@@ -14,6 +14,7 @@ CEDEAO et Union africaine.
 - La clé Groq est lue dans les Secrets de l'application, jamais dans le code.
 """
 
+import json
 import re
 import unicodedata
 from pathlib import Path
@@ -45,6 +46,8 @@ dans l'Union africaine.
 
 Règles impératives :
 1. Appuie-toi UNIQUEMENT sur les extraits fournis. N'affirme aucune règle de droit qui n'y figure pas.
+   Les extraits sont trouvés automatiquement et certains peuvent être hors sujet : IGNORE-les. Ne cite
+   jamais un article sans rapport direct avec la question, même pour « illustrer ».
 2. Cite chaque règle avec sa référence exacte entre crochets, telle qu'elle figure dans l'en-tête de \
 l'extrait, par exemple [Loi 09-08 (Maroc), art. 4].
 3. Si les extraits ne suffisent pas, dis-le et indique quel texte consulter. N'invente jamais un numéro \
@@ -52,8 +55,12 @@ d'article, un délai ou un montant.
 4. Si plusieurs pays ou espaces sont concernés, distingue nettement ce que prévoit chacun.
 5. Si l'en-tête d'un extrait indique « VERSION D'ORIGINE » ou « OCR », signale qu'il faut vérifier le \
 texte officiel en vigueur avant toute citation définitive.
-6. Écris en français juridique clair, sans jargon inutile.
-7. Termine par une phrase rappelant qu'il s'agit d'une information juridique et non d'un conseil, \
+6. Si la question est pratique (« comment créer… », « que faire si… »), réponds par étapes concrètes et
+   numérotées, chacune rattachée à l'article qui la fonde.
+7. Si la question ne précise pas le pays, traite séparément la Côte d'Ivoire (droit OHADA) et le Maroc
+   quand les extraits le permettent, et invite à préciser le pays.
+8. Écris en français juridique clair, sans jargon inutile.
+9. Termine par une phrase rappelant qu'il s'agit d'une information juridique et non d'un conseil, \
 à faire valider par un professionnel."""
 
 FORMATS = {
@@ -246,6 +253,7 @@ ALIAS_TEXTES = {
 
 # Notions qui désignent un texte précis : on renforce le score de ses articles.
 NOTIONS_TEXTES = {
+    r"cr[ée]e[rz]? (?:ma |une |sa )?soci[ée]t[ée]|constitu|immatricul|statuts": ["AUSCGIE", "AUDCG", "Loi 5-96", "Code de commerce"],
     r"\bsas\b|actions simplifi[ée]e": ["AUSCGIE"],
     r"\bsarl\b|responsabilit[ée] limit[ée]e": ["AUSCGIE", "Loi 5-96"],
     r"\bsa\b|soci[ée]t[ée] anonyme|conseil d.administration": ["AUSCGIE"],
@@ -258,6 +266,52 @@ NOTIONS_TEXTES = {
     r"arbitr": ["(AUA)"], r"m[ée]diat": ["(AUM)"], r"transport": ["AUCTMR"],
     r"comptab|[ée]tats financiers": ["AUDCIF", "SYCEBNL"],
 }
+
+
+ANALYSE = """Tu es documentaliste juridique (OHADA, Côte d'Ivoire, Maroc, CEDEAO, Union africaine).
+Pour la question posée, réponds UNIQUEMENT par un objet JSON de cette forme :
+{"mots_cles": "termes juridiques précis tels qu'ils figurent dans les textes, synonymes compris (20 mots au plus)",
+ "espaces": ["Côte d'Ivoire" | "Maroc" | "OHADA" | "CEDEAO" | "Union africaine"],
+ "articles": [{"texte": "AUSCGIE", "num": "10"}]}
+- "espaces" : seulement ceux que la question vise explicitement ou implicitement ; liste vide si rien n'est précisé.
+- "articles" : au plus 5 articles centraux dont tu es sûr. Valeurs possibles pour "texte" : AUSCGIE, AUDCG, AUS,
+  AUPSRVE, AUPCAP, AUA, AUM, AUCTMR, AUSCOOP, AUDCIF, SYCEBNL, Loi 09-08, Loi 2013-450, Loi 5-96, Loi 49-16,
+  Loi 53-95, Code de commerce, DOC, Malabo, CEDEAO. Liste vide si tu n'es pas sûr."""
+
+
+def analyser_question(client, question, precedente=""):
+    """Reformule la question en vocabulaire juridique (modèle rapide). Ne bloque jamais."""
+    modele = st.secrets["GROQ_MODEL_RAPIDE"] if "GROQ_MODEL_RAPIDE" in st.secrets else "openai/gpt-oss-20b"
+    contenu = (f"Question précédente (contexte) : {precedente}\n" if precedente else "") + f"Question : {question}"
+    try:
+        rep = client.chat.completions.create(
+            model=modele, temperature=0, max_tokens=600,
+            messages=[{"role": "system", "content": ANALYSE}, {"role": "user", "content": contenu}])
+        brut = rep.choices[0].message.content or ""
+        m = re.search(r"\{.*\}", brut, re.S)
+        data = json.loads(m.group(0)) if m else {}
+    except Exception:
+        data = {}
+    return {"mots_cles": str(data.get("mots_cles", ""))[:400],
+            "espaces": [e for e in data.get("espaces", []) if e in ESPACES] if isinstance(data.get("espaces"), list) else [],
+            "articles": [a for a in data.get("articles", []) if isinstance(a, dict)][:5]
+            if isinstance(data.get("articles"), list) else []}
+
+
+def articles_suggeres(suggestions, passages, articles):
+    """Va chercher le texte réel des articles suggérés (ignorés s'ils n'existent pas)."""
+    trouves = []
+    for sug in suggestions:
+        frag, num = str(sug.get("texte", "")), str(sug.get("num", "")).strip()
+        if not frag or not num:
+            continue
+        cle = f"({frag})" if frag in ("AUS", "AUA", "AUM") else frag
+        for lab, liste in articles.items():
+            if cle in lab:
+                for n, idx in liste:
+                    if n == num:
+                        trouves.append(passages[idx[0]])
+    return trouves
 
 
 def articles_cites(question, passages, articles):
@@ -277,14 +331,19 @@ def articles_cites(question, passages, articles):
     return trouves
 
 
-def rechercher(question, passages, index, articles, domaines, espaces, k=TOP_K):
+def rechercher(question, passages, index, articles, domaines, espaces, k=TOP_K, analyse=None):
     """Articles cités explicitement, puis meilleurs passages ; chaque espace pertinent a sa part."""
+    analyse = analyse or {}
     exacts = articles_cites(question, passages, articles)
-    requete = question
+    for p in articles_suggeres(analyse.get("articles", []), passages, articles):
+        if p not in exacts and p["domaine"] in domaines and p["pays"] in espaces:
+            exacts.append(p)
+    requete = question + " " + analyse.get("mots_cles", "")
     for motif, ajout in EXPANSIONS.items():
         if re.search(motif, question, re.I):
             requete += ajout
     cites = [e for e, motif in ESPACES_CITES.items() if re.search(motif, question, re.I) and e in espaces]
+    cites += [e for e in analyse.get("espaces", []) if e in espaces and e not in cites]
     if cites:
         etendu = set(cites)
         for e in cites:
@@ -308,8 +367,9 @@ def rechercher(question, passages, index, articles, domaines, espaces, k=TOP_K):
         par_espace = {}
         for i in ordre:
             par_espace.setdefault(passages[i]["pays"], []).append(i)
+        seuil = 0.6 if cites else 0.4      # sans pays précisé, on garde plus d'espaces
         pertinents = [e for e, lst in par_espace.items()
-                      if scores[lst[0]] >= 0.6 * meilleur or e in cites]
+                      if scores[lst[0]] >= seuil * meilleur or e in cites]
         part = max(2, k // max(1, len(pertinents)))
         for e in pertinents:
             choisis.extend(par_espace[e][:part])
@@ -319,9 +379,9 @@ def rechercher(question, passages, index, articles, domaines, espaces, k=TOP_K):
             if i not in choisis:
                 choisis.append(i)
         choisis = sorted(choisis[:k], key=lambda i: scores[i], reverse=True)
-    resultat = list(exacts)
-    for i in choisis:
-        if passages[i] not in resultat and len(resultat) < k + len(exacts):
+    resultat = list(exacts[:5])
+    for i in choisis:                   # 9 passages au plus : reste dans les quotas gratuits de Groq
+        if passages[i] not in resultat and len(resultat) < 9:
             resultat.append(passages[i])
     return resultat
 
@@ -406,10 +466,14 @@ passages, index, textes, articles = charger_corpus()
 espaces_dispo = [e for e in ESPACES if any(t["pays"] == e for t in textes)]
 labels_textes = [t["label"] for t in textes if t["label"] in articles]
 
-if LOGO_H.exists():
-    st.logo(str(LOGO_H), icon_image=str(LOGO_ICONE) if LOGO_ICONE.exists() else None, size="large")
+import base64
 
 with st.sidebar:
+    if LOGO_H.exists():
+        logo_b64 = base64.b64encode(LOGO_H.read_bytes()).decode()
+        st.markdown(f"<img src='data:image/png;base64,{logo_b64}' alt='JCKouassi, Juriste 2.0' "
+                    f"style='width:100%;border-radius:14px;margin:4px 0 14px;border:1px solid #243456'>",
+                    unsafe_allow_html=True)
     st.markdown("#### Périmètre de recherche")
     choix_domaine = st.radio("Domaine", ["Les deux", "Données personnelles", "Droit des affaires"])
     domaines = {"Les deux": ["donnees", "affaires"], "Données personnelles": ["donnees"],
@@ -426,7 +490,6 @@ with st.sidebar:
     st.caption(f"Une initiative de **{AUTEUR}**")
 
 # En-tête : bandeau de marque
-import base64
 icone_b64 = base64.b64encode(LOGO_ICONE.read_bytes()).decode() if LOGO_ICONE.exists() else ""
 st.markdown(
     f"""<div class='jck-hero'>
@@ -499,7 +562,12 @@ with onglet_q:
                 reponse, trouves = "Sélectionnez au moins un pays ou espace juridique dans le panneau de gauche.", []
                 st.warning(reponse)
             else:
-                trouves = rechercher(question, passages, index, articles, domaines, choix_espaces)
+                precedente = next((m["content"] for m in reversed(st.session_state.messages[:-1])
+                                   if m["role"] == "user"), "")
+                with st.spinner("Analyse de la question et recherche des articles…"):
+                    analyse = analyser_question(client, question, precedente)
+                    trouves = rechercher(question, passages, index, articles, domaines, choix_espaces,
+                                         analyse=analyse)
                 contexte = "\n\n".join(
                     f"[{n + 1}] {p['ref']} — {p['titre']}\n{p['texte']}" for n, p in enumerate(trouves)
                 ) or "(Aucun extrait pertinent trouvé dans le corpus.)"
@@ -526,6 +594,8 @@ with onglet_q:
                                    f"Le service de génération est momentanément indisponible ({nom}). "
                                    "Réessayez dans un instant.")
                         st.warning(reponse)
+                    if analyse.get("mots_cles"):
+                        st.caption(f"Termes recherchés : {analyse['mots_cles']}")
                     if trouves:
                         st.markdown("<div class='jck-label'>Articles consultés</div>", unsafe_allow_html=True)
                         afficher_sources(trouves, "dernier")
