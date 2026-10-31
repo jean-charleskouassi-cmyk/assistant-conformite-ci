@@ -13,6 +13,10 @@ des textes officiels, article par article, et cite ses sources.
 - **Question juridique** : réponse rédigée à partir des seuls articles retrouvés, au choix en *synthèse* ou en
   *note juridique* (réponse, textes applicables, analyse, points de vigilance), avec la liste des articles
   consultés, lisibles en entier et copiables pour la citation.
+- **Aide à la formulation** : thèmes avec questions types, composition guidée (thème, pays, ce que l'on
+  cherche, situation) et bouton « Améliorer ma question » qui reformule en termes juridiques et signale les
+  informations manquantes. Après chaque réponse : la question telle que comprise, les précisions utiles et
+  trois questions de suivi en un clic.
 - **Citation directe** : « Que prévoit l'article 309 de l'AUSCGIE ? » va chercher l'article exact.
 - **Consulter un article** : texte intégral d'un article, avec navigation vers l'article précédent ou suivant.
 - **Bibliothèque** : liste des textes intégrés, avec leur source.

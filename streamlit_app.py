@@ -66,7 +66,8 @@ texte officiel en vigueur avant toute citation définitive.
 à faire valider par un professionnel."""
 
 FORMATS = {
-    "Synthèse": "Réponds en quelques paragraphes courts : la réponse d'abord, puis ses fondements textuels.",
+    "Synthèse": ("Commence par la réponse directe en deux ou trois phrases. Donne ensuite ses fondements "
+                 "textuels, puis, si c'est utile, une courte liste « À faire » avec les démarches concrètes."),
     "Note juridique": ("Présente ta réponse comme une courte note juridique, avec ces intertitres : "
                        "**Réponse**, **Textes applicables**, **Analyse** (principe, conditions, exceptions, "
                        "sanctions le cas échéant), **Points de vigilance**."),
@@ -305,14 +306,21 @@ NOTIONS_TEXTES = {
 
 ANALYSE = """Tu es documentaliste juridique (OHADA, Côte d'Ivoire, Maroc, CEDEAO, Union africaine).
 Pour la question posée, réponds UNIQUEMENT par un objet JSON de cette forme :
-{"mots_cles": "termes juridiques précis tels qu'ils figurent dans les textes, synonymes compris (20 mots au plus)",
+{"question_precise": "la question reformulée en une phrase juridique claire et précise, en français",
+ "mots_cles": "termes juridiques précis tels qu'ils figurent dans les textes, synonymes compris (20 mots au plus)",
  "espaces": ["Côte d'Ivoire" | "Maroc" | "OHADA" | "CEDEAO" | "Union africaine"],
- "articles": [{"texte": "AUSCGIE", "num": "10"}]}
+ "articles": [{"texte": "AUSCGIE", "num": "10"}],
+ "precisions": ["information manquante formulée comme une courte question à l'utilisateur"],
+ "suivis": ["question de suivi utile"]}
+- "question_precise" : garde le sens de l'utilisateur ; n'ajoute un pays que s'il est indiqué ou évident.
 - "espaces" : seulement ceux que la question vise explicitement ou implicitement ; liste vide si rien n'est précisé.
 - "articles" : au plus 6 articles centraux (par exemple les premiers articles du titre qui traite le sujet,
   d'après le plan fourni). Valeurs possibles pour "texte" : AUSCGIE, AUDCG, AUS,
   AUPSRVE, AUPCAP, AUA, AUM, AUCTMR, AUSCOOP, AUDCIF, SYCEBNL, Loi 09-08, Loi 2013-450, Loi 5-96, Loi 49-16,
-  Loi 53-95, Code de commerce, DOC, Malabo, CEDEAO. Liste vide si tu n'es pas sûr."""
+  Loi 53-95, Code de commerce, DOC, Malabo, CEDEAO. Liste vide si tu n'es pas sûr.
+- "precisions" : au plus 3 informations qui manquent pour bien répondre (pays, forme de société, qualité de la
+  personne, montant…) ; liste vide si la question est assez précise.
+- "suivis" : 3 questions de suivi courtes et concrètes qu'un juriste poserait ensuite."""
 
 
 def analyser_question(client, question, precedente="", plan_txt=""):
@@ -324,17 +332,24 @@ def analyser_question(client, question, precedente="", plan_txt=""):
                + f"Question : {question}")
     try:
         rep = client.chat.completions.create(
-            model=modele, temperature=0, max_tokens=600,
+            model=modele, temperature=0, max_tokens=900,
             messages=[{"role": "system", "content": ANALYSE}, {"role": "user", "content": contenu}])
         brut = rep.choices[0].message.content or ""
         m = re.search(r"\{.*\}", brut, re.S)
         data = json.loads(m.group(0)) if m else {}
     except Exception:
         data = {}
-    return {"mots_cles": str(data.get("mots_cles", ""))[:400],
-            "espaces": [e for e in data.get("espaces", []) if e in ESPACES] if isinstance(data.get("espaces"), list) else [],
-            "articles": [a for a in data.get("articles", []) if isinstance(a, dict)][:6]
-            if isinstance(data.get("articles"), list) else []}
+
+    def liste(cle, n):
+        v = data.get(cle, [])
+        return [x for x in v if x][:n] if isinstance(v, list) else []
+
+    return {"question_precise": str(data.get("question_precise", ""))[:500],
+            "mots_cles": str(data.get("mots_cles", ""))[:400],
+            "espaces": [e for e in liste("espaces", 5) if e in ESPACES],
+            "articles": [a for a in liste("articles", 6) if isinstance(a, dict)],
+            "precisions": [str(x)[:160] for x in liste("precisions", 3)],
+            "suivis": [str(x)[:200] for x in liste("suivis", 3)]}
 
 
 def articles_suggeres(suggestions, passages, articles):
@@ -557,6 +572,76 @@ def afficher_sources(sources, cle):
 
 
 # --- Onglet 1 : questions
+THEMES = {
+    "Créer une société": ("créer une société", "la création d'une société", [
+        "Quelles sont les étapes pour créer une SARL en Côte d'Ivoire ?",
+        "Quelles sont les conditions de constitution d'une SAS en droit OHADA ?",
+        "Comment créer une SARL au Maroc ?"]),
+    "Bail commercial": ("conclure ou renouveler un bail commercial", "le bail commercial", [
+        "Quelle est la durée d'un bail commercial en droit OHADA et comment le renouveler ?",
+        "Dans quels cas le bailleur peut-il refuser le renouvellement du bail commercial au Maroc ?"]),
+    "Recouvrer une créance": ("recouvrer une créance", "le recouvrement de créances", [
+        "Comment fonctionne la procédure d'injonction de payer dans l'espace OHADA ?",
+        "Quelles saisies un créancier peut-il pratiquer contre son débiteur en droit OHADA ?"]),
+    "Garanties et sûretés": ("constituer une garantie (sûreté)", "les sûretés", [
+        "Comment constituer une hypothèque en droit OHADA ?",
+        "Quelles sont les règles du cautionnement en droit OHADA ?"]),
+    "Entreprise en difficulté": ("traiter les difficultés d'une entreprise", "les procédures collectives", [
+        "Quelles sont les conditions d'ouverture du redressement judiciaire en droit OHADA ?",
+        "Comment se déroule la procédure de conciliation en droit OHADA ?"]),
+    "Données personnelles": ("traiter des données personnelles", "la protection des données personnelles", [
+        "Faut-il déclarer un fichier clients à l'autorité de protection, au Maroc et en Côte d'Ivoire ?",
+        "Quels sont les droits des personnes concernées en Côte d'Ivoire ?",
+        "Peut-on transférer des données personnelles vers l'étranger depuis le Maroc ?"]),
+    "Arbitrage et médiation": ("recourir à l'arbitrage ou à la médiation", "l'arbitrage et la médiation", [
+        "Comment désigner un arbitre selon l'Acte uniforme relatif au droit de l'arbitrage ?",
+        "Comment se déroule une médiation selon l'Acte uniforme relatif à la médiation ?"]),
+}
+PAYS_FORMULES = {"Côte d'Ivoire (droit OHADA)": "en Côte d'Ivoire", "Maroc": "au Maroc",
+                 "Comparer Côte d'Ivoire et Maroc": "en Côte d'Ivoire et au Maroc (comparaison)",
+                 "Autre pays de l'OHADA": "dans l'espace OHADA"}
+BESOINS = {
+    "Les étapes à suivre": "Quelles sont les étapes à suivre pour {v} {p} ?",
+    "Les conditions à remplir": "Quelles sont les conditions à remplir pour {v} {p} ?",
+    "Les délais à respecter": "Quels sont les délais à respecter pour {v} {p} ?",
+    "Les formalités et documents": "Quelles formalités et quels documents faut-il pour {v} {p} ?",
+    "Les sanctions prévues": "Quelles sanctions sont prévues en matière de {n} {p} ?",
+    "Les droits et obligations": "Quels sont les droits et obligations des parties en matière de {n} {p} ?",
+}
+
+
+def poser(q):
+    st.session_state.question_exemple = q
+
+
+def soumettre():
+    texte = st.session_state.get("saisie", "").strip()
+    if texte:
+        st.session_state.question_a_traiter = texte
+        st.session_state.saisie = ""
+        st.session_state.pop("suggestion", None)
+
+
+def composer():
+    v, n, _ = THEMES[st.session_state.f_theme]
+    q = BESOINS[st.session_state.f_besoin].format(v=v, n=n, p=PAYS_FORMULES[st.session_state.f_pays])
+    situation = st.session_state.get("f_situation", "").strip()
+    st.session_state.saisie = q + (f" Ma situation : {situation}" if situation else "")
+
+
+def utiliser_suggestion():
+    sug = st.session_state.pop("suggestion", None)
+    if sug and sug.get("question_precise"):
+        st.session_state.saisie = sug["question_precise"]
+
+
+def boutons_suivi(suivis, cle):
+    if suivis:
+        st.markdown("<div class='jck-label'>Pour aller plus loin</div>", unsafe_allow_html=True)
+        for j, q in enumerate(suivis):
+            st.button(q, key=f"suivi_{cle}_{j}", on_click=poser, args=(q,), width="stretch")
+
+
 with onglet_q:
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -566,37 +651,78 @@ with onglet_q:
         client = Groq(api_key=st.secrets["GROQ_API_KEY"])
         modele = st.secrets["GROQ_MODEL"] if "GROQ_MODEL" in st.secrets else DEFAULT_MODEL
 
-        if not st.session_state.messages:
-            st.markdown("<div class='jck-label'>Exemples de questions</div>", unsafe_allow_html=True)
-            exemples = [
-                "Faut-il déclarer un fichier clients à l'autorité de protection, au Maroc et en Côte d'Ivoire ?",
-                "Quelles sont les conditions de constitution d'une SAS en droit OHADA ?",
-                "Comment fonctionne la procédure d'injonction de payer dans l'espace OHADA ?",
-                "Que prévoit la Convention de Malabo sur les transferts de données hors de l'Union africaine ?",
-            ]
-            c1, c2 = st.columns(2)
-            for n, ex in enumerate(exemples):
-                if (c1 if n % 2 == 0 else c2).button(ex, key=f"ex{n}", width="stretch"):
-                    st.session_state.question_exemple = ex
-                    st.rerun()
+        def ameliorer():
+            texte = st.session_state.get("saisie", "").strip()
+            if texte:
+                st.session_state.suggestion = analyser_question(client, texte)
 
+        # Points de départ par thème
+        if not st.session_state.messages:
+            st.markdown("<div class='jck-label'>Par où commencer ? Choisissez un thème</div>",
+                        unsafe_allow_html=True)
+            theme = st.selectbox("Thème", list(THEMES), label_visibility="collapsed", key="theme_depart")
+            cols = st.columns(len(THEMES[theme][2]))
+            for j, q in enumerate(THEMES[theme][2]):
+                cols[j].button(q, key=f"ex_{theme}_{j}", on_click=poser, args=(q,), width="stretch")
+
+        # Historique
         for n, m in enumerate(st.session_state.messages):
-            with st.chat_message(m["role"], avatar=str(LOGO_ICONE) if m["role"] == "assistant" and LOGO_ICONE.exists() else None):
+            avatar = str(LOGO_ICONE) if m["role"] == "assistant" and LOGO_ICONE.exists() else None
+            with st.chat_message(m["role"], avatar=avatar):
                 st.markdown(m["content"])
+                if m.get("precise"):
+                    st.caption(f"Question comprise comme : {m['precise']}")
                 if m.get("sources"):
                     st.markdown("<div class='jck-label'>Articles consultés</div>", unsafe_allow_html=True)
                     afficher_sources(m["sources"], f"h{n}")
+                if m.get("precisions"):
+                    st.caption("Pour une réponse plus ciblée, précisez : " + " · ".join(m["precisions"]))
+                boutons_suivi(m.get("suivis"), f"h{n}")
 
-        with st.form("question", clear_on_submit=True):
-            saisie = st.text_area("Votre question", height=110, label_visibility="collapsed",
-                                  placeholder="Posez votre question juridique, ou citez un article : « Que prévoit l'article 309 de l'AUSCGIE ? »")
-            envoye = st.form_submit_button("Rechercher et répondre", type="primary")
-        question = saisie.strip() if envoye and saisie.strip() else st.session_state.pop("question_exemple", None)
+        # Aide à la formulation
+        with st.expander("Besoin d'aide pour formuler votre question ?"):
+            st.markdown("Une bonne question indique **le pays**, **la situation** (forme de société, qualité "
+                        "des parties, montant…) et **ce que vous cherchez** (étapes, conditions, délais, "
+                        "sanctions). Composez-la en trois choix :")
+            g1, g2, g3 = st.columns(3)
+            g1.selectbox("Thème", list(THEMES), key="f_theme")
+            g2.selectbox("Pays", list(PAYS_FORMULES), key="f_pays")
+            g3.selectbox("Vous cherchez", list(BESOINS), key="f_besoin")
+            st.text_input("Votre situation en une phrase (facultatif)", key="f_situation",
+                          placeholder="ex. deux associés, capital de 1 million de FCFA, activité de commerce")
+            st.button("Composer ma question", on_click=composer)
+
+        # Saisie
+        st.text_area("Votre question", key="saisie", height=110, label_visibility="collapsed",
+                     placeholder="Posez votre question juridique, ou citez un article : « Que prévoit "
+                                 "l'article 309 de l'AUSCGIE ? »")
+        b1, b2, _ = st.columns([2, 2, 3])
+        b1.button("Rechercher et répondre", type="primary", on_click=soumettre, width="stretch")
+        b2.button("Améliorer ma question", on_click=ameliorer, width="stretch",
+                  help="Reformule votre question en termes juridiques et signale ce qui manque.")
+
+        sug = st.session_state.get("suggestion")
+        if sug:
+            with st.container(border=True):
+                if sug.get("question_precise"):
+                    st.markdown(f"**Version proposée :** {sug['question_precise']}")
+                if sug.get("precisions"):
+                    st.markdown("**Pour une réponse plus précise, indiquez :**\n" +
+                                "\n".join(f"- {x}" for x in sug["precisions"]))
+                if not sug.get("question_precise") and not sug.get("precisions"):
+                    st.markdown("Votre question est déjà claire : vous pouvez lancer la recherche.")
+                s1, s2, _ = st.columns([2, 1, 4])
+                if sug.get("question_precise"):
+                    s1.button("Utiliser cette version", on_click=utiliser_suggestion, width="stretch")
+                s2.button("Ignorer", on_click=lambda: st.session_state.pop("suggestion", None))
+
+        question = st.session_state.pop("question_a_traiter", None) or st.session_state.pop("question_exemple", None)
 
         if question:
             st.session_state.messages.append({"role": "user", "content": question})
             with st.chat_message("user"):
                 st.markdown(question)
+            analyse = {}
             if not choix_espaces:
                 reponse, trouves = "Sélectionnez au moins un pays ou espace juridique dans le panneau de gauche.", []
                 st.warning(reponse)
@@ -608,8 +734,8 @@ with onglet_q:
                         plan_resume(t["label"], plans) for t in textes
                         if t["domaine"] in domaines and t["pays"] in choix_espaces and t["label"] in plans)
                     analyse = analyser_question(client, question, precedente, plan_dispo)
-                    trouves = rechercher(question, passages, index, articles, domaines, choix_espaces,
-                                         analyse=analyse)
+                    trouves = rechercher(question + " " + analyse.get("question_precise", ""), passages, index,
+                                         articles, domaines, choix_espaces, analyse=analyse)
                 contexte = "\n\n".join(
                     f"[{n + 1}] {p['ref']} — {p['titre']}\n{p['texte']}" for n, p in enumerate(trouves)
                 ) or "(Aucun extrait pertinent trouvé dans le corpus.)"
@@ -617,11 +743,14 @@ with onglet_q:
                 if concernes:
                     contexte += "\n\nPlan des textes concernés :\n" + "\n".join(
                         plan_resume(lab, plans) for lab in concernes)
+                precise = analyse.get("question_precise", "")
                 historique = [{"role": m["role"], "content": m["content"][:1500]}
                               for m in st.session_state.messages[-5:-1]]
                 messages = [{"role": "system", "content": SYSTEME + "\n\n" + FORMATS[format_rep]},
                             *historique,
-                            {"role": "user", "content": f"Extraits des textes :\n\n{contexte}\n\nQuestion : {question}"}]
+                            {"role": "user", "content": f"Extraits des textes :\n\n{contexte}\n\n"
+                                                        f"Question : {question}"
+                                                        + (f"\n(Reformulation juridique : {precise})" if precise else "")}]
                 with st.chat_message("assistant", avatar=str(LOGO_ICONE) if LOGO_ICONE.exists() else None):
                     try:
                         flux = client.chat.completions.create(model=modele, messages=messages,
@@ -640,13 +769,19 @@ with onglet_q:
                                    f"Le service de génération est momentanément indisponible ({nom}). "
                                    "Réessayez dans un instant.")
                         st.warning(reponse)
-                    if analyse.get("mots_cles"):
-                        st.caption(f"Termes recherchés : {analyse['mots_cles']}")
+                    if precise:
+                        st.caption(f"Question comprise comme : {precise}")
                     if trouves:
                         st.markdown("<div class='jck-label'>Articles consultés</div>", unsafe_allow_html=True)
                         afficher_sources(trouves, "dernier")
-            st.session_state.messages.append({"role": "assistant", "content": reponse, "sources": [
-                {"ref": s["ref"], "texte": s["texte"], "contexte": s["contexte"]} for s in trouves]})
+                    if analyse.get("precisions"):
+                        st.caption("Pour une réponse plus ciblée, précisez : " + " · ".join(analyse["precisions"]))
+                    boutons_suivi(analyse.get("suivis"), "dernier")
+            st.session_state.messages.append({
+                "role": "assistant", "content": reponse,
+                "sources": [{"ref": s["ref"], "texte": s["texte"], "contexte": s["contexte"]} for s in trouves],
+                "precise": analyse.get("question_precise", ""), "precisions": analyse.get("precisions", []),
+                "suivis": analyse.get("suivis", [])})
 
 # --- Onglet 2 : consultation directe d'un article
 with onglet_art:
