@@ -21,6 +21,10 @@ des textes officiels, article par article, et cite ses sources.
   articles qui traitent le même point dans l'autre système, grâce à une table de correspondance par thème (SARL,
   bail commercial, fonds de commerce, sûretés, procédures collectives…), signale les matières sans équivalent, et
   rédige à la demande une comparaison (points communs, différences, conséquences pratiques).
+- **Rédiger un contrat** : formulaire guidé pour quatre actes (contrat de prestation de services, accord de
+  confidentialité, statuts de SARL, bail commercial), en droit marocain ou en droit OHADA / ivoirien. L'assistant
+  rédige un projet complet appuyé sur les articles de la bibliothèque, surligne les informations manquantes,
+  liste les points de vigilance et le projet se télécharge en Word.
 - **Citation directe** : « Que prévoit l'article 309 de l'AUSCGIE ? » va chercher l'article exact.
 - **Consulter un article** : texte intégral d'un article, avec navigation vers l'article précédent ou suivant.
 - **Bibliothèque** : liste des textes intégrés, avec leur source.

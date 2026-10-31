@@ -594,6 +594,273 @@ def equivalents(p, source, passages, index, n=5):
     return theme, resultats
 
 
+# ------------------------------------------------------------------ rédaction de contrats
+
+PARTIES = [("p1_nom", "Nom ou dénomination", "ex. Société Atlas Digital SARL"),
+           ("p1_info", "Forme, siège ou adresse, représentant, n° RC ou CIN",
+            "ex. SARL au capital de 100 000 DH, siège à Kénitra, RC 12345, représentée par M. X, gérant"),
+           ("p2_nom", "Nom ou dénomination", "ex. M. Youssef Benali"),
+           ("p2_info", "Forme, siège ou adresse, représentant, n° RC ou CIN", "ex. consultant indépendant, Rabat")]
+
+# Pour chaque contrat : rôles des parties, champs propres, et articles d'ancrage par droit applicable.
+# « socle » = articles toujours fournis (numéros vérifiés dans la bibliothèque) ;
+# « reserve » = plages d'articles parmi lesquelles le moteur choisit les plus pertinents.
+CONTRATS = {
+    "Contrat de prestation de services": {
+        "roles": ("Le client", "Le prestataire"),
+        "champs": [("objet", "Objet de la mission", "area", "ex. refonte du site internet et formation de l'équipe"),
+                   ("livrables", "Livrables et délais", "area", "ex. maquette sous 15 jours, mise en ligne sous 45 jours"),
+                   ("duree", "Durée ou date de fin", "text", "ex. 3 mois à compter de la signature"),
+                   ("prix", "Prix et modalités de paiement", "text", "ex. 30 000 DH HT, 40 % à la commande, solde à la livraison"),
+                   ("donnees", "Le prestataire traite des données personnelles pour le client", "check", ""),
+                   ("litiges", "Règlement des litiges", "choice",
+                    ["Tribunal compétent", "Médiation, puis tribunal", "Médiation, puis arbitrage"])],
+        "requete": "louage ouvrage services prix exécution délai responsabilité inexécution force majeure résiliation",
+        "droits": {
+            "Maroc": {"socle": [("DOC", ["230", "723", "724", "263", "264", "268", "269"])],
+                      "reserve": [("DOC", (723, 780))],
+                      "donnees": [("Loi 09-08", ["23", "25", "26"])]},
+            "Côte d'Ivoire (OHADA)": {"socle": [("(AUM)", ["2"]), ("(AUA)", ["2", "3-1", "4"])], "reserve": [],
+                                      "donnees": [("Loi 2013-450", ["39", "40", "41"])],
+                                      "note": "Le droit commun ivoirien des contrats (Code civil) n'est pas intégré dans "
+                                              "la bibliothèque : les clauses générales sont rédigées sans référence "
+                                              "légale et doivent être vérifiées."},
+        },
+    },
+    "Accord de confidentialité (NDA)": {
+        "roles": ("La partie divulgatrice", "La partie destinataire"),
+        "champs": [("sens", "Type d'accord", "choice", ["Unilatéral", "Mutuel (les deux parties échangent)"]),
+                   ("projet", "Projet ou contexte des échanges", "area", "ex. étude d'un partenariat commercial"),
+                   ("duree_conf", "Durée de l'obligation de confidentialité", "text", "ex. 5 ans après la fin des échanges"),
+                   ("penalite", "Pénalité forfaitaire en cas de violation (facultatif)", "text", "ex. 50 000 DH"),
+                   ("donnees", "Les informations échangées comprennent des données personnelles", "check", ""),
+                   ("litiges", "Règlement des litiges", "choice",
+                    ["Tribunal compétent", "Médiation, puis tribunal", "Médiation, puis arbitrage"])],
+        "requete": "obligation contractuelle inexécution dommages intérêts confidentialité secret",
+        "droits": {
+            "Maroc": {"socle": [("DOC", ["230", "263", "264"])], "reserve": [],
+                      "donnees": [("Loi 09-08", ["23", "25", "26"])]},
+            "Côte d'Ivoire (OHADA)": {"socle": [("(AUM)", ["2"]), ("(AUA)", ["3-1", "4"])], "reserve": [],
+                                      "donnees": [("Loi 2013-450", ["39", "40", "41"])],
+                                      "note": "Le droit commun ivoirien des contrats (Code civil) n'est pas intégré dans "
+                                              "la bibliothèque : les clauses générales doivent être vérifiées."},
+        },
+    },
+    "Statuts de SARL": {
+        "roles": None,
+        "champs": [("denomination", "Dénomination sociale", "text", "ex. Atlas Digital"),
+                   ("objet", "Objet social", "area", "ex. conseil en transformation numérique, formation"),
+                   ("siege", "Siège social", "text", "ex. 12, avenue Mohammed V, Kénitra"),
+                   ("capital", "Capital social et valeur d'une part", "text", "ex. 100 000 DH, parts de 100 DH"),
+                   ("associes", "Associés et apports (une ligne par associé)", "area",
+                    "ex. Amina Alaoui — 60 000 DH en numéraire — 600 parts\nKarim Idrissi — 40 000 DH en numéraire — 400 parts"),
+                   ("gerance", "Gérant(s) et durée du mandat", "text", "ex. Amina Alaoui, pour une durée indéterminée"),
+                   ("duree_soc", "Durée de la société", "text", "99 ans"),
+                   ("cession", "Cession de parts à des tiers", "choice",
+                    ["Avec agrément des associés", "Libre entre associés, agrément pour les tiers"])],
+        "requete": "statuts capital parts sociales apports gérance gérant assemblée décisions cession agrément",
+        "droits": {
+            "Maroc": {"socle": [("Loi 5-96", ["44", "45", "46", "50", "51", "53", "58", "62", "71"])],
+                      "reserve": [("Loi 5-96", (44, 87))],
+                      "note": "La loi n° 5-96 de la bibliothèque est la version d'origine de 1997 : elle a été modifiée "
+                              "depuis, notamment sur le capital minimum. Vérifiez chaque règle dans la version en vigueur."},
+            "Côte d'Ivoire (OHADA)": {"socle": [("AUSCGIE", ["10", "13", "309", "310", "311", "312", "313", "317",
+                                                             "318", "323", "324", "334"])],
+                                      "reserve": [("AUSCGIE", (309, 384))]},
+        },
+    },
+    "Bail commercial": {
+        "roles": ("Le bailleur", "Le preneur"),
+        "champs": [("local", "Adresse et description du local", "area", "ex. local de 80 m² au rez-de-chaussée, 5 rue X, Casablanca"),
+                   ("activite", "Activité exercée dans les lieux", "text", "ex. restauration rapide"),
+                   ("duree", "Durée du bail et date d'effet", "text", "ex. 3 ans à compter du 1er janvier 2027"),
+                   ("loyer", "Loyer, charges et révision", "text", "ex. 8 000 DH par mois, charges en sus"),
+                   ("depot", "Dépôt de garantie", "text", "ex. deux mois de loyer"),
+                   ("travaux", "Répartition des travaux et réparations", "choice",
+                    ["Selon la loi (grosses réparations au bailleur)", "À préciser dans le contrat"])],
+        "requete": "bail écrit durée loyer révision renouvellement réparations résiliation congé indemnité",
+        "droits": {
+            "Maroc": {"socle": [("Loi 49-16", ["premier", "3", "4", "5", "6", "7"])],
+                      "reserve": [("Loi 49-16", (1, 38))]},
+            "Côte d'Ivoire (OHADA)": {"socle": [("AUDCG", ["101", "103", "104", "105", "106", "112", "123", "133"])],
+                                      "reserve": [("AUDCG", (101, 134))]},
+        },
+    },
+}
+
+REDACTION = """Tu es juriste rédacteur de contrats (droit marocain et droit OHADA). Rédige un PROJET d'acte complet, \
+prêt à être relu par un professionnel.
+
+Règles :
+1. Rédige en français juridique clair, en articles numérotés (« Article 1 – Objet », « Article 2 – … »), avec un \
+titre, la désignation des parties, un préambule court si utile, et un bloc de signatures (lieu, date, nombre \
+d'exemplaires).
+2. Utilise les informations fournies. Pour toute information manquante, écris [À COMPLÉTER : ce qu'il faut \
+indiquer]. N'invente aucun nom, montant, date, numéro ou adresse.
+3. Appuie les clauses imposées ou encadrées par la loi sur les articles fournis, en les citant entre parenthèses, \
+par exemple (art. 3 de la loi n° 49-16). Ne cite AUCUN article qui ne figure pas dans les extraits. N'invente \
+aucune règle légale (délai, montant minimum, majorité) qui n'y figure pas.
+4. Inclus les clauses usuelles adaptées au contrat (durée, prix, obligations, responsabilité, force majeure, \
+confidentialité, résiliation, règlement des litiges, droit applicable, élection de domicile).
+5. Après le contrat, écris exactement la ligne ===VIGILANCE=== puis 3 à 6 points de vigilance pour la personne \
+qui va signer (formalités, mentions obligatoires, points à faire vérifier), chacun rattaché à un article fourni \
+quand c'est possible.
+6. N'ajoute aucun commentaire avant le titre du contrat."""
+
+
+def extraits_contrat(type_c, droit, avec_donnees, passages, index, articles, n_max=10):
+    """Articles d'ancrage d'un contrat : socle vérifié + articles les plus pertinents de la réserve."""
+    conf = CONTRATS[type_c]["droits"][droit]
+    labels = list(articles)
+
+    def label_de(frag):
+        return next((lab for lab in labels if frag in lab), None)
+
+    choisis = []
+
+    def ajouter(lab, num):
+        lst = dict(articles.get(lab, []))
+        if num in lst and (lab, num) not in [(p["label"], p["num"]) for p in choisis]:
+            idx = lst[num]
+            p = dict(passages[idx[0]])
+            p["texte"] = p["texte"] + "".join(passages[i]["texte"][150:] for i in idx[1:])
+            choisis.append(p)
+
+    for frag, nums in conf["socle"] + (conf.get("donnees", []) if avec_donnees else []):
+        lab = label_de(frag)
+        for num in nums:
+            ajouter(lab, num)
+    scores = index.get_scores(tokeniser(CONTRATS[type_c]["requete"]))
+    for frag, (debut, fin) in conf.get("reserve", []):
+        lab = label_de(frag)
+        cands = [(num, idx) for num, idx in articles.get(lab, []) if debut <= cle_article(num)[0] <= fin]
+        for num, idx in sorted(cands, key=lambda c: max(scores[i] for i in c[1]), reverse=True):
+            if len(choisis) >= n_max:
+                break
+            ajouter(lab, num)
+    return choisis[:n_max + 3]
+
+
+def demande_contrat(type_c, droit, valeurs):
+    conf = CONTRATS[type_c]
+    lignes = [f"Contrat demandé : {type_c}", f"Droit applicable : {droit}"]
+    if conf["roles"]:
+        for (cle, _, _), role in zip([PARTIES[0], PARTIES[2]], conf["roles"]):
+            pref = cle[:2]
+            lignes.append(f"{role} : {valeurs.get(pref + '_nom') or '[non renseigné]'} — "
+                          f"{valeurs.get(pref + '_info') or '[non renseigné]'}")
+    for cle, libelle, genre, _ in conf["champs"]:
+        v = valeurs.get(cle)
+        if genre == "check":
+            v = "oui" if v else "non"
+        lignes.append(f"{libelle} : {v or '[non renseigné]'}")
+    if valeurs.get("ville"):
+        lignes.append(f"Lieu de signature : {valeurs['ville']}")
+    if valeurs.get("precisions"):
+        lignes.append(f"Précisions du rédacteur : {valeurs['precisions']}")
+    return "\n".join(lignes)
+
+
+def _xml(t):
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def markdown_vers_docx(md, titre_doc="Projet de contrat"):
+    """Convertit le markdown simple du contrat en fichier Word (.docx), sans dépendance externe."""
+    import io
+    import zipfile
+
+    def runs(texte):
+        out = []
+        for k, morceau in enumerate(re.split(r"\*\*", texte)):
+            if not morceau:
+                continue
+            gras = "<w:b/>" if k % 2 else ""
+            for bout in re.split(r"(\[À COMPLÉTER[^\]]*\])", morceau):
+                if not bout:
+                    continue
+                hl = "<w:highlight w:val=\"yellow\"/>" if bout.startswith("[À COMPLÉTER") else ""
+                out.append(f"<w:r><w:rPr>{gras}{hl}</w:rPr><w:t xml:space=\"preserve\">{_xml(bout)}</w:t></w:r>")
+        return "".join(out)
+
+    paras = []
+    for ligne in md.replace("\r", "").split("\n"):
+        s = ligne.strip()
+        if not s:
+            continue
+        if s in ("---", "***", "___"):
+            continue
+        style = None
+        if s.startswith("# "):
+            style, s = "Title", s[2:]
+        elif s.startswith("## "):
+            style, s = "Heading1", s[3:]
+        elif s.startswith("### ") or re.match(r"^\**Article\s+\w+", s):
+            style, s = "Heading2", s.lstrip("#").strip()
+            s = s.strip("*")
+        elif re.match(r"^[-*•]\s+", s):
+            s = "• " + re.sub(r"^[-*•]\s+", "", s)
+            style = "Liste"
+        ppr = f"<w:pPr><w:pStyle w:val=\"{style}\"/></w:pPr>" if style else ""
+        paras.append(f"<w:p>{ppr}{runs(s)}</w:p>")
+    corps = "".join(paras)
+    document = ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+                "<w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:body>"
+                f"{corps}<w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"1418\" w:right=\"1418\" "
+                "w:bottom=\"1418\" w:left=\"1418\" w:header=\"709\" w:footer=\"709\" w:gutter=\"0\"/></w:sectPr>"
+                "</w:body></w:document>")
+
+    def style(sid, nom, taille, gras=False, couleur="1D2433", avant=0, apres=120, centre=False):
+        return (f"<w:style w:type=\"paragraph\" w:styleId=\"{sid}\"><w:name w:val=\"{nom}\"/>"
+                "<w:basedOn w:val=\"Normal\"/><w:pPr>" + (f"<w:jc w:val=\"center\"/>" if centre else "") +
+                f"<w:spacing w:before=\"{avant}\" w:after=\"{apres}\"/><w:keepNext/></w:pPr><w:rPr>"
+                + ("<w:b/>" if gras else "") + f"<w:color w:val=\"{couleur}\"/><w:sz w:val=\"{taille}\"/></w:rPr></w:style>")
+
+    styles = ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+              "<w:styles xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\">"
+              "<w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii=\"Calibri\" w:hAnsi=\"Calibri\" w:cs=\"Calibri\"/>"
+              "<w:sz w:val=\"22\"/><w:lang w:val=\"fr-FR\"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr>"
+              "<w:spacing w:after=\"120\" w:line=\"276\" w:lineRule=\"auto\"/><w:jc w:val=\"both\"/></w:pPr></w:pPrDefault>"
+              "</w:docDefaults><w:style w:type=\"paragraph\" w:default=\"1\" w:styleId=\"Normal\"><w:name w:val=\"Normal\"/>"
+              "</w:style>"
+              + style("Title", "Title", 34, True, "0D1B3D", 0, 320, True)
+              + style("Heading1", "heading 1", 26, True, "0D1B3D", 240, 120)
+              + style("Heading2", "heading 2", 23, True, "8A6A1F", 200, 80)
+              + "<w:style w:type=\"paragraph\" w:styleId=\"Liste\"><w:name w:val=\"Liste\"/><w:basedOn w:val=\"Normal\"/>"
+                "<w:pPr><w:ind w:left=\"357\"/><w:spacing w:after=\"60\"/></w:pPr></w:style></w:styles>")
+    types = ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+             "<Types xmlns=\"http://schemas.openxmlformats.org/package/2006/content-types\">"
+             "<Default Extension=\"rels\" ContentType=\"application/vnd.openxmlformats-package.relationships+xml\"/>"
+             "<Default Extension=\"xml\" ContentType=\"application/xml\"/>"
+             "<Override PartName=\"/word/document.xml\" ContentType=\"application/vnd.openxmlformats-officedocument."
+             "wordprocessingml.document.main+xml\"/><Override PartName=\"/word/styles.xml\" ContentType=\"application/"
+             "vnd.openxmlformats-officedocument.wordprocessingml.styles+xml\"/><Override PartName=\"/docProps/core.xml\" "
+             "ContentType=\"application/vnd.openxmlformats-package.core-properties+xml\"/></Types>")
+    rels = ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+            "<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">"
+            "<Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/"
+            "officeDocument\" Target=\"word/document.xml\"/><Relationship Id=\"rId2\" Type=\"http://schemas."
+            "openxmlformats.org/package/2006/relationships/metadata/core-properties\" Target=\"docProps/core.xml\"/>"
+            "</Relationships>")
+    doc_rels = ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+                "<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">"
+                "<Relationship Id=\"rId1\" Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/"
+                "styles\" Target=\"styles.xml\"/></Relationships>")
+    core = ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+            "<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" "
+            "xmlns:dc=\"http://purl.org/dc/elements/1.1/\"><dc:title>" + _xml(titre_doc) + "</dc:title>"
+            "<dc:creator>JCKouassi · Assistant juridique</dc:creator></cp:coreProperties>")
+    tampon = io.BytesIO()
+    with zipfile.ZipFile(tampon, "w", zipfile.ZIP_DEFLATED) as z:
+        z.writestr("[Content_Types].xml", types)
+        z.writestr("_rels/.rels", rels)
+        z.writestr("word/document.xml", document)
+        z.writestr("word/_rels/document.xml.rels", doc_rels)
+        z.writestr("word/styles.xml", styles)
+        z.writestr("docProps/core.xml", core)
+    return tampon.getvalue()
+
+
 # ------------------------------------------------------------------ interface
 
 st.set_page_config(page_title="JCKouassi · Assistant juridique",
@@ -668,6 +935,63 @@ div[data-testid="stExpander"] summary:hover { color: var(--or-clair); }
 .jck-pied b { color: var(--or-clair); }
 .jck-pied span { color: var(--bleu-clair); letter-spacing: .3em; font-family: 'Sora', sans-serif; font-size: .72rem; }
 
+/* ---------- Refonte : chiffres clés, onglets en pilules, cartes ---------- */
+.jck-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 18px; }
+.jck-stat { position: relative; overflow: hidden; padding: 14px 16px; border-radius: 16px; border: 1px solid var(--bord);
+            background: linear-gradient(160deg, rgba(22,36,74,.75), rgba(11,20,48,.75)); backdrop-filter: blur(6px); }
+.jck-stat::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+                    background: linear-gradient(180deg, var(--or-clair), var(--or)); }
+.jck-stat b { display: block; font-family: 'Sora', sans-serif; font-size: 1.55rem; font-weight: 800; color: #fff; line-height: 1.1; }
+.jck-stat span { color: var(--doux); font-size: .8rem; letter-spacing: .02em; }
+@media (max-width: 760px) { .jck-stats { grid-template-columns: repeat(2, 1fr); }
+                            .jck-hero { flex-direction: column; align-items: flex-start; padding: 22px; }
+                            .jck-titre { font-size: 1.7rem; } }
+
+div[data-baseweb="tab-list"] { gap: 6px; border-bottom: none !important; padding: 6px; border-radius: 16px;
+    background: rgba(15,26,51,.7); border: 1px solid var(--bord); flex-wrap: wrap; }
+button[data-baseweb="tab"] { border-radius: 11px !important; padding: 8px 14px !important; }
+button[data-baseweb="tab"][aria-selected="true"] { background: linear-gradient(90deg, rgba(201,151,47,.22), rgba(243,208,138,.12)) !important;
+    box-shadow: inset 0 0 0 1px rgba(214,169,74,.45); }
+button[data-baseweb="tab"]:hover { color: #fff; background: rgba(59,110,246,.10); }
+div[data-baseweb="tab-highlight"], div[data-baseweb="tab-border"] { display: none !important; }
+div[data-baseweb="tab-panel"] { padding-top: 18px; }
+
+/* Étapes « comment ça marche » */
+.jck-etapes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 4px 0 18px; }
+.jck-etape { padding: 14px 16px; border-radius: 14px; border: 1px dashed var(--bord); background: rgba(15,26,51,.45); }
+.jck-etape i { font-style: normal; display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
+               background: rgba(214,169,74,.15); color: var(--or-clair); font-family: 'Sora', sans-serif; font-weight: 700;
+               font-size: .85rem; margin-right: 8px; }
+.jck-etape b { color: #fff; font-weight: 600; }
+.jck-etape p { color: var(--doux); font-size: .84rem; margin: 6px 0 0; }
+@media (max-width: 760px) { .jck-etapes { grid-template-columns: 1fr; } }
+
+/* Cartes à bordure (formulaires, résultats) */
+div[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 16px !important; border-color: var(--bord) !important;
+    background: linear-gradient(160deg, rgba(15,26,51,.78), rgba(7,12,26,.6)); }
+div[data-testid="stForm"] { border: 1px solid var(--bord) !important; border-radius: 16px !important;
+    background: linear-gradient(160deg, rgba(15,26,51,.78), rgba(7,12,26,.6)); padding: 18px 18px 8px !important; }
+.jck-section { font-family: 'Sora', sans-serif; font-weight: 700; color: #fff; font-size: 1.05rem; margin: 2px 0 8px;
+               display: flex; align-items: center; gap: 10px; }
+.jck-section::before { content: ""; width: 18px; height: 2px; background: var(--or); border-radius: 2px; }
+.jck-badge { display: inline-block; font-size: .72rem; padding: 3px 9px; border-radius: 999px; margin: 0 6px 6px 0;
+             border: 1px solid rgba(214,169,74,.45); color: var(--or-clair); background: rgba(214,169,74,.08); }
+.st-key-papier_contrat, .st-key-papier_flux { background: #fbfaf6; border-radius: 14px; padding: 28px 34px 18px;
+    box-shadow: 0 18px 50px rgba(0,0,0,.45); border-top: 4px solid var(--or); }
+.st-key-papier_contrat *, .st-key-papier_flux * { color: #1d2433; }
+.st-key-papier_contrat h1, .st-key-papier_contrat h2, .st-key-papier_contrat h3,
+.st-key-papier_flux h1, .st-key-papier_flux h2, .st-key-papier_flux h3 { color: #0d1b3d !important; font-family: 'Sora', sans-serif !important; }
+.st-key-papier_contrat h1, .st-key-papier_flux h1 { text-align: center; font-size: 1.45rem; }
+.st-key-papier_contrat h2, .st-key-papier_flux h2 { font-size: 1.05rem; margin-top: 1rem; }
+.st-key-papier_contrat h3, .st-key-papier_flux h3 { font-size: .98rem; color: #8a6a1f !important; }
+@media (max-width: 760px) { .st-key-papier_contrat, .st-key-papier_flux { padding: 18px 16px 10px; } }
+
+/* Barre latérale épurée */
+section[data-testid="stSidebar"] .stRadio label, section[data-testid="stSidebar"] .stMultiSelect label { color: var(--doux); }
+.jck-side-carte { margin-top: 10px; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--bord);
+                  background: rgba(15,26,51,.6); font-size: .82rem; color: var(--doux); line-height: 1.5; }
+.jck-side-carte b { color: var(--or-clair); }
+
 /* ---------- Animations ---------- */
 @keyframes jck-monte { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 @keyframes jck-apparait { from { opacity: 0; } to { opacity: 1; } }
@@ -699,6 +1023,12 @@ div[data-testid="stExpander"] summary:hover { color: var(--or-clair); }
 .jck-chip:nth-child(3) { animation-delay: .65s; } .jck-chip:nth-child(4) { animation-delay: .75s; }
 .jck-chip:nth-child(5) { animation-delay: .85s; }
 .jck-chip:hover { transform: translateY(-2px); border-color: var(--or); color: var(--or-clair); }
+.jck-stat, .jck-etape { animation: jck-monte .6s cubic-bezier(.2,.7,.2,1) both; transition: transform .2s, border-color .2s; }
+.jck-stat:nth-child(2), .jck-etape:nth-child(2) { animation-delay: .1s; }
+.jck-stat:nth-child(3), .jck-etape:nth-child(3) { animation-delay: .2s; }
+.jck-stat:nth-child(4) { animation-delay: .3s; }
+.jck-stat:hover, .jck-etape:hover { transform: translateY(-3px); border-color: rgba(214,169,74,.6); }
+.st-key-papier_contrat { animation: jck-monte .6s both; }
 
 /* Onglets : le contenu apparaît à chaque changement */
 div[data-baseweb="tab-panel"] { animation: jck-monte .45s cubic-bezier(.2,.7,.2,1) both; }
@@ -756,12 +1086,13 @@ with st.sidebar:
     st.markdown("#### Réponse")
     format_rep = st.radio("Format", list(FORMATS), horizontal=True)
     st.divider()
-    if st.button("Nouvelle conversation", width="stretch"):
+    if st.button("Nouvelle conversation", icon=":material/refresh:", width="stretch"):
         st.session_state.messages = []
         st.rerun()
     nb_articles = sum(t["articles"] for t in textes)
-    st.caption(f"{len(textes)} textes · {nb_articles:,} articles indexés".replace(",", " "))
-    st.caption(f"Une initiative de **{AUTEUR}**")
+    st.markdown(f"<div class='jck-side-carte'><b>{len(textes)} textes</b> · "
+                f"{nb_articles:,} articles indexés".replace(",", " ") +
+                f"<br>Une initiative de <b>{AUTEUR}</b>, juriste.</div>", unsafe_allow_html=True)
 
 # En-tête : bandeau de marque
 icone_b64 = base64.b64encode(LOGO_ICONE.read_bytes()).decode() if LOGO_ICONE.exists() else ""
@@ -778,9 +1109,19 @@ st.markdown(
       </div></div>""",
     unsafe_allow_html=True)
 
-onglet_q, onglet_eq, onglet_art, onglet_biblio, onglet_apropos = st.tabs(
-    ["Question juridique", "Équivalences Maroc ↔ OHADA", "Consulter un article", "Bibliothèque des textes",
-     "À propos"])
+nb_art_total = sum(t["articles"] for t in textes)
+st.markdown(
+    "<div class='jck-stats'>"
+    f"<div class='jck-stat'><b>{len(textes)}</b><span>textes officiels</span></div>"
+    f"<div class='jck-stat'><b>{nb_art_total:,}</b><span>articles consultables</span></div>".replace(",", " ") +
+    f"<div class='jck-stat'><b>{len(espaces_dispo)}</b><span>pays et espaces juridiques</span></div>"
+    f"<div class='jck-stat'><b>{len(CONTRATS)}</b><span>modèles de contrats guidés</span></div>"
+    "</div>", unsafe_allow_html=True)
+
+onglet_q, onglet_eq, onglet_ctr, onglet_art, onglet_biblio, onglet_apropos = st.tabs(
+    [":material/forum: Question juridique", ":material/compare_arrows: Équivalences Maroc ↔ OHADA",
+     ":material/edit_document: Rédiger un contrat", ":material/article: Consulter un article",
+     ":material/local_library: Bibliothèque", ":material/info: À propos"])
 
 
 def afficher_sources(sources, cle):
@@ -879,6 +1220,14 @@ with onglet_q:
 
         # Points de départ par thème
         if not st.session_state.messages:
+            st.markdown(
+                "<div class='jck-etapes'>"
+                "<div class='jck-etape'><i>1</i><b>Posez votre question</b><p>Indiquez le pays, votre situation "
+                "et ce que vous cherchez : étapes, conditions, délais.</p></div>"
+                "<div class='jck-etape'><i>2</i><b>L'assistant cherche les articles</b><p>Il retrouve les articles "
+                "pertinents dans les textes officiels intégrés.</p></div>"
+                "<div class='jck-etape'><i>3</i><b>Réponse sourcée</b><p>Chaque règle est citée avec son article, "
+                "lisible en entier sous la réponse.</p></div></div>", unsafe_allow_html=True)
             st.markdown("<div class='jck-label'>Par où commencer ? Choisissez un thème</div>",
                         unsafe_allow_html=True)
             theme = st.selectbox("Thème", list(THEMES), label_visibility="collapsed", key="theme_depart")
@@ -1061,6 +1410,117 @@ with onglet_eq:
                             st.caption("Comparaison rédigée par le modèle de secours (forte affluence).")
                     except Exception as e:  # noqa: BLE001
                         st.warning(message_erreur(e))
+
+# --- Onglet Rédiger un contrat
+def surligner(md):
+    return re.sub(r"\[(À COMPLÉTER[^\]]*)\]", r":orange-background[\1]", md)
+
+
+with onglet_ctr:
+    st.markdown("<div class='jck-section'>Rédiger un projet de contrat</div>", unsafe_allow_html=True)
+    st.markdown("Remplissez le formulaire : l'assistant rédige un projet complet, appuyé sur les articles de la "
+                "bibliothèque, avec les informations manquantes surlignées. Le projet se télécharge en Word.")
+    k1, k2 = st.columns([3, 2])
+    type_c = k1.selectbox("Contrat", list(CONTRATS), key="ctr_type")
+    droit = k2.radio("Droit applicable", list(CONTRATS[type_c]["droits"]), horizontal=True, key="ctr_droit")
+    conf_c = CONTRATS[type_c]
+    conf_d = conf_c["droits"][droit]
+    bases = list(dict.fromkeys(f for f, _ in conf_d["socle"] + conf_d.get("donnees", [])))
+    noms_bases = [next((t["label"] for t in textes if f in t["label"]), f) for f in bases]
+    st.markdown("".join(f"<span class='jck-badge'>{_xml(n.split(' (')[0] if n.startswith('Acte') else n)}</span>"
+                        for n in noms_bases), unsafe_allow_html=True)
+    if conf_d.get("note"):
+        st.info(conf_d["note"], icon=":material/info:")
+
+    with st.form(f"form_{type_c}"):
+        valeurs = {}
+        if conf_c["roles"]:
+            colonnes = st.columns(2)
+            for col, role, (cn, ln, pn), (ci, li, pi) in zip(colonnes, conf_c["roles"],
+                                                             [PARTIES[0], PARTIES[2]], [PARTIES[1], PARTIES[3]]):
+                col.markdown(f"<div class='jck-label'>{role}</div>", unsafe_allow_html=True)
+                valeurs[cn] = col.text_input(ln, placeholder=pn, key=f"{type_c}_{cn}")
+                valeurs[ci] = col.text_area(li, placeholder=pi, height=80, key=f"{type_c}_{ci}")
+        st.markdown("<div class='jck-label'>Contenu</div>", unsafe_allow_html=True)
+        for cle, libelle, genre, aide in conf_c["champs"]:
+            k = f"{type_c}_{cle}"
+            if genre == "area":
+                valeurs[cle] = st.text_area(libelle, placeholder=aide, height=90, key=k)
+            elif genre == "text":
+                valeurs[cle] = st.text_input(libelle, placeholder=aide, key=k)
+            elif genre == "check":
+                valeurs[cle] = st.checkbox(libelle, key=k)
+            else:
+                valeurs[cle] = st.selectbox(libelle, aide, key=k)
+        f1, f2 = st.columns([1, 2])
+        valeurs["ville"] = f1.text_input("Lieu de signature", placeholder="ex. Kénitra", key=f"{type_c}_ville")
+        valeurs["precisions"] = f2.text_input("Autres précisions (facultatif)", key=f"{type_c}_precisions",
+                                              placeholder="ex. clause de non-concurrence de 12 mois, paiement par virement")
+        lancer = st.form_submit_button("Rédiger le projet de contrat", type="primary", icon=":material/edit_document:")
+
+    if lancer:
+        if "GROQ_API_KEY" not in st.secrets:
+            st.error("La clé GROQ_API_KEY n'est pas configurée dans les Secrets de l'application.")
+        else:
+            client_c = Groq(api_key=st.secrets["GROQ_API_KEY"])
+            modele_c = st.secrets["GROQ_MODEL"] if "GROQ_MODEL" in st.secrets else DEFAULT_MODEL
+            extraits = extraits_contrat(type_c, droit, bool(valeurs.get("donnees")), passages, index, articles)
+            contexte_c = "\n\n".join(
+                f"[{p['ref']}]\n{p['texte'][:800]}{'…' if len(p['texte']) > 800 else ''}" for p in extraits)
+            if conf_d.get("note"):
+                contexte_c += f"\n\nAvertissement : {conf_d['note']}"
+            messages_c = [{"role": "system", "content": REDACTION},
+                          {"role": "user", "content": f"{demande_contrat(type_c, droit, valeurs)}\n\n"
+                                                      f"Articles de référence :\n\n{contexte_c}"}]
+            fait = False
+            with st.container(key="papier_flux"):
+                try:
+                    with st.spinner("Rédaction du projet en cours…"):
+                        flux, utilise = flux_modele(client_c, messages_c, modele_c)
+                    zone = st.empty()
+                    texte_c = ""
+                    for bloc in flux:
+                        if bloc.choices and bloc.choices[0].delta.content:
+                            texte_c += bloc.choices[0].delta.content
+                            zone.markdown(surligner(texte_c.split("===VIGILANCE===")[0]))
+                    corps_c, _, vigil = texte_c.partition("===VIGILANCE===")
+                    st.session_state.contrat = {"type": type_c, "droit": droit, "corps": corps_c.strip(),
+                                                "vigilance": vigil.strip(), "secours": utilise != modele_c,
+                                                "sources": [{"ref": p["ref"], "texte": p["texte"],
+                                                             "contexte": p["contexte"]} for p in extraits]}
+                    fait = True
+                except Exception as e:  # noqa: BLE001
+                    st.warning(message_erreur(e))
+            if fait:
+                st.rerun()
+
+    res = st.session_state.get("contrat")
+    if res and res["corps"]:
+        st.markdown(f"<div class='jck-label'>Projet · {res['type']} · {res['droit']}</div>", unsafe_allow_html=True)
+        with st.container(key="papier_contrat"):
+            st.markdown(surligner(res["corps"]))
+        if res.get("secours"):
+            st.caption("Projet rédigé par le modèle de secours (forte affluence).")
+        d1, d2, d3 = st.columns([2, 2, 3])
+        nom_fichier = re.sub(r"[^a-z0-9]+", "_", normaliser(res["type"])).strip("_")
+        d1.download_button("Télécharger en Word", data=markdown_vers_docx(res["corps"], res["type"]),
+                           file_name=f"{nom_fichier}.docx", icon=":material/download:", type="primary",
+                           mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                           on_click="ignore", width="stretch")
+        d2.download_button("Texte brut (.md)", data=res["corps"].encode("utf-8"), file_name=f"{nom_fichier}.md",
+                           mime="text/markdown", on_click="ignore", width="stretch")
+        if d3.button("Effacer ce projet", key="ctr_effacer"):
+            st.session_state.pop("contrat", None)
+            st.rerun()
+        if res["vigilance"]:
+            with st.container(border=True):
+                st.markdown("<div class='jck-section'>Points de vigilance</div>", unsafe_allow_html=True)
+                st.markdown(res["vigilance"])
+        st.markdown("<div class='jck-label'>Articles utilisés pour la rédaction</div>", unsafe_allow_html=True)
+        afficher_sources(res["sources"], "contrat")
+        st.caption("Projet généré automatiquement à titre d'aide à la rédaction : il ne remplace pas la relecture "
+                   "d'un professionnel du droit. Certains actes (cession d'immeuble, statuts dans certains pays) "
+                   "exigent l'intervention d'un notaire ou d'un avocat.")
 
 # --- Onglet 2 : consultation directe d'un article
 with onglet_art:
