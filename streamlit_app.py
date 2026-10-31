@@ -1,128 +1,565 @@
 # -*- coding: utf-8 -*-
 """
-Assistant de conformité (loi ivoirienne n° 2013-450) — version en ligne (Streamlit).
-Le corpus juridique est intégré directement ci-dessous (dictionnaire CORPUS).
-Réponses via l'API open source gratuite Groq ; la clé est lue dans les Secrets.
+JCKouassi · Assistant juridique
+Une initiative de Kouassi Jean-Charles.
+
+Données personnelles et droit des affaires : Côte d'Ivoire, Maroc, OHADA,
+CEDEAO et Union africaine.
+
+- Le corpus est dans corpus/ : un fichier texte par texte juridique, avec un
+  en-tête (titre, label, pays, domaine, source).
+- Chaque texte est découpé article par article, puis indexé par mots-clés (BM25).
+- Les réponses sont rédigées par un modèle open source (API Groq) à partir des
+  seuls articles retrouvés, avec leurs références.
+- La clé Groq est lue dans les Secrets de l'application, jamais dans le code.
 """
 
 import re
+import unicodedata
+from pathlib import Path
+
 import streamlit as st
-from rank_bm25 import BM25Okapi
 from groq import Groq
+from rank_bm25 import BM25Okapi
 
-CHUNK_SIZE = 1200
-CHUNK_OVERLAP = 200
-TOP_K = 5
+ICI = Path(__file__).parent
+CORPUS_DIR = ICI / "corpus"
+LOGO_H = ICI / "assets" / "logo_horizontal.png"
+LOGO_ICONE = ICI / "assets" / "logo_icone.png"
 
-SYSTEME = (
-    "Tu es un assistant d'information sur la conformité à la loi ivoirienne "
-    "n° 2013-450 relative à la protection des données à caractère personnel. "
-    "Règles impératives :\n"
-    "1. Réponds UNIQUEMENT à partir des extraits de corpus fournis.\n"
-    "2. Cite toujours l'article ou la décision sur lequel tu t'appuies "
-    "(par exemple : art. 14, décision n° 2023-0937).\n"
-    "3. Si la réponse ne figure pas dans les extraits, dis-le clairement "
-    "et n'invente rien.\n"
-    "4. Rappelle, quand c'est pertinent, que tu fournis une information et non "
-    "un conseil juridique, et qu'un juriste doit valider les décisions importantes.\n"
-    "Réponds en français, de façon claire et concise."
-)
+AUTEUR = "Kouassi Jean-Charles"
+CONTACT = "nshinobi701@gmail.com"
+MAX_CHUNK = 1800
+TOP_K = 7
+DEFAULT_MODEL = "openai/gpt-oss-120b"
 
-# --- Corpus juridique intégré (nom de source -> texte) ---
-CORPUS = {
-    'loi_2013-450.txt': "LOI N° 2013-450 DU 19 JUIN 2013 RELATIVE A LA PROTECTION DES DONNEES A CARACTERE PERSONNEL (CÔTE D'IVOIRE)\n\nREMARQUE : extrait de travail, transcrit à partir d'un scan OCR. Les numéros d'articles\net les montants doivent être vérifiés sur le texte officiel (Journal officiel) avant toute\ncitation définitive. Remplace idéalement ce fichier par le PDF officiel complet.\n\n--- DÉFINITIONS (article 1er) ---\n\nConsentement de la personne concernée : toute manifestation de volonté expresse, non\néquivoque, libre, spécifique et informée par laquelle la personne concernée ou son\nreprésentant accepte que ses données à caractère personnel fassent l'objet d'un traitement.\n\nDonnées sensibles : données à caractère personnel relatives aux opinions ou activités\nreligieuse, philosophique, politique, syndicale, à la vie sexuelle ou raciale, à la santé,\naux mesures d'ordre social, aux poursuites, aux sanctions pénales ou administratives.\n\nMineur : toute personne âgée de moins de dix-huit ans.\n\nResponsable du traitement : la personne physique ou morale, publique ou privée, qui, seule\nou conjointement, décide de collecter et de traiter des données à caractère personnel et en\ndétermine les finalités.\n\nAutorité de protection : l'autorité administrative indépendante chargée de veiller à ce que\nles traitements des données à caractère personnel soient mis en œuvre conformément à la loi.\n\nCorrespondant à la protection des données / code de conduite / agrément : notions définies\npar la loi (voir articles 12, et définitions du code de conduite homologué par l'Autorité et\nde l'agrément de produits ou systèmes).\n\n--- CHAMP ET FORMALITÉS ---\n\nArticle 3 : Sont soumis à la loi toute collecte, traitement, transmission, stockage et\nutilisation de données à caractère personnel par une personne physique, l'État, les\ncollectivités ou les personnes morales, et tout traitement mis en œuvre sur le territoire\nnational.\n\nArticle 5 : Le traitement des données à caractère personnel est soumis à une déclaration\npréalable auprès de l'Autorité de protection. L'Autorité délivre un récépissé ; le traitement\npeut être mis en œuvre dès réception, sans exonération de responsabilité.\n\nArticle 6 : Sont dispensés de déclaration préalable, notamment : les traitements à usage\nexclusivement personnel ou domestique ; ceux dont la publication est prescrite par la loi ;\nles registres à usage privé ; et les traitements pour lesquels le responsable a désigné un\ncorrespondant à la protection des données (sauf transfert vers un pays tiers).\n\nArticle 7 : Sont soumis à AUTORISATION PRÉALABLE de l'Autorité avant toute mise en œuvre :\nles traitements de données génétiques, médicales et de recherche ; les données relatives aux\ninfractions, condamnations ou mesures de sûreté ; le traitement portant sur un numéro\nnational d'identification ou les numéros de téléphone ; les données biométriques ; les\ntraitements d'intérêt public à fins historiques, statistiques ou scientifiques ; le transfert\nde données vers un pays tiers.\n\nArticle 12 : Le correspondant à la protection des données est une personne qualifiée. Il tient\nla liste des traitements, est accessible à toute personne qui en fait la demande, ne peut être\nsanctionné par l'employeur pour l'exercice de ses missions et peut saisir l'Autorité.\n\n--- PRINCIPES DIRECTEURS ---\n\nArticle 14 : Le traitement est légitime si la personne concernée donne expressément son\nconsentement préalable. Il peut être dérogé à cette exigence lorsque le responsable est dûment\nautorisé et que le traitement est nécessaire : au respect d'une obligation légale ; à une\nmission d'intérêt public ; à l'exécution d'un contrat ; à la sauvegarde des droits et libertés\nfondamentaux de la personne concernée.\n\nArticle 15 : La collecte, l'enregistrement, le traitement, le stockage, la transmission et\nl'interconnexion doivent se faire de manière licite et loyale.\n\nArticle 16 : Les données sont collectées pour des finalités déterminées, explicites et\nlégitimes, et ne peuvent être traitées ultérieurement de manière incompatible. Elles doivent\nêtre adéquates, pertinentes et non excessives, et conservées pendant une durée n'excédant pas\nla période nécessaire aux finalités pour lesquelles elles ont été collectées ou traitées.\n\nArticle 17 : Les données collectées doivent être exactes et, si nécessaire, mises à jour ;\nles données inexactes ou incomplètes doivent être effacées ou rectifiées.\n\nArticle 18 : Le principe de transparence implique une information obligatoire et claire du\nresponsable du traitement sur les données à caractère personnel.\n\nArticle 19 : Les données doivent être traitées de manière confidentielle et protégées,\nnotamment lorsque le traitement comporte des transmissions dans un réseau.\n\nArticle 20 : Le responsable du traitement doit choisir un sous-traitant offrant des garanties\nsuffisantes pour la protection et la confidentialité des données.\n\n--- DROITS DE LA PERSONNE CONCERNÉE ---\n\nArticle 28 : Le responsable du traitement informe la personne concernée, au plus tard lors de\nla collecte : de son identité, des finalités, des catégories de données et de destinataires,\nde la possibilité de refuser de figurer sur le fichier, du droit d'accès et de rectification,\nde la durée de conservation et de tout transfert vers un pays tiers.\n\nArticle 29 : Toute personne peut obtenir du responsable la confirmation et la communication des\ndonnées la concernant, ainsi que les informations permettant de connaître et de contester le\ntraitement. À défaut d'accès, l'Autorité dispose d'un pouvoir d'investigation et peut ordonner\nla rectification, l'effacement ou le verrouillage des données non conformes.\n\nArticle 30 : Toute personne a le droit de s'opposer, pour des motifs légitimes, au traitement\nde ses données, et de s'opposer gratuitement au traitement à des fins de prospection.\n\nArticle 31 : Toute personne peut exiger que soient rectifiées, complétées, mises à jour,\nverrouillées ou supprimées les données inexactes, incomplètes, périmées, ou dont la collecte,\nl'utilisation ou la conservation est interdite.\n\nArticle 33 : La personne concernée a droit à l'effacement (droit à l'oubli numérique),\nnotamment lorsque les données ne sont plus nécessaires, que le consentement est retiré, que le\ndélai de conservation a expiré ou que le traitement n'est pas conforme à la loi.\n\n--- TRANSFERT VERS UN PAYS TIERS ---\n\nArticle 26 : Le responsable ne peut transférer des données vers un pays tiers que si cet État\nassure un niveau de protection supérieur ou équivalent. Le transfert nécessite l'autorisation\npréalable de l'Autorité de protection et fait l'objet d'un contrôle régulier au regard de sa\nfinalité.\n\n--- SÉCURITÉ ---\n\nArticle 40 : Le responsable du traitement prend toute précaution, au regard de la nature des\ndonnées, pour empêcher qu'elles soient déformées, endommagées, ou que des tiers non autorisés\ny aient accès. Il choisit un sous-traitant offrant des garanties suffisantes de sécurité.\n\nArticle 41 : Le responsable est tenu, notamment : d'empêcher l'accès non autorisé aux\ninstallations et aux supports ; d'empêcher la lecture, la copie, la modification ou\nl'effacement non autorisés ; de garantir que seules les personnes autorisées accèdent aux\ndonnées relevant de leur autorisation ; de pouvoir vérifier a posteriori qui a accédé aux\ndonnées et ce qui a été introduit, modifié ou effacé ; de sauvegarder les données par des\ncopies de sécurité protégées.\n\nArticle 42 : Le responsable établit un rapport annuel pour l'Autorité de protection sur le\nrespect des mesures de sécurité de l'article 41.\n\nArticle 45 : Est puni d'un emprisonnement d'un mois à deux ans et d'une amende de 1 000 000 à\n10 000 000 FCFA quiconque entrave l'action de l'Autorité de protection (opposition aux\nmissions, refus de communiquer, dissimulation de documents).\n\n--- L'AUTORITÉ DE PROTECTION ET LES SANCTIONS ---\n\nArticle 46 : Les missions de l'autorité de protection des données à caractère personnel sont\nconfiées à l'autorité administrative indépendante en charge de la régulation des\ntélécommunications et des technologies de l'information et de la communication (ARTCI).\n\nArticle 47 : L'Autorité de protection informe, reçoit déclarations et plaintes, octroie et\nretire les autorisations, procède à des vérifications par des agents assermentés, prononce des\nsanctions administratives et pécuniaires, tient un répertoire public des traitements, conseille,\ndonne son avis sur les textes, élabore des règles de conduite et autorise les transferts\ntransfrontaliers.\n\nArticle 49 : L'Autorité de protection peut prononcer à l'égard du responsable : un avertissement\npour non-respect des obligations ; une mise en demeure de faire cesser les manquements dans le\ndélai qu'elle fixe.\n\nArticle 50 : En cas de violation des droits et libertés, l'Autorité peut, après procédure\ncontradictoire, décider de l'interruption du traitement, du verrouillage de certaines données,\nou de l'interdiction temporaire ou définitive d'un traitement contraire à la loi.\n\nArticle 51 : Après avoir entendu le responsable qui ne se conforme pas à la mise en demeure,\nl'Autorité peut prononcer : le retrait provisoire ou définitif de l'autorisation ; une sanction\npécuniaire proportionnée. Le montant ne peut excéder 10 000 000 FCFA ; en cas de manquement\nréitéré dans les cinq ans, il ne peut excéder 100 000 000 FCFA ou, pour une entreprise, 5 % du\nchiffre d'affaires hors taxes du dernier exercice, dans la limite de 500 000 000 FCFA. Ces\nsanctions s'appliquent sans préjudice des sanctions pénales.\n\nArticle 53 : Les responsables de traitement disposent d'un délai de six mois à compter de\nl'entrée en vigueur de la loi pour se mettre en conformité.\n",
-    'decisions_artci.md': "# Décisions de l'ARTCI (Autorité de régulation des télécommunications de Côte d'Ivoire)\n\nCes trois décisions ont été rendues le 23 août 2023. Dans les trois cas, l'ARTCI\na prononcé un avertissement assorti d'une mise en demeure de se mettre en\nconformité (article 49 de la loi n° 2013-450), sans amende.\n\n## Décision n° 2023-0937 — Yango CIV LLC\nManquements : enregistrement des conversations des passagers de VTC et exposition\nde leurs données (noms, numéros de téléphone, courriels) sans consentement\n(art. 14) ; conservation au-delà de la durée nécessaire (art. 16) ; mesures de\nsécurité insuffisantes (art. 19 et 41).\nSanction : avertissement et mise en demeure (art. 49), désactivation de l'option\nd'enregistrement. Pas d'amende.\n\n## Décision n° 2023-0936 — Standard Chartered Bank Côte d'Ivoire S.A.\nManquements : collecte excessive de données sans consentement clair ; sécurité\ninsuffisante ; absence de notification des violations aux autorités et aux clients.\nSanction : avertissement et mise en demeure (art. 49). Pas d'amende.\n\n## Décision n° 2023-0938 — Société Quipux Afrique S.A.\nManquements : collecte sans consentement éclairé ; conservation au-delà de la\nfinalité ; failles de sécurité.\nSanction : avertissement et mise en demeure (art. 49). Pas d'amende.\n\n## À retenir sur le pouvoir de sanction de l'ARTCI\nL'ARTCI peut aller plus loin que l'avertissement : l'article 51 l'autorise à\nprononcer des sanctions pécuniaires (jusqu'à 10 000 000 FCFA ; jusqu'à\n100 000 000 FCFA ou 5 % du chiffre d'affaires, dans la limite de 500 000 000 FCFA,\nen cas de récidive), et à retirer l'autorisation (provisoirement ou définitivement),\nsans préjudice des sanctions pénales.\n",
+ESPACES = ["Côte d'Ivoire", "Maroc", "OHADA", "CEDEAO", "Union africaine"]
+DOMAINES = {"donnees": "Données personnelles", "affaires": "Droit des affaires"}
+# Textes communautaires applicables quand la question vise un pays.
+APPLICABLES = {"Côte d'Ivoire": ["OHADA", "CEDEAO", "Union africaine"], "Maroc": ["Union africaine"]}
+
+SYSTEME = """Tu es l'assistant juridique de JCKouassi, conçu par Kouassi Jean-Charles. Tu informes sur la \
+protection des données personnelles et le droit des affaires en Côte d'Ivoire, au Maroc, dans l'espace \
+OHADA (les Actes uniformes s'appliquent notamment en Côte d'Ivoire, pas au Maroc), dans la CEDEAO et \
+dans l'Union africaine.
+
+Règles impératives :
+1. Appuie-toi UNIQUEMENT sur les extraits fournis. N'affirme aucune règle de droit qui n'y figure pas.
+2. Cite chaque règle avec sa référence exacte entre crochets, telle qu'elle figure dans l'en-tête de \
+l'extrait, par exemple [Loi 09-08 (Maroc), art. 4].
+3. Si les extraits ne suffisent pas, dis-le et indique quel texte consulter. N'invente jamais un numéro \
+d'article, un délai ou un montant.
+4. Si plusieurs pays ou espaces sont concernés, distingue nettement ce que prévoit chacun.
+5. Si l'en-tête d'un extrait indique « VERSION D'ORIGINE » ou « OCR », signale qu'il faut vérifier le \
+texte officiel en vigueur avant toute citation définitive.
+6. Écris en français juridique clair, sans jargon inutile.
+7. Termine par une phrase rappelant qu'il s'agit d'une information juridique et non d'un conseil, \
+à faire valider par un professionnel."""
+
+FORMATS = {
+    "Synthèse": "Réponds en quelques paragraphes courts : la réponse d'abord, puis ses fondements textuels.",
+    "Note juridique": ("Présente ta réponse comme une courte note juridique, avec ces intertitres : "
+                       "**Réponse**, **Textes applicables**, **Analyse** (principe, conditions, exceptions, "
+                       "sanctions le cas échéant), **Points de vigilance**."),
+}
+
+STOP = set("""a au aux avec ce ces cette dans de des du elle en est et etre il ils je la le les leur \
+leurs lui ma mais me meme mes moi mon ne nos notre nous on ou par pas pour qu que qui sa se ses son \
+sur ta te tes toi ton tu un une vos votre vous y quel quelle quels quelles comment est-ce peut \
+peuvent doit doivent faut sont ont cas loi article articles selon""".split())
+
+
+# ------------------------------------------------------------------ recherche
+
+def normaliser(texte):
+    texte = unicodedata.normalize("NFKD", texte.lower())
+    return "".join(c for c in texte if not unicodedata.combining(c))
+
+
+SUFFIXES = ("issements", "issement", "ations", "ation", "ements", "ement", "atrices", "atrice",
+            "ables", "able", "ibles", "ible",
+            "ateurs", "ateur", "euses", "euse", "ances", "ance", "ences", "ence", "ites", "ite",
+            "ives", "ive", "ifs", "if", "aux", "ees", "ee", "es", "er", "ez", "e", "s", "x")
+
+
+def raciner(mot):
+    """Racinisation très simple du français : déclarer / déclaration -> declar."""
+    if len(mot) <= 4 or mot.isdigit():
+        return mot
+    for suf in SUFFIXES:
+        if mot.endswith(suf) and len(mot) - len(suf) >= 4:
+            mot = mot[: -len(suf)]
+            break
+    return mot[:-2] + "c" if mot.endswith("qu") else mot
+
+
+def tokeniser(texte):
+    return [raciner(m) for m in re.findall(r"[a-z0-9]+", normaliser(texte))
+            if m not in STOP and len(m) > 1]
+
+
+ARTICLE_RE = re.compile(
+    r"(?m)^[\W_]{0,4}(?:Article|ARTICLE|Art\.)\s+"
+    r"(premier|Premier|PREMIER|1er|\d+(?:\s*[-‑]\s*\d+)?(?:\s*bis|\s*ter)?)\b")
+TITRE_RE = re.compile(r"(?mi)^\s*(livre|titre|chapitre|section)\b[^\n]{0,120}")
+
+
+def lire_document(chemin):
+    brut = chemin.read_text(encoding="utf-8")
+    meta, lignes = {}, brut.split("\n")
+    i = 0
+    while i < len(lignes) and lignes[i].startswith("# ") and ":" in lignes[i]:
+        cle, val = lignes[i][2:].split(":", 1)
+        meta[cle.strip()] = val.strip()
+        i += 1
+    meta.setdefault("label", chemin.stem)
+    meta.setdefault("titre", meta["label"])
+    meta.setdefault("pays", "")
+    meta.setdefault("domaine", chemin.parent.name)
+    meta.setdefault("source", "")
+    return meta, "\n".join(lignes[i:]).strip()
+
+
+def cle_article(num):
+    if num.lower() in ("premier", "1er"):
+        return (1, 0)
+    parts = re.findall(r"\d+", num)
+    return (int(parts[0]), int(parts[1]) if len(parts) > 1 else 0) if parts else (0, 0)
+
+
+def decouper(meta, texte):
+    """Découpe un texte en passages : un par article, les longs articles en plusieurs parties."""
+    reperes = list(ARTICLE_RE.finditer(texte))
+    retenus, precedent = [], (0, -1)
+    for m in reperes:
+        k = cle_article(m.group(1))
+        if k > precedent:            # sinon : article d'un autre texte cité en note
+            retenus.append(m)
+            precedent = k
+    if len(retenus) < 5:                 # décision, note… : découpage en extraits
+        retenus = []
+    if not retenus:
+        blocs = [("", texte)]
+    else:
+        blocs = []
+        if retenus[0].start() > 300:
+            blocs.append(("", texte[:retenus[0].start()]))
+        for n, m in enumerate(retenus):
+            fin = retenus[n + 1].start() if n + 1 < len(retenus) else len(texte)
+            num = re.sub(r"\s+", " ", m.group(1))
+            num = "premier" if num.lower() in ("premier", "1er") else num.replace(" ", "")
+            blocs.append((num, texte[m.start():fin]))
+    niveaux = ["livre", "titre", "chapitre", "section"]
+    plan, passages = {}, []
+    for num, bloc in blocs:
+        contexte = " > ".join(plan[n] for n in niveaux if n in plan)
+        for t in TITRE_RE.finditer(bloc):      # intitulés valables pour la suite
+            niv = t.group(1).lower()
+            plan[niv] = t.group(0).strip()
+            for inf in niveaux[niveaux.index(niv) + 1:]:
+                plan.pop(inf, None)
+        corps = bloc.strip()
+        if len(corps) < 25:
+            continue
+        if num:
+            ref = f"{meta['label']}, art. {num}"
+        elif retenus:
+            ref = f"{meta['label']}, préambule et dispositions liminaires"
+        else:
+            ref = meta["label"]
+        morceaux = [corps[k:k + MAX_CHUNK] for k in range(0, len(corps), MAX_CHUNK - 150)]
+        for j, morceau in enumerate(morceaux):
+            suffixe = ""
+            if len(morceaux) > 1:
+                suffixe = f" (partie {j + 1})" if num else f" (extrait {j + 1})"
+            passages.append({"ref": ref + suffixe, "texte": morceau, "num": num, "partie": j,
+                             "label": meta["label"], "titre": meta["titre"], "pays": meta["pays"],
+                             "domaine": meta["domaine"], "contexte": contexte})
+    return passages
+
+
+@st.cache_resource(show_spinner="Chargement de la bibliothèque juridique…")
+def charger_corpus():
+    passages, textes = [], []
+    for chemin in sorted(CORPUS_DIR.glob("*/*")):
+        if chemin.suffix.lower() not in (".txt", ".md"):
+            continue
+        meta, texte = lire_document(chemin)
+        p = decouper(meta, texte)
+        passages.extend(p)
+        textes.append({**meta, "articles": len({x["num"] for x in p if x["num"]}), "passages": len(p)})
+    # Les intitulés (titre, chapitre, section) sont répétés pour peser davantage.
+    index = BM25Okapi([tokeniser(" ".join([p["ref"], p["contexte"], p["contexte"], p["contexte"],
+                                           p["texte"]])) for p in passages])
+    # Table des articles : label -> liste ordonnée de (numéro, [indices des passages])
+    articles = {}
+    for i, p in enumerate(passages):
+        if not p["num"]:
+            continue
+        lst = articles.setdefault(p["label"], [])
+        if lst and lst[-1][0] == p["num"]:
+            lst[-1][1].append(i)
+        else:
+            lst.append((p["num"], [i]))
+    return passages, index, textes, articles
+
+
+EXPANSIONS = {
+    r"\bsarl\b": " société à responsabilité limitée",
+    r"\bsas\b": " société par actions simplifiée",
+    r"\bsa\b": " société anonyme",
+    r"\bsnc\b": " société en nom collectif",
+    r"\bgie\b": " groupement d'intérêt économique",
+    r"\brccm\b": " registre du commerce et du crédit mobilier",
+    r"\bminimum\b|\bminimal\b": " au moins",
+    r"\bdpo\b": " correspondant à la protection des données délégué",
+    r"\bcndp\b": " commission nationale",
+    r"\bartci\b": " autorité de protection",
+    r"autorit[ée] de (?:protection|contr[ôo]le)|\bautorit[ée]\b": " commission nationale",
+    r"\bcommission nationale\b": " autorité de protection",
+    r"\bbail commercial\b": " fonds de commerce locataire bailleur preneur",
+    r"\bd[ée]clar": " déclaration préalable récépissé",
+    r"\bautoris": " autorisation préalable",
+    r"\bfaillite\b": " redressement judiciaire liquidation des biens cessation des paiements",
+    r"\bsaisie\b": " saisie voie d'exécution titre exécutoire",
+}
+ESPACES_CITES = {
+    "Maroc": r"maroc|marocain",
+    "Côte d'Ivoire": r"c[oô]te d.ivoire|ivoirien|\bci\b|artci",
+    "OHADA": r"ohada|acte uniforme|\bau[a-z]{1,6}\b",
+    "CEDEAO": r"cedeao|ecowas",
+    "Union africaine": r"union africaine|malabo",
+}
+# Abréviations courantes -> label du texte, pour « article 309 AUSCGIE » etc.
+ALIAS_TEXTES = {
+    r"\bauscgie\b|soci[ée]t[ée]s commerciales": "AUSCGIE", r"\baudcg\b|droit commercial g[ée]n[ée]ral": "AUDCG",
+    r"\baus\b|s[ûu]ret[ée]s": "(AUS)", r"\baupsrve\b|voies d.ex[ée]cution|recouvrement": "AUPSRVE",
+    r"\baupcap\b|proc[ée]dures collectives": "AUPCAP", r"\baua\b|arbitrage": "(AUA)",
+    r"\baum\b|m[ée]diation": "(AUM)", r"\bauctmr\b|transport de marchandises": "AUCTMR",
+    r"\bauscoop\b|coop[ée]rative": "AUSCOOP", r"\baudcif\b|droit comptable": "AUDCIF",
+    r"\bsycebnl\b|but non lucratif": "SYCEBNL", r"09-08": "Loi 09-08", r"2013-450": "Loi 2013-450",
+    r"5-96": "Loi 5-96", r"49-16": "Loi 49-16", r"53-95": "Loi 53-95",
+    r"code de commerce": "Code de commerce", r"\bdoc\b|obligations et (?:des )?contrats": "DOC",
+    r"malabo": "Malabo", r"cedeao|a/sa\.?1": "CEDEAO",
 }
 
 
-def _tokeniser(texte):
-    return re.findall(r"[a-zàâäéèêëîïôöùûüç0-9]+", texte.lower())
+# Notions qui désignent un texte précis : on renforce le score de ses articles.
+NOTIONS_TEXTES = {
+    r"\bsas\b|actions simplifi[ée]e": ["AUSCGIE"],
+    r"\bsarl\b|responsabilit[ée] limit[ée]e": ["AUSCGIE", "Loi 5-96"],
+    r"\bsa\b|soci[ée]t[ée] anonyme|conseil d.administration": ["AUSCGIE"],
+    r"\bgie\b|groupement d.int[ée]r[êe]t": ["AUSCGIE"],
+    r"coop[ée]rative": ["AUSCOOP"],
+    r"injonction de payer|saisie|voies d.ex[ée]cution": ["AUPSRVE", "Loi 53-95"],
+    r"redressement judiciaire|liquidation|cessation des paiements|conciliation|sauvegarde": ["AUPCAP", "Code de commerce"],
+    r"bail commercial|fonds de commerce|rccm|registre du commerce|entreprenant": ["AUDCG", "Code de commerce", "Loi 49-16"],
+    r"hypoth[èe]que|gage|nantissement|cautionnement|s[ûu]ret[ée]": ["(AUS)", "DOC"],
+    r"arbitr": ["(AUA)"], r"m[ée]diat": ["(AUM)"], r"transport": ["AUCTMR"],
+    r"comptab|[ée]tats financiers": ["AUDCIF", "SYCEBNL"],
+}
 
 
-def _decouper(texte, taille, chevauchement):
-    texte = texte.strip()
-    morceaux, debut = [], 0
-    while debut < len(texte):
-        morceaux.append(texte[debut:debut + taille].strip())
-        debut += taille - chevauchement
-    return [m for m in morceaux if m]
-
-
-@st.cache_resource(show_spinner="Préparation du corpus juridique…")
-def charger_index():
-    docs, sources = [], []
-    for nom, texte in CORPUS.items():
-        for morceau in _decouper(texte, CHUNK_SIZE, CHUNK_OVERLAP):
-            docs.append(morceau)
-            sources.append(nom)
-    bm25 = BM25Okapi([_tokeniser(d) for d in docs]) if docs else None
-    return docs, sources, bm25
-
-
-def retrouver(question, docs, sources, bm25, k=TOP_K):
-    if bm25 is None:
+def articles_cites(question, passages, articles):
+    """Repère « art. 309 de l'AUSCGIE » et renvoie les passages de cet article."""
+    nums = re.findall(r"\bart(?:icle|\.)?\s*(\d+(?:-\d+)?|premier|1er)\b", question, re.I)
+    if not nums:
         return []
-    scores = bm25.get_scores(_tokeniser(question))
-    indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
-    return [(docs[i], sources[i]) for i in indices]
+    labels = [lab for lab in articles
+              if any(re.search(m, question, re.I) and frag in lab for m, frag in ALIAS_TEXTES.items())]
+    trouves = []
+    for lab in labels:
+        for num in nums:
+            num = "premier" if num.lower() in ("premier", "1er") else num
+            for n, idx in articles[lab]:
+                if n == num:
+                    trouves.extend(passages[i] for i in idx)
+    return trouves
 
 
-st.set_page_config(page_title="Assistant conformité — Côte d'Ivoire", page_icon="⚖️")
-st.title("Assistant conformité — données personnelles (Côte d'Ivoire)")
-st.caption(
-    "Répond à partir de la loi n° 2013-450 et des décisions de l'ARTCI, en citant ses "
-    "sources. ⚠️ Outil d'information, pas un conseil juridique : faites valider les "
-    "décisions importantes par un juriste."
-)
+def rechercher(question, passages, index, articles, domaines, espaces, k=TOP_K):
+    """Articles cités explicitement, puis meilleurs passages ; chaque espace pertinent a sa part."""
+    exacts = articles_cites(question, passages, articles)
+    requete = question
+    for motif, ajout in EXPANSIONS.items():
+        if re.search(motif, question, re.I):
+            requete += ajout
+    cites = [e for e, motif in ESPACES_CITES.items() if re.search(motif, question, re.I) and e in espaces]
+    if cites:
+        etendu = set(cites)
+        for e in cites:
+            etendu.update(a for a in APPLICABLES.get(e, []) if a in espaces)
+        espaces = list(etendu)
+    for motif in ESPACES_CITES.values():
+        requete = re.sub(motif, " ", requete, flags=re.I)
+    if len(espaces) > 1:
+        k = max(k, 8)
+    scores = index.get_scores(tokeniser(requete))
+    vises = [frag for motif, frags in NOTIONS_TEXTES.items() if re.search(motif, question, re.I)
+             for frag in frags]
+    if vises:
+        scores = [sc * 1.6 if any(f in passages[i]["label"] for f in vises) else sc
+                  for i, sc in enumerate(scores)]
+    ordre = [i for i in sorted(range(len(passages)), key=lambda i: scores[i], reverse=True)
+             if scores[i] > 0 and passages[i]["domaine"] in domaines and passages[i]["pays"] in espaces]
+    choisis = []
+    if ordre:
+        meilleur = scores[ordre[0]]
+        par_espace = {}
+        for i in ordre:
+            par_espace.setdefault(passages[i]["pays"], []).append(i)
+        pertinents = [e for e, lst in par_espace.items()
+                      if scores[lst[0]] >= 0.6 * meilleur or e in cites]
+        part = max(2, k // max(1, len(pertinents)))
+        for e in pertinents:
+            choisis.extend(par_espace[e][:part])
+        for i in ordre:
+            if len(choisis) >= k:
+                break
+            if i not in choisis:
+                choisis.append(i)
+        choisis = sorted(choisis[:k], key=lambda i: scores[i], reverse=True)
+    resultat = list(exacts)
+    for i in choisis:
+        if passages[i] not in resultat and len(resultat) < k + len(exacts):
+            resultat.append(passages[i])
+    return resultat
 
-if "GROQ_API_KEY" not in st.secrets:
-    st.error(
-        "La clé GROQ_API_KEY n'est pas configurée. Ajoute-la dans les Secrets de "
-        "l'application (menu ⋮ > Settings > Secrets)."
-    )
-    st.stop()
 
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-LLM_MODEL = st.secrets["GROQ_MODEL"] if "GROQ_MODEL" in st.secrets else "llama-3.3-70b-versatile"
-docs, sources, bm25 = charger_index()
+# ------------------------------------------------------------------ interface
 
-if "messages" not in st.session_state:
-    st.session_state.messages = []
+st.set_page_config(page_title="JCKouassi · Assistant juridique",
+                   page_icon=str(LOGO_ICONE) if LOGO_ICONE.exists() else "⚖️",
+                   layout="wide", initial_sidebar_state="expanded")
 
-for m in st.session_state.messages:
-    with st.chat_message(m["role"]):
-        st.markdown(m["content"])
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap');
+html, body, [class*="css"], .stMarkdown, p, li, label { font-family: 'Inter', system-ui, sans-serif; }
+h1, h2, h3, .jck-titre { font-family: 'Source Serif 4', Georgia, serif !important; color: #14284b; }
+.block-container { padding-top: 1.6rem; max-width: 1180px; }
+.jck-entete { display: flex; align-items: center; gap: 18px; padding: 6px 0 14px;
+              border-bottom: 2px solid #c9972f; margin-bottom: 8px; }
+.jck-titre { font-size: 1.9rem; font-weight: 700; line-height: 1.15; margin: 0; }
+.jck-sous { color: #4a5670; font-size: .95rem; margin-top: 2px; }
+.jck-sous b { color: #9c7322; }
+.jck-pied { margin-top: 2.5rem; padding-top: 12px; border-top: 1px solid #d7dce6; color: #5c6780;
+            font-size: .85rem; text-align: center; }
+.jck-pied b { color: #14284b; }
+.jck-ref { font-weight: 600; color: #14284b; }
+.jck-ctx { color: #6b7590; font-size: .82rem; margin-bottom: 4px; }
+div[data-testid="stExpander"] details { border-color: #d7dce6; background: #ffffff; }
+</style>
+""", unsafe_allow_html=True)
 
-question = st.chat_input("Pose ta question sur la loi 2013-450…")
-if question:
-    st.session_state.messages.append({"role": "user", "content": question})
-    with st.chat_message("user"):
-        st.markdown(question)
+passages, index, textes, articles = charger_corpus()
+espaces_dispo = [e for e in ESPACES if any(t["pays"] == e for t in textes)]
+labels_textes = [t["label"] for t in textes if t["label"] in articles]
 
-    passages = retrouver(question, docs, sources, bm25)
-    contexte = "\n\n".join(f"[Source : {s}]\n{d}" for d, s in passages)
-    invite = (
-        f"Extraits du corpus juridique :\n{contexte}\n\n"
-        f"Question de l'utilisateur : {question}"
-    )
+if LOGO_H.exists():
+    st.logo(str(LOGO_H), icon_image=str(LOGO_ICONE) if LOGO_ICONE.exists() else None, size="large")
 
-    with st.chat_message("assistant"):
-        flux = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[
-                {"role": "system", "content": SYSTEME},
-                {"role": "user", "content": invite},
-            ],
-            stream=True,
-            temperature=0.2,
-        )
+with st.sidebar:
+    st.markdown("#### Périmètre de recherche")
+    choix_domaine = st.radio("Domaine", ["Les deux", "Données personnelles", "Droit des affaires"])
+    domaines = {"Les deux": ["donnees", "affaires"], "Données personnelles": ["donnees"],
+                "Droit des affaires": ["affaires"]}[choix_domaine]
+    choix_espaces = st.multiselect("Pays et espaces juridiques", espaces_dispo, default=espaces_dispo)
+    st.markdown("#### Réponse")
+    format_rep = st.radio("Format", list(FORMATS), horizontal=True)
+    st.divider()
+    if st.button("Nouvelle conversation", width="stretch"):
+        st.session_state.messages = []
+        st.rerun()
+    nb_articles = sum(t["articles"] for t in textes)
+    st.caption(f"{len(textes)} textes · {nb_articles:,} articles indexés".replace(",", " "))
+    st.caption(f"Une initiative de **{AUTEUR}**")
 
-        def generer():
-            for bloc in flux:
-                yield bloc.choices[0].delta.content or ""
+# En-tête
+col_logo, col_titre = st.columns([1, 9], vertical_alignment="center")
+with col_logo:
+    if LOGO_ICONE.exists():
+        st.image(str(LOGO_ICONE), width=84)
+with col_titre:
+    st.markdown(
+        f"<div class='jck-titre'>Assistant juridique</div>"
+        f"<div class='jck-sous'>Données personnelles et droit des affaires · Côte d'Ivoire, Maroc, OHADA, "
+        f"CEDEAO, Union africaine<br>Une initiative de <b>{AUTEUR}</b> · Juriste 2.0</div>",
+        unsafe_allow_html=True)
 
-        reponse = st.write_stream(generer())
-        if passages:
-            st.caption("Sources consultées : " + ", ".join(sorted({s for _, s in passages})))
+onglet_q, onglet_art, onglet_biblio, onglet_apropos = st.tabs(
+    ["Question juridique", "Consulter un article", "Bibliothèque des textes", "À propos"])
 
-    st.session_state.messages.append({"role": "assistant", "content": reponse})
+
+def afficher_sources(sources, cle):
+    for n, s in enumerate(sources):
+        with st.expander(f"[{n + 1}] {s['ref']}"):
+            if s.get("contexte"):
+                st.markdown(f"<div class='jck-ctx'>{s['contexte']}</div>", unsafe_allow_html=True)
+            st.markdown(s["texte"].replace("\n", "  \n"))
+            st.code(s["ref"], language=None)
+
+
+# --- Onglet 1 : questions
+with onglet_q:
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+    if "GROQ_API_KEY" not in st.secrets:
+        st.error("La clé GROQ_API_KEY n'est pas configurée dans les Secrets de l'application.")
+    else:
+        client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+        modele = st.secrets["GROQ_MODEL"] if "GROQ_MODEL" in st.secrets else DEFAULT_MODEL
+
+        if not st.session_state.messages:
+            st.markdown("**Exemples de questions**")
+            exemples = [
+                "Faut-il déclarer un fichier clients à l'autorité de protection, au Maroc et en Côte d'Ivoire ?",
+                "Quelles sont les conditions de constitution d'une SAS en droit OHADA ?",
+                "Comment fonctionne la procédure d'injonction de payer dans l'espace OHADA ?",
+                "Que prévoit la Convention de Malabo sur les transferts de données hors de l'Union africaine ?",
+            ]
+            c1, c2 = st.columns(2)
+            for n, ex in enumerate(exemples):
+                if (c1 if n % 2 == 0 else c2).button(ex, key=f"ex{n}", width="stretch"):
+                    st.session_state.question_exemple = ex
+                    st.rerun()
+
+        for n, m in enumerate(st.session_state.messages):
+            with st.chat_message(m["role"], avatar=str(LOGO_ICONE) if m["role"] == "assistant" and LOGO_ICONE.exists() else None):
+                st.markdown(m["content"])
+                if m.get("sources"):
+                    st.markdown("**Articles consultés**")
+                    afficher_sources(m["sources"], f"h{n}")
+
+        with st.form("question", clear_on_submit=True):
+            saisie = st.text_area("Votre question", height=110, label_visibility="collapsed",
+                                  placeholder="Posez votre question juridique, ou citez un article : « Que prévoit l'article 309 de l'AUSCGIE ? »")
+            envoye = st.form_submit_button("Rechercher et répondre", type="primary")
+        question = saisie.strip() if envoye and saisie.strip() else st.session_state.pop("question_exemple", None)
+
+        if question:
+            st.session_state.messages.append({"role": "user", "content": question})
+            with st.chat_message("user"):
+                st.markdown(question)
+            if not choix_espaces:
+                reponse, trouves = "Sélectionnez au moins un pays ou espace juridique dans le panneau de gauche.", []
+                st.warning(reponse)
+            else:
+                trouves = rechercher(question, passages, index, articles, domaines, choix_espaces)
+                contexte = "\n\n".join(
+                    f"[{n + 1}] {p['ref']} — {p['titre']}\n{p['texte']}" for n, p in enumerate(trouves)
+                ) or "(Aucun extrait pertinent trouvé dans le corpus.)"
+                historique = [{"role": m["role"], "content": m["content"][:1500]}
+                              for m in st.session_state.messages[-5:-1]]
+                messages = [{"role": "system", "content": SYSTEME + "\n\n" + FORMATS[format_rep]},
+                            *historique,
+                            {"role": "user", "content": f"Extraits des textes :\n\n{contexte}\n\nQuestion : {question}"}]
+                with st.chat_message("assistant", avatar=str(LOGO_ICONE) if LOGO_ICONE.exists() else None):
+                    try:
+                        flux = client.chat.completions.create(model=modele, messages=messages,
+                                                              stream=True, temperature=0.2)
+
+                        def generer():
+                            for bloc in flux:
+                                if bloc.choices and bloc.choices[0].delta.content:
+                                    yield bloc.choices[0].delta.content
+
+                        reponse = st.write_stream(generer())
+                    except Exception as e:
+                        nom = type(e).__name__
+                        reponse = ("Le service est très sollicité (limite de requêtes atteinte). "
+                                   "Réessayez dans une minute." if "RateLimit" in nom else
+                                   f"Le service de génération est momentanément indisponible ({nom}). "
+                                   "Réessayez dans un instant.")
+                        st.warning(reponse)
+                    if trouves:
+                        st.markdown("**Articles consultés**")
+                        afficher_sources(trouves, "dernier")
+            st.session_state.messages.append({"role": "assistant", "content": reponse, "sources": [
+                {"ref": s["ref"], "texte": s["texte"], "contexte": s["contexte"]} for s in trouves]})
+
+# --- Onglet 2 : consultation directe d'un article
+with onglet_art:
+    st.markdown("Affichez le texte intégral d'un article, puis naviguez vers l'article précédent ou suivant.")
+    c1, c2 = st.columns([3, 1])
+    texte_choisi = c1.selectbox("Texte", labels_textes, key="texte_art")
+    liste = articles.get(texte_choisi, [])
+    numeros = [n for n, _ in liste]
+    if "pos_art" not in st.session_state or st.session_state.get("pos_texte") != texte_choisi:
+        st.session_state.pos_art, st.session_state.pos_texte = 0, texte_choisi
+
+    def aller_article():
+        saisie = st.session_state.get("num_art", "").strip()
+        cible = "premier" if saisie.lower() in ("1", "1er", "premier") and "premier" in numeros else saisie
+        if cible in numeros:
+            st.session_state.pos_art = numeros.index(cible)
+            st.session_state.art_introuvable = ""
+        elif saisie:
+            st.session_state.art_introuvable = saisie
+
+    c2.text_input("Article n°", placeholder="ex. 309 ou 2-1", key="num_art", on_change=aller_article)
+    if st.session_state.get("art_introuvable"):
+        st.warning(f"L'article {st.session_state.art_introuvable} n'a pas été trouvé dans ce texte.")
+    if liste:
+        pos = min(st.session_state.pos_art, len(liste) - 1)
+        num, idx = liste[pos]
+        p0 = passages[idx[0]]
+        st.markdown(f"### Article {num}")
+        st.markdown(f"<div class='jck-ctx'>{p0['titre']}<br>{p0['contexte']}</div>", unsafe_allow_html=True)
+        corps = passages[idx[0]]["texte"]
+        for i in idx[1:]:                       # recoller les parties sans le chevauchement
+            corps += passages[i]["texte"][150:]
+        st.markdown(corps.replace("\n", "  \n"))
+        st.code(f"{texte_choisi}, art. {num}", language=None)
+        b1, b2, _ = st.columns([1, 1, 4])
+        if b1.button("← Article précédent", disabled=pos == 0, width="stretch"):
+            st.session_state.pos_art = pos - 1
+            st.rerun()
+        if b2.button("Article suivant →", disabled=pos >= len(liste) - 1, width="stretch"):
+            st.session_state.pos_art = pos + 1
+            st.rerun()
+
+# --- Onglet 3 : bibliothèque
+with onglet_biblio:
+    st.markdown("Textes intégrés, découpés article par article.")
+    for espace in ESPACES:
+        lot = [t for t in textes if t["pays"] == espace]
+        if not lot:
+            continue
+        st.markdown(f"#### {espace}")
+        st.dataframe(
+            [{"Texte": t["titre"], "Domaine": DOMAINES.get(t["domaine"], t["domaine"]),
+              "Articles": t["articles"] or "—", "Source": t["source"]} for t in lot],
+            hide_index=True, width="stretch")
+
+# --- Onglet 4 : à propos
+with onglet_apropos:
+    a, b = st.columns([2, 1])
+    with a:
+        st.markdown(f"""
+### Une initiative de {AUTEUR}
+
+Cet assistant a été conçu et développé par **{AUTEUR}**, juriste, pour rendre les textes de la protection
+des données personnelles et du droit des affaires plus faciles à interroger, en Côte d'Ivoire, au Maroc et
+dans l'espace OHADA.
+
+**Méthode.** Chaque texte officiel est découpé article par article, avec son livre, son titre et son
+chapitre. Pour chaque question, le moteur retrouve les articles pertinents, puis un modèle de langage open
+source rédige une réponse **à partir de ces seuls articles**, en citant leurs références. Les articles
+consultés sont affichés sous chaque réponse et peuvent être lus en entier dans l'onglet « Consulter un
+article ».
+
+**Limites.** L'outil fournit une information juridique, pas un conseil. Certains textes ont été obtenus par
+reconnaissance de caractères (OCR) ou sont des versions non consolidées : vérifiez toujours le texte officiel
+en vigueur avant de vous en prévaloir. La jurisprudence n'est pas encore intégrée, en dehors de décisions
+de l'ARTCI.
+
+**Contact** : {CONTACT}
+""")
+    with b:
+        if LOGO_H.exists():
+            st.image(str(LOGO_H), width=300)
+
+st.markdown(
+    f"<div class='jck-pied'>Conçu et développé par <b>{AUTEUR}</b> · JCKouassi, Juriste 2.0 · "
+    f"Information juridique, pas un conseil juridique.</div>", unsafe_allow_html=True)

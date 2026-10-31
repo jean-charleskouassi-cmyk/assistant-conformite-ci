@@ -1,0 +1,1716 @@
+# titre: Acte uniforme révisé portant organisation des sûretés, adopté le 15 décembre 2010 à Lomé
+# label: Acte uniforme portant organisation des sûretés (AUS)
+# pays: OHADA
+# domaine: affaires
+# source: Journal officiel de l'OHADA (texte diffusé par ohada.com)
+
+OHADA
+ORGANISATION POUR L'HARMONISATION
+EN AFRIQUE DU DROIT DES AFFAIRES
+
+ACTE UNIFORME RÉVISÉ PORTANT
+ORGANISATION DES SÛRETÉS
+
+Préambule
+Le Conseil des Ministres de l'Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) ;
+- Vu le Traité relatif à l'harmonisation du droit des affaires en Afrique, signé à Port-Louis le 17 octobre 1993, tel que
+révisé à Québec le 17 octobre 2008, notamment en ses articles 2, 5 à 10 et 12 ;
+- Vu le rapport du Secrétariat Permanent et les observations des Etats Parties ;
+- Vu l'avis N° 002/2010 en date du 03 août 2010 de la Cour Commune de Justice et d'Arbitrage ; Après en avoir
+délibéré, adopte à l'unanimité des Etats Parties présents et votants l'Acte uniforme dont la teneur suit :
+
+Titre préliminaire - Définitions et domaine d'application des sûretés - Agents
+des sûretés
+
+Chapitre 1 - Définitions et domaine d'application des sûretés
+Article 1
+Une sûreté est l'affectation au bénéfice d'un créancier d'un bien, d'un ensemble de biens ou d'un patrimoine afin de
+garantir l'exécution d'une obligation ou d'un ensemble d'obligations, quelle que soit la nature juridique de celles-ci
+et notamment qu'elles soient présentes ou futures, déterminées ou déterminables, conditionnelles ou
+inconditionnelles, et que leur montant soit fixe ou fluctuant.
+Article 2
+Sauf disposition contraire du présent Acte uniforme, les sûretés qu'il régit sont accessoires de l'obligation dont elles
+garantissent l'exécution.
+Article 3
+Est considéré comme débiteur professionnel au sens du présent Acte uniforme, tout débiteur dont la dette est née
+dans l'exercice de sa profession ou se trouve en rapport direct avec l'une de ses activités professionnelles, même
+si celle-ci n'est pas principale.
+Article 4
+Les sûretés personnelles, au sens du présent Acte uniforme, consistent en l'engagement d'une personne de
+répondre de l'obligation du débiteur principal en cas de défaillance de celui-ci ou à première demande du
+bénéficiaire de la garantie.
+Sauf disposition contraire du présent Acte uniforme, les seules sûretés réelles valablement constituées sont celles
+qui sont régies par cet Acte. Elles consistent soit dans le droit du créancier de se faire payer par préférence sur le
+prix de réalisation d'un bien affecté à la garantie de l'obligation de son débiteur, soit dans le droit de recouvrer la
+libre disposition d'un bien dont il est propriétaire à titre de garantie de cette obligation.
+Les sûretés réelles peuvent être constituées par le débiteur lui-même ou un tiers en garantie de l'obligation sous
+réserve des dispositions particulières du présent Acte uniforme.
+
+page 2 / 45
+
+Les sûretés propres au droit fluvial, maritime et aérien, les sûretés légales autres que celles régies par le présent
+Acte uniforme, ainsi que les sûretés garantissant l'exécution de contrats conclus exclusivement entre
+établissements de financement, peuvent faire l'objet de législations particulières.
+
+Chapitre 2 - Agent des sûretés
+Article 5
+Toute sûreté ou autre garantie de l'exécution d'une obligation peut être constituée, inscrite, gérée et réalisée par
+une institution financière ou un établissement de crédit, national ou étranger, agissant, en son nom et en qualité
+d'agent des sûretés, au profit des créanciers de la ou des obligations garanties l'ayant désigné à cette fin.
+Article 6
+L'acte désignant l'agent des sûretés mentionne, à peine de nullité :
+1°) la ou les obligations garanties ou, si elles sont futures, les éléments de nature à permettre leur
+individualisation, tels que l'indication de leur débiteur, de leur lieu de paiement, de leur montant ou l'évaluation de
+ce dernier, et de leur échéance ;
+2°) l'identité, au jour de la désignation de l'agent des sûretés, des créanciers de la ou des obligations garanties ;
+3°) l'identité et le siège social de l'agent des sûretés ;
+4°) la durée de sa mission et l'étendue de ses pouvoirs d'administration et de disposition ;
+5°) les conditions dans lesquelles l'agent des sûretés rend compte de sa mission aux créanciers de la ou des
+obligations garanties.
+Article 7
+Lorsque l'agent des sûretés agit au profit des créanciers de la ou des obligations garanties, il doit en faire
+expressément mention et toute inscription d'une sûreté effectuée à l'occasion de sa mission doit mentionner son
+nom et sa qualité d'agent des sûretés.
+Article 8
+Sauf stipulation contraire et pour tout ce qui a trait aux obligations garanties, les créanciers sont représentés par
+l'agent des sûretés dans leurs relations avec leurs débiteurs, leurs garants, ainsi que les personnes ayant affecté
+ou cédé un bien en garantie de ces obligations, et les tiers.
+Dans la limite des pouvoirs qui lui ont été conférés par les créanciers de la ou des obligations garanties, l'agent des
+sûretés peut intenter toutes actions pour défendre leurs intérêts, y compris en justice, la seule indication qu'il
+intervient en sa qualité d'agent des sûretés étant suffisante.
+Article 9
+Lorsque la constitution ou la réalisation d'une sûreté entraîne un transfert de propriété au profit de l'agent des
+sûretés, le ou les biens transférés forment un patrimoine affecté à sa mission et doivent être tenus séparés de son
+patrimoine propre par l'agent des sûretés. Il en va de même des paiements reçus par l'agent des sûretés à
+l'occasion de l'accomplissement de sa mission.
+Sous réserve de l'exercice éventuel d'un droit de suite sur ces biens et hors les cas de fraude, ils ne peuvent alors
+être saisis que par les titulaires de créances nées de la conservation et de la gestion de ces biens, y compris en
+
+page 3 / 45
+
+cas d'ouverture d'une procédure collective d'apurement du passif à l'encontre de l'agent des sûretés.
+Article 10
+L'acte désignant l'agent des sûretés peut prévoir les conditions dans lesquelles l'agent des sûretés peut, sous sa
+responsabilité, se substituer un tiers pour accomplir sa mission.
+En ce cas, les créanciers de la ou des obligations garanties peuvent agir directement contre la personne que
+l'agent des sûretés s'est substituée.
+Cet acte peut également prévoir les conditions de remplacement de l'agent des sûretés si celui-ci manque à ses
+devoirs ou met en péril les intérêts qui lui sont confiés ou encore s'il fait l'objet de l'ouverture d'une procédure
+collective d'apurement du passif. En l'absence de dispositions contractuelles en ce sens, les créanciers de
+l'obligation garantie peuvent, dans les hypothèses précitées, demander à la juridiction compétente, statuant à bref
+délai, la nomination d'un agent des sûretés provisoire ou solliciter le remplacement de l'agent des sûretés.
+En cas de remplacement de l'agent des sûretés, qu'il soit de source contractuelle ou judiciaire, tous les droits et
+toutes les actions que celui-ci détient dans l'intérêt des créanciers de la ou des obligations garanties sont transmis
+de plein droit et sans autre formalité au nouvel agent des sûretés.
+Article 11
+A défaut de disposition contraire dans l'acte le désignant, la responsabilité de l'agent des sûretés à l'égard des
+créanciers de la ou des obligations garanties s'apprécie comme celle d'un mandataire salarié.
+
+Titre 1 - Sûretés personnelles
+Article 12
+Les sûretés personnelles régies par le présent Acte uniforme sont le cautionnement et la garantie autonome.
+
+Chapitre 1 - Cautionnement
+Article 13
+Le cautionnement est un contrat par lequel la caution s'engage, envers le créancier qui accepte, à exécuter une
+obligation présente ou future contractée par le débiteur, si celuici n'y satisfait pas lui-même.
+Cet engagement peut être contracté sans ordre du débiteur.
+
+Section 1 - Formation du cautionnement
+Article 14
+Le cautionnement ne se présume pas, quelle que soit la nature de l'obligation garantie.
+Il se prouve par un acte comportant la signature de la caution et du créancier ainsi que la mention, écrite de la
+main de la caution, en toutes lettres et en chiffres, de la somme maximale garantie couvrant le principal, les
+intérêts et autres accessoires. En cas de différence, le cautionnement vaut pour la somme exprimée en lettres.
+La caution qui ne sait ou ne peut écrire doit se faire assister de deux témoins qui certifient, dans l'acte de
+
+page 4 / 45
+
+cautionnement son identité et sa présence et attestent, en outre, que la nature et les effets de l'acte lui ont été
+précisés. La présence des témoins certificateurs dispense la caution de l'accomplissement des formalités prévues
+par l'alinéa précédent.
+Les dispositions du présent article s'appliquent également au cautionnement exigé par la loi de chaque Etat Partie
+ou par une décision de justice.
+Article 15
+Lorsque le débiteur est tenu, par la convention, la loi de chaque Etat Partie ou la décision de justice, de fournir une
+caution, celle-ci doit être domiciliée ou faire élection de domicile dans le ressort territorial de la juridiction où elle
+doit être fournie, sauf dispense du créancier ou de la juridiction compétente. La caution doit présenter des
+garanties de solvabilité appréciées en tenant compte de tous les éléments de son patrimoine. Le débiteur qui ne
+peut trouver une caution pourra la remplacer par toute sûreté réelle donnant les mêmes garanties au créancier.
+Article 16
+Lorsque la caution reçue par le créancier, volontairement ou en justice, est devenue ensuite insolvable, le débiteur
+doit en fournir une autre ou fournir une sûreté réelle donnant les mêmes garanties au créancier.
+Cette règle ne reçoit exception que lorsque le créancier a subordonné son consentement au contrat principal à
+l'engagement, à son égard, d'une caution nommément désignée.
+Article 17
+Le cautionnement ne peut exister que si l'obligation principale garantie est valablement constituée. Toutefois, il est
+possible de cautionner, en parfaite connaissance de cause, les engagements d'un incapable. La confirmation, par
+le débiteur, d'une obligation entachée de nullité relative, ne lie pas la caution, sauf renonciation expresse, par la
+caution, à cette nullité.
+Le défaut de pouvoir du représentant pour engager la personne morale débitrice principale ne peut être invoqué
+par la caution de celle-ci que si l'obligation principale n'est pas valablement constituée, sauf lorsque la personne
+morale débitrice principale a confirmé cette obligation et que la caution a expressément renoncé à se prévaloir de
+la nullité de ladite obligation.
+L'engagement de la caution ne peut être contracté à des conditions plus onéreuses que l'obligation principale, sous
+peine de réduction à concurrence de celle-ci, ni excéder ce qui est dû par le débiteur principal au moment des
+poursuites.
+Le débiteur principal ne peut aggraver l'engagement de la caution par une convention postérieure au
+cautionnement.
+Article 18
+Sauf clause contraire, le cautionnement d'une obligation s'étend, outre le principal, et dans la limite de la somme
+maximale garantie, aux accessoires de la dette et aux frais de recouvrement de la créance, y compris ceux
+postérieurs à la dénonciation qui est faite à la caution.
+A la demande de la caution, l'acte constitutif de l'obligation principale est annexé à la convention de
+cautionnement.
+Le cautionnement peut également être contracté pour une partie seulement de la dette et sous des conditions
+moins onéreuses.
+Article 19
+
+page 5 / 45
+
+Le cautionnement général des dettes du débiteur principal, sous la forme d'un cautionnement de tous
+engagements, du solde débiteur d'un compte courant ou sous toute autre forme, ne s'entend, sauf clause contraire
+expresse, que de la garantie des dettes contractuelles directes. Il doit être conclu, sous peine de nullité, pour une
+somme maximale librement déterminée entre les parties, incluant le principal, les intérêts et autres accessoires.
+Le cautionnement général peut être renouvelé lorsque la somme maximale est atteinte.
+Le renouvellement doit être exprès ; toute clause contraire est réputée non écrite.
+Il peut être révoqué, à tout moment, par la caution avant que la somme maximale garantie ait été atteinte. Tous les
+engagements du débiteur garanti nés avant la révocation restent garantis par la caution.
+Sauf clause contraire, le cautionnement général ne garantit pas les dettes du débiteur principal antérieures à la
+date du cautionnement.
+
+Section 2 - Modalités du cautionnement
+Article 20
+Le cautionnement est réputé solidaire.
+Il est simple lorsqu'il en est ainsi décidé, expressément, par la loi de chaque Etat Partie ou la convention des
+parties.
+Article 21
+La caution peut, elle-même, se faire cautionner par un certificateur désigné comme tel dans le contrat.
+Sauf stipulation contraire, le ou les certificateurs sont cautions simples de la caution certifiée.
+Article 22
+La caution peut garantir son engagement en consentant une sûreté réelle sur un ou plusieurs de ses biens.
+Elle peut également limiter son engagement à la valeur de réalisation du ou des biens sur lesquels elle a consenti
+une telle sûreté.
+
+Section 3 - Effets du cautionnement
+Article 23
+La caution n'est tenue de payer la dette qu'en cas de non-paiement du débiteur principal.
+Le créancier ne peut entreprendre de poursuites contre la caution qu'après une mise en demeure de payer
+adressée au débiteur principal et restée sans effet.
+La prorogation du terme accordée au débiteur principal par le créancier doit être notifiée par ce dernier à la
+caution. Celle-ci est en droit de refuser le bénéfice de cette prorogation et de poursuivre le débiteur pour le forcer
+au paiement ou obtenir une garantie ou une mesure conservatoire.
+Nonobstant toute clause contraire, la déchéance du terme accordé au débiteur principal ne s'étend pas
+automatiquement à la caution qui ne peut être requise de payer qu'à l'échéance fixée à l'époque où la caution a été
+fournie. Toutefois, la caution encourt la déchéance du terme si, après mise en demeure, elle ne satisfait pas à ses
+
+page 6 / 45
+
+propres obligations à l'échéance fixée.
+Article 24
+Dans le mois de la mise en demeure de payer adressée au débiteur principal et restée sans effet, le créancier doit
+informer la caution de la défaillance du débiteur principal en lui indiquant le montant restant dû par ce dernier en
+principal, intérêts et autres accessoires à la date de cet incident de paiement.
+A défaut, la caution ne saurait être tenue au paiement des pénalités ou intérêts de retard échus entre la date de cet
+incident et la date à laquelle elle en a été informée.
+Toute clause contraire aux dispositions du présent article est réputée non écrite.
+Article 25
+Le créancier est tenu, dans le mois qui suit le terme de chaque semestre civil à compter de la signature du contrat
+de cautionnement, de communiquer à la caution un état des dettes du débiteur principal précisant leurs causes,
+leurs échéances et leurs montants en principal, intérêts, et autres accessoires restant dus à la fin du semestre
+écoulé, en lui rappelant la faculté de révocation par reproduction littérale des dispositions de l'article 19 du présent
+Acte uniforme.
+A défaut d'accomplissement des formalités prévues au présent article, le créancier est déchu, vis-à-vis de la
+caution, des intérêts contractuels échus depuis la date de la précédente information jusqu'à la date de
+communication de la nouvelle information, sans préjudice des dispositions de l'article 29 du présent Acte uniforme.
+Toute clause contraire aux dispositions du présent article est réputée non écrite.
+Article 26
+La caution est tenue de la même façon que le débiteur principal. La caution solidaire est tenue de l'exécution de
+l'obligation principale dans les mêmes conditions qu'un débiteur solidaire sous réserve des dispositions
+particulières du présent Acte uniforme.
+Toutefois, le créancier ne peut poursuivre la caution simple ou solidaire qu'en appelant en cause le débiteur
+principal.
+Article 27
+La caution judiciaire et la caution solidaire ne disposent pas du bénéfice de discussion.
+La caution simple, à moins qu'elle ait expressément renoncé à ce bénéfice, peut, sur premières poursuites dirigées
+contre elle, exiger la discussion du débiteur principal, en indiquant les biens de ce dernier susceptibles d'être saisis
+immédiatement sur le territoire national et de produire des deniers suffisants pour le paiement intégral de la dette.
+Elle doit, en outre, avancer les frais de discussion ou consigner la somme nécessaire arbitrée par la juridiction
+compétente à cet effet.
+Lorsque la caution a fait l'indication des biens et fourni les deniers suffisants pour la discussion, le créancier est,
+jusqu'à concurrence des biens indiqués, responsable, à l'égard de la caution, de l'insolvabilité du débiteur principal
+survenue par le défaut de poursuites.
+Article 28
+S'il existe plusieurs cautions pour un même débiteur et une même dette, sauf stipulation de solidarité entre elles ou
+renonciation par elles à ce bénéfice, chacune d'elles peut, sur premières poursuites du créancier, demander la
+
+page 7 / 45
+
+division de la dette entre les cautions solvables au jour où l'exception est invoquée.
+La caution ne répond pas des insolvabilités des autres cautions survenues après la division.
+Le créancier qui divise volontairement son action ne peut revenir sur cette division et supporte l'insolvabilité des
+cautions poursuivies sans pouvoir la reporter sur les autres cautions.
+Article 29
+Toute caution ou tout certificateur de caution peut opposer au créancier toutes les exceptions inhérentes à la dette
+qui appartiennent au débiteur principal et tendent à réduire, éteindre ou différer la dette sous réserve des
+dispositions des articles 17 et 23, alinéas 3 et 4 du présent Acte uniforme et des dispositions particulières de l'Acte
+uniforme portant organisation des procédures collectives d'apurement du passif.
+La caution simple ou solidaire est déchargée quand la subrogation aux droits et garanties du créancier ne peut
+plus s'opérer, en sa faveur, par le fait du créancier. Toute clause contraire est réputée non écrite.
+Si le fait reproché au créancier limite seulement cette subrogation, la caution est déchargée à concurrence de
+l'insuffisance de la garantie conservée.
+Article 30
+La caution doit aviser le débiteur principal ou le mettre en cause avant de payer la dette au créancier poursuivant.
+Si la caution a payé sans avoir averti ou mis en cause le débiteur principal, elle perd son recours contre lui si, au
+moment du paiement par elle ou postérieurement à ce paiement, le débiteur avait le moyen de faire déclarer la
+dette éteinte ou s'il avait payé dans l'ignorance du paiement de la caution. Néanmoins, la caution conserve son
+action en répétition contre le créancier.
+Article 31
+La caution est subrogée dans tous les droits et garanties du créancier poursuivant pour tout ce qu'elle a payé à ce
+dernier.
+S'il y a plusieurs débiteurs principaux solidaires d'une même dette, la caution est subrogée contre chacun d'eux
+pour tout ce qu'elle a payé, même si elle n'en a cautionné qu'un. Si les débiteurs sont conjoints, elle doit diviser ses
+recours.
+Article 32
+La caution qui a payé a, également, un recours personnel contre le débiteur principal pour ce qu'elle a payé en
+principal, en intérêts de cette somme et en frais engagés depuis qu'elle a dénoncé au débiteur principal les
+poursuites dirigées contre elle. Elle peut, en outre, réclamer des dommages-intérêts pour réparation du préjudice
+subi du fait des poursuites du créancier.
+S'il y a eu cautionnement partiel, le créancier ne peut, pour le reliquat, être préféré à la caution qui a payé et agi en
+vertu de son recours personnel. Toute clause contraire est réputée non écrite.
+Article 33
+Les recours du certificateur de caution contre la caution certifiée sont soumis aux dispositions des articles 30, 31 et
+32 du présent Acte uniforme.
+Article 34
+
+page 8 / 45
+
+Lorsqu'il existe plusieurs cautions simples ou solidaires pour une même dette, si l'une des cautions a utilement
+acquitté la dette, elle a un recours contre les autres cautions, chacune pour sa part et portion.
+Article 35
+La caution peut agir en paiement contre le débiteur principal ou demander la conservation de ses droits dans le
+patrimoine de celui-ci, avant même d'avoir payé le créancier :
+- dès qu'elle est poursuivie ;
+- lorsque le débiteur est en état de cessation des paiements ou en déconfiture ;
+- lorsque le débiteur ne l'a pas déchargée dans le délai convenu ;
+- lorsque la dette est devenue exigible par l'échéance du terme sous lequel elle avait été contractée.
+
+Section 4 - Extinction du cautionnement
+Article 36
+L'extinction partielle ou totale de l'obligation principale entraîne, dans la même mesure, celle de l'engagement de la
+caution.
+La dation en paiement libère définitivement la caution, même si le créancier est ensuite évincé de la chose
+acceptée par lui. Toute clause contraire est réputée non écrite.
+La novation de l'obligation principale par changement d'objet ou de cause, la modification des modalités ou sûretés
+dont elle était assortie libère la caution à moins qu'elle n'accepte de reporter sa garantie sur la nouvelle dette.
+Toute clause contraire stipulée avant la novation est réputée non écrite.
+Les engagements de la caution simple ou solidaire passent à ses héritiers uniquement pour les dettes nées
+antérieurement au décès de la caution.
+Article 37
+L'engagement de la caution disparaît indépendamment de l'obligation principale :
+- lorsque, sur poursuites dirigées contre elle, la caution excipe de la compensation pour une créance personnelle ;
+- lorsque le créancier a consenti une remise de dette à la seule caution ;
+- lorsque la confusion s'opère entre la personne du créancier et de la caution.
+Article 38
+Toutefois, la confusion qui s'opère dans la personne du débiteur principal et de sa caution lorsque l'une devient
+héritière de l'autre, n'éteint pas l'action du créancier contre le certificateur de la caution.
+
+Chapitre 2 - Garantie et contre-garantie autonomes
+Article 39
+La garantie autonome est l'engagement par lequel le garant s'oblige, en considération d'une obligation souscrite
+
+page 9 / 45
+
+par le donneur d'ordre et sur instructions de ce donneur d'ordre, à payer une somme déterminée au bénéficiaire,
+soit sur première demande de la part de ce dernier, soit selon des modalités convenues.
+La contre-garantie autonome est l'engagement par lequel le contre-garant s'oblige, en considération d'une
+obligation souscrite par le donneur d'ordre et sur instructions de ce donneur d'ordre, à payer une somme
+déterminée au garant, soit sur première demande de la part de ce dernier, soit selon des modalités convenues.
+
+Section 1 - Formation des garantie et contre-garantie autonomes
+Article 40
+Les garantie et contre-garantie autonomes ne peuvent être souscrites par les personnes physiques sous peine de
+nullité.
+Elles créent des engagements autonomes, distincts des conventions, actes et faits susceptibles d'en constituer la
+base.
+Article 41
+Les garantie et contre-garantie autonomes ne se présument pas. Elles doivent être constatées par un écrit
+mentionnant, à peine de nullité :
+- la dénomination de garantie ou de contre-garantie autonome ;
+- le nom du donneur d'ordre ;
+- le nom du bénéficiaire ;
+- le nom du garant ou du contre-garant ;
+- la convention de base, l'acte ou le fait, en considération desquels la garantie ou la contre-garantie autonome est
+émise ;
+- le montant maximum de la garantie ou de la contre-garantie autonome ;
+- la date ou le fait entraînant l'expiration de la garantie ;
+- les conditions de la demande de paiement, s'il y a lieu ;
+- l'impossibilité, pour le garant ou le contre-garant, de bénéficier des exceptions de la caution.
+
+Section 2 - Effets des garantie et contre-garantie autonomes
+Article 42
+Sauf clause ou convention contraire expresse, le droit à garantie du bénéficiaire n'est pas cessible. Toutefois,
+l'incessibilité du droit à garantie n'affecte pas le droit du bénéficiaire de céder tout montant auquel il aurait droit à la
+suite de la présentation d'une demande conforme au titre de la garantie.
+Article 43
+Les garantie et contre-garantie autonomes prennent effet à la date où elles sont émises sauf stipulation d'une prise
+d'effet à une date ultérieure.
+
+page 10 / 45
+
+Les instructions du donneur d'ordre, la garantie et la contre-garantie autonomes sont irrévocables dans le cas
+d'une garantie ou d'une contre-garantie autonome à durée déterminée.
+Les garanties ou contre-garanties autonomes à durée indéterminée peuvent être révoquées par le garant ou le
+contre-garant respectivement.
+Article 44
+Le garant et le contre-garant ne sont obligés qu'à concurrence de la somme stipulée dans la garantie ou la
+contre-garantie autonome sous déduction des paiements antérieurs faits respectivement par le garant ou le
+contre-garant conformément aux termes de leur engagement.
+Les garantie et contre-garantie autonomes peuvent stipuler que le montant de l'engagement sera réduit d'un
+montant déterminé ou déterminable à des dates précisées ou contre présentation au garant ou au contre-garant de
+documents indiqués à cette fin dans l'engagement.
+Article 45
+La demande de paiement au titre de la garantie autonome doit résulter d'un écrit du bénéficiaire accompagné de
+tout autre document prévu dans la garantie. Cette demande doit indiquer le manquement reproché au donneur
+d'ordre dans l'exécution de l'obligation en considération de laquelle la garantie a été souscrite.
+La demande de paiement au titre de la contre-garantie autonome doit résulter d'un écrit du garant mentionnant que
+le garant a reçu une demande de paiement émanant du bénéficiaire et conforme aux stipulations de la garantie.
+Toute demande de paiement doit être conforme aux termes de la garantie ou de la contre-garantie autonome au
+titre de laquelle elle est effectuée et doit, sauf clause contraire, être présentée au lieu d'émission de la garantie
+autonome ou, en cas de contre-garantie, au lieu d'émission de la contre-garantie autonome.
+Article 46
+Le garant et le contre-garant disposent chacun de cinq jours ouvrés pour examiner la conformité de la demande en
+paiement aux termes de la garantie ou de la contre-garantie autonome. Ils ne peuvent rejeter la demande qu'à la
+condition de notifier au bénéficiaire ou, en cas de contre-garantie, au garant, au plus tard à l'expiration de ce délai,
+l'ensemble des irrégularités qui motivent ce rejet.
+Le garant doit transmettre une copie de la demande du bénéficiaire et tous documents accompagnant celle-ci au
+donneur d'ordre ou, en cas de contre-garantie, au contregarant, à charge pour ce dernier de les transmettre au
+donneur d'ordre.
+Le garant doit aviser le donneur d'ordre ou, en cas de contre-garantie, le contre-garant, qui en avisera le donneur
+d'ordre, de toute réduction du montant de la garantie et de tout acte ou événement mettant fin à celle-ci autre
+qu'une date de fin de validité.
+Article 47
+Le donneur d'ordre ne peut faire défense de payer au garant que si la demande de paiement du bénéficiaire est
+manifestement abusive ou frauduleuse. Le contre-garant dispose à l'encontre du garant de la même faculté dans
+les mêmes conditions.
+Le donneur d'ordre ne peut faire défense de payer au contre-garant que si le garant savait ou aurait dû savoir que
+la demande de paiement du bénéficiaire avait un caractère manifestement abusif ou frauduleux.
+Article 48
+
+page 11 / 45
+
+Le garant ou le contre-garant qui a fait un paiement conformément aux termes de la garantie ou de la
+contre-garantie autonome dispose des mêmes recours que la caution contre le donneur d'ordre.
+Article 49
+La garantie ou la contre-garantie autonome cesse :
+- soit au jour calendaire spécifié ou à l'expiration du délai prévu ;
+- soit à la présentation au garant ou au contre-garant des documents libératoires spécifiés dans la garantie ou la
+contre-garantie autonome ;
+- soit sur déclaration écrite du bénéficiaire libérant le garant de son obligation au titre de la garantie autonome ou
+déclaration écrite du garant libérant le contre-garant de son obligation au titre de la contre-garantie autonome.
+
+Titre 2 - Sûretés mobilières
+Article 50
+Les sûretés mobilières sont : le droit de rétention, la propriété retenue ou cédée à titre de garantie, le gage de
+meubles corporels, le nantissement de meubles incorporels et les privilèges.
+Sauf disposition contraire, les sûretés mobilières soumises à publicité font l'objet d'une inscription au Registre du
+Commerce et du Crédit Mobilier conformément aux dispositions du chapitre 1 du présent titre.
+
+Chapitre 1 - Inscription des sûretés mobilières au registre du commerce et
+du crédit mobilier
+Article 51
+L'inscription des sûretés mobilières est faite à la requête du créancier, de l'agent des sûretés ou du constituant.
+L'inscription des privilèges généraux du Trésor, de l'Administration des douanes et des institutions de Sécurité
+Sociale est effectuée à la diligence du comptable public de l'administration créancière.
+Article 52
+L'inscription a lieu au Registre du Commerce et du Crédit Mobilier dans le respect des règles de compétence
+territoriale ci-après :
+- le Registre du Commerce et du Crédit Mobilier compétent pour recevoir l'inscription des sûretés mobilières est
+celui dans le ressort duquel est immatriculé le constituant de la sûreté ou, s'il n'est pas soumis à l'obligation
+d'immatriculation, celui dans le ressort duquel est situé, selon le cas, le siège ou le domicile du constituant ;
+- le Registre du Commerce et du Crédit Mobilier compétent pour recevoir l'inscription des nantissements de
+créance ou des cessions de créance à titre de garantie est celui dans le ressort duquel est immatriculé le débiteur
+de cette créance ou, s'il n'est pas soumis à l'obligation d'immatriculation, celui dans le ressort duquel est situé,
+selon le cas, le siège ou le domicile de ce débiteur ;
+- le Registre du Commerce et du Crédit Mobilier compétent pour recevoir l'inscription du nantissement des droits
+d'associés et des valeurs mobilières d'une société commerciale ou d'une personne morale assujettie à
+l'immatriculation est celui dans le ressort duquel est immatriculée cette société ou cette personne morale ;
+
+page 12 / 45
+
+- le Registre du Commerce et du Crédit Mobilier compétent pour recevoir l'inscription du nantissement de fonds de
+commerce et du privilège du vendeur de fonds de commerce est celui dans le ressort duquel est immatriculée la
+personne physique ou morale propriétaire du fonds ;
+- le Registre du Commerce et du Crédit Mobilier compétent pour recevoir l'inscription des privilèges généraux du
+Trésor, de l'Administration des douanes et des Institutions de Sécurité Sociale est celui dans le ressort duquel est
+immatriculé le redevable ou, s'il n'est pas soumis à l'obligation d'immatriculation, celui dans le ressort duquel est
+situé, selon le cas, le siège ou le domicile du redevable.
+Les règles de compétence relatives à l'inscription des sûretés concernant l'entreprenant sont les mêmes que celles
+applicables à l'assujetti à l'immatriculation.
+Article 53
+Aux fins d'inscription, le créancier, l'agent des sûretés, le constituant ou le cas échéant le comptable public,
+présente au Greffe chargé de la tenue du Registre du Commerce et du Crédit Mobilier, ou à l'organe compétent
+dans l'Etat Partie, un formulaire d'inscription portant mention :
+a) des nom, prénom, dénomination sociale, domicile ou siège social et s'il y a lieu, les coordonnées électroniques
+et le numéro d'immatriculation ou de déclaration d'activité, du créancier ou de l'agent des sûretés, du débiteur de la
+créance garantie et du constituant s'il n'est pas ce débiteur ;
+b) de la nature et de la date du titre générateur de la sûreté ;
+c) le cas échéant, de la durée de l'inscription convenue par les parties ;
+d) du montant maximum de la créance garantie comprenant le principal, les intérêts et autres accessoires, de la
+date de son exigibilité et de l'existence d'un pacte commissoire. Pour les créances futures, le formulaire mentionne
+les éléments permettant de les déterminer ;
+e) le cas échéant, de la faculté pour le constituant d'aliéner les biens fongibles grevés par la sûreté dans les
+conditions prévues par l'article 102 du présent Acte uniforme ;
+f) de la désignation du bien grevé avec l'indication des éléments permettant de l'identifier, notamment sa nature,
+son lieu de situation et, le cas échéant, sa marque ou son numéro de série, ou, lorsqu'il s'agit d'un ensemble de
+biens présents ou futurs, leur nature, qualité, quantité ou valeur.
+Lorsque la sûreté a pour objet une créance ou un ensemble de créances, actuelles ou futures, la désignation du ou
+des biens grevés requiert l'indication des éléments de nature à permettre l'individualisation de cette ou de ces
+créances, tels que l'indication du débiteur, le lieu de paiement, le montant des créances ou leur évaluation et leur
+échéance.
+En cas de nantissement des droits d'associés et valeurs mobilières d'une société commerciale et ceux cessibles de
+toute autre personne morale, le formulaire porte, en outre, mention du numéro d'immatriculation de la société dont
+les droits d'associés et valeurs mobilières font l'objet de ce nantissement.
+En cas de nantissement ou de vente d'un fonds de commerce, le formulaire requérant l'inscription du nantissement
+ou du privilège du vendeur porte, en outre, mention du numéro d'immatriculation ou de déclaration d'activité de la
+personne physique ou morale propriétaire ou exploitant du fonds sur lequel est requis l'inscription du nantissement
+ou du privilège du vendeur.
+Article 54
+Après avoir vérifié que le formulaire d'inscription comporte bien les mentions obligatoires exigées par l'article 53 du
+
+page 13 / 45
+
+présent Acte uniforme, le greffier de la juridiction chargée de la tenue du Registre du Commerce et du Crédit
+Mobilier, ou le responsable de l'organe compétent dans l'Etat Partie, procède immédiatement à l'inscription sur un
+registre chronologique des dépôts. Il délivre immédiatement au requérant un accusé d'inscription avec mention de
+la date, de la désignation de la formalité effectuée et du numéro d'ordre porté au registre chronologique des
+dépôts. L'inscription ou le refus d'inscription est également notifié par le Greffe, ou par l'organe compétent dans
+l'Etat Partie, au débiteur ou au constituant de la sûreté s'il n'est pas le débiteur. Cette inscription ou ce refus
+d'inscription peut, dans un délai de huit jours à compter de sa notification, faire l'objet d'un recours du débiteur ou
+du constituant selon le cas, devant la juridiction compétente, ou devant l'autorité compétente dans l'Etat Partie,
+statuant à bref délai.
+En cas d'irrégularité du formulaire, le greffier, ou le responsable de l'organe compétent dans l'Etat Partie, rejette
+l'inscription. Le rejet doit être motivé. Il est immédiatement notifié par le Greffe, ou par l'organe compétent dans
+l'Etat Partie, au requérant et porté en marge de l'inscription au registre chronologique des dépôts. Le rejet peut,
+dans un délai de huit jours à compter de sa notification, faire l'objet d'un recours de la personne qui a requis
+l'inscription devant la juridiction compétente, ou devant l'autorité compétente dans l'Etat Partie, statuant à bref
+délai.
+La décision rendue en application des alinéas 1 et 2 du présent article est susceptible de recours, dans un délai de
+quinze jours à compter de sa notification, devant la juridiction de recours compétente statuant à bref délai.
+Article 55
+A défaut de notification du rejet au requérant, le greffier, ou le responsable de l'organe compétent dans l'Etat
+Partie, doit sans délai :
+1°) faire mention de l'inscription au dossier individuel ouvert au nom de la personne physique ou morale contre
+laquelle est prise l'inscription ;
+2°) classer audit dossier le formulaire de la déclaration, avec mention de la date d'inscription et de son numéro
+d'ordre ;
+3°) notifier l'inscription au Fichier national du Registre du Commerce et du Crédit Mobilier en lui transmettant une
+copie du formulaire d'inscription et un extrait du dossier individuel ouvert au nom de la personne contre laquelle est
+prise l'inscription.
+Article 56
+Dans le cas d'un nantissement des droits d'associés et valeurs mobilières d'une société commerciale et ceux
+cessibles de toute autre personne morale, le greffier, ou le responsable de l'organe compétent dans l'Etat Partie,
+doit, en outre, faire mention de l'inscription au dossier individuel ouvert au nom de la société ou de la personne
+morale dont les droits d'associés et valeurs mobilières sont concernés par l'inscription de nantissement.
+Article 57
+L'inscription régulièrement prise d'une sûreté mobilière soumise à publicité est opposable aux tiers à la date de son
+inscription au registre chronologique des dépôts du Registre du Commerce et du Crédit Mobilier.
+Si les inscriptions de sûretés concurrentes grevant un même bien sont requises le même jour, celle qui est requise
+en vertu du titre dont la date est la plus ancienne est réputée avoir été inscrite en premier, quel que soit l'ordre du
+registre susvisé.
+Si les inscriptions de sûretés concurrentes grevant un même bien sont requises le même jour en vertu de titres
+ayant la même date, les sûretés sont réputées de même rang à l'exception des cessions à titre de garantie et
+réserves de propriété qui sont alors réputées inscrites avant les autres sûretés dont l'inscription a été requise le
+même jour, quel que soit l'ordre du registre susvisé.
+
+page 14 / 45
+
+Si les inscriptions d'une réserve de propriété et d'une cession à titre de garantie ayant pour objet un même bien
+sont requises le même jour, la réserve de propriété est réputée avoir été inscrite en premier, quel que soit l'ordre
+du registre susvisé.
+Si les inscriptions de cessions à titre de garantie ayant pour objet un même bien sont requises le même jour en
+vertu de titres ayant la même date, ce bien sera réputé appartenir à ces créanciers à proportion du montant de leur
+créance, quel que soit l'ordre du registre susvisé.
+Article 58
+L'inscription des privilèges généraux du Trésor, de l'Administration des douanes et des Institutions de Sécurité
+Sociale conserve les droits du créancier pendant une durée de trois ans à compter de sa date.
+Pour les autres sûretés mobilières soumises à publicité, les parties peuvent convenir de la durée de validité de
+l'inscription au Registre du Commerce et du Crédit Mobilier dans l'acte constitutif de ladite sûreté mobilière sans
+que cette durée puisse dépasser dix années à compter de l'inscription.
+Si l'inscription n'a pas été renouvelée avant l'expiration du délai pendant lequel elle produit effet, elle est alors
+périmée et radiée d'office par le Greffe ou par l'organe compétent dans l'Etat Partie.
+L'inscription garantit, au même rang que le principal, deux années d'intérêt.
+Article 59
+Le renouvellement d'une inscription s'effectue dans les mêmes conditions que l'inscription initiale.
+Le renouvellement, valablement effectué, est opposable aux tiers à compter de la date de son inscription sur le
+registre chronologique des dépôts du Registre du Commerce et du Crédit Mobilier. Intervenu avant l'expiration du
+délai pendant lequel l'inscription initiale produit effet, il permet au requérant de conserver le bénéfice de celle-ci.
+Un certificat de renouvellement mentionnant la date de son inscription et son numéro d'ordre sur le registre
+chronologique des dépôts du Registre du Commerce et du Crédit Mobilier est immédiatement transmis au
+requérant.
+Article 60
+Toute modification de l'inscription initiale au Registre du Commerce et du Crédit Mobilier par subrogation
+conventionnelle dans le bénéfice de la sûreté ou cession d'antériorité n'a d'effet que si elle est inscrite en marge de
+l'inscription initiale.
+Toute modification conventionnelle ou judiciaire de l'assiette de la sûreté ou de la créance garantie fait l'objet d'une
+inscription modificative dans les conditions et formes prévues pour l'inscription initiale.
+Article 61
+La personne physique ou morale contre laquelle a été prise une ou plusieurs inscriptions énoncées au présent
+Titre peut, à tout moment, saisir la juridiction compétente, ou l'autorité compétente dans l'Etat Partie, d'une
+demande visant à obtenir la mainlevée, la modification ou le cantonnement de l'inscription.
+La juridiction compétente, ou l'autorité compétente dans l'Etat Partie, peut, en tout état de cause et avant même
+d'avoir statué au fond, donner mainlevée totale ou partielle de l'inscription si le requérant justifie de motifs sérieux
+et légitimes.
+Article 62
+
+page 15 / 45
+
+Toute radiation partielle ou totale de l'inscription au Registre du Commerce et du Crédit Mobilier n'a d'effet que si
+elle est inscrite en marge de l'inscription initiale.
+Article 63
+La radiation judiciaire d'une inscription est ordonnée par la juridiction compétente ou par l'autorité compétente dans
+l'Etat Partie.
+Article 64
+La radiation conventionnelle ne peut être opérée que sur dépôt ou transmission électronique d'un acte authentique
+ou sous seing privé de consentement à la radiation, donné par le créancier ou son cessionnaire régulièrement
+subrogé et justifiant de ses droits, ainsi que d'un formulaire portant mention :
+1°) des nom, prénom, dénomination sociale, domicile ou siège social, ainsi que, le cas échéant, le numéro
+d'immatriculation de la personne physique ou morale contre laquelle avait été requise l'inscription, ou en cas
+d'inscription portant sur des droits d'associés et valeurs mobilières, le numéro d'immatriculation de la personne
+morale dont les droits d'associés et valeurs mobilières font l'objet de cette inscription ;
+2°) de la nature et de la date du ou des actes déposés.
+La radiation sera inscrite au Registre du Commerce et du Crédit Mobilier, après vérification de la conformité du
+formulaire avec l'acte présenté. Il sera délivré un certificat de radiation à toute personne qui en fera la demande.
+Article 65
+Toute inscription de sûreté mobilière, effectuée par fraude, ou portant des inscriptions inexactes données de
+mauvaise foi, est punie des peines prévues par la loi pénale nationale.
+La juridiction compétente, ou l'autorité compétente dans l'Etat Partie, en prononçant la condamnation, peut
+ordonner la rectification de la mention inexacte dans les termes qu'elle détermine.
+Article 66
+Toute demande d'information doit être établie sur un formulaire mis à disposition à cet effet par le Registre du
+Commerce et du Crédit Mobilier.
+A toute demande d'information formulée en application de l'alinéa précédent, le greffier, ou le responsable de
+l'organe compétent dans l'Etat Partie, doit répondre immédiatement, ou au plus tard dans un délai de deux jours
+ouvrés à compter de la réception de la demande au Registre du Commerce et du Crédit Mobilier, en délivrant au
+demandeur soit un certificat attestant qu'aucune inscription n'a été prise, soit un état général des inscriptions
+existantes avec leurs mentions marginales, soit un ou des états particuliers lorsque la demande ne concerne qu'un
+bien ou une catégorie de biens appartenant au débiteur ou au constituant.
+Toute inscription, modification ou radiation non conforme aux prescriptions de la loi ainsi que toute délivrance
+d'extraits incomplets ou erronés engagent, selon le cas, la responsabilité du greffier ou du responsable de l'organe
+compétent dans l'Etat Partie.
+
+Chapitre 2 - Droit de rétention
+Article 67
+Le créancier qui détient légitimement un bien mobilier de son débiteur peut le retenir jusqu'au complet paiement de
+ce qui lui est dû, indépendamment de toute autre sûreté, sous réserve de l'application de l'article 107 alinéa 2, du
+
+page 16 / 45
+
+présent Acte uniforme.
+Article 68
+Le droit de rétention ne peut s'exercer que :
+- si la créance du rétenteur est certaine, liquide et exigible ;
+- s'il existe un lien de connexité entre la naissance de la créance et la détention de la chose retenue ;
+- et si le bien n'a pas été saisi avant d'être détenu par le rétenteur.
+Article 69
+La connexité est réputée établie :
+1°) lorsque la chose retenue a été remise jusqu'au complet paiement de la créance du rétenteur ;
+2°) lorsque la créance impayée résulte du contrat qui oblige le rétenteur à livrer la chose retenue ;
+3°) lorsque la créance impayée est née à l'occasion de la détention de la chose retenue.
+Article 70
+Le créancier a l'obligation de conserver le bien retenu en bon état. Par dérogation à l'alinéa précédent, il peut faire
+procéder, sur autorisation de la juridiction compétente statuant à bref délai, à la vente de ce bien si l'état ou la
+nature périssable de ce dernier le justifie ou si les frais occasionnés par sa garde sont hors de proportion avec sa
+valeur. Dans ce cas, le droit de rétention se reporte sur le prix de vente qui doit être consigné.
+
+Chapitre 3 - Propriété retenue ou cédée à titre de garantie
+Article 71
+La propriété d'un bien mobilier peut être retenue en garantie d'une obligation par l'effet d'une clause de réserve de
+propriété.
+Elle peut aussi être cédée en garantie d'une obligation aux conditions prévues par le présent Chapitre.
+
+Section 1 - Réserve de propriété
+Article 72
+La propriété d'un bien mobilier peut être retenue en garantie par l'effet d'une clause de réserve de propriété qui
+suspend l'effet translatif d'un contrat jusqu'au complet paiement de l'obligation qui en constitue la contrepartie.
+Article 73
+A peine de nullité, la réserve de propriété est convenue par écrit au plus tard au jour de la livraison du bien. Elle
+peut l'être dans un écrit régissant un ensemble d'opérations présentes ou à venir entre les parties.
+Article 74
+La réserve de propriété n'est opposable aux tiers que si celle-ci a été régulièrement publiée au Registre du
+
+page 17 / 45
+
+Commerce et du Crédit Mobilier, conformément aux dispositions des articles 51 à 66 du présent Acte uniforme.
+Article 75
+La propriété réservée d'un bien fongible peut s'exercer, à concurrence de la créance restant due, sur des biens de
+même espèce et de même qualité détenus par le débiteur ou pour son compte.
+Article 76
+L'incorporation d'un meuble faisant l'objet d'une réserve de propriété à un autre bien ne fait pas obstacle aux droits
+du créancier lorsque ces biens peuvent être séparés sans subir de dommage.
+A défaut, le tout appartient au propriétaire de la chose qui forme la partie principale, à charge pour lui de payer à
+l'autre la valeur, estimée à la date du paiement, de la chose qui y a été unie.
+Article 77
+A défaut de complet paiement à l'échéance, le créancier peut demander la restitution du bien afin de recouvrer le
+droit d'en disposer.
+La valeur du bien repris est imputée, à titre de paiement, sur le solde de la créance garantie.
+Lorsque la valeur du bien repris excède le montant de ce solde, le créancier doit au débiteur une somme égale à la
+différence.
+Toute clause contraire aux alinéas 2 et 3 du présent article est réputée non écrite.
+Article 78
+Lorsque le bien est vendu ou détruit, le droit de propriété se reporte, selon le cas, sur la créance du débiteur à
+l'égard du sous-acquéreur ou sur l'indemnité d'assurance subrogée au bien.
+
+Section 2 - Propriété cédée à titre de garantie
+Article 79
+La propriété d'un bien, actuel ou futur, ou d'un ensemble de biens, peut être cédée en garantie du paiement d'une
+dette, actuelle ou future, ou d'un ensemble de dettes aux conditions prévues par la présente section.
+
+Sous-section 1 - Cession de créance à titre de garantie
+Article 80
+Une créance détenue sur un tiers peut être cédée à titre de garantie de tout crédit consenti par une personne
+morale nationale ou étrangère, faisant à titre de profession habituelle et pour son compte des opérations de
+banque ou de crédit.
+L'incessibilité de la créance ne peut être opposée au cessionnaire par le débiteur cédé lorsqu'elle est de source
+conventionnelle et que la créance est née en raison de l'exercice de la profession du débiteur cédé ou se trouve en
+rapport direct avec l'une de ses activités professionnelles, même si celle-ci n'est pas principale.
+Article 81
+
+page 18 / 45
+
+La cession de créance à titre de garantie doit être constatée dans un écrit comportant, à peine de nullité, les
+énonciations suivantes :
+1°) le nom ou la dénomination sociale du cédant et du cessionnaire ;
+2°) la date de la cession ;
+3°) et la désignation des créances garanties et des créances cédées.
+Si ces créances sont futures, l'acte doit permettre leur individualisation ou contenir des éléments permettant
+celle-ci tels que l'indication du débiteur, le lieu de paiement, le montant des créances ou leur évaluation et, s'il y a
+lieu, leur échéance.
+Article 82
+A la date de sa conclusion, le contrat de cession d'une créance, présente ou future, à titre de garantie, prend
+immédiatement effet entre les parties, quelle que soit la date de naissance, d'échéance ou d'exigibilité de la
+créance cédée et devient opposable aux tiers à compter de son inscription au Registre du Commerce et du Crédit
+Mobilier et ce, quelle que soit la loi applicable à la créance et la loi du pays de résidence de son débiteur.
+A compter de la date de la cession, le cédant ne peut, sans l'accord du cessionnaire, modifier l'étendue des droits
+attachés à la créance cédée.
+Article 83
+A moins que les parties n'en conviennent autrement, la cession s'étend aux accessoires de la créance et entraîne
+de plein droit leur transfert et son opposabilité aux tiers sans autre formalité que celle énoncée à l'article précédent.
+Article 84
+Pour être opposable au débiteur de la créance cédée, la cession de créance doit lui être notifiée ou ce dernier doit
+intervenir à l'acte.
+A défaut, le cédant reçoit valablement paiement de la créance.
+Article 85
+Lorsque le débiteur de la créance cédée est un débiteur professionnel au sens de l'article 3 du présent Acte
+uniforme, celui-ci peut, à la demande du cessionnaire, s'engager à le payer directement en acceptant la cession.
+Dans ce cas, le débiteur ne peut opposer au cessionnaire les exceptions fondées sur ses rapports personnels avec
+le cédant, à moins que le cessionnaire, en acquérant ou en recevant la créance, n'ait agi sciemment au détriment
+du débiteur. A peine de nullité, cet engagement est constaté par un écrit intitulé « Acte d'acceptation d'une cession
+de créance à titre de garantie » et reproduisant en caractères suffisamment apparents les dispositions du présent
+article.
+Article 86
+Les sommes payées au cessionnaire au titre de la créance cédée s'imputent sur la créance garantie lorsqu'elle est
+échue. Le surplus s'il y a lieu est restitué au cédant.
+Toute clause contraire est réputée non écrite.
+
+Sous-section 2 - Transfert fiduciaire d'une somme d'argent
+
+page 19 / 45
+
+Article 87
+Le transfert fiduciaire d'une somme d'argent est la convention par laquelle un constituant cède des fonds en
+garantie de l'exécution d'une obligation.
+Ces fonds doivent être inscrits sur un compte bloqué, ouvert au nom du créancier de cette obligation, dans les
+livres d'un établissement de crédit habilité à les recevoir.
+Article 88
+A peine de nullité, la convention détermine la ou les créances garanties, ainsi que le montant des fonds cédés à
+titre de garantie, et identifie le compte bloqué.
+Article 89
+Le transfert fiduciaire devient opposable aux tiers à la date de sa notification à l'établissement teneur du compte,
+pourvu que les fonds soient inscrits sur le compte bloqué.
+Article 90
+Si les fonds cédés produisent intérêts, ces derniers sont portés au crédit du compte, sauf convention contraire.
+Article 91
+A l'échéance et en cas de complet paiement de la créance garantie, les fonds inscrits sur le compte sont restitués
+au constituant.
+En cas de défaillance du débiteur et huit jours après que le constituant en ait été dûment averti, le créancier peut
+se faire remettre les fonds cédés dans la limite du montant des créances garanties demeurant impayées.
+Toute clause contraire au présent article est réputée non écrite.
+
+Chapitre 4 - Gage de meubles corporels
+Article 92
+Le gage est le contrat par lequel le constituant accorde à un créancier le droit de se faire payer par préférence sur
+un bien meuble corporel ou un ensemble de biens meubles corporels, présents ou futurs.
+
+Section 1 - Constitution du gage
+Article 93
+Le gage peut être constitué en garantie d'une ou de plusieurs créances présentes ou futures, à condition que
+celles-ci soient déterminées ou déterminables.
+Article 94
+Les parties peuvent convenir de la subrogation, en cours d'exécution du contrat, de la chose gagée par une autre
+chose.
+
+page 20 / 45
+
+Le gage peut également porter sur des sommes ou des valeurs déposées à titre de consignation par les
+fonctionnaires, les officiers ministériels ou toute autre personne pour garantir les abus dont ils pourraient être
+responsables et les prêts consentis pour la constitution de cette consignation.
+Article 95
+Le constituant d'un gage de biens présents doit être propriétaire de la chose gagée. S'il ne l'est pas, le créancier
+gagiste peut s'opposer à la revendication du propriétaire dans les conditions prévues pour le possesseur de bonne
+foi.
+Article 96
+A peine de nullité, le contrat de gage doit être constaté dans un écrit contenant la désignation de la dette garantie,
+la quantité des biens donnés en gage ainsi que leur espèce ou leur nature.
+Lorsque le gage porte sur un bien ou un ensemble de biens futurs, le droit du créancier s'exerce sur le bien gagé
+aussitôt que le constituant en acquiert la propriété, sauf convention contraire.
+Article 97
+Le contrat de gage est opposable aux tiers, soit par l'inscription au Registre du Commerce et du Crédit Mobilier,
+soit par la remise du bien gagé entre les mains du créancier gagiste ou d'un tiers convenu entre les parties.
+Lorsque le gage a été régulièrement publié, les ayants cause à titre particulier du constituant ne peuvent être
+regardés comme des possesseurs de bonne foi et le créancier gagiste peut exercer son droit de suite à leur
+encontre.
+Article 98
+Sauf clause contraire, le constituant ne peut exiger la radiation de l'inscription ou la restitution du bien gagé
+qu'après paiement intégral de la dette garantie en principal, intérêts et autres accessoires.
+
+Section 2 - Effets du gage
+Article 99
+Lorsque le gage est constitué avec dépossession, le créancier gagiste peut, sous réserve de l'application de
+l'article 107, alinéa 2 du présent Acte uniforme, opposer son droit de rétention sur le bien gagé, directement ou par
+l'intermédiaire du tiers convenu, jusqu'au paiement intégral en principal, intérêts et autres accessoires, de la dette
+garantie.
+Article 100
+S'il a été dessaisi contre sa volonté, le créancier peut revendiquer la chose gagée comme un possesseur de bonne
+foi.
+Article 101
+Lorsque le gage avec dépossession a pour objet des choses fongibles, le créancier doit, sauf clause contraire, les
+tenir ou les faire tenir séparées des choses de même nature détenues par lui ou le tiers convenu. A défaut, le
+constituant peut réclamer la restitution du bien gagé, sans préjudice de dommages-intérêts.
+Lorsque la convention dispense le créancier de cette obligation, il acquiert la propriété des choses gagées à
+charge de restituer la même quantité de choses équivalentes. En cas d'entiercement, la propriété ainsi acquise par
+
+page 21 / 45
+
+le créancier peut s'exercer sur des biens de même espèce et de même qualité détenus par le tiers convenu.
+Article 102
+Lorsque le gage sans dépossession a pour objet des choses fongibles, le contrat de gage peut permettre au
+constituant de les aliéner à charge de les remplacer par la même quantité de choses équivalentes. Cette
+autorisation donnée au constituant vaut renonciation par le créancier à l'exercice de son droit de suite à l'encontre
+du tiers acquéreur de ces biens.
+Article 103
+Sauf stipulation contraire, le créancier gagiste ne peut user de la chose gagée ni en percevoir les fruits. S'il est
+autorisé à percevoir les fruits, il doit les imputer sur ce qui lui est dû en intérêts ou, à défaut, sur le capital de la
+dette.
+Article 104
+Faute de paiement à l'échéance, le créancier gagiste muni d'un titre exécutoire peut faire procéder à la vente
+forcée de la chose gagée, huit jours après une sommation faite au débiteur et, s'il y a lieu, au tiers constituant du
+gage dans les conditions prévues par les dispositions organisant les voies d'exécution auxquelles le contrat de
+gage ne peut déroger. Dans ce cas, il exerce son droit de préférence sur le prix de la chose vendue, dans les
+conditions de l'article 226 du présent Acte uniforme.
+Le créancier peut aussi faire ordonner par la juridiction compétente que le bien gagé lui sera attribué en paiement
+jusqu'à due concurrence du solde de sa créance et d'après estimation suivant les cours ou à dire d'expert. Si le
+bien gagé est une somme d'argent ou un bien dont la valeur fait l'objet d'une cotation officielle, les parties peuvent
+convenir que la propriété du bien gagé sera attribuée au créancier gagiste en cas de défaut de paiement. Il en va
+de même pour les autres meubles corporels lorsque le débiteur de la dette garantie est un débiteur professionnel.
+En ce cas, le bien gagé doit être estimé au jour du transfert par un expert désigné à l'amiable ou judiciairement,
+toute clause contraire étant réputée non écrite.
+Article 105
+En cas d'attribution judiciaire ou conventionnelle, lorsque la valeur du bien excède le montant qui lui est dû, le
+créancier gagiste doit consigner une somme égale à la différence s'il existe d'autres créanciers bénéficiant d'un
+gage sur le même bien ou, à défaut, verser cette somme au constituant. Toute clause contraire est réputée non
+écrite.
+Article 106
+En cas de perte ou de détérioration totale ou partielle de la chose gagée qui ne serait pas de son fait, le créancier
+gagiste exerce son droit de préférence sur l'indemnité d'assurance, s'il y a lieu, pour le montant de la créance
+garantie en principal, intérêts et autres accessoires, dans le respect des dispositions de l'article 226 du présent
+Acte uniforme.
+Article 107
+Lorsqu'un même bien fait l'objet de plusieurs gages successifs sans dépossession, le rang des créanciers est
+déterminé par l'ordre de leur inscription.
+Lorsqu'un bien donné en gage sans dépossession fait ultérieurement l'objet d'un gage avec dépossession, le droit
+de préférence du créancier gagiste antérieur est opposable au créancier gagiste postérieur lorsqu'il a été
+régulièrement publié et nonobstant le droit de rétention de ce dernier.
+
+page 22 / 45
+
+Lorsqu'un bien donné en gage avec dépossession fait ultérieurement l'objet d'un gage sans dépossession, le droit
+de rétention du créancier gagiste antérieur est opposable au créancier postérieur qui ne pourra prétendre exercer
+ses droits sur le bien, tant que le créancier antérieur n'aura pas été entièrement payé.
+Article 108
+Lorsque le gage est constitué avec dépossession, le créancier gagiste ou le tiers convenu doit veiller sur la chose
+et en assurer la conservation comme le doit un dépositaire rémunéré.
+De même, lorsque le constituant est resté en possession du bien gagé, il doit le conserver en bon père de famille
+et, notamment, l'assurer contre les risques de perte et de détérioration totale ou partielle.
+Article 109
+Lorsque le gage est constitué avec dépossession, le constituant peut réclamer la restitution du bien gagé, sans
+préjudice de dommages-intérêts, si le créancier ou le tiers convenu ne satisfait pas à son obligation de
+conservation du bien gagé.
+Lorsque le gage est constitué sans dépossession, le créancier peut se prévaloir de la déchéance du terme de la
+dette garantie ou solliciter un complément de gage si le constituant ne satisfait pas à son obligation de
+conservation du gage.
+Article 110
+Si le gage, quelles qu'en soient les modalités, a pour objet un ensemble de biens fongibles, le créancier peut
+exiger du constituant, à peine de déchéance du terme, qu'il en maintienne la valeur.
+Le créancier peut, à tout moment et aux frais du débiteur, obtenir du constituant ou du tiers convenu un état de
+l'ensemble des biens gagés ainsi que la comptabilité de toutes les opérations le concernant. Si la constitution de la
+sûreté a donné lieu à l'émission d'un bordereau de gage de stocks, l'établissement domiciliataire du bordereau a
+également ce pouvoir.
+Est considéré comme établissement domiciliataire au sens du présent Acte uniforme, tout établissement habilité à
+recevoir des dépôts du public.
+Article 111
+Lorsqu'un bien objet d'un gage avec dépossession menace de périr, le créancier gagiste ou le tiers convenu peut
+faire vendre, sous sa responsabilité, le bien gagé sur autorisation notifiée au constituant de la juridiction
+compétente saisie sur simple requête. Les effets du gage sont alors reportés sur le prix.
+Article 112
+Le tiers convenu et, s'il y a lieu, l'acquéreur de mauvaise foi de la chose donnée en gage répondent, solidairement
+avec le créancier gagiste, de l'inexécution des obligations mentionnées aux articles 103, 108 alinéa 1 et 111 du
+présent Acte uniforme.
+Article 113
+Lorsqu'il est entièrement payé du capital, des intérêts et autres accessoires, le créancier gagiste restitue la chose
+avec tous ses accessoires. Le constituant doit alors rembourser au créancier gagiste ou au tiers convenu, les
+dépenses utiles ou nécessaires que celui-ci a faites pour la conservation du gage.
+Article 114
+
+page 23 / 45
+
+Le gage est indivisible nonobstant la divisibilité de la dette envers les héritiers du débiteur ou ceux du créancier.
+L'héritier du débiteur qui a payé sa part de la dette ne peut demander la restitution de sa portion dans le gage,
+celui-ci fut-il divisible par nature, tant que la dette n'est pas entièrement acquittée.
+L'héritier du créancier qui a reçu sa part de la créance ne peut remettre le gage, celuici fut-il divisible, au préjudice
+des cohéritiers qui ne sont pas payés.
+Article 115
+La mise en gage de marchandises dont le débiteur peut disposer par bordereau de gage de stocks,
+connaissement, récépissé de transport ou de douane, est constituée suivant les dispositions propres à chacun de
+ces titres ou documents.
+
+Section 3 - Extinction du gage
+Article 116
+Le gage prend fin lorsque l'obligation qu'il garantit est entièrement éteinte, tant en capital, qu'en intérêts et autres
+accessoires.
+Article 117
+Le gage avec dépossession disparaît indépendamment de l'obligation garantie si la chose est volontairement
+restituée au constituant, si elle est perdue par le fait du créancier gagiste, ou lorsque la juridiction compétente en
+ordonne la restitution pour faute du créancier gagiste, sauf désignation d'un séquestre qui aura la mission d'un tiers
+convenu.
+
+Section 4 - Dispositions particulières à certains gages
+
+Sous-section 1 - Gage du matériel professionnel et des véhicules
+automobiles
+Article 118
+Sans préjudice des dispositions de la présente sous-section, le matériel professionnel et les véhicules automobiles,
+assujettis ou non à une déclaration de mise en circulation et à immatriculation administrative, peuvent faire l'objet
+d'un gage en application des dispositions des articles 92 à 117 du présent Acte uniforme.
+Le matériel professionnel faisant partie d'un fonds de commerce peut être nanti en même temps que les autres
+éléments du fonds, conformément aux dispositions des articles 162 à 165 du présent Acte uniforme.
+Article 119
+En ce qui concerne les véhicules automobiles assujettis à une déclaration de mise en circulation et à
+immatriculation administrative, le gage doit être mentionné sur le titre administratif portant autorisation de circuler et
+immatriculation. L'absence de cette mention ne remet pas en cause la validité ou l'opposabilité du gage dûment
+inscrit au Registre du Commerce et du Crédit Mobilier.
+
+page 24 / 45
+
+Sous-section 2 - Gage de stocks
+Article 120
+Sans préjudice des dispositions de la présente sous-section, les matières premières, les produits d'une exploitation
+agricole ou industrielle, les marchandises peuvent faire l'objet d'un gage en application des dispositions des articles
+92 à 117 du présent Acte uniforme.
+Article 121
+La constitution d'un gage de stocks sans dépossession peut donner lieu à l'émission par le greffier, ou par le
+responsable de l'organe compétent dans l'Etat Partie, d'un bordereau de gage de stocks.
+Dans ce cas, l'acte constitutif du gage doit comporter, à peine de nullité, outre les mentions prévues par l'article 96
+du présent Acte uniforme, le nom de l'assureur qui couvre les stocks gagés contre les risques de vol, d'incendie et
+de détérioration totale ou partielle ainsi que la désignation de l'établissement domiciliataire du bordereau de gage
+de stocks.
+Article 122
+Le bordereau remis au débiteur après inscription porte, de façon apparente :
+- la mention « gage de stocks » ;
+- la date de sa délivrance qui correspond à celle de l'inscription au Registre du Commerce et du Crédit Mobilier ;
+- le numéro d'inscription au registre chronologique des dépôts ;
+- la signature du débiteur.
+Il est remis par le débiteur au créancier par voie d'endossement signé et daté.
+Le bordereau peut être endossé et avalisé dans les mêmes conditions qu'un billet à ordre avec les mêmes effets.
+A défaut de convention contraire, la durée de validité du bordereau est de cinq ans à compter de la date de son
+émission, sauf renouvellement.
+Article 123
+L'endossement confère au porteur du bordereau la qualité et les droits d'un créancier gagiste.
+Article 124
+Le débiteur émetteur du bordereau de gage de stocks conserve le droit de vendre les stocks gagés.
+Il ne peut livrer les biens vendus qu'après consignation du prix auprès de l'établissement domiciliataire.
+
+Chapitre 5 - Nantissement de meubles incorporels
+Article 125
+Le nantissement est l'affectation d'un bien meuble incorporel ou d'un ensemble de biens meubles incorporels,
+présents ou futurs, en garantie d'une ou plusieurs créances, présentes ou futures, à condition que celles-ci soient
+
+page 25 / 45
+
+déterminées ou déterminables. Il est conventionnel ou judiciaire.
+Article 126
+Peuvent notamment être nantis :
+- les créances ;
+- le compte bancaire ;
+- les droits d'associés, les valeurs mobilières et le compte de titres financiers ;
+- le fonds de commerce ;
+- les droits de propriété intellectuelle.
+
+Section 1 - Nantissement de créance
+Article 127
+A peine de nullité, le nantissement de créance doit être constaté dans un écrit contenant la désignation des
+créances garanties et des créances nanties ou, si elles sont futures, les éléments de nature à permettre leur
+individualisation, tels que l'indication du débiteur, le lieu de paiement, le montant des créances ou leur évaluation et
+leur échéance.
+Article 128
+Lorsque le nantissement a pour objet une créance future, le créancier nanti acquiert un droit sur la créance dès la
+naissance de celle-ci.
+Article 129
+Le nantissement de créance peut porter sur une fraction de créance, sauf si elle est indivisible.
+Article 130
+Le nantissement s'étend aux accessoires de la créance nantie, à moins que les parties n'en conviennent
+autrement.
+Article 131
+A la date de sa conclusion, le nantissement d'une créance, présente ou future, prend effet entre les parties, quelle
+que soit la date de naissance, d'échéance ou d'exigibilité de la créance nantie et devient opposable aux tiers à
+compter de son inscription au Registre du Commerce et du Crédit Mobilier, et ce, quelles que soient la loi
+applicable à la créance et la loi du pays de résidence de son débiteur.
+Article 132
+Pour être opposable au débiteur de la créance nantie, le nantissement de créance doit lui être notifié par écrit ou
+ce dernier doit intervenir à l'acte.
+A défaut, seul le constituant reçoit valablement paiement de la créance, à charge d'en verser le montant au
+créancier nanti, sauf stipulation contraire et sous réserve du respect des dispositions de l'article 134 du présent
+Acte uniforme.
+
+page 26 / 45
+
+Article 133
+Après notification ou intervention à l'acte du débiteur de la créance nantie, seul le créancier nanti reçoit
+valablement paiement de cette créance tant en capital qu'en intérêts et autres accessoires, même lorsque le
+paiement n'a pas été poursuivi par lui.
+Article 134
+Si l'échéance de la créance nantie est antérieure à l'échéance de la créance garantie, le créancier nanti conserve
+les sommes à titre de garantie sur un compte ouvert auprès d'un établissement habilité à les recevoir, à charge
+pour lui de les restituer au constituant si l'obligation garantie est exécutée. En cas de défaillance du débiteur de la
+créance garantie et huit jours après une mise en demeure restée sans effet, le créancier nanti affecte les fonds au
+remboursement de sa créance, dans la limite des sommes impayées.
+Si l'échéance de la créance garantie est antérieure à l'échéance de la créance nantie, le créancier peut se faire
+attribuer, par la juridiction compétente ou dans les conditions prévues par la convention, la créance nantie ainsi
+que tous les droits qui s'y rattachent.
+Le créancier nanti peut également attendre l'échéance de la créance nantie.
+Sauf convention contraire, le créancier nanti perçoit en outre les intérêts en les imputant sur ce qui lui est dû en
+capital, intérêts et autres accessoires.
+Article 135
+S'il a été payé au créancier nanti une somme supérieure à la dette garantie, il répond du surplus perçu en qualité
+de mandataire du constituant. Toute clause contraire est réputée non écrite.
+
+Section 2 - Nantissement de compte bancaire
+Article 136
+Le nantissement de compte bancaire est un nantissement de créance. Les règles qui régissent celui-ci lui sont
+applicables, sous réserve des dispositions de la présente section.
+Article 137
+Lorsque le nantissement porte sur un compte bancaire, la créance nantie s'entend du solde créditeur, provisoire ou
+définitif, au jour de la réalisation de la sûreté, sous réserve de la régularisation des opérations en cours, selon les
+modalités prévues par l'Acte uniforme portant organisation des procédures simplifiées de recouvrement et des
+voies d'exécution en matière de saisie-attribution des créances pratiquée entre les mains d'un établissement de
+crédit.
+Sous cette même réserve, en cas d'ouverture d'une procédure collective à l'encontre du débiteur de la créance
+garantie, les droits du créancier nanti portent sur le solde créditeur du compte au jour de cette ouverture.
+Article 138
+Les parties peuvent convenir des conditions dans lesquelles le constituant pourra continuer à disposer des
+sommes inscrites sur le compte nanti.
+Article 139
+
+page 27 / 45
+
+Même après réalisation, le nantissement de compte bancaire subsiste tant que le compte n'a pas été clôturé et que
+la créance garantie n'a pas été intégralement payée.
+
+Section 3 - Nantissement des droits d'associés, valeurs mobilières et
+comptes de titres financiers
+
+Sous-section 1
+Article 140
+Les droits d'associés et valeurs mobilières des sociétés commerciales et ceux cessibles de toute autre personne
+morale assujettie à l'immatriculation au Registre du Commerce et du Crédit Mobilier peuvent faire l'objet d'un
+nantissement conventionnel ou judiciaire.
+Article 141
+A peine de nullité, le nantissement des droits d'associés et des valeurs mobilières doit être constaté dans un écrit
+contenant les mentions suivantes :
+1°) la désignation du créancier, du débiteur et du constituant du nantissement si celui-ci n'est pas le débiteur ;
+2°) le siège social et le numéro d'immatriculation au Registre du Commerce et du Crédit Mobilier de la personne
+morale émettrice des droits d'associés et valeurs mobilières ;
+3°) le nombre ou le moyen de déterminer celui-ci et, le cas échéant, les numéros des titres nantis ;
+4°) les éléments permettant l'individualisation de la créance garantie tels que son montant ou son évaluation, sa
+durée et son échéance.
+Article 142
+La juridiction compétente peut autoriser le créancier à prendre une inscription de nantissement sur les droits
+d'associés et valeurs mobilières. Le nantissement judiciaire est régi par les dispositions relatives à la saisie
+conservatoire des titres sociaux réglementée par les dispositions de l'Acte uniforme portant organisation des
+procédures simplifiées de recouvrement et des voies d'exécution.
+La décision de justice doit comporter les mentions prévues par l'article précédent.
+Article 143
+Sous réserve des dispositions spéciales relatives au droit des sociétés commerciales et des personnes morales
+concernées, le nantissement conventionnel ou judiciaire n'est opposable aux tiers dans la mesure et selon les
+conditions prévues par les articles 51 à 66 du présent Acte uniforme que s'il est inscrit au Registre du Commerce
+et du Crédit Mobilier.
+L'inscription provisoire et l'inscription définitive doivent être prises, respectivement, après la décision autorisant le
+nantissement et la décision de validation passée en force de chose jugée.
+Outre l'inscription prévue ci-dessus, le nantissement conventionnel ou judiciaire peut être signifié ou notifié à la
+société commerciale ou à la personne morale émettrice des droits d'associés et valeurs mobilières ou des titres
+constatant les droits des associés.
+
+page 28 / 45
+
+Article 144
+Le nantissement des droits d'associés et des valeurs mobilières confère au créancier :
+- un droit de suite qu'il exerce conformément aux dispositions de l'article 97 alinéa 2 du présent Acte uniforme ;
+- un droit de réalisation qu'il exerce conformément aux dispositions des articles 104 et 105 du présent Acte
+uniforme ;
+- un droit de préférence qu'il exerce conformément aux dispositions de l'article 226 du présent Acte uniforme ;
+- le droit de percevoir les fruits des droits sociaux et des valeurs mobilières nanties si les parties en sont
+convenues.
+Article 145
+En dehors des avances sur titres soumises aux règles du gage, les institutions financières et les établissements de
+crédit peuvent, s'ils y sont autorisés par la réglementation applicable, consentir des prêts à trois mois sur valeurs
+mobilières cotées que le créancier gagiste peut, à défaut de remboursement, faire exécuter en bourse, sans
+formalité, le lendemain de l'échéance.
+
+Sous-section 2 - Nantissement de comptes de titres financiers
+Article 146
+Le nantissement d'un compte de titres financiers est la convention par laquelle le constituant affecte en garantie
+d'une obligation l'ensemble des valeurs mobilières et autres titres financiers figurant dans ce compte.
+Article 147
+Le nantissement de comptes de titres financiers est constitué, tant entre les parties qu'à l'égard de la personne
+morale émettrice et des tiers, par une déclaration datée et signée par le titulaire du compte.
+La déclaration constitutive du nantissement comporte, à peine de nullité, les mentions suivantes :
+1°) la désignation du créancier, du débiteur et du constituant du nantissement ;
+2°) le nombre et la nature des titres financiers formant l'assiette initiale du nantissement ;
+3°) les éléments permettant l'individualisation de la créance garantie tels que son montant ou son évaluation, sa
+durée et son échéance ;
+4°) les éléments d'identification du compte spécial nanti.
+Article 148
+Les titres financiers figurant initialement au crédit du compte nanti, ceux qui leur sont substitués ou les complètent
+de quelque manière que ce soit ainsi que leurs fruits et produits sont compris dans l'assiette du nantissement.
+Les titres financiers et les sommes en toute monnaie inscrites au crédit du compte nanti postérieurement à la date
+de la déclaration constitutive du nantissement sont réputés avoir été remis à la date de ladite déclaration.
+Sur simple demande, le créancier nanti peut obtenir du teneur de compte nanti, une attestation de nantissement de
+
+page 29 / 45
+
+comptes de titres financiers comportant l'inventaire des titres financiers et sommes en toute monnaie inscrites à la
+date de délivrance de ladite attestation.
+Article 149
+Le compte nanti prend la forme d'un compte spécial ouvert au nom du titulaire et tenu par la personne morale
+émettrice ou l'intermédiaire financier.
+Article 150
+Lorsque le compte est tenu par une personne non autorisée à recevoir des fonds du public, les fruits et produits
+mentionnés à l'article 148 du présent Acte uniforme sont inscrits au crédit d'un compte spécial ouvert au nom du
+titulaire du compte nanti dans les livres d'un établissement habilité à recevoir ces fonds.
+Ce compte spécial est réputé faire partie intégrante du compte nanti à la date de la déclaration de nantissement.
+Le créancier nanti peut obtenir, sur simple demande au teneur du compte spécial, une attestation comportant
+l'inventaire des sommes en toute monnaie inscrites au crédit de ce compte à cette date.
+Article 151
+Le créancier nanti définit avec le titulaire du compte nanti les conditions dans lesquelles ce dernier peut disposer
+des titres financiers et des sommes en toute monnaie figurant dans ce compte. Le créancier nanti bénéficie en
+toute hypothèse d'un droit de rétention sur les titres financiers et sommes en toute monnaie figurant au compte
+nanti.
+Lorsque, n'étant pas le teneur du compte nanti, le créancier nanti a autorisé le titulaire du compte à disposer des
+valeurs mobilières et des sommes en toute monnaie figurant dans le compte nanti, le titulaire du compte et le
+créancier nanti informent par écrit le teneur de compte des conditions de cette disposition. Le teneur de compte ne
+peut déroger aux instructions reçues sans l'accord du créancier nanti.
+Article 152
+Le créancier nanti titulaire d'une créance certaine, liquide et exigible peut, pour les titres financiers ainsi que pour
+les sommes en toute monnaie figurant sur le compte nanti, réaliser le nantissement huit jours ou à l'échéance de
+tout autre délai préalablement convenu avec le titulaire du compte après mise en demeure du débiteur remise en
+mains propres ou adressée par courrier recommandé. Cette mise en demeure du débiteur est également notifiée
+au constituant du nantissement lorsqu'il n'est pas le débiteur ainsi qu'au teneur de compte lorsque ce dernier n'est
+pas le créancier nanti.
+Article 153
+La mise en demeure prévue à l'article précédent contient, à peine de nullité, la reproduction intégrale des mentions
+suivantes :
+1°) « Faute de paiement, le nantissement pourra être réalisé par le créancier dans les huit jours ou à l'échéance de
+tout autre délai préalablement convenu avec le titulaire du compte nanti » ;
+2°) « Le titulaire du compte nanti peut, jusqu'à l'expiration du délai mentionné ci-dessus, faire connaître au teneur
+de compte l'ordre dans lequel les sommes ou titres financiers devront être attribués en pleine propriété ou
+vendues, au choix du créancier ».
+Article 154
+Dans la limite du montant de la créance garantie et, le cas échéant, dans le respect de l'ordre indiqué par le
+
+page 30 / 45
+
+titulaire du compte nanti, la réalisation du nantissement de ce compte intervient :
+1°) pour les sommes en toute monnaie figurant dans le compte nanti, directement par transfert en pleine propriété
+au créancier nanti ;
+2°) pour les titres financiers admis aux négociations sur un marché réglementé que le titulaire du compte nanti ou,
+à défaut, le créancier nanti a désignés, par vente sur un marché réglementé ou attribution en propriété de la
+quantité déterminée par le créancier nanti. Cette quantité est établie, par le créancier nanti, sur la base du dernier
+cours de clôture disponible sur un marché réglementé.
+Le titulaire du compte nanti supporte tous les frais résultant de la réalisation du nantissement.
+Ces frais sont imputés sur le montant résultant de cette réalisation.
+Article 155
+Lorsque, n'étant pas le teneur du compte nanti, le créancier nanti estime réunies les conditions de la réalisation du
+nantissement, il demande par écrit au teneur de compte de procéder à cette réalisation comme prévue à l'article
+154 ci-dessus.
+
+Section 4 - Nantissement des droits de propriété intellectuelle
+Article 156
+Le nantissement des droits de propriété intellectuelle est la convention par laquelle le constituant affecte en
+garantie d'une obligation tout ou partie de ses droits de propriété intellectuelle existants ou futurs, tels que des
+brevets d'invention, des marques de fabrique et de commerce, des dessins et modèles.
+Le nantissement des droits de propriété intellectuelle peut être conventionnel ou judiciaire.
+Article 157
+A peine de nullité, le nantissement des droits de propriété intellectuelle doit être constaté dans un écrit contenant
+les mentions suivantes :
+1°) la désignation du créancier, du débiteur et du constituant du nantissement si celui-ci n'est pas le débiteur ;
+2°) les éléments identifiant ou permettant de déterminer les droits apportés en garantie ;
+3°) les éléments permettant l'individualisation de la créance garantie tels que son montant ou son évaluation, sa
+durée et son échéance.
+Article 158
+La juridiction compétente peut autoriser le créancier à prendre une inscription de nantissement sur les droits de
+propriété intellectuelle. Le nantissement judiciaire est régi par les dispositions relatives à la saisie conservatoire
+des titres sociaux réglementée par les dispositions de l'Acte uniforme portant organisation des procédures
+simplifiées de recouvrement et des voies d'exécution.
+La décision de justice doit comporter les mentions prévues par l'article précédent.
+Article 159
+Le nantissement de droits de propriété intellectuelle ne s'étend pas, sauf convention contraire des parties, aux
+
+page 31 / 45
+
+accessoires et aux fruits résultant de l'exploitation du droit de propriété intellectuelle objet du nantissement.
+Article 160
+Le nantissement conventionnel ou judiciaire n'est opposable aux tiers dans la mesure et selon les conditions
+prévues par les articles 51 à 66 du présent Acte uniforme que s'il est inscrit au Registre du Commerce et du Crédit
+Mobilier.
+L'inscription provisoire et l'inscription définitive doivent être prises, respectivement, après la décision autorisant le
+nantissement et la décision de validation passée en force de chose jugée.
+Si le nantissement a pour objet un droit inscrit sur l'un des registres régis par la réglementation applicable en
+matière de propriété intellectuelle, il doit, en outre, être satisfait aux règles de publicité prévues par cette
+règlementation.
+Article 161
+Le nantissement des droits de propriété intellectuelle confère au créancier :
+- un droit de suite qu'il exerce conformément aux dispositions de l'article 97 alinéa 2 du présent Acte uniforme ;
+- un droit de réalisation qu'il exerce conformément aux dispositions des articles 104 et 105 du présent Acte
+uniforme ;
+- un droit de préférence qu'il exerce conformément aux dispositions de l'article 226 du présent Acte uniforme.
+
+Section 5 - Nantissement du fonds de commerce et privilège du vendeur de
+fonds de commerce
+
+Sous-section 1 - Nantissement du fonds de commerce
+Article 162
+Le nantissement du fonds de commerce est la convention par laquelle le constituant affecte en garantie d'une
+obligation, les éléments incorporels constitutifs du fonds de commerce à savoir la clientèle et l'enseigne ou le nom
+commercial.
+Le nantissement peut aussi porter sur les autres éléments incorporels du fonds de commerce tels que le droit au
+bail commercial, les licences d'exploitation, les brevets d'invention, marques de fabrique et de commerce, dessins
+et modèles et autres droits de la propriété intellectuelle. Il peut également être étendu au matériel professionnel.
+Cette extension du nantissement doit faire l'objet d'une clause spéciale désignant les éléments engagés et d'une
+mention particulière au Registre du Commerce et du Crédit Mobilier. Cette clause n'a d'effet que si la publicité
+prévue par l'article 160 du présent Acte uniforme a été satisfaite.
+Le nantissement ne peut porter sur les droits réels immobiliers conférés ou constatés par des baux ou des
+conventions soumises à inscription au registre de la publicité immobilière.
+Si le nantissement porte sur un fonds de commerce et ses succursales, celles-ci doivent être désignées par
+l'indication précise de leur siège.
+
+page 32 / 45
+
+Article 163
+A peine de nullité, le nantissement du fonds de commerce doit être constaté dans un écrit contenant les mentions
+suivantes :
+1°) la désignation du créancier, du débiteur et du constituant du nantissement si celui-ci n'est pas le débiteur ;
+2°) la désignation précise et le siège du fonds et, s'il y a lieu, de ses succursales ;
+3°) les éléments du fonds nanti ;
+4°) les éléments permettant l'individualisation de la créance garantie tels que son montant ou son évaluation, sa
+durée et son échéance.
+Article 164
+La juridiction compétente peut autoriser le créancier à prendre une inscription de nantissement sur le fonds de
+commerce de son débiteur. Le nantissement judiciaire est régi par les dispositions relatives à la saisie
+conservatoire des titres sociaux réglementée par les dispositions de l'Acte uniforme portant organisation des
+procédures simplifiées de recouvrement et des voies d'exécution.
+La décision judiciaire doit comporter toutes les mentions prévues par l'article précédent.
+Article 165
+Le nantissement conventionnel ou judiciaire n'est opposable aux tiers dans la mesure et selon les conditions
+prévues par les articles 51 à 66 du présent Acte uniforme que s'il est inscrit au Registre du Commerce et du Crédit
+Mobilier.
+L'inscription provisoire et l'inscription définitive doivent être prises, respectivement, après la décision autorisant le
+nantissement et la décision de validation passée en force de chose jugée.
+
+Sous-section 2 - Privilège du vendeur de fonds de commerce
+Article 166
+Pour produire son effet translatif et être opposable aux tiers, la vente doit être inscrite au Registre du Commerce et
+du Crédit Mobilier à la demande de l'acquéreur immatriculé et dans le respect des conditions prévues par l'Acte
+uniforme relatif au droit commercial général.
+Article 167
+Sous réserve des dispositions de l'article précédent, le vendeur du fonds de commerce, pour bénéficier de son
+privilège et de l'action résolutoire prévus par les dispositions relatives à la vente du fonds de commerce, doit faire
+inscrire la vente et son privilège au Registre du Commerce et du Crédit Mobilier.
+Article 168
+Toute demande tendant à la résolution amiable, judiciaire ou de plein droit de la vente du fonds de commerce doit
+faire l'objet d'une prénotation au Registre du Commerce et du Crédit Mobilier à l'initiative du vendeur.
+Cette prénotation est autorisée par la juridiction compétente du lieu où la vente a été inscrite, par décision sur
+requête, à charge de lui en référer.
+
+page 33 / 45
+
+La prénotation faite, la validité des inscriptions ultérieures est subordonnée à la décision à intervenir sur la
+résolution de la vente.
+Article 169
+Lorsque la vente a été résolue à l'amiable, judiciairement ou en vertu d'une clause résolutoire de plein droit, la
+résolution doit être publiée au Registre du Commerce et du Crédit Mobilier.
+
+Sous-section 3 - Règles de publicité communes au nantissement du fonds
+de commerce et au privilège du vendeur
+Article 170
+Lorsque le nantissement conventionnel ou judiciaire ou le privilège du vendeur du fonds de commerce porte sur
+des brevets d'invention, marques de fabrique, de service et de commerce, des dessins et modèles et autres droits
+de la propriété intellectuelle ainsi que sur le matériel professionnel, il doit, en dehors de l'inscription de la sûreté du
+créancier au Registre du Commerce et du Crédit Mobilier, être satisfait aux règles de publicité prévues pour les
+actes affectant la propriété des droits de propriété intellectuelle et aux règles du présent Acte uniforme relatives au
+nantissement du matériel faisant partie d'un fonds de commerce.
+Article 171
+Si le fonds faisant l'objet d'un nantissement ou d'un privilège comprend une ou des succursales, les inscriptions
+prévues aux articles 164 à 167 du présent Acte uniforme doivent être prises au Registre du Commerce et du Crédit
+Mobilier où est principalement immatriculé le fonds.
+Article 172
+Le bailleur de l'immeuble dans lequel est exploité le fonds doit recevoir notification du bordereau d'inscription ou de
+la modification de l'inscription initiale. A défaut, le créancier nanti ne peut se prévaloir des dispositions de l'article
+176 du présent Acte uniforme.
+Article 173
+Toute vente amiable ou judiciaire de fonds de commerce ou de l'un de ses éléments ne peut avoir lieu sans
+production par le vendeur ou l'auxiliaire de justice chargé de la vente, d'un état des inscriptions prises sur le fonds.
+
+Sous-section 4 - Effets des inscriptions
+Article 174
+En cas de vente ou de réalisation du fonds, les créanciers chirographaires peuvent obtenir en justice la déchéance
+du terme de leurs créances pour concourir à la distribution du prix.
+Article 175
+En cas de déplacement du fonds, le propriétaire doit, quinze jours au moins à l'avance, notifier aux créanciers
+inscrits, par acte extrajudiciaire, son intention de déplacer le fonds en indiquant le nouvel emplacement qu'il entend
+lui fixer.
+Le déplacement opéré, sans notification régulière, entraîne déchéance du terme pour le débiteur.
+
+page 34 / 45
+
+Le créancier inscrit qui refuse de consentir au déplacement peut, dans le délai de quinze jours suivant la
+notification, demander la déchéance du terme s'il y a diminution de sa sûreté.
+Le créancier inscrit qui a consenti au déplacement conserve sa sûreté s'il fait mentionner son accord, dans le
+même délai, en marge de l'inscription initiale.
+Si le fonds est transféré dans un autre Etat Partie, l'inscription initiale, à la demande du créancier inscrit, est
+reportée sur le Registre du Commerce et du Crédit Mobilier où est transféré le fonds.
+Article 176
+Le bailleur qui entend poursuivre la résiliation du bail de l'immeuble dans lequel est exploité un fonds de commerce
+grevé d'inscription doit notifier sa demande aux créanciers inscrits par acte extrajudiciaire.
+La décision judiciaire de résiliation ne peut intervenir, ni la résiliation amiable ou en vertu d'une clause résolutoire
+de plein droit produire effet, qu'après l'expiration du délai de deux mois suivant la notification.
+Article 177
+Les créanciers inscrits ont un droit de surenchère qu'ils exercent conformément aux dispositions prévues pour la
+vente du fonds de commerce.
+Article 178
+Les créanciers inscrits bénéficient :
+- d'un droit de suite qu'ils exercent conformément aux dispositions de l'article 97 alinéa 2, du présent Acte uniforme
+;
+- d'un droit de réalisation qu'ils exercent conformément aux dispositions de l'article 104, alinéa 1, du présent Acte
+uniforme ;
+- d'un droit de préférence qu'ils exercent conformément aux dispositions de l'article 226 du présent Acte uniforme.
+
+Chapitre 6 - Privilèges
+
+Section 1 - Privilèges généraux
+Article 179
+Les privilèges généraux confèrent un droit de préférence exercé par leurs titulaires selon les dispositions prévues
+par les articles 225 et 226 du présent Acte uniforme.
+Les textes spéciaux créant des privilèges généraux doivent préciser le rang de ceux-ci en le déterminant par
+rapport aux dispositions de l'article 180 du présent Acte uniforme.
+A défaut, le rang de ces privilèges est le dernier de celui établi par ledit article 180.
+Article 180
+Sont privilégiés, sans publicité et dans l'ordre qui suit :
+
+page 35 / 45
+
+1°) les frais d'inhumation, les frais de la dernière maladie du débiteur ayant précédé la saisie des biens ;
+2°) les fournitures de subsistance faites au débiteur pendant la dernière année ayant précédé son décès, la saisie
+des biens ou la décision judiciaire d'ouverture d'une procédure collective ;
+3°) les sommes dues aux travailleurs et apprentis pour exécution et résiliation de leur contrat durant la dernière
+année ayant précédé le décès du débiteur, la saisie des biens ou la décision judiciaire d'ouverture d'une procédure
+collective ;
+4°) les sommes dues aux auteurs d'œuvres intellectuelles, littéraires et artistiques pour les trois dernières années
+ayant précédé le décès du débiteur, la saisie des biens ou la décision judiciaire d'ouverture d'une procédure
+collective ;
+5°) dans la limite de la somme fixée légalement pour l'exécution provisoire des décisions judiciaires, les sommes
+dues aux organismes de sécurité et de prévoyance sociales ;
+6°) dans la limite de la somme fixée légalement pour l'exécution provisoire des décisions judiciaires, les sommes
+dont le débiteur est redevable au titre des créances fiscales et douanières.
+Article 181
+Sont privilégiées au-delà du montant fixé par l'article 180 5°) et 6°) du présent Acte uniforme, les créances
+fiscales, douanières et des organismes de sécurité et de prévoyance sociales.
+Ces privilèges n'ont d'effet que s'ils sont inscrits, dans les six mois de l'exigibilité de ces créances, au Registre du
+Commerce et du Crédit Mobilier. Toutefois, s'il y a eu infraction à la législation fiscale, douanière ou sociale, le
+délai ne commence à courir qu'à compter de la notification de la contrainte ou du titre de perception ou de tout
+autre titre de mise en recouvrement.
+L'inscription conserve le privilège du Trésor public, de l'Administration des douanes et des organismes de sécurité
+et de prévoyance sociales pendant trois ans à compter du jour où elle a été prise ; son effet cesse sauf
+renouvellement demandé avant l'expiration de ce délai.
+
+Section 2 - Privilèges spéciaux
+Article 182
+Les créanciers titulaires de privilèges spéciaux ont, sur les meubles qui leur sont affectés comme assiette par la loi,
+un droit de préférence qu'ils exercent, après saisie, selon les dispositions prévues par l'article 226 du présent Acte
+uniforme.
+Le droit de préférence s'exerce aussi, par subrogation, sur l'indemnité d'assurance du meuble qui a péri ou
+disparu, tant qu'elle n'est pas payée.
+Article 183
+Le vendeur a, sur le meuble vendu, un privilège pour garantie du paiement du prix non payé, s'il est encore en la
+possession du débiteur ou sur le prix encore dû par le sousacquéreur.
+Article 184
+Le bailleur d'immeuble a un privilège sur les meubles garnissant les lieux loués.
+Ce privilège garantit, outre les dommages-intérêts qui pourraient lui être alloués, les créances du bailleur contre le
+
+page 36 / 45
+
+preneur pour les douze mois échus précédant la saisie et pour les douze mois à échoir après celle-ci.
+Le preneur ou toute personne qui, par des manœuvres frauduleuses, prive le bailleur de son privilège totalement ou
+partiellement, commet une infraction pénale réprimée par la loi nationale de chaque Etat Partie.
+En cas de déplacement des meubles sans son consentement, le bailleur peut encore procéder à leur saisie et
+conserve son privilège sur eux s'il en a fait la déclaration de revendication dans l'acte de saisie.
+Article 185
+Le transporteur terrestre a un privilège sur la chose transportée, pour tout ce qui lui est dû à condition qu'il y ait un
+lien de connexité entre la chose transportée et la créance.
+Article 186
+Le travailleur d'un exécutant d'ouvrage à domicile a un privilège sur les sommes dues par le donneur d'ouvrage
+pour garantir les créances nées du contrat de travail si cellesci sont nées de l'exécution de l'ouvrage.
+Article 187
+Les travailleurs et fournisseurs des entreprises de travaux ont un privilège sur les sommes restant dues à celles-ci
+pour les travaux exécutés, en garantie des créances nées à leur profit à l'occasion de l'exécution de ces travaux.
+Les salaires dus aux travailleurs sont payés par préférence aux sommes dues aux fournisseurs.
+Article 188
+Le commissionnaire a sur les marchandises qu'il détient pour le compte du commettant un privilège pour garantir
+ses créances nées du contrat de commission.
+Article 189
+Celui qui a exposé des frais ou fourni des prestations pour éviter la disparition d'une chose ou sauvegarder l'usage
+auquel elle est destinée a un privilège sur ce meuble.
+
+Titre 3 - Hypothèques
+
+Chapitre 1 - Dispositions générales
+Article 190
+L'hypothèque est l'affectation d'un immeuble déterminé ou déterminable appartenant au constituant en garantie
+d'une ou plusieurs créances, présentes ou futures à condition qu'elles soient déterminées ou déterminables.
+Elle est légale, conventionnelle ou judiciaire.
+Article 191
+Sauf disposition contraire, les règles applicables aux hypothèques conventionnelles s'appliquent également aux
+hypothèques forcées.
+Article 192
+
+page 37 / 45
+
+Sauf disposition contraire, seuls les immeubles présents et immatriculés peuvent faire l'objet d'une hypothèque.
+Peuvent faire l'objet d'une hypothèque :
+1°) les fonds bâtis ou non bâtis et leurs améliorations ou constructions survenues, à l'exclusion des meubles qui
+en constituent l'accessoire ;
+2°) les droits réels immobiliers régulièrement inscrits selon les règles de l'Etat Partie.
+Article 193
+L'hypothèque est indivisible par nature et subsiste totalement sur les immeubles affectés jusqu'à complet paiement
+et malgré la survenance d'une succession.
+Article 194
+Ceux qui n'ont sur l'immeuble qu'un droit soumis à condition, résolution, ou rescision régulièrement publiées ne
+peuvent consentir qu'une hypothèque soumise aux mêmes conditions, résolutions ou rescisions.
+L'hypothèque d'un immeuble indivis conserve son effet quel que soit le résultat du partage, si elle a été consentie
+par tous les indivisaires. Dans le cas contraire, elle ne conserve son effet que dans la mesure où l'indivisaire qui l'a
+consentie est, lors du partage, alloti de l'immeuble indivis ou, lorsque l'immeuble est licité à un tiers, si cet
+indivisaire est alloti du prix de la licitation.
+L'hypothèque d'une quote-part dans un ou plusieurs immeubles indivis ne conserve son effet que dans la mesure
+où l'indivisaire qui l'a consentie est, lors du partage, alloti du ou de ces immeubles indivis ; elle le conserve alors
+dans toute la mesure de cet allotissement, sans être limitée à la quote-part qui appartenait à l'indivisaire qui l'a
+consentie ;lorsque l'immeuble est licité à un tiers, elle le conserve également si cet indivisaire est alloti du prix de la
+licitation.
+Article 195
+Tout acte conventionnel ou judiciaire constitutif d'hypothèque doit être inscrit conformément aux règles de publicité
+édictées par l'Etat Partie où est situé le bien grevé et prévues à cet effet.
+L'hypothèque régulièrement publiée prend rang du jour de l'inscription.
+Lorsque le droit réel immobilier, objet de l'hypothèque, consiste en un démembrement du droit de propriété tel que
+l'usufruit, le droit de superficie, le bail emphytéotique ou le bail à construction, l'inscription de l'hypothèque doit
+également être notifiée, par acte extrajudiciaire, au propriétaire, au tréfoncier ou au bailleur.
+Article 196
+L'inscription a une durée déterminée et conserve le droit du créancier jusqu'à une date devant être fixée par la
+convention ou la décision de justice dans la limite de trente ans au jour de la formalité, sauf disposition contraire
+d'une loi nationale. Son effet cesse si elle n'est pas renouvelée, avant l'expiration de ce délai, pour une durée
+déterminée. Il en va de même lorsque l'hypothèque a été constituée pour une durée indéterminée.
+Article 197
+L'hypothèque confère à son titulaire un droit de suite et un droit de préférence.
+Le droit de préférence s'exerce selon les dispositions de l'article 225 du présent Acte uniforme pour garantir le
+principal, les frais et trois ans d'intérêts au même rang, sauf à prendre des inscriptions particulières portant
+hypothèques à compter de leurs dates pour les intérêts autres que ceux conservés par l'inscription initiale.
+
+page 38 / 45
+
+Le droit de préférence s'exerce également, par subrogation, sur l'indemnité d'assurance de l'immeuble sinistré.
+Article 198
+A moins qu'il ne poursuive la vente du bien hypothéqué selon les modalités prévues par les règles de la saisie
+immobilière, auxquelles la convention d'hypothèque ne peut déroger, le créancier hypothécaire impayé peut
+demander en justice que l'immeuble lui demeure en paiement.
+Cette faculté ne lui est toutefois pas offerte si l'immeuble constitue la résidence principale du constituant.
+Article 199
+A condition que le constituant soit une personne morale ou une personne physique dûment immatriculée au
+Registre du Commerce et du Crédit Mobilier et que l'immeuble hypothéqué ne soit pas à usage d'habitation, il peut
+être convenu dans la convention d'hypothèque que le créancier deviendra propriétaire de l'immeuble hypothéqué.
+A l'issue d'un délai de trente jours suivant une mise en demeure de payer par acte extra-judiciaire demeurée sans
+effet, le créancier pourra faire constater le transfert de propriété dans un acte établi selon les formes requises par
+chaque État Partie en matière de transfert d'immeuble.
+Article 200
+Dans les cas prévus aux deux articles précédents, l'immeuble doit être estimé par expert désigné amiablement ou
+judiciairement.
+Si sa valeur excède le montant de la créance garantie, le créancier doit au constituant une somme égale à la
+différence. S'il existe d'autres créanciers hypothécaires, il la consigne. Toute clause contraire est réputée non
+écrite.
+Article 201
+Tout acte relatif à une hypothèque et portant transmission, changement de rang, subrogation, renonciation,
+extinction, est établi, selon la loi nationale du lieu de situation de l'immeuble, par acte notarié ou par acte sous
+seing privé suivant un modèle conforme aux règles de l'Etat Partie concerné et publié comme l'acte par lequel cette
+hypothèque est consentie ou constituée.
+L'extinction de l'hypothèque conventionnelle ou judiciaire résulte :
+- de l'extinction de l'obligation principale ;
+- de la renonciation du créancier à l'hypothèque ;
+- de la péremption de l'inscription attestée, sous sa responsabilité, par le conservateur du registre de la publicité
+immobilière, cette attestation devant mentionner qu'aucune prorogation ou nouvelle inscription n'affecte la
+péremption ;
+- de la purge des hypothèques résultant du procès-verbal de l'adjudication sur expropriation forcée et du paiement
+ou de la consignation de l'indemnité définitive d'expropriation pour cause d'utilité publique.
+Article 202
+L'hypothèque est radiée selon les règles de publicité de l'Etat Partie où est situé le bien grevé.
+En cas de refus du créancier d'y consentir ou du conservateur de procéder à la radiation de l'hypothèque, le
+
+page 39 / 45
+
+débiteur ou l'ayant-droit de celui-ci peut obtenir mainlevée judiciaire de cette sûreté. La décision judiciaire de
+mainlevée prononcée contre le créancier ou ses ayants-droit et passée en force de chose jugée oblige le
+conservateur à procéder à la radiation.
+
+Chapitre 2 - Hypothèques conventionnelles
+Article 203
+L'hypothèque conventionnelle ne peut être consentie que par celui qui est titulaire du droit réel immobilier
+régulièrement inscrit et capable d'en disposer.
+Par exception à l'alinéa précédent, l'hypothèque peut être consentie sur des immeubles à venir dans les cas et
+conditions ci-après :
+1°) celui qui ne possède pas d'immeubles présents et libres ou qui n'en possède pas en quantité suffisante pour la
+sûreté de la créance peut consentir que chacun de ceux qu'il acquerra par la suite sera affecté au paiement de
+celle-ci au fur et à mesure de leur acquisition ;
+2°) celui dont l'immeuble présent assujetti à l'hypothèque a péri ou subi des dégradations telles qu'il est devenu
+insuffisant pour la sûreté de la créance le peut pareillement, sans préjudice du droit pour le créancier de poursuivre
+dès à présent son remboursement ;
+3°) celui qui possède un droit réel lui permettant de construire à son profit sur le fonds d'autrui, sur le domaine
+public ou sur le domaine national peut hypothéquer les bâtiments et ouvrages dont la construction est commencée
+ou simplement projetée ; en cas de destruction de ceux-ci, l'hypothèque est reportée de plein droit sur les
+nouvelles constructions édifiées au même emplacement.
+Article 204
+L'hypothèque conventionnelle doit être consentie pour une somme déterminée ou au moins déterminable en
+principal et portée à la connaissance des tiers par l'inscription de l'acte. Le débiteur aura droit, s'il y a lieu, par la
+suite, de requérir la réduction de cette somme en se conformant aux règles de la publicité foncière prévues à cet
+effet.
+Article 205
+L'hypothèque conventionnelle est consentie, selon la loi nationale du lieu de situation de l'immeuble :
+- par acte authentique établi par le notaire territorialement compétent ou l'autorité administrative ou judiciaire
+habilitée à faire de tels actes ;
+- ou par acte sous seing privé dressé suivant un modèle agréé par la conservation de la propriété foncière.
+La procuration donnée à un tiers pour constituer une hypothèque en la forme notariée doit être établie en la même
+forme.
+Article 206
+Tant que l'inscription n'est pas faite, l'acte d'hypothèque est inopposable aux tiers et constitue, entre les parties,
+une promesse synallagmatique qui les oblige à procéder à la publicité.
+Article 207
+La publication de l'hypothèque conventionnelle garantissant un prêt à court terme peut être différée pendant un
+
+page 40 / 45
+
+délai maximum de quatre-vingt dix jours sans que le créancier perde le rang qui lui est acquis.
+Pour cela, le créancier devra se conformer aux dispositions spécialement édictées à cet effet par les règles de
+publicité concernant les hypothèques garantissant les prêts à court terme, prévues par la loi nationale du lieu de
+situation de l'immeuble.
+Article 208
+L'hypothèque consentie pour sûreté d'une ouverture de crédit à concurrence d'une somme déterminée à fournir
+prend rang à la date de sa publication sans égard aux dates successives de l'exécution des engagements pris par
+le fournisseur du crédit.
+
+Chapitre 3 - Hypothèques forcées
+Article 209
+L'hypothèque forcée est celle qui est conférée, sans le consentement du débiteur, soit par la loi, soit par une
+décision de justice.
+Les hypothèques forcées autres que celles prévues par le présent Acte uniforme sont régies par les dispositions
+particulières de la loi nationale de chaque Etat Partie.
+
+Section 1 - Hypothèques forcées légales
+Article 210
+L'hypothèque légale de la masse des créanciers prévue par l'Acte uniforme portant organisation des procédures
+collectives d'apurement du passif est inscrite dans le délai de dix jours à compter de la décision judiciaire
+d'ouverture de la procédure collective à la requête du greffier ou du syndic.
+Article 211
+Le vendeur, l'échangiste ou le copartageant peut exiger de l'autre partie à l'acte une hypothèque sur les immeubles
+vendus, échangés ou partagés pour garantir le paiement total ou partiel du prix, de la soulte de l'échange ou des
+créances résultant du partage.
+A défaut de stipulation d'hypothèque conventionnelle, le vendeur, l'échangiste ou le copartageant peuvent, en vertu
+d'une décision de la juridiction compétente, obtenir l'hypothèque forcée sur lesdits immeubles.
+L'action en résolution de l'acte de vente, d'échange ou de partage pour défaut de paiement du prix ou de la soulte
+appartient au vendeur, à l'échangiste, ou au copartageant titulaire d'une hypothèque conventionnelle ou forcée
+régulièrement publiée du fait même de l'obtention de cette garantie et concurremment avec elle.
+Celui qui fournit les deniers pour l'acquisition d'un immeuble vendu, échangé ou partagé, peut obtenir une
+hypothèque conventionnelle ou forcée dans les mêmes conditions que le vendeur, l'échangiste ou le copartageant
+dès lors qu'il est authentiquement constaté par l'acte d'emprunt que la somme était destinée à cet emploi et, par la
+quittance du vendeur, de l'échangiste ou du copartageant, que le paiement a été fait des deniers empruntés.
+Article 212
+Les architectes, entrepreneurs et autres personnes employées pour édifier, réparer ou reconstruire des bâtiments
+peuvent, avant le commencement des travaux, se faire consentir une hypothèque conventionnelle ou obtenir, par
+décision judiciaire, une hypothèque forcée sur l'immeuble ayant fait l'objet des travaux.
+
+page 41 / 45
+
+L'hypothèque est inscrite provisoirement pour le montant de la somme qui sera estimée due. Cette inscription
+prend rang à sa date mais pour une période n'excédant pas un mois après l'achèvement des travaux constaté par
+huissier. L'hypothèque conserve sa date si, dans le même délai, par accord des parties ou par décision judiciaire,
+l'inscription devient définitive, pour le tout ou partie seulement de la somme estimée due.
+Celui qui fournit les deniers pour payer ou rembourser les architectes, entrepreneurs et autres personnes
+employées pour édifier, réparer ou reconstruire des bâtiments peut obtenir une hypothèque conventionnelle ou
+forcée dans les mêmes conditions que ces créanciers dès lors qu'il est formellement constaté dans l'acte
+d'emprunt que la somme était destinée à cet emploi et, par la quittance des architectes, entrepreneurs et autres
+personnes, que le paiement a été fait des deniers empruntés.
+
+Section 2 - Hypothèques forcées judiciaires
+Article 213
+Pour sûreté de sa créance, en dehors des cas prévus par les articles 210 à 212 du présent Acte uniforme, le
+créancier peut être autorisé à prendre inscription provisoire d'hypothèque sur les immeubles de son débiteur en
+vertu d'une décision de la juridiction compétente du domicile du débiteur ou du ressort dans lequel sont situés les
+immeubles à saisir.
+La décision rendue indique la somme pour laquelle l'hypothèque est autorisée.
+Elle fixe au créancier un délai dans lequel il doit, à peine de caducité de l'autorisation, former devant la juridiction
+compétente l'action en validité d'hypothèque conservatoire ou la demande au fond, même présentée sous forme
+de requête à fin d'injonction de payer. Elle fixe, en outre, le délai pendant lequel le créancier ne peut saisir la
+juridiction du fond.
+Si le créancier enfreint les dispositions de l'alinéa précédent, la décision peut être rétractée par la juridiction qui a
+autorisé l'hypothèque.
+Article 214
+La décision peut obliger le créancier à justifier, préalablement, de sa solvabilité suffisante ou, à défaut, à donner
+caution par acte déposé au Greffe ou entre les mains d'un séquestre avec ou sans obligation d'observer les règles
+concernant la réception des cautions.
+Article 215
+La juridiction compétente ne statue qu'à charge de lui en référer en cas de difficulté.
+Sa décision est exécutoire sur minute, nonobstant opposition ou appel.
+Article 216
+Le créancier est autorisé à prendre une inscription provisoire d'hypothèque sur présentation de la décision
+contenant :
+1°) la désignation du créancier, son élection de domicile, le nom du débiteur ;
+2°) la date de la décision ;
+3°) la cause et le montant de la créance garantie en principal, intérêts et frais ;
+
+page 42 / 45
+
+4°) la désignation, par le numéro du titre foncier, de chacun des immeubles sur lesquels l'inscription a été
+ordonnée ; à défaut de titre foncier, sous réserve de l'application de l'article 192 du présent Acte uniforme, la
+désignation des immeubles non immatriculés est faite conformément aux dispositions des législations nationales
+spécialement prévues à cet effet.
+Les dispositions du présent article n'excluent pas les formalités de publicité prévues par la législation foncière.
+Article 217
+Le créancier doit notifier la décision ordonnant l'hypothèque judiciaire en délivrant l'assignation en vue de l'instance
+en validité ou de l'instance au fond. Il doit également notifier l'inscription dans la quinzaine de cette formalité.
+Il doit élire domicile dans le ressort de la juridiction compétente ou de la conservation foncière.
+Article 218
+Mainlevée ou réduction de l'hypothèque peut être obtenue de la juridiction compétente qui l'a autorisée, statuant à
+bref délai, contre consignation, entre les mains d'un séquestre par lui désigné, des sommes en principal, intérêts et
+frais, avec affectation spéciale à la créance. La mainlevée ou la réduction de l'hypothèque doit être demandée
+dans le mois de la notification de l'assignation en validité ou de l'instance au fond.
+Lorsque la créance litigieuse a fait l'objet d'une décision passée en force de chose jugée, les sommes séquestrées
+sont spécialement affectées, par privilège sur tous autres, au paiement de la créance du poursuivant. Elles se
+trouvent frappées de saisieconservatoire pendant la durée de la procédure.
+Article 219
+La juridiction saisie peut, en tout état de cause, avant même d'avoir statué sur le fond, ordonner une mainlevée
+totale ou partielle de l'hypothèque si le débiteur justifie de motifs sérieux et légitimes.
+Dans le cas de péremption d'instance, de désistement d'instance ou d'action, la mainlevée non consentie de
+l'inscription provisoire est donnée par la juridiction qui a autorisé ladite inscription et la radiation est faite sur dépôt
+de sa décision passée en force de chose jugée.
+Article 220
+Lorsqu'il est justifié que la valeur des immeubles est double du montant des sommes inscrites, le débiteur peut
+faire limiter les effets de la première inscription sur les immeubles qu'il indique à cette fin.
+Article 221
+Si la créance est reconnue, la décision statuant sur le fond maintient en totalité ou en partie l'hypothèque déjà
+inscrite ou octroie une hypothèque définitive.
+Dans les six mois suivant le jour où cette décision a acquis l'autorité de la chose jugée, l'inscription de l'hypothèque
+qui en résulte est requise conformément à la législation de l'Etat Partie où est situé le bien grevé. Ce qui a été
+maintenu prend rang à la date de l'inscription provisoire ; l'hypothèque prend rang à la date de l'inscription
+définitive.
+Faute d'inscription définitive dans le délai fixé ci-dessus, ou si la créance n'est pas reconnue par une décision
+passée en force de chose jugée, la première inscription devient rétroactivement sans effet et sa radiation peut être
+demandée par toute personne intéressée, aux frais de l'inscrivant, à la juridiction qui a autorisé ladite inscription.
+
+Chapitre 4 - Effets des hypothèques
+
+page 43 / 45
+
+Article 222
+Dans le cas où l'immeuble hypothéqué devient insuffisant pour garantir sa créance, par suite de destruction ou de
+dégradation, le créancier peut poursuivre le paiement de sa créance avant le terme ou obtenir une autre
+hypothèque.
+Article 223
+Le droit de suite s'exerce contre tout tiers détenteur de l'immeuble dont le titre est publié postérieurement à
+l'hypothèque.
+Bien que le tiers détenteur ne soit pas personnellement obligé à la dette, il peut désintéresser le créancier
+poursuivant du montant intégral de sa créance, en capital, intérêts et autres accessoires, en se subrogeant à lui.
+
+Titre 4 - Distribution des deniers et classement des sûretés
+Article 224
+La procédure de distribution du prix sur saisie est fixée par les règles régissant les voies d'exécution sous réserve
+des dispositions qui suivent concernant l'ordre de distribution.
+Article 225
+Les deniers provenant de la réalisation des immeubles sont distribués dans l'ordre suivant :
+1°) aux créanciers des frais de justice engagés pour parvenir à la réalisation du bien vendu et à la distribution
+elle-même du prix ;
+2°) aux créanciers de salaires superprivilégiés ;
+3°) aux créanciers titulaires d'une hypothèque conventionnelle ou forcée et aux créanciers séparatistes inscrits
+dans le délai légal, chacun selon le rang de son inscription au registre de la publicité immobilière ;
+4°) aux créanciers munis d'un privilège général soumis à publicité chacun selon le rang de son inscription au
+Registre du Commerce et du Crédit Mobilier ;
+5°) aux créanciers munis d'un privilège général non soumis à publicité selon l'ordre établi par l'article 180 du
+présent Acte uniforme ;
+6°) aux créanciers chirographaires munis d'un titre exécutoire lorsqu'ils sont intervenus par voie de saisie ou
+d'opposition à la procédure.
+En cas d'insuffisance de deniers pour désintéresser les créanciers désignés aux 1°), 2°), 5°) et 6°) du présent
+article venant à rang égal, ceux-ci concourent à la distribution dans la proportion de leurs créances totales, au marc
+le franc.
+Article 226
+Sans préjudice de l'exercice d'un éventuel droit de rétention ou d'un droit exclusif au paiement, les deniers
+provenant de la réalisation des meubles sont distribués dans l'ordre suivant :
+1°) aux créanciers des frais de justice engagés pour parvenir à la réalisation du bien vendu et à la distribution
+
+page 44 / 45
+
+elle-même du prix ;
+2°) aux créanciers de frais engagés pour la conservation du bien du débiteur dans l'intérêt des créanciers dont le
+titre est antérieur en date ;
+3°) aux créanciers de salaires superprivilégiés ;
+4°) aux créanciers garantis par un privilège général soumis à publicité, un gage, ou un nantissement, chacun à la
+date de son opposabilité aux tiers ;
+5°) aux créanciers munis d'un privilège spécial, chacun suivant le meuble sur lequel porte le privilège ; en cas de
+conflit entre créances assorties d'un privilège spécial sur le même meuble, la préférence est donnée au premier
+saisissant ;
+6°) aux créanciers munis d'un privilège général non soumis à publicité selon l'ordre établi par l'article 180 du
+présent Acte uniforme ;
+7°) aux créanciers chirographaires munis d'un titre exécutoire lorsqu'ils sont intervenus par voie de saisie ou
+d'opposition à la procédure de distribution.
+En cas d'insuffisance de deniers pour désintéresser les créanciers désignés aux 1°), 2°), 3°), 6°) et 7°) du
+présent article venant à rang égal, ceux-ci concourent à la distribution dans la proportion de leurs créances totales,
+au marc le franc.
+
+Titre 5 - Dispositions transitoires et finales
+Article 227
+Le présent Acte uniforme, qui abroge l'Acte uniforme portant organisation des sûretés du 17 avril 1997, n'est
+applicable qu'aux sûretés consenties ou constituées après son entrée en vigueur.
+Les sûretés consenties ou constituées antérieurement au présent Acte uniforme et conformément à la législation
+alors en vigueur restent soumises à cette législation jusqu'à leur extinction.
+Article 228
+Le présent Acte uniforme sera publié au Journal Officiel de l'OHADA dans un délai de soixante jours à compter de
+la date de son adoption. Il sera également publié dans les Etats Parties, au Journal Officiel ou par tout moyen
+approprié. Il sera applicable quatre-vingt-dix jours à compter de la date de sa publication au Journal officiel de
+l'OHADA conformément à l'article 9 du Traité relatif à l'harmonisation du droit des affaires en Afrique, signé à
+Port-Louis le 17 octobre 1993, tel que révisé à Québec le 17 octobre 2008.
+Fait à Lomé, le 15 décembre 2010.
+
+Powered by TCPDF (www.tcpdf.org)
+
+page 45 / 45

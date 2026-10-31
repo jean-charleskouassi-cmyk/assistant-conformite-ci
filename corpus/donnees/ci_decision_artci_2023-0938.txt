@@ -1,0 +1,630 @@
+# titre: Décision n° 2023-0938 du 23 août 2023 portant avertissement et mise en demeure de la société Quipux Afrique SA
+# label: Décision ARTCI n° 2023-0938 (Quipux Afrique SA)
+# pays: Côte d'Ivoire
+# domaine: donnees
+# source: ARTCI, Conseil de régulation (décision scannée, texte obtenu par OCR)
+
+REPUBLIQUE DE CÔTE D'IVOIRE
+Union - Discipline - Travail
+CONSEIL D REGULATION
+DE L'AUTORITE DE PROTECTION
+DE LA REPU BLIQU E DE COTE D'IVO IRE
+PORT ANT AVER TISSE MENT ET MISE EN DEME URE
+DE LA SOCIE TE QUIPU X AFRIQ UE SA
+EN MATIE RE DE PROTECTION DES DONN EES A
+CARA CTER E PERS ONNE L
+AbJ
+Arourriabo
+Marcory
+~1rect1 on Générale·
+L'A~TO RITE DE PROTECTION,
+la Constitution ;
+la Loi n°63-526 du 26 décemb re 1963 portant fixation des peines applicables
+en matière de contravention ;
+la Loi n°63-527 du 26 décemb re 1963 portant fixation des peines applicables à
+certaines infractions en matière de police de la circulation routière ;
+caractère personn el ;
+aux Technol ogies de l'Information et de la Commun ication ;
+fonctionn ement de l'Autorité de Régulation des Télécom municati ons/TIC de
+Côte d'Ivoire (ARTCI) ;
+fourniture des prestatio ns de cryptologie ;
+déclarati ons, de présenta tion des demand es d'octroi et de retrait des
+autorisations pour le traiteme nt des données à caractèr e personn el ;
+de l'archiva ge électron ique ;
+des voies routières ouvertes à la circulation publique ;
+fonctionn ement de l'Autorité de la Mobilité Urbaine dans le Grand Abidjan ;
+fonctionn ement de l'Autorité de Régulation du Transpo rt Intérieur ;
+l'Autorité de Régulati on des Télécom municati ons/TIC de Côte d'Ivoire ;
+des
+Régulation
+l'Autorité
+Régulation
+Conseil
+Télécom municati ons /TIC de Côte d'Ivoire (ARTCI) ;
+de concess ion pour la conception, le financement, la mise en place,
+l'exploitation et la mainten ance d'un système de gestion intégrée des activités
+des transpor ts routiers en Côte-d 'Ivoire, d'un système de transpor t intelligent et
+d'une fourrière administrative.
+Général de l'Autorité de Régulation des Télécom municati ons /TIC de Côte
+d'Ivoire (ARTCI) ;
+Conseil de Régulati on de l'Autorité de Régulation des Télécom municati ons/ TIC
+Côte d'Ivoire, en abrégé ARTCI ;
+!'Arrêté n°511/M PTIC/CA B du 11 novembr e 2014 portant définition du profil et
+fixant les condition s d'emploi du correspo ndant à la protectio n des données à
+caractère personn el ;
+la Convent ion de Concess ion de Service Public pour la concepti on, l'ingénierie,
+le financement, la mise en place et l'exploitation d'un système de gestion
+intégrée de l'ensemb le des activités des transpor ts terrestre s en Côte d'Ivoire,
+conclue le 04 novemb re 2020 entre l'État de Côte d'Ivoire et la Société QUIPUX
+AFRIQU E SA, et ses annexes ;
+la Décision n°2013-0 003 du Conseil de Régulation de l'Autorité de Régulation
+des Télécom municati ons/TIC de Côte d'Ivoire en date du 20 septemb re 2013
+portant règleme nt intérieur ;
+la Décision n°2014-0 020 du Conseil de Régulation de l'Autorité de Régulation
+des Télécom municati ons /TIC de Côte d'Ivoire en date du 03 septemb re 2014
+portant adoption des règles de conduites relatives au traiteme nt et à la protection
+des données à caractèr es personnel ;
+la Décision n°2014-0021 du Conseil de Régulation de l'Autorité de Régulation
+des Télécom municati ons/TIC de Côte d'Ivoire en date du 03 septemb re 2014
+portant condition s et critères applicab les à la limitation du traiteme nt des
+données à caractèr e personn el ;
+la Décision n°2014- 0022 du Conseil de Régulation de l'Autorité de Régulation
+des Télécom municati ons/TIC de Côte d'Ivoire en date du 03 septemb re 2014
+portant condition s de la suppression des liens vers les données à caractère
+personnel, des copies ou des reproductions de celles-ci existant dans les
+services de commun ication électronique accessibles au public ;
+la Décision n°2017-3 53 de l'Autorité de Protection de la Républiq ue de Côte
+d'Ivoire en date du 26 octobre 2017 portant vérification préalabl e ;
+la Décision n°2017-3 54 de l'Autorité de Protection de la Républiq ue de Côte
+d'Ivoire en date du 26 octobre 2017 portant procédu re de mise en conformité
+à la protection des données à caractère personnel ;
+la Décision n°2020-0 581 de l'Autorité de Protection de la Républiq ue de Côte
+d'Ivoire en date du 30 juillet 2020 fixant les critères et les condition s d'exercic e
+des activités de :
+Corresp ondant à la protection des données , personn e morale ;
+Audit de conform ité ;
+Formatio n ;
+l'Avis n°2021 -0023 de l'Autorité de Protection de la Républiq ue de Côte d'Ivoire
+en date du 04 août 2021 relatif à l'avant-p rojet de Décret portant autorisation de
+traiteme nt de données à caractèr e personn el pour l'exploitation et la
+maintena nce d'une fourrière administrative ;
+l'Avis n°2021-0 024 de l'Autorité de Protection de la Républiq ue de Côte d'Ivoire
+en date du 04 août 2021 relatif à l'avant-p rojet de Décret portant autorisation de
+traiteme nt de données à caractèr e personnel pour la m ise en œuvre d'un
+système de gestion intégrée ;
+l'Avis n°2021-0 025 de l'Autorité de Protection de la Républiq ue de Côte d'Ivoire
+en date du 04 août 2021 relatif à l'avant-p rojet de Décret portant autorisation de
+traiteme nt de données à caractèr e personn el pour la mise en œuvre d'un
+système de transpor t intelligent, en abrégé STI ;
+la Décision n°2021-0 676 de l'Autorité de Protection de la Républiq ue de Côte
+d'Ivoire en date du 04 Août 2021 portant procédu re de contrôle en matière de
+protection des données à caractère personn el ;
+la Décision n°2022-0 738 de l'Autorité de Protection de la Républiq ue de Côte
+d'Ivoire en date du 05 mai 2022 portant approba tion de la liste des contrôles en
+matière de protectio n des données à caractèr e personn el pour l'année 2022 ;
+information de la mission de contrôle ;
+Faits et procédure
+des données à caractèr e personn el, dispose que l'Autorité de Protectio n veille à ce
+que lies traitements des données à caractère personnel soient mis en œuvre
+conf rmément aux dispositions de ladite loi et de ses décrets d'application ;
+à la protection des données à caractère personnel, l'Autorité de Protection s'assure
+que l'usage des technologies de l'information et de la communication ne porte pas
+atteihte ou ne comporte pas de menace pour la liberté et la vie privée des utilisateurs
+situJ~ sur l'ensemble du territoire national ;
+Qu'~ ce titre, elle est chargée de procéder par le biais d'agents assermentés, à des
+véri~cations portant sur tout traitement de données à caractère personnel et de
+prononcer des sanctions administratives et pécuniaires à l'égard des responsables du
+traittmen t qui ne se conforment pas aux dispositions de la présente Loi ;
+Coni,idérant la Décision n°2021-0676 de l'Autorité de Protection de la République de
+CôtEt d'Ivoire en date du 04 Août 2021 portant procédure de contrôle en matière de
+protection des données à caractère personnel ;
+Con~idérant que l'article 9 de la même décision dispose que l'Autorité de Protection
+proqède à la publication sur son site internet, du programme annuel de contrôle, et
+cette publication vaut information du responsable du traiteme nt;
+Con~idérant que la société OUIPUX AFRIQUE SA a été identifiée par l'Autorité de
+Protection de la République de Côte d'Ivoire comme un responsable du traitement à
+confôle r en matière de protection des données à caractère personnel pour l'année
+Conbidérant que par lettre référencée 22-00876 DG/DCNS/DCPD/SPDS/JLC, la
+soci~té QUIPUX AFRIQUE SA a été informée de la mission de contrôle en matière de
+prot.ctio n des données à caractère personnel dans son agence de Korhogo ;
+Con idérant que QUIPUX AFRIQUE SA, Société Anonyme de droit ivoirien au capital
+le d$veloppement de solutions technologiques appliquées aux systèmes de transpor t;
+Considérant que les 07 et 08 novembre 2022, en application de la décision n°2022073~ de l'Autorité de Protection de la République de Côte d'Ivoire en date du 05 mai
+2022 portant approbation de la liste des contrôles en matière de protection des
+donhées à caractère personnel pour l'année 2022, des agents assermentés de
+l'Autorité de Protection ont mené une opération de contrôle au sein de l'agence de
+QUIPUX AFRIQUE SA de de la ville de Korhogo ;
+Quj cette mission avait pour objet de vérifier le respect par la société QUIPUX
+rela~ive à la protection des données à caractère personnel ainsi que celles de ses
+sou~-traitants et de l'application des prescriptions contenues dans les avis n°0023,
+Qu'l insi, les agents assermentés ont effectué des contrôles sur les traitements de
+donhées à caractère personnel des clients, du personnel, des visiteurs et sur les
+traitements mis en œuvre par la société QUIPUX AFRIQUE SA et ses sous-tra itants ;
+conlidé rant que l'Autorité de Protection a effectué les contrôles suivants :
+Contrôle du dispositif de vidéosurveillance;
+Contrôle du dispositif de biomét rie;
+Contrôle des activités de la caisse ;
+r Contrôle des activités du Département Risques et continuité des activités ;
+Contrôle des activités du Correspondant à la protection ;
+Contrôle des activités des systèmes d'information.
+Con~idérant qu'à l'issue du contrôle, une copie des Procès-verbaux de contrôle
+SA.
+conrdic toirem ent dressé et signé, a été remise è la société QUIPU X AFRIQUE
+Motifs de la Décision :
+A) Sur les manquements aux obligations de conformité et d'autorisations
+protection des données personnelles
+à la protection des données à caractère personnel, le traitement portant sur un numéro
+les
+national d'identification ou tout autre identifiant de la même nature, notamment
+ion,
+nu~l_éros de téléphone est soumis à autorisation préalable de l'Autorité de Protect
+avart toute mise en œuvre ;
+desjdonnées personnelles dispose que : « les responsables de traitement de donnée
+à c~ractère personnel disposent d'un délai de six (06) mois, à compter de la date de
+l'enrée en vigueur de la présente loi, pour se mettre en conformité avec ses
+dispositions » ;
+Co sidérant que l'article 2 de la Décision n°2017-354 de l'Autorité de Protection de
+Ré ublique de Côte d'Ivoire en date du 26 octobre 2017 portant procédure de mise
+juin
+con ormité des responsables du traitement avec la Loi n°2013
+rela ive à la protection des données à caractère personnel dispose que : « la mise
+uridique
+conformité implique que les mesures techniques, organisationnelles
+par
+nécessaires pour la protection des données à caractère personnel ont été prises
+le ~esponsables du traitement » ;
+Corlsidérant que l'article 4 de la Décision n°2017-354 de l'Autorité de Protection de
+mise
+ure
+procéd
+portant
+Ré~ublique de Côte d'Ivoire en date du 26 octobre 2017
+conformité des responsables du traitement avec la Loi n°2013-450 du 19 juin 2013
+relative à la protect ion des données à caractère personnel dispose que : « (. .
+ion
+de'f ande de mise en conformité est adressée à l'Autorité de Protect
+Con idérant qu'au moment du contrôle effectué par l'Autorité de Protection, la société
+QUI UX AFRIQUE SA ne disposait pas :
+d'autorisation de traitement au sens de l'article 7 de Loi n°2013-450 du
+19 juin 2013 relative à la protection des données à caractère personnel
+et de ses textes d'application ;
+d'autorisation de mise en conformité au sens de la Décision n°2017-354
+de l'Autorité de Protection de la République de Côte d'Ivoire en date du
+26 octobre 2017 portant procédure de mise en conformité des
+relative à la protection des données à caractère personnel.
+Par onséquent, l'Autorité de Protection considère que la société QUIPUX n'a pas
+à la rotection des données à caractère personnel.
+B) Sur le non-respect du principe de la légitimité et licéité des traitements
+Con idérant que conformément aux dispositions de l'article 14 de la Loi n°2013-450
+du 9 juin 2013 relative à la protection des données à caractère personnel, le
+trait ment de données à caractère personnel est considéré comme légitime si la
+pers nne concernée donne expressément son consentement préalable ;
+Con idérant toutefois que le consentement doit être exprès, non équivoque, libre
+spé ifique et éclairé ;
+Con idérant que le consentement doit être une manifestation de volonté libre,
+spé ifique, éclairée et univoque par laquelle la personne concernée accepte le
+trait ment de ses données ;
+Con idérant que la personne concernée doit avoir été suffisamment informée par le
+resp nsable du traitement, avant de donner librement son consentement, afin d'être
+en esure de comprendre d'une part, la portée et les conséquences de son
+con entement, et d'autre part, les avantages et les inconvénients du traitement ;
+Con idérant que lors du contrôle et après analyse des documents mis à dispositions
+des agents assermentés, l'Autorité de Protection constate sans que la liste ne soit
+exh ustive:
+l'existence d'une fiche de recueil de consentement intitulée
+« FORMULAIRE DE CONSENTEMENT POUR CONSIGNATION DE
+RENSEIGNEMENTS COMMUNIQUES » pour les salariés qui ne prend pas
+en compte les principes liés à la protection des données à caractère
+personnel;
+l'existence d'une fiche de prospection qui ne contient pas de mécanisme
+de recueil de consentement;
+l'absence de recueil du consentement pour l'utilisation de la biométrie
+pour les agents et les clients ;
+l'absence de recueil du consentement pour l'installation du dispositif de
+vidéosurveillance ;
+l'absence de clauses de données personnelles dans le contrat de
+travail ;
+l'absence de fiche de recueil du consentement pour les données
+collectées dans le cadre du test psychotechnique ;
+l'absence de recueil de consentement pour l'utilisation de l'intelligence
+artificielle.
+Con idérant le responsable du traitement n'a pu fournir à l'Autorité de Protection,
+les reuves du consentement ou les dérogations à l'exigence du consentement
+préa able des clients, des salariés et des fournisseurs.
+Dès lors, l'Autorité de Protection considère que les traitements opérés ne
+sati font pas au principe de la légitimité ;
+C) Sur les finalités
+Con idérant l'article 16 de la Loi relative à la protection des données à caractère
+pers nnel qui dispose que les données doivent être collectées pour des finalités
+déte minées, explicites et légitimes et ne peuvent pas être traitées ultérieurement de
+man ère incompatible avec ces finalités ;
+Con idérant que lors du contrôle et l'analyse des documents, l'Autorité de Protection
+a co staté, sans que la liste ne soit exhaustive:
+les finalités liées à l'utilisation des dispositifs de biométrie et de
+vidéosurveillance ne sont pas identifiées ni clairement définies ;
+les finalités liées à l'utilisation des logiciels ne sont pas identifiées ni
+clairement définies.
+Con idérant que, à la suite de l'analyse du site internet de QUIPUX AFRIQUE SA
+effe tuée le 14 juin 2023 à l'adresse suivante: https://www.quipuxafrique.com/site/,
+l'Aut rité de protection a constaté des finalités non autorisées et imprécises
+ment:
+la gestion des données partagées ;
+la gestion des flottes ;
+la gestion du fret ;
+la Plateforme d'authentification des titres de transport routier au profit de la
+Direction Générale des Impôts.
+Con idérant que pour que la finalité d'un traitement de données soit légitime, il est
+née ssaire qu'à tous les stades et à tout moment, celle-ci repose soit sur le
+con entement de la personne concernée soit sur l'un des cas prévus par dérogation à
+l'exi ence de consentement ;
+é de
+que
+ient
+Protection de la République de Côte d'Ivoire en date du 04 août 2021 disposa
+par
+Toutl autre traitem ent de donnée s liés aux avis ci-dess us énumé rés et non prévus
+la Cfnven tion de conces sion, et ses annexe s doit pour être légitime , obtenir
+con~en tement préalab le des person nes concern ées ;
+Con~idérant que la plateforme d'authentification des titres de transport routier
+au profit de la Direction Générale des Impôts constitue une finalité non prise
+co~pte par les avis et n'a pas fait l'objet d'une demande d'autorisation
+traitement ;
+Dès/lors, l'Autorité de Protection considère que les finalités sont indéterminées
+et il égitimes.
+D) Sur la période de conservation des données traitées
+être
+des !donnée s à caractè re personn el dispose que, les donnée s traitées doivent
+finalités
+aux
+aire
+nécess
+con$ervées pendan t une durée qui n'excèd e pas la période
+pou[ lesquel les elles ont été collecté es ;
+é de
+Consid érant que lors du contrôle et après analyse des docume nts, l'Autorit
+Prot ction a constat é sans que la liste ne soit exhaus tive :
+les cartons d'archiv es sont rangés dans un placard fermé à clé dans un bureau
+dont l'accès se fait par emprei nte digitale ;
+les cartons d'archiv es sont transpo rtés par le service logistiq ue de QUIPU X
+AFRIQ UE SA à une fréquen ce de deux (02) fois par mois ;
+les archive s sont la proprié té du Ministè re des Transp orts ;
+les données communiquées au Ministère des Transports ne disposent
+pas de durée de conservations ;
+les données issues de la vidéosurveillance sont conservées pendant une
+durée de trente (30) jours sur des serveurs en côte d'ivoire ;
+l'absence de répertoire des délais de conservations des données pour
+chaque donnée traitée ;
+les délais de conservation des données biométriques des agents et des
+clients ne sont pas définis ;
+l'absence de politique d'archivage et de conservation des données ;
+l'absence de preuve du respect des délais de conservations prévus par
+les avis de l'autorité de protection ;
+l'absen ce de durée de conser vation pour la fiche de prospe ction ;
+les donnée s issues du formula ire de consen tement pour consig nation de
+renseig nemen ts commu niques sont conser vées pendan t une durée de
+les procéd ures suivan tes (non signée s), commu niquée s à l'Autor ité de
+Protec tion, ne contien nent pas de durées de conser vation :
+o gestion des réclam ations ;
+o gestion des plaintes ;
+o entrée et de sortie du personnel ;
+l'absence de durée de conservation de l'engagement de confidentialité
+de l'emplo yé;
+les lignes directrices relatives à la sous-traitance ne contiennent pas de
+durées de conservations ;
+les durées de conservations des données collectées de la plateforme elearning QUIPUX Academy n'ont pas été définies et communiquées à
+l'Autorité de Protection ;
+les délais de conservation des données issues du traitement des plaintes
+de la vidéoverbalisation ne sont pas définis.
+Co~sidérant enfin que la société QUIPUX AFRIQUE SA n'a pu fournir à l'Autorité
+contrôle
+points
+différen
+les
+Pro ection, les durées de conservation pour tous
+Dè lors, l'Autorité de Protection, au regard de la nature des données traitées
+con idère que le principe de la conservation limitée des données n'est pas respect
+E) Sur la proportionnalité des données collectées
+juin
+201 , relative à la protection des données à caractère personnel, les données traitées
+doi ent être adéquates, pertinentes et non excessives au regard des finalités pour
+les uelles elles sont collectées et traitées ;
+Co~sidérant que lors du contrôle et après analyse des documents, l'Autorité
+tive
+exhaus
+Profection a constaté sans que la liste ne soit
+l'absence de politique de gestion des données sensib les;
+la liste des données communiquées au ministère du transports dans les
+cartons d'archives n'a pas été communiquée à l'Autorité de protection ;
+la procédur e de gestion des réclamati ons ne définit pas les données
+objet de la collecte dans le cadre de la gestion des réclamati ons ;
+la collecte du certificat de nationalit é dans le cadre du recrutem ent ou de
+la gestion des ressource s humaines ;
+la liste des données collectées dans le cadre de la plateform e
+d'authent ification des titres de transport routier au profit de la Direction
+Générale des Impôts n'a pas été communi quée ;
+Par l conséque nt, l'Autorité de Protectio n considère que le principe de la
+proportio nnalité n'est pas respecté.
+F) Sur les destinata ires ou catégorie s de destinata ires habilités à recevoir
+communi cation des données
+Con idérant les disposition s de l'article 9 de la Loi n°2013-45 0 relative à la protection
+des données à caractère personnel , le responsable du traitement est tenu d'indiquer
+les testinatair es habilités à recevoir communic ation des données traitées ;
+Con idérant que les destinatai res internes et externes doivent être clairemen t
+ide1tifiés ;
+Qu'4 l'issue du contrôle, la société QUIPUX AFRIQUE SA indique que les destinatai res
+des données traitées sont les suivants :
+Le Ministère des Transport s ;
+Le cabinet d'avocats EMERITUS pour la gestion des contentie ux ;
+Le chef d'agence et le Directeur des Ressourc es Humaine s pour les
+arrêts maladies ;
+Le Trésor Public et la SICTA dans le cadre de l'intercon nexion des bases
+de données ;
+La Direction Générale des Impôts dans le cadre de la mise en place de la
+plateform e d'authent ification des titres de transport routier au profit de
+la Direction Générale des Impôts.
+Co'lsidér ant que la liste des sous-trait ants n'a pas été communi quée à l'Autorité
+de Îrotection pour analyse ;
+L'A~torité de Protectio n considère que les destinata ires des données à
+caractère personne l opérés par la société QUIPUX AFRIQUE SA sont
+incomple ts, insuffisan ts, non clairemen t identifiés .
+G) Sur la transparence des traitements
+relat ve à la protection des données à caractère personnel, la transparence implique
+l'inf rmation obligatoire et claire des personnes concernées par le responsable du
+trait[me nt ;
+Qu'i s'agit en l'espèce pour le responsable du traitement de faire preuve de
+tran parence vis-à-vis des personnes concernées qui devront notamment être
+inforées :
+- de l'identité du Responsable du traitement et le cas échéant, celle de son
+représentant dûment mandaté ;
+-, de la finalité du traitement ;
+- des catégories de données concernées ;
+- des destinataires auxquels les données sont susceptibles d'être
+communiquées ;
+-J de l'existence et des modalités d'exercice de leur droit d'accès et de
+rectification ;
+de la durée de conservation des données ;
+de l'éventualité de tout transfert de données à destination de pays tiers.
+En !cas d'utilisation d'un dispositif de vidéosurveillance , des affiches ou des
+pict1grammes doivent indiquer, d'une façon claire et visible, les informations
+suivantes :
+- l'identité du Responsable du traitement et le cas échéant, celle de son
+représentant dûment mandaté ;
+le fait que la société QUIPUX AFRIQUE SA soit placée sous vidéosurveillance ;
+-, la finalité du traitement;
+- les catégories de données concernées ;
+les destinataires auxquels les données sont susceptibles d'être communiquées;
+-_, l'existence et des modalités d'exercice des droits de la personne concernée;
+la durée de conservation des données ;
+- le numéro de !'Autorisation délivrée par l'Autorité de Protection.
+Con~idérant que lors du contrôle et après analyse des documents, l'Autorité de
+Protection constate :
+la fiche de consentement ne contient pas les dispositions de l'article 28
+de la loi n°2013-450 relative à la protection des données personnelles ;
+l'absence de mentions légales sur les formulaires et dans les contrats ;
+l'absence de la politique de confidentialité sur le site internet ;
+l'absence de politique de protection des données personnelles sur le site
+internet ;
+l'absence de conditions générales d'utilisation du site internet ;
+l'absence d'accord du personnel pour la mise en place du dispositif de
+vidéosurveillance ;
+L'existence d'une affiche relative à la vidéosurveillance contenant les
+mentions suivantes : « site sous vidéosurveillance pour des raisons de
+Con idérant que la société QUIPUX AFRIQUE SA a installé un dispositif de
+vidé surveillance ;
+Con idérant que l'affiche de l'agence de KORHOGO ne contient pas toutes les
+men ions ci-dessus citées ;
+Con idérant qu'au moment du contrôle, la société QUIPUX AFRIQUE SA ne
+disp sait pas d'autorisation de traitement de données à caractère personnel
+pou la vidéosurveillance ;
+Que le responsable du traitement a communiqué à l'Autorité de Protection, les
+doc ments suivants :
+un formulaire de documents à fournir pour le permis de conduire ;
+un formulaire de documents à fournir pour la carte grise ;
+un formulaire de documents à fournir pour la carte de transporteur ;
+un formulaire de documents à fournir pour la carte de transport.
+Qu' près l'analyse des formulaires ci-dessus énumérés, l'Autorité de Protection
+con tate que les points relatifs à la transparence ne sont pas insérés dans les
+for ulaires communiqués à l'Autorité de Protection.
+onséquent, l'Autorité de Protection considère que les traitements effectués
+oyen de la vidéosurveillance et des formulaires ci-dessus énumérés ne sont
+onformes au principe de la transparence.
+H) Sur le Correspondant à la protection des données
+rotection des données à caractère personnel prescrivent que le responsable du
+trait ment doit indiquer dans sa demande, la fonction de la personne ou le service
+aupr' s duquel s'exercent les droits reconnus aux personnes concernées, notamment
+les roits d'accès, de rectification, de suppression et de retrait du consentement;
+Con idérant qu'au moment du contrôle, l'Autorité de Protection a constaté:
+La présence du correspondant à la protection de QUIPUX AFRIQUE SA ;
+Le correspondant à la protection a suivi des formations sur la protection des
+données à caractère personnel ;
+La fiche de poste spécifique aux activités du Correspondant à la protection des
+données n'est pas disponible ;
+Chaque Direction dispose d'un chargé de correspondant qui rend compte au
+Correspondant à la protection ;
+L'existence d'un outil de formation dénommé « QUIPUX Academy » pour les
+formations ;
+Le Correspondant à la protection n'a pas encore réalisé de contrôle interne, ni
+de sensibilisation sur la protection des données à caractère personnel à
+l'endroit du personnel ;
+Le correspo ndant à la protection des données n'est pas connu de tout le
+personne l;
+L'avis du Correspo ndant à la protection n'est pas sollicité dans
+l'élaboration des procédur es internes.
+l 'A~ orité de Protection considère que les mesures relatives aux activités du
+corrf spondant sont partiellement respectées .
+1) Sur les droits des personnes concernées
+à la protection des données à caractère personnel prescrivent que le responsable du
+trait ment doit indiquer dans sa demande, la fonction de la personne ou le service
+aup ès duquel s'exercen t les droits reconnus aux personnes concernées, notamment
+les droits d'accès, de rectification, de suppression ;
+Co~sidérant que lors du contrôle et après analyse des documents, l'Autorité de
+Protection constate :
+l'existence d'un Correspondant à la protection des données pour la société
+QUIPUX AFRIQUE SA ;
+l'absence d'une procédur e de gestion des droits des personnes
+concerné es ;
+les mentions relatives aux droits des personne s concerné es sont
+inexistantes sur les formulaires communi qués ;
+l'absence du contact du Correspo ndant à la protectio n des données sur
+les formulair es de consente ment pour consigna tion de renseignements
+communi qués, sur les fiches de prospection ;
+Co sidérant que les formulaires et autres documents ne prennent pas tous en compte
+les roits des personnes concernées ,
+L'At,1torité de Protection considère que les droits des personnes concernées ne sont
+pasl respectés.
+J) Sur les mesures de sécurité
+des onnées à caractère personnel dispose que le responsable du traitement est tenu
+de p endre toute précaution au regard de la nature des données et, notamment, pour
+emp cher qu'elles soient déformées, endommagées, ou que des tiers non autorisés y
+aien accès.
+Con idérant que la société QUIPUX AFRIQUE SA a mis en place plusieurs mesures
+de s curité pour garantir la protection des données personnelles dont une politique de
+mot de passe, une charte informatique, une politique de gestion des accès et des
+habi itations, une politique de sécurité ;
+Que le contrôle a révélé plusieurs insuffisances dans les mesures prises, notamment :
+l'absence de systèmes de suppression automatique des données audelà des durées de conservation ;
+l'absence de procédure de suppression des données au-delà de la durée
+de conservation ;
+l'absence de chiffrement des disques durs de sauvegarde ;
+l'absence de plan de continuité des activités ;
+l'absence de cloisonnement du réseau de l'environnement d'exécution
+de l'application biométrique (Kelio) des autres réseaux ;
+l'absence de mentions légales, de Conditions Générales d'utilisation, de
+politique de confidentialité et de Politique de gestion des cookies sur le
+site internet de quipuxafrique ;
+le mot de passe pour l'ouverture de session sur le poste de travail utilisé
+pour la vidéosurveillance est faible ;
+le recours à une base de données centralisée pour le stockage des gabarits
+biométriques ;
+le transfert de données non autorisé vers le Royaume-Uni ;
+la durée de conservation des données issues des caméras de
+vidéosurveillance est excessive ;
+les ports USB sur les postes de travail des utilisateurs ne sont pas
+verrouillés .
+L'Au orité de Protection considère que les mesures de sécurité sont insuffisantes pour
+ass rer la protection des données personnelles traitées.
+K) Sur les procédures internes de la société QUIPUX AFRIQUE SA
+Con idérant que la société QUIPUX AFRIQUE SA a communiqué plusieurs
+proc, dures à l'Autorité de Protection.
+Con idérant que l'analyse de ces procédures, sans que la liste ne soit exhaustive, fait
+ress rtir les points suivants :
+L'existence d'une cartographie des risques axée sur la protection des données
+personnelles ;
+la ligne directrice de la sous-traitance non validée ne prend pas en
+compte les principes liés à la protection des données personnelles ;
+Les principes liés à la protection des données personnelles ne sont pas
+pris en compte dans les documents suivants :
+les lignes directrices de la sous-traitance (non validées) ;
+la procédure de sauvegarde et de récupération des données (non
+validée) ;
+la procédure de gestion des accès logiques ;
+le Plan de continuité des activités;
+les procédures de plaintes, réclamations, d'entrée et sorties,
+d'enregistrement des données biométriques.
+l'absence de politique de confidentialité;
+l'absence de procédure de conservation des données ;
+Dès lors, l'Autorité de Protection considère que les procédures internes ne sont pas
+don ées à caractère personnel.
+L) Sur les sous-traitants
+des onnées à caractère personnel dispose que le responsable du traitement est tenu
+de hoisir un sous-traitant qui apporte des garanties suffisantes au regard des
+mes res de sécurité techniques et d'organisation relatives aux traitements à effectuer.
+Qu'i incombe au responsable du traitement ainsi qu'aux sous-traitants de veiller au
+resp et de ces mesures.
+Con idérant qu'à l'issue du contrôle, l'Autorité de Protection a constaté :
+le recour s à la société CFAO pour « l'assist ance et la mainte nance de
+l'infras tructur e de stocka ge IBM (switch -serveu rs-baie de disque s)»;
+La société G4S est sollicit ée pour la sécurit é physiq ue des locaux ;
+Le cabine t d'avoc ats EMERITUS pour la gestion des conten tieux;
+La société AWS pour l'héber gemen t de la platefo rme ;
+La société IBM WASTON pour la platefo rme d'intell igence artificie lle ;
+Con idérant qu'auc un des sous-tr aitants cités ne dispos ent d'autor isation
+trait~m ent de donnée s à caractè re person nel ou d'autor isation de mise
+conform ité ;
+Conridérant par ailleurs que la liste complè te des sous-tr aitants n'a pas
+commu niqué à l'Autor ité de Protec tion ;
+été
+L'AJori té de Protection considère que les recommandations faites dans les avis,
+sur es sous-traitants n'ont pas été respectées.
+M) Sur les interconnexions des bases de données
+Selon l'article 27 de la Loi relative à la protection des données personnelles,
+l'int±rconnexion des fichiers est soumise à l'autorisation préalable de l'Autorité
+prot ction. Elle ne peut pas entrainer de discrimination ou de réduction des droits,
+s de
+libe111és et garanties pour les personnes concernées, ni être assorties de mesure
+sécurité inappropriées, et doit tenir compte du principe de pertinence des donnée
+faisjnt l'objet d'interconnexion.
+des
+décl~rations, de présentation des demandes, d'octroi et de retrait des autorisations
+que
+pou le traitement des données à caractère personnel précise en outre
+l'int rconnexion des fichiers contenant des données à caractère personnel n'est
+aut risée que dans les cas limitativement prévus par décision de l'ARTCI.
+n°2j21- 0025 prononcées par l'Autorité de protection de la République de Côte d'Ivoire
+Considérant que l'Autorité de protection a prescrit à la société QUIPUX AFRIQUE
+quel chacune de ces interconnexions fasse l'objet d'une autorisation spécifique
+l'Autorité de protection.
+Co1sidérant que l'Autorité de protection a prescrit à la société QUIPUX AFRIQUE
+tion
+l'interdiction de procéder à l'interconnexion des différents systèmes sauf autorisa
+pré~lable de l'Autorité de protection.
+Con idérant que lors du contrôle, l'Autorité de protection a constaté une
+inte connexion des bases de données avec celles de la SICTA et du Trésor
+Pub ic;
+Con idérant qu'au moment du contrôle, la société QUIPUX AFRIQUE SA n'a pu
+fou nir à l'Autorité de protection, la preuve des autorisations spécifiques
+pre crites par l'Autorité de protection ;
+onséquent, l'Autorité de protection considère que les prescriptions contenues
+les avis n'ont pas été respectées.
+N) Sur les transferts des données
+Con idérant que l'Autorité de protection a constaté:
+L'utilisation d'une plateforme technologique hébergée dans le cloud AWS
+(Amazon Web Services) ;
+L'utilisation de la plateforme IBM WATSON comme
+connaissance et d'exécution de l'intelligence artificielle ;
+moteur de
+Con idérant que les transferts des données sur lesdites plateformes n'ont pas
+fait 'objet d'autorisation de traitement de données ;
+Con idérant que les données collectées par ces plateformes n'ont pas été
+ide tifiées ;
+Con idérant que les pays destinataires des données de ces plateformes
+héb rgées dans des cloud ne sont pas clairement identifiés ;
+Con idérant que QUIPUX AFRIQUE SA ne dispose pas d'autorisation de
+tran ferts des données pour les plateformes ;
+onséquent, l'Autorité de protection considère que les transferts des données
+les cloud sont illégitimes.
+relat ve à la protection des données à caractère personnel et l'article 17 de la Décision
+n°2 21-0676 de l'Autorité de Protection de la République de Côte d'Ivoire en date du
+04 oût 2021 portant procédure de contrôle en matière de protection des données à
+cara tère personnel ;
+Apr s en avoir délibéré,
+DECIDE:
+rela ive à la protection des données à caractère personnel et l'article 17 de la Décision
+n°2 21-0676 de l'Autorité de Protection de la République de Côte d'Ivoire en date du
+04 oût 2021 portant procédure de contrôle en matière de protection des données à
+car ctère personnel, l'Autorité de Protection prononce à l'égard de la société QUIPUX
+AF IQUE SA:
+- u avertissement pour non-respect des obligations découlant de la Loi
+p rsonnel;
+e mise en demeure de faire cesser les manquements observés dans les
+ixante (60) jours à compter de la réception de la présente décision ;
+- u e mise en demeure de procéder à sa mise en conformité avec la Loi n°20134 0 du 19 juin 2013 relative à la protection des données à caractère
+p rsonnel dans un délai de soixante (60) jours à compter de la réception de la
+p ésente;
+e mise en demeure d'appliquer toutes les prescriptions contenues dans les
+protection de la République de Côte d'Ivoire en date du 04 août 2021 .
+L'A torité de Protection prononcera l'une des mesures prévues par l'article 51 de la loi
+n°2 13-450 du 19 juin 2013 relative à la protection des données à caractère personnel
+en s de non-respect de la présente décision par la société QUIPUX AFRIQUE SA.
+Les gents assermentés de l'Autorité de Protection effectueront des contrôles afin de
+s'as urer du respect de la présente décision conformément à la décision n°2021-0676
+de I' utorité de Protection en date du 04 août 2021 portant procédure de contrôle en
+mati· re de protection des données à caractère personnel.
+La résente décision prend effet à compter de la date de sa notification.
+Le ~irecteur Général est chargé de l'exécution de la présente décision, qui sera
+publiée sur le site internet de l'Autorité de Régulation des TélécommunicationsfTIC de
+Côt d'Ivoire et celui de l'Autorité de Protection.
+En deux (2) exemplaires originaux
+Le président
+Dr Coty Souleïnia
+COMMANDEUR DE L'ORDR

@@ -1,0 +1,973 @@
+# titre: Acte additionnel A/SA.1/01/10 relatif à la protection des données à caractère personnel dans l'espace de la CEDEAO, du 16 février 2010
+# label: Acte additionnel A/SA.1/01/10 de la CEDEAO relatif à la protection des données à caractère personnel
+# pays: CEDEAO
+# domaine: donnees
+# source: Journal officiel de la CEDEAO, vol. 56, février 2010
+
+ACTE ADDITIONNEL A/SA.1/01/10 RELATIF A LA
+PROTECTION DES DONNEES A CARACTERE
+PERSONNEL DANS L'ESPACE DE LACEDEAO
+LES HAUTES PARTIES CONTRACTANTES,
+VU les Articles 7, 8 et 9 du Traité Révisé de la
+CEDEAO tel qu'amendé, portant création de la
+Conférence des Chefs d'Etat et de Gouvernement
+et définissant sa composition et ses fonctions ;
+VU le Protocole Additionnel A/SP.1/06/06 portant
+amendement du Traité Révisé de la CEDEAO ;
+VU l'article 4 paragraphe g dudit Traité qui énonce
+l'adhésion des Etats Membres au respect, à la
+promotion et à la protection des droits de l'homme
+et des peuples conformément aux dispositions de la
+Charte Africaine des Droits de l'Homme et des
+Peuples ;
+VU les articles 27, 32 et 33 dudit Traité relatifs à la
+Science et à la Technologie, et aux domaines des
+Communications et des Télécommunications ;
+VU l'article 57 dudit Traité relatif à la coopération
+judiciaire et juridique qui prescrit que les Etats
+membres s'engagent à promouvoir la coopération
+judiciaire en vue d'harmoniser les systèmes
+judiciaires et juridiques;
+VU l'Acte Additionnel A/SA 1/01/07du 19 janvier2007
+de la CEDEAO relatif à l'harmonisation des
+Politiques et du Cadre Réglementaire du secteur des
+Technologies de l'Information et de la
+Communication (TIC) ;
+CONSIDERANT les progrès importants réalisés dans
+les domaines des Technologies de l'Information et
+de la Communication (TIC) ainsi que de l'Internet
+dont l'utilisation inappropriée dans la vie quotidienne
+pose des problèmes relativement à la vie privée et
+professionnelle des utilisateurs ;
+CONSCIENTES qu'une technologie telle que
+l'internet et ses facilités de profilage et de traçage
+des individus constitue un vecteur favorable de
+collecte et de traitement des données à caractère
+personnel ;
+CONSCIENTESégalement que l'utilisation croissante
+des technologies de l'information et de la
+communicationpeut être préjudiciable à la vie privée
+et professionnelle des utilisateurs ;
+
+de la CEDEAO Vol. 56
+NOTANT que nonobstant l'existence des législations
+nationales relatives à la protection de l'intimité des
+citoyens dans leur vie quotidienne ou professionnelle
+et à la garantie de la libre circulation des
+informations, il s'avère important de combler un vide
+juridique créé par la naissance de ce nouvel
+instrument de communication qu'est l'Internet ;
+CONSCIENTES de la nécessité de combler ce vide
+juridique et de créer en conséquence un cadre légal
+harmonisé dans le traitement des données à
+caractère personnel ;
+DESIREUSES d'adopter un Acte Additionnel relatif à
+la protection des données à caractère personnel ;
+APRES AVIS du Parlement de la Communauté en
+date du 23 Mai 2009;
+SUR RECOMMANDATION de la Soixante troisième
+Session Ordinaire du Conseil des Ministres, tenue
+à Abuja les 20 et 21 Novembre 2009;
+CONVIENNENT DE CE QUI SUIT :
+CHAPITRE I
+DISPOSITIONS GENERALES
+Article premier : Définitions
+Ausens du présent Acte Additionnel, on entend par :
+Autorité de protection : l'autorité nationale
+administrative indépendante chargée de veiller à ce
+que les traitements des données à caractère
+personnel soient mis en œuvre conformément aux
+dispositions du présent Acte additionnel ;
+Code de conduite : les chartes d'utilisation
+élaborées par le responsable du traitement afin
+d'instaurer un usage correct des ressources
+informatiques, de l'Internet et des communications
+électroniques de la structure concernée et
+homologué par l'Autorité de protection ;
+Consentement de la personne concernée:
+toute manifestation de volonté expresse, non
+équivoque, libre, spécifique et informée par laquelle
+la personne concernée ou son représentant légal,
+judiciaireou conventionnel accepte que ses données
+à caractère personnel fassent l'objet d'un traitement
+manuel ou électronique ;
+
+Octobre 2009 - Février 2010 Journal Officiai de
+Destinataire d'un traitement des données à
+caractère personnel: toute personne habilitée à
+recevoir communication de ces données autre que
+la personne concernée, le responsable du
+traitement, le sous-traitant et les personnes qui, en
+raison de leurs fonctions, sont chargés de traiter
+les données ;
+Données à caractère personnel : toute
+information relative à une personne physique
+identifiée ou identifiable directement ou
+indirectement, par référence à un numéro
+d'identification ou à un ou plusieurs éléments,
+propres à son identité physique, physiologique,
+génétique, psychique, culturelle, sociale ou
+économique ;
+Données sensibles : toutes les données à
+caractère personnel relatives aux opinions ou
+activités religieuses, philosophiques, politiques,
+syndicales, à la vie sexuelle ou raciale, à la santé,
+aux mesures d'ordre social, aux poursuites, aux
+sanctions pénales ou administratives ;
+Données dans le domaine de la santé: toute
+information concernant l'état physique et mental
+d'une personne concernée, y compris les données
+génétiques précitées ;
+Fichier de données à caractère personnel: tout
+ensemble structuré de données accessibles selon
+des critères déterminés, que cet ensemble soit
+centralisé, décentralisé ou réparti de manière
+fonctionnelle ou géographique;
+Interconnexion des données à caractère
+personnel : tout mécanisme de connexion
+consistant en la mise en relationde données traitées
+pour une finalité déterminée avec d'autres données
+traitées pour des finalités identiques ou non, ouliées
+par un ou plusieurs responsables de traitement ;
+Personne concernée: toute personne physique
+qui fait l'objet d'un traitement des données à
+caractère personnel ;
+Prospection directe : toute sollicitation effectuée
+au moyen de l'envoi de message, quel qu'en soit le
+support ou la nature notamment commerciale,
+politique ou caritative, destinée à promouvoir,
+directement ou indirectement, des biens, des
+services ou l'image d'une personne vendant des
+biens ou fournissant des services ;
+
+Vol. 56
+la CEDEAO
+Responsable du traitement : personne physique
+ou morale, publique ou privée, tout autre organisme
+ou association qui, seul ou conjointement avec
+d'autres, prend la décision de collecter et de traiter
+des données à caractère personnel et en détermine
+les finalités ;
+Sous-traitant: toute personne physique ou morale,
+publique ou privée, tout autre organisme ou
+association qui traite des données pour le compte
+du responsable du traitement ;
+Tiers : toute personne physique ou morale, publique
+ou privée, tout autre organisme ou association autre
+que la personne concernée, le responsable du
+traitement, le sous-traitant et les personnes qui,
+placés sous l'autorité directe du responsable du
+traitement ou du sous-traitant, sont habilités à traiter
+les données ;
+Traitement des données à caractère personnel:
+toute opérationou ensemble d'opérations effectuées
+ou non à l'aide de procédés automatisés ou non, et
+appliquées à des données, telles que la collecte,
+l'exploitation, l'enregistrement, l'organisation, la
+conservation, l'adaptation, la modification,
+l'extraction, la sauvegarde, la copie, la consultation,
+l'utilisation, la communication par transmission, la
+diffusion ou toute autre forme de mise à disposition,
+le rapprochement ou l'interconnexion, ainsi que le
+verrouillage, le cryptage, l'effacement ou la
+destruction des données à caractère personnel.
+CHAPITRE»:
+CADRE JURIDIQUE DE LA PROTECTION DES
+DONNEES A CARACTERE PERSONNEL
+Article 2: Objet
+Chaque Etat membre met en place un cadre légal
+de protection de la vie privée et professionnelle
+consécutive à la collecte, au traitement, à la
+transmission, au stockage et à l'usage des données
+à caractère personnel, sous réserve de la protection
+de l'ordre public.
+Article 3: Champ d'application
+Sont soumises aux dispositions du Présent Acte
+Additionnel:
+1) toute collecte, tout traitement, toute
+transmission, tout stockage et toute utilisation
+des données à caractère personnel par une
+
+Octobre 2009 - Février 2010
+Journal Officiai
+personne physique, par l'Etat, les collectivités
+locales, les personnes morales de droit public
+ou de droit privé ;
+2) tout traitement automatisé ou non de données
+contenues ou appelées à figurer dans un
+fichier, à l'exception des traitements
+mentionnés à l'article 4 du présent Acte
+additionnel;
+3) tout traitement mis en œuvre sur le territoire
+d'un Etat Membre de l'UEMOA ou de la
+CEDEAO ;
+4) tout traitement des données concernant la
+sécurité publique, la défense, la recherche et
+la poursuite d'infractions pénales ou la sûreté
+de l'Etat, sous réserve des dérogations
+définiespar des dispositions spécifiquesfixées
+par d'autres textes de loi en vigueur.
+Article 4: Exclusions
+Le présent Acte additionnel ne s'applique pas aux
+traitements de données utilisées par une personne
+physique dans le cadre exclusif de ses activités
+personnelles ou domestiques.
+CHAPITRE III:
+FORMALITES NECESSAIRES AU TRAITEMENT
+DES DONNEES A CARACTERE PERSONNEL
+Article 5: Formalité de déclaration
+En dehors des cas prévus aux articles 6, 11 et 12
+du présent Acte additionnel, les traitements de
+données à caractère personnel font l'objet d'une
+déclaration auprès de l'Autorité de protection.
+Article 6: Traitements à caractère personnel
+pour le compte du service public
+Les traitements des données à caractère personnel
+opérés pour le compte de l'Etat, d'un établissement
+public ou d'une collectivité locale ou d'une personne
+morale de droit privé gérant un service public sont
+décidés par acte législatif ou réglementaire pris
+après avis motivé de l'Autorité de protection.
+Ces traitements portent sur:
+1) la sûreté de l'Etat, la défense ou la sécurité
+publique ;
+
+de la CEDEAO Vol. 56
+2) la prévention, la recherche, la constatation ou
+la poursuite des infractions pénales ou
+l'exécution des condamnations pénales ou des
+mesures de sûreté;
+3) le recensement de la population ;
+4) les données à caractère personnel faisant
+apparaître, directement ou indirectement, les
+origines raciales, ethniques ou régionales, la
+filiation, les opinions politiques, philosophiques
+ou religieuses ou l'appartenance syndicale
+des personnes, ou qui sont relatives à la santé
+ou à la vie sexuelle ;
+5) le traitement de salaires, pensions, impôts,
+taxes et autres liquidations.
+Article 7: Formalités de demandes d'avis et
+d'autorisations
+Les demandes d'avis, les déclarations et les
+demandes d'autorisations doivent préciser :
+l'identité et l'adresse du responsable du
+1)
+traitement ou, si celui-ci n'est pas établi sur le
+territoire d'un Etat Membre de la CEDEAO et
+de l'UEMOA, celles de son
+représentant dûment mandaté ;
+2) la ou les finalités du traitement ainsi que la
+description générale de ses fonctions ;
+les interconnexions envisagées ou toutes
+3)
+autres formes de mise en relation avec d'autres
+traitements ;
+4) les données à caractère personnel traitées,
+leur origine et les catégories de personnes
+concernées par le traitement ;
+5) la durée de conservation des données
+traitées;
+le ou les services chargés de mettre en œuvre
+6)
+le traitement ainsi que les catégories de
+personnes qui, en raison de leurs fonctions
+ou pour les besoins du service, ont
+directement accès aux données enregistrées ;
+7)
+les destinataires habilités
+a recevoir
+communication des données ;
+8) la fonction de la personne ou le service auprès
+duquel s'exerce le droit d'accès ;
+
+Journal Officiai de
+Octobre 2009 - Février 2010
+9) les dispositions prises pourassurer la sécurité
+des traitements et des données ;
+10) l'indication du recours à un sous-traitant ;
+11) les transferts de données à caractère
+personnel envisagés à destination d'un pays
+tiers non membre de la CEDEAO ou de
+l'UEMOA, sous réserve de réciprocité.
+Article 8: Délai
+L'Autorité de protection se prononce dans un délai
+fixe à compter de la réception de la demande d'avis
+ou d'autorisation. Toutefois, ce délai peut être
+prorogé ou non sur décision motivée de l'Autorité
+de protection.
+Article 9: Voie de l'avis ou de la demande
+d'autorisation
+L'avis, la déclaration ou la demande d'autorisation
+peut être adressé à l'Autorité de protection par voie
+postale ou électronique.
+Article 10: Exonération de l'obligation de
+déclaration
+Pour les catégories les plus courantes de traitement
+des données à caractère personnel dont la mise en
+œuvre n'est pas susceptible de porter atteinte à la
+vie privée ou aux libertés, l'Autorité de protection
+peut établir et publier des normes destinées à
+simplifier ou à exonérer l'obligation de déclaration.
+Article 11: Dispense de formalités
+Sont dispensés des formalités préalables prévues
+aux articles suivants :
+1) les traitements mentionnés à l'article 4 du
+présent Acte additionnel;
+2) les traitements ayant pour seul objet la tenue
+d'un registre qui est destiné à un usage
+exclusivement privé ;
+3) les traitements mis en œuvre par une
+association ou tout organisme à but non
+lucratif et à caractère religieux, philosophique,
+politique ou syndical dès lors que ces données
+correspondent à l'objet de cette association
+ou de cet organisme, qu'elles ne concernent
+que leurs membres et qu'elles ne doivent pas
+être communiquées à des tiers.
+
+la CEDEAO Vol. 56
+Article 12: Types de traitements à mettre en
+oeuvre après autorisation
+Sont mis en œuvre après autorisation de l'Autorité
+de protection:
+1) les traitements des données à caractère
+personnel portant sur des données
+génétiques et sur la recherche dans le
+domaine de la santé ;
+2) les traitements des données à caractère
+personnel portant sur des données relatives
+aux infractions, condamnations ou mesures de
+sûreté ;
+3) les traitements des données à caractère
+personnel ayant pour objet une interconnexion
+de fichiers, telle que définie à l'article 37 du
+présent Acte additionnel;
+4) les traitements portant sur un numéro national
+d'identification ou tout autre identifiant de la
+même nature ;
+5) les traitements des données à caractère
+personnel comportant des données
+biométriques ;
+6) les traitements des données à caractère
+personnel ayant un motif d'intérêt public
+notamment à des fins historiques, statistiques
+ou scientifiques.
+Article 13: Saisine de l'Autorité de protection
+L'Autorité de protection peut être saisie par toute
+personne, agissant par elle-même, par l'entremise
+de son avocat ou par toute autre personne physique
+ou morale dûment mandatée.
+CHAPITRE IV:
+CADRE INSTITUTIONNEL DE LA PROTECTION
+DES DONNEES A CARACTERE PERSONNEL
+Article 14: Création
+1) Dans l'espace CEDEAO, chaque Etat Membre
+met en place une Autorité de protection des
+données à caractère personnel. Les Etats
+Membres qui n'en disposent pas encore sont
+encouragés à en installer ;
+2) L'Autorité de protection est une autorité
+
+.Octobre 2009 - Février 2010 Journal Officiai de
+administrative indépendante chargée de
+veiller à ce que les traitements des données
+à caractère personnel soient mis en œuvre
+conformément aux dispositions du présent
+Acte additionnel.
+Article 15: Composition
+Chaque Etat Membre prend les dispositions
+nécessaires pour déterminer la composition de
+l'Autorité de protection. Cette autorité est composée
+de personnalités qualifiées pour leur connaissance
+en droit, en informatique, et tout autre domaine de
+connaissance pour atteindre les objectifs tels que
+définis à l'article 2 du présent Acte additionnel.
+Article 16: Incompatibilité
+La qualité de membre d'une autorité de protection
+est incompatible avec la qualité de membre du
+Gouvernement, de l'exercice des fonctions de
+dirigeants d'entreprise, de la détention de
+participation dans les entreprises du secteur de
+l'informatique ou des télécommunications.
+Article 17: Immunité
+1) Les membres d'une Autorité de protection
+jouissent d'une immunité totale pour les
+opinions émises dans l'exercice ou à l'occasion
+de l'exercice de leur fonction.
+2) Dans l'exercice de leur attribution, ils ne
+reçoivent d'instruction d'aucune autorité.
+Article 18: Secret professionnel et règlement
+intérieur
+1) Les membres de l'autorité de protection sont
+soumis au secret professionnel conformément
+aux textes en vigueur dans chaque Etat
+Membre.
+2) Chaque Autorité de protection établit un
+règlement intérieur qui précise notamment les
+règles relatives aux délibérations, à
+l'instruction et à la présentation des dossiers.
+Article 19: Attributions de l'Autorité de
+protection des données à caractère personnel
+1. L'Autorité de protection s'assure que les TIC
+ne comportent aucune menace aux libertés
+publiques et à la vie privée. A ce titre, elle doit :
+
+la CEDEAO
+Vol. 56
+a) informer les personnes concernées et
+les responsables de traitement de leurs
+droits et obligations ;
+b) répondre à toute demande d'avis
+portant sur un traitement de données à
+caractère personnel ;
+c) informer les personnes concernées et
+les responsables de traitement de leurs
+droits et obligations ;
+d) autoriser les traitements de fichiers
+dans un certain nombre de cas,
+notamment les fichiers sensibles ;
+e) recevoir les formalités préalables à la
+création de traitements des données à
+caractère personnel ;
+f) recevoir les réclamations, les pétitions
+et les plaintes relatives à la mise en
+œuvre des traitements des données à
+caractère personnel et informer leurs
+auteurs des suites données à celles-ci ;
+g) informer sans délai l'autorité judiciaire
+pour certains types d'infractions dont elle
+a connaissance ;
+h) procéder, par le biais d'agents
+assermentés, à des vérifications portant
+sur tout traitement des données à
+caractère personnel ;
+i) prononcer des sanctions,
+administratives et pécuniaires à l'égard
+d'un responsable de traitement ;
+j) mettre à jour un répertoire des
+traitements des données à caractère
+personnel et à la disposition du public ;
+k) conseiller les personnes et organismes
+qui font les traitements des données à
+caractère personnel ou qui procèdent
+à des essais ou expériences ;
+I) autoriser les transferts transfrontaliers
+de données à caractère personnel ;
+m) faire des suggestions susceptibles de
+simplifier et d'améliorer le cadre législatif
+et réglementaire à l'égard du traitement
+des données ;
+n) mettre en place des mécanismes de
+coopération avec les autorités de
+
+Journal Officiai de
+Octobre 2009 - Février 2010
+protection des données à caractère
+personnel de pays tiers ;
+o) participer aux négociations
+internationales en matière de protection
+des données à caractère personnel ;
+p) établir, selon unepériodicité bien définie,
+un rapport d'activités remis soit au
+Président de la République, soit au
+Président de l'Assemblée nationale, soit
+au Premier ministre, soit au Ministre de
+la Justice ;
+q) requérir des agents assermentés,
+conformément aux dispositions en
+vigueur dans les Etats membres de la
+CEDEAO, en vue de participer à la mise
+en œuvre des missions de vérification;
+2. L'Autorité de protection peut en outre
+prononcer les mesures suivantes :
+a) Un avertissement à l'égard du
+responsable du traitement ne respectant
+pas les obligations découlant des
+présentes lignes directrices ;
+b) une mise en demeure de faire cesser
+les manquements concernés dans le
+délai qu'elle fixe.
+3) De même, en cas d'urgence, lorsque la mise
+en œuvre d'un traitement ou l'exploitation de
+données à caractère personnel entraîne une
+violation de droits et libertés, l'Autorité de
+protection, après procédure contradictoire,
+peut décider:
+a) l'interruption de la mise en œuvre du
+traitement ;
+b) le verrouillage de certaines données à
+caractère personnel traitées ;
+c) l'interdiction temporaire ou définitive d'un
+traitement contraire aux dispositions du
+présent Acte additionnel.
+Article 20 : Sanctions
+Si le responsable du traitement ne se conforme pas
+à la mise en demeure quilui a été adressée, l'Autorité
+de protection peut prononcer à son encontre, après
+procédure contradictoire, les sanctions suivantes:
+1) un retrait provisoire de l'autorisation
+accordée ;
+
+Vol. 56
+la CEDEAO
+2) le retrait définitif de l'autorisation ;
+3) une amende pécuniaire.
+Article 21: Recours
+Les sanctions et décisions prises par l'Autorité de
+protection sont susceptibles de faire l'objet d'un
+recours.
+Article 22: Budget
+Pour l'accomplissement de ses missions, l'Autorité
+de protection reçoit une dotation budgétaire de
+l'Etat.
+CHAPITRE V:
+PRINCIPES DIRECTEURS DU TRAITEMENT DES
+DONNEES A CARACTERE PERSONNEL
+Article 23: Principe du consentement et de
+légitimité
+1) Le traitement des données à caractère
+personnel est considéré comme légitime si la
+personne concernée donne son consentement.
+2) Toutefois, il peut être dérogé à cette exigence
+du consentement lorsque le traitement est
+nécessaire:
+a) au respect d'une obligation légale à
+laquelle le responsable du traitement est
+soumis ;
+b) à l'exécution d'une mission d'intérêtpublic
+ou relevant de l'exercice de l'autorité
+publique, dont est investi le responsable
+du traitement ou le tiers auquel les
+données sont communiquées ;
+c) à l'exécution d'un contrat auquel la
+personne concernée est partie ou à
+l'exécution de mesures précontractuelles
+prises à sa demande ;
+d) à la sauvegarde de l'intérêt ou des droits
+et libertés fondamentaux de la personne
+concernée.
+Article 24 : Principe de licéité et de loyauté
+La collecte, l'enregistrement, le traitement, le
+stockageet latransmission des données à caractère
+
+Octobre 2009 - Février 2010
+Journal Officiai
+personnel doivent se faire de manière licite, loyale
+et non frauduleuse.
+Article 25: Principe de finalité, de pertinence,
+de conservation
+1) Les données doivent être collectées pour des
+finalités déterminées, explicites et légitimes et
+ne peuvent pas être traitées ultérieurement de
+manière incompatible avec ces finalités.
+2) Ellesdoivent être adéquates et pertinentes au
+regard des finalités pour lesquelles elles sont
+collectées et traitées ultérieurement.
+3) Elles doivent être conservées pendant une
+durée qui n'excède pas la période nécessaire
+aux finalités pour lesquelles elles ont été
+collectées ou traitées.
+4) Au-delàde cette période requise, les données
+ne peuvent faire l'objet d'une conservation
+qu'en vue de répondre spécifiquement à un
+traitement à des fins historiques, statistiques
+ou de recherches en vertu des dispositions
+légales.
+Article 26: Principe d'exactitude
+Les données collectées doivent être exactes et, si
+nécessaire, mises à jour. Toute mesure raisonnable
+doit être prise pour que les données inexactes ou
+incomplètes, au regard des finalités pour lesquelles
+elles sont collectées et traitées ultérieurement, soient
+effacées ou rectifiées.
+Article 27 : Principe de transparence
+Le principe de transparence implique une
+information obligatoire de la part du responsable du
+traitement portant sur les données à caractère
+personnel.
+Article 28 Principe de confidentialité et de
+sécurité
+Les données à caractère personnel doivent être
+traitées de manière confidentielle et être protégées,
+notamment lorsque le traitement comporte des
+transmissions de données dans un réseau.
+Article 29: Principe du choix du sous traitant
+Lorsque le traitement est mis en œuvre pour le
+compte du responsable du traitement, celui-ci doit
+choisir un sous-traitant qui apporte des garanties
+
+de la CEDEAO
+Vol. 56
+suffisantes. Il incombe au responsable du traitement
+ainsi qu'au sous-traitant de veiller au respect des
+mesures de sécurité définies par le présent Acte
+additionnel.
+Article 30: Principes spécifiques
+Dans l'espace CEDEAO, il est interdit de procéder
+à la collecte et à tout traitement qui révèlent l'origine
+raciale,ethnique ou régionale, la filiation, les opinions
+politiques, les convictions religieuses ou
+philosophiques, l'appartenance syndicale, la vie
+sexuelle, les données génétiques ou plus
+généralement celles relatives à l'état de santé de la
+personne concernée.
+Article 31 : Exceptions
+L'interdiction fixée à l'article précédent ne s'applique
+pas pour les catégories de traitements
+suivantes lorsque:
+1) le traitement des données à caractère
+personnel porte sur des données
+manifestement rendues publiques par la
+personne concernée ;
+2) la personne concernée a donné son
+consentement par écrit, quel que soit le
+support, à un tel traitement et en conformité
+avec les textes en vigueur;
+3) le traitement des données à caractère
+personnel est nécessaire à la sauvegarde des
+intérêts vitaux de la personne concernée ou
+d'une autre personne dans le cas où la
+personne concernée se trouve dans l'incapacité
+physique ou juridique de donner son
+consentement ;
+4) le traitement, notamment des données
+génétiques, est nécessaire à la constatation,
+à l'exercice ou à la défense d'un droit en
+justice ;
+5) une procédure judiciaire ou une enquête
+pénale est ouverte ;
+6) le traitement des données à caractère
+personnel s'avère nécessaire pour un motif
+d'intérêt public notamment à des fins
+historiques, statistiques ou scientifiques ;
+7) le traitement est nécessaire à l'exécution d'un
+
+Journal Officiai de
+Octobre 2009 - Février 2010
+contrat auquel la personne concernée est
+partie ou à l'exécution de mesures
+précontractuelles prises à la demande de la
+personne concernée pendant la période
+précontractuelle ;
+8) le traitement est nécessaire au respect d'une
+obligation légale ou réglementaire à laquelle
+le responsable du traitement est soumis ;
+9) le traitement est nécessaire à l'exécution d'une
+mission d'intérêt public ou est effectué par une
+autorité publique ou est assigné par une
+autorité publique au responsable du traitement
+ou à un tiers, auquel les données sont
+communiquées ;
+10) le traitement est effectué dans le cadre des
+activités légitimes d'une fondation, d'une
+association ou de tout autre organisme à but
+non lucratif et à finalité politique,
+philosophique, religieuse, mutualiste ou
+syndicale. Toutefois, le traitement doit se
+rapporter auxseuls membres de cet organisme
+ou aux personnes entretenant avec lui des
+contacts réguliers liés à sa finalité et que les
+données ne soient pas communiquées à des
+tiers sans le consentement des personnes
+concernées.
+Article 32 : Le cas du traitement des données
+à caractère personnel réalisé aux fins de
+journalisme, de recherche, d'expression
+artistique ou littéraire
+Le traitement des données à caractère personnel
+réalisé aux fins de journalisme, de recherche,
+d'expression artistique ou littéraire, estadmis lorsqu'il
+est mis en œuvre aux seules fins d'expression
+littéraire et artistique, d'exercice ou à titre
+professionnel, de l'activité de journaliste ou
+chercheur, dans le respect des règles
+déontologiques de ces professions.
+Article 33 : Application des dispositions des lois
+relatives à la Presse écrite ou au secteur de
+l'audiovisuel et du code pénal
+Les dispositions du présent Acte additionnel ne font
+pas obstacle à l'application des dispositions des lois
+relatives à la presse écrite ou au secteur de
+l'audiovisuel et du code pénal qui prévoient les
+conditions d'exercice du droit de réponse et qui
+préviennent, limitent, réparent et, le cas échéant,
+
+la CEDEAO Vol. 56
+répriment les atteintes à la vie privée et à la
+réputation des personnes physiques.
+Article 34 : Interdiction de prospection directe
+Dans l'espace CEDEAO, il est interdit de procéder
+à la prospection directe à l'aide de tout moyen de
+communication utilisant, sous quelque forme que ce
+soit, les données à caractère personnel d'une
+personne physique qui n'a pas exprimé son
+consentement préalable à recevoir de telles
+prospections.
+Article 35 : Fondement d'une décision de
+justice
+1) Aucune décision de justice impliquant une
+appréciation sur le comportement d'une
+personne ne peut avoir pour fondement un
+traitement automatisé des données à caractère
+personnel destiné à évaluer certains aspects
+de sa personnalité.
+2) Aucune décision produisant des effets
+juridiques à l'égard d'une personne ne peut
+être prise sur le seul fondement d'un traitement
+automatisé des données à caractère personnel
+destiné à définir le profil de l'intéressé ou à
+évaluer certains aspects de sa personnalité.
+Article 36 : Transfert des données à caractère
+personnel vers un pays non membre de la
+CEDEAO
+1) Le responsable d'un traitement ne peut
+transférer des données à caractère personnel
+vers un pays non membre de la CEDEAO que
+si cet Etat assure un niveau de protection
+suffisant de la vie privée, des libertés et droits
+fondamentaux des personnes à l'égard du
+traitement dont ces données font ou peuvent
+faire l'objet.
+2) Avant tout transfert des données à caractère
+personnel vers ce pays tiers, le responsable
+du traitement doit préalablement informer
+l'Autorité de protection.
+Article 37: Interconnexion des fichiers
+comportant des données à caractère
+personnel
+L'interconnexion des fichiers visée à l'article 12 du
+présent Acte additionnel dort permettre d'atteindre
+des objectifs légaux ou statutaires présentant un
+
+Octobre 2009 - Février 2010 Journal Officiai
+intérêt légitime pour les responsables des
+traitements. Elle ne peut pas entraîner de
+discrimination ou de réduction des droits, libertés et
+garanties pour les personnes concernées ni être
+assortie de mesures de sécurité appropriées et doit
+tenir compte du principe de pertinence des données
+faisant l'objet de l'interconnexion.
+CHAPITRE VI:
+DROITS DE LA PERSONNE DONT LES
+DONNEES FONT L'OBJET D'UN TRAITEMENT
+Article 38: Droit à l'information
+Le responsable du traitement doit fournir à la
+personne dont les données font l'objet d'un
+traitement, au plus tard, lors de la collecte et quels
+que soient les moyens et supports employés, les
+informations suivantes :
+1) son identité et, le cas échéant, celle de son
+représentant;
+2) la ou les finalités déterminées du traitement
+auquel les données sont destinées ;
+3) les catégories de données concernées ;
+4) le ou les destinataires auxquels les données
+sont susceptibles d'être communiquées ;
+5) le fait de pouvoir demander à ne plus figurer
+sur le fichier ;
+6) l'existence d'un droit d'accès aux données la
+concernant et de rectification de ces données ;
+7) la durée de conservation des données ;
+8) l'éventualité de tout transfert de données à
+destination de pays tiers.
+Article 39 : Droit d'accès
+Toute personne physique dont les données à
+caractère personnel font l'objet d'un traitement peut
+demander au responsable de ce traitement, sous
+forme de questions:
+1) les informations permettant de connaître et de
+contester le traitement ;
+2) la confirmation que des données à caractère
+personnel la concernant font ou ne font pas
+l'objet de ce traitement ;
+
+de la CEDEAO
+Vol. 56
+3) la communication des données à caractère
+personnel qui la concernent ainsi que de toute
+information disponible quant à l'origine de
+celles-ci ;
+4) des informations relatives aux finalités du
+traitement, aux catégories de données à
+caractère personnel traitées et aux
+destinataires ou aux catégories de
+destinataires auxquels les données sont
+communiquées.
+Article 40: Droit d'opposition
+1) Toute personne physique a le droit de
+s'opposer, pour des motifs légitimes, à ce que
+des données à caractère personnel la
+concernant fassent l'objet d'un traitement.
+2) Ellea le droit, d'une part, d'être informée avant
+que des données la concernant ne soient pour
+la première fois communiquées à des tiers ou
+utilisées pour le compte de tiers à des fins de
+prospection et, d'autre part, de se voir
+expressément offrir le droit de s'opposer,
+gratuitement, à ladite communication ou
+utilisation.
+Article 41 : Droit de rectification et de
+suppression
+Toute personnephysique peutexiger du responsable
+d'un traitement que soient, selon les cas, rectifiées,
+complétées, misesà jour, verrouillées ou supprimées
+les données à caractère personnel la concernant,
+qui sont inexactes, incomplètes, équivoques,
+périmées, ou dont la collecte, l'utilisation, la
+communication ou la conservation est interdite.
+CHAPITRE VII:
+OBLIGATIONS DU RESPONSABLE DE
+TRAITEMENT DE DONNEES A CARACTERE
+PERSONNEL
+Article 42 : Les obligations de confidentialité
+Le traitement des données à caractère personnel
+est confidentiel. Il est effectuéexclusivement par des
+personnes qui agissent sous l'autorité du
+responsable du traitement et seulement sur ses
+instructions.
+
+Octobre 2009 - Février 2010
+Journal Officiai de
+Article 43 : Les obligations de sécurité
+Le responsable du traitement est tenu de prendre
+toute précaution utile au regard de la nature des
+données et, notamment, pour empêcher qu'elles
+soient déformées, endommagées, ou que des tiers
+non autorisés y aient accès.
+Article 44 : Les obligations de conservation
+Les données à caractère personnel doivent être
+conservées pendant une durée fixée par un texte
+réglementaire et uniquement pour les fins en vue
+desquelles elles ont été recueillies.
+Article 45 : Les obligations de pérennité
+1) Le responsable du traitement est tenu de
+prendre toute mesure utile pour assurer que
+les données à caractère personnel traitées
+pourront être exploitées quel que soit le support
+technique utilisé.
+2) Il doit particulièrement s'assurer que l'évolution
+de la technologie ne sera pas un obstacle à
+cette exploitation.
+CHAPITRE VIII:
+DISPOSITIONS FINALES
+Article 46 : Amendement et révision
+1) Tout Etat Membre, le Conseil des Ministres et
+la Commission de la CEDEAO peuvent
+soumettre des propositions en vue de
+l'amendement ou de la révision du présent Acte
+Additionnel.
+2) Toutes les propositions d'amendement ou de
+révision sont soumises à la Commission de la
+CEDEAO qui les communique aux Etats
+membres trente (30) jours au plus tard après
+leur réception. Le Conseil des Ministres
+EN FOI DE QUOI, NOUS, CHEFS D'ETAT ET DE
+ECONOMIQUE DES ETATS DE
+AVONS SIGNE LE PRESENT
+FAIT AABUJA, LE16
+EN UN SEUL ORIGINAL EN ANGLAIS,
+LES TROIS (3) TEXTES
+
+la CEDEAO Vol. 56
+examine les propositions d'amendements ou
+de révisions à l'expiration d'un délai de trois
+(3) mois accordé aux Etats Membres pour
+émettre leurs observations.
+3) Les amendements et révisions sont adoptés
+par le Conseil des Ministres et soumis à la
+Conférence des Chefs d'Etat et de
+Gouvernement pour approbation et signature.
+Lesdits amendements et révisions entrent en
+vigueur conformément aux dispositions de
+l'article 48 du présent Acte additionnel.
+Article 47 : Publication
+Le présent Acte additionnel est publié par la
+Commission dans le Journal Officiel de la
+Communauté dans les trente (30) jours de sa date
+de signature par la Conférence des Chefs d'Etat et
+de Gouvernement. Il est également publié par
+chaque Etat Membre dans son Journal Officiel trente
+(30) jours après que la Commission le lui notifiera.
+Article 48 : Entrée en vigueur
+Le présent Acte additionnel entre en vigueur dès sa
+publication dans le Journal Officiel de la
+Communauté et dans ceux de chaque Etat membre.
+Le présent Acte additionnel est annexé au Traité de
+la CEDEAO dont il est partie intégrante.
+Article 49 : Autorité dépositaire
+Le présent Acte additionnel est déposé à la
+Commission qui en transmet des copies certifiées
+conformes à tous les Etats Membres et le fait
+enregistrer auprès de l'Union Africaine, de
+l'Organisation des Nations Unies et auprès de toutes
+organisations régionales et internationales
+coopérant avec la CEDEAO et désignées par le
+Conseil, en vertu des articles 83, 84 et 85 du Traité
+Révisé de la CEDEAO.
+GOUVERNEMENT DE LA COMMUNAUTE
+L'AFRIQUE DE L'OUEST (CEDEAO),
+ACTE ADDITIONNEL.
+FEVRIER 2010
+EN FRANÇAIS ET EN PORTUGAIS,
+FAISANT EGALEMENT FOI.
+
+Octobre 2009 • Février 2010 Journal Officiai de
+S. E. M. Jean Marie EHOUZOU
+Ministre des Affaires Etrangères,'
+De l'Intégration Africaine, de la Francophonie
+Et des Béninois de l'Extérieur
+Pour, et par ordre du Président de la
+République du Bénin
+S.E. M. José BRITO
+Ministre des Affaires Etrangères
+de la Coopération et des Communautés
+Pour le Gouvernement
+De la République du Cap Vert
+Et:
+S. E. Aja Dr. Isatou NJIE-SAIDY
+Vice-Présidente,
+Pour, et par ordre du Président
+de la République de la Gambie
+S. E.' Mme Ellen JOHNSON-SIRLEAF
+Présidente de la République du Libéria
+
+la CEDEAO Vol. 56
+S.^. M. Biaise COMPAORE
+'S Président du Faso,
+résident du Conseil des Ministres
+S. E. M. Youssouf BAKAYOKO
+Ministre des Affaires Etrangères
+Pour, et par ordre du Président
+de la République de Côte d'Ivoire
+S. E. M. John ATTA-MILLS
+ë
+sident et Commandant en Chef»
+de la République du Ghana
+S.E. Malam Bacai SANHA
+Président de la République de Guinée Bissau
+)r. Badara ALOU-MACALOU
+Ministre des Maliens de l'Extérieur et
+de l'Intégration Africaine Pour, et par ordre du
+Président de la République du Mali
+
+Octobre 2009 - Fevriet 2010 Journal Officiai de la
+S.E. MrAbdbulaye WADE
+Président de la République du Sénégal
+S. E. M. Koffi
+Ministre des Affaires Etrangères et
+Pour, et par ordre du Président
+
+CEDEAO Vol. 56
+S. E. Dr. Goodluck Ebele JONATHAN GCON,
+Président par intérim,
+Commandant-en-Chef des Forces Armées
+de la République Fédérale du Nigeria
+Président en exercice de la CEDEAO
+S. E/M. Ernest Bai KOROMA
+Président de la République de Sierra Leone
+ESAW
+de l'Intégration Régionale
+de la République Togolaise
+
+Octobre 2009 - Février 2010 Journal Officiai

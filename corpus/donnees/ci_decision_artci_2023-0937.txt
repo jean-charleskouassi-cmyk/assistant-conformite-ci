@@ -1,0 +1,505 @@
+# titre: Décision n° 2023-0937 du 23 août 2023 portant avertissement et mise en demeure de la société Yango CIV LLC
+# label: Décision ARTCI n° 2023-0937 (Yango CIV LLC)
+# pays: Côte d'Ivoire
+# domaine: donnees
+# source: ARTCI, Conseil de régulation (décision scannée, texte obtenu par OCR)
+
+REPUBLIQUE DE CÔTE D'IVOIRE
+Union - Discipline - Travail
+AUTORITE DE RE<llJI.AID'I DES TEiECOM.IUIICATOO'OC Dé COJ!: D'l'IOIRE
+CONSEIL DE REGULATION
+DE L'AUTdRITE DE PROTECTION
+DE LA REPUBLIQUE DE COTE D'IVOIRE
+PORTANT AVERTISSEMENT
+ET MISE EN DEMEURE
+DE LA soa IETE YANGO c1v LLC
+EN MATIERE DE
+f ROTECTION DES DONNEES
+L'AUTORITE DE PROTECTION ,
+person nel;
+La Loi n°2013-546 du 30 juillet 2013 relative aux Transactions électroniques ;
+L'Ordonnance n°2012-293 du 21 mars 2012 relative aux Télécommunications
+et aux Technologies de l'Information et de la Communication ;
+fonctionnement de l'Autorité de Régulation des TélécommunicationsfTIC de Côte
+d'Ivoire (ARTCI) ;
+fourniture des prestations de cryptologie ;
+de conservation de l'écrit etlde la signature sous forme électronique ;
+déclarations, de présentation des demandes, d'octroi et de retrait des autorisations
+pour le traitement des données à caractère personnel ;
+profession de transporteur et d'exercice de l'activité de transport routier ;
+novembre 2016 portant réglementation de l'usage
+des voies routières ouvertes à la circulation publique ;
+Le Décret n°2019-947 du 13 novembre 2019 portant nomination du Président de
+l'Autorité de Régulation des TélécommunicationsfTIC de Côte d'Ivoire ;
+des
+Régulation
+l'Autorité
+Régulation
+Conseil
+Télécommunications fTIC de Côte d'Ivoire (ARTCI) ;
+Le Décret n°2021-860 du 15 décembre 2021 portant réglementation des transports
+publics particuliers de personnes ;
+Le Décret n°2022-265 du 13 Avril 2022 portant nomination du Directeur Général
+de l'Autorité de Régulation des Télécommunications fTIC de Côte d'Ivoire
+Le Décret n°2022-783 du 12 Octobre 2022 portant renouvellement partiel du
+Conseil de Régulation de l'Autorité de Régulation des Télécommunications/ TIC
+Côte d'Ivoire, en abrégé ARTCI ;
+ion du profil et
+L'Arrêté n°511/MPTIC/CAB du 11 novembre 2014 portant définit
+données à
+fixant les conditions d'emploi du correspondant à la protection des
+caractère personnel ;
+de Régulation des
+La Décis ion n°2013-0003 du Conseil de Régulation de l'Autorité
+Télécommunications/TIC de Côte d'Ivoire en date du 20 septe
+règlement intérieur ;
+de Régulation des
+La Décision n°2014-0020 du Conseil de Régulation de l'Autorité
+Télécommunications /TIC de Côte d'Ivoire en date du 03 septe
+la protection des
+adoption des règles de conduites relatives au traitement et à
+données à caractères perso11nel ;
+de Régulation des
+La Décision n°2014-0021 du Conseil de Régulation de l'Autorité
+Télécommunications/TIC de Côte d'Ivoire en date du 03 septembre
+des données à
+conditions et critères applicables à la limitation du traitement
+caractère personnel ;
+de Régulation des
+La Décision n°2014-0022 du Conseil de Régulation de l'Autorité
+Télécommunications/TIC de Côte d'Ivoire en date du 03
+es à caractère
+portant conditions de la suppression des liens vers les donné
+dans les services
+personnel, des copies ou def reproductions de celles-ci existant
+de communication électronique accessibles au public ;
+blique de Côte
+La Décision n°2017-354 de l'Autorité de Protection de la Répu
+en conformité des
+d'Ivoire en date du 26 octobre 2017 portant procédure de mise
+responsables du traitement avec la loi n°2013-450 du 19 juin
+protection des données à caractère personnel ;
+blique de Côte
+La Décision n°2020-0581 de l'Autorité de Protection de la Répu
+d'exercice
+d'Ivoire en date du 30 juillet 2020 fixant les critères et les conditions
+des activités de :
+- Correspondant à la protection des données, personne moral
+- audit de conformité ;
+- formation .
+blique de Côte
+La Décision n°2021-0676 de l'Autorité de Protection de la Répu
+le en matière de
+d'Ivoire en date du 04 Août 2021 portant procédure de contrô
+protection des données à caractère personnel ;
+la société YANGO
+Le Procès-verbal de la réunion qui s'est tenue entre l'ARTCI et
+lundi 26 Juin
+Le courrier référencé 23-00789/DG/DCNS/DCPD/SPDS/JLC du
+Faits et procédure
+L'Autorité de protection a effectué une veille sur les réseaux sociaux qui a permis de
+constater plusieurs publications, dénonciations et signalements relatant de probables
+enregistrements, sans consenter'l"ent préalable des utilisateurs, de tous échanges et
+conversations des passagers effectuées à l'intérieur des Véhicules de Tourisme avec
+Chauffeur (VTC) qui utilisent l'application de la société YANGO CIV LLC.
+Les publications et signalements reçus faisaient état de l'activation immédiate du bouton
+d'enregistrement prévu dans la version « chauffeur » de l'application mobile YANGO afin
+d'enregistrer tous les échanges effectués par le client à bord d'un véhicule YANGO VTC.
+Afin d'avoir la version des faits de la société YANGO CIV LLC, l'Autorité de Protection a
+convoqué cette dernière à une rencontre le lundi 26 juin 2023 dans ses locaux de 11 h45
+à 12h38, dont les échanges ont été consignés dans un procès-verbal ;
+Considérant qu'au cours de ces échangée, les représentants de la société YANGO ont
+confirmé l'existence de la fonctionnalité d'enregistrement via l'application mobile YANGO,
+avec pour finalité« la sécurité des chauffeurs utilisant la plateforme YANGO ».
+des données à caractère personnel énonce que l'Autorité de Protection s'assure que
+l'usage des technologies de l'information et de la communication ne porte pas atteinte ou
+ne comporte pas de menace po~r la liberté et la vie privée des utilisateurs situés sur
+l'ensemble du territoire national ;
+A ce titre, elle est chargée de recevoir les réclamations, les plaintes relatives à la mise
+en œuvre des traitements de données à caractère personnel, d'informer les auteurs de
+la suite accordée à celles-ci et de prononcer des sanctions administratives et pécuniaires
+à l'égard des responsables de traitement qui ne se conformément aux dispositions de
+présente loi.
+Par conséquent, l'Autorité de Protection est compétente pour statuer sur les
+signalements et dénonciations relevées.
+Il.
+Motifs de la Décisio ~ :
+A) Sur l'illégalité de l'en~egistrement des conversations téléphoniques des
+passagers
+la protection des données à caractère personnel, le traitement portant sur un numéro
+national d'identification ou tout autre identifiant de la même nature, notamment les
+numéros de téléphone est soumfs à autorisation préalable de l'Autorité de Protection,
+avant toute mise en œuvre ;
+Considé rant qu'en l'espèce , la société YANGO CIV LLC procède à un enregist rement de
+utilisant son application
+tous les échange s des passage rs opérés à l'intérieu r des
+de réservation ;
+vrc
+Qu'en application des dispositi ons précitées, ledit traiteme nt doit être autorisé par
+l'Autorité de Protection, pour être ~is en œuvre ;
+Considé rant que selon l'article 7 précité de la même loi, la demand e d'autoris ation est
+présenté e par le respons able du traiteme nt ou son représen tant légal ;
+à caractèr e personn el, définit le responsable du traiteme nt comme étant la personn e
+physique ou morale, publique ou privée, tout autre organism e ou associat ion qui, seule
+ou conjointe ment avec d'autres , wend la décision de collecter et de traiter des données
+à caractèr e personn el et en déterh1ine les finalités ;
+Que la société YANGO CIV LLC a introduit une demand e d'autoris ation de traiteme nt
+auprès de l'Autorité de Protectio n ;
+Que l'analyse cette demand e frit ressortir que l'enregis trement des conversa tions
+utilisant l'application
+téléphon iques et verbales des ~assagers à l'intérieu r des
+YANGO ne figure pas dans la demand e d'autorisation de traiteme nt introduite auprès de
+l'Autorité de Protection ;
+vrc
+Que par ailleurs la société YANGO CIV LLC n'a pas effectué son processu s de mise en
+caractèr e personnel.
+L'Autorit é de Protection considèr e que l'enregis trement des conversa tions téléphon iques
+et verbales des passage rs à l'inté~ieur des VTC utilisant l'applica tion YANGO est illégale.
+B) Sur l'illégitimité et l'illicéité des enregistrements des conversations
+téléphoniques
+Considé rant que conform ément aux dispositi ons de l'article 14 de la Loi n°2013-4 50 du
+19 juin 2013 relative à la protectio n des données à caractèr e personn el, le traiteme nt de
+données à caractère personn el est considér é comme légitime si la personn e concern ée
+donne expressé ment son consente ment préalable ;
+Considé rant toutefois que le c9nsente ment doit être exprès, non équivoqu e, libre
+spécifiqu e et éclairé ;
+Que la personn e concern ée doit avoir été suffisam ment informée par le respons able du
+traiteme nt, avant de donner lib(emen t son consent ement, afin d'être en mesure de
+compren dre d'une part, la portée et les conséqu ences de son consente ment, et d'autre
+part, les avantage s et les inconv~n ients du traiteme nt ;
+Que le consente ment doive être une manifestation de volonté libre, spécifiqu e, éclairée
+et univoque par laquelle la personn e concerné e accepte le traiteme nt de ses données ;
+la politique de
+Que l'analyse des conditions géhérales d'utilisation, de la licence et
+site internet
+confidentialité présents dans l'application mobile YANGO et sur son
+été prise pour le
+démontre que le traitement n'y figµre pas et qu'aucune disposition n'a
+à l'intérieur du
+recueil du consentement préalable des clients avant tout enregistrement
+véhicule ;
+tion et la société
+Considérant en l'espèce que lors de l'entre tien entre l'Autorité de Protec
+Protection, les
+YANGO CIV LLC, le gérant de cette dernière n'a pu fournir à l'Autorité de
+consentement
+preuves du recueil de consentement ou les dérogations à l'exigence du
+oniques des
+préalable dans le cadre de l'enregistrement des conversations téléph
+passagers à l'intérieur des VTC utilisant leur application ;
+conversations
+Dès lors, l'Autorité de Protection considère que l'enregistrement des
+tion est illicite et
+téléphoniques des passagers à l'irtérie ur des VTC utilisant leur applica
+illégitime.
+C) Sur les finalités
+relative à la protection des données à caractère
+Considérant l'article 16 de la Loi
+des finalités
+personnel qui dispose que les données doivent être collectées pour
+urement de
+déterminées, explicites et légitimes et ne peuvent pas être traitées ultérie
+manière incompatible avec ces firlalités ;
+légitime, il est
+Considérant que pour que la finblité d'un traitement de données soit
+le consentement
+nécessaire qu'à tous les stades et à tout moment, celui-ci repose soit sur
+à l'exigence de
+de la personne concernée soit sur l'un des cas prévus par dérogation
+consentement ;
+affirmé que les
+Que lors de l'entretien, le gérant de la société YANGO CIV LLC a
+eurs utilisant
+enregistrements étaient effectµés pour la sécurité des chauff
+l'application YANG O ;
+opérées par la
+Considérant non seulement que les traitements de données personnelles
+mais aussi et
+société YANGO CIV LLC ne se fondent pas sur un consentement valide
+nt;
+surtout il n'existe aucun motif de dérogation à l'exigence du conse nteme
+Dès lors, l'Autorité de Protection considère que la finalité est déterminée,
+illégitime.
+explicite mais
+D) Sur la période de conservation des données traitées
+à la protection
+s doivent être
+des données à caractère personnel dispose que, les données traitée
+finalités pour
+conservées pendant une durée q~i n'excède pas la période nécessaire aux
+lesquelles elles ont été collectées ;
+la société
+Consid érant que lors de son entretie n avec l'Autorité de Protection, le gérant de
+YANGO CIV LLC a affirmé que les enregis tremen ts sont conserv és indéfini ment
+considè re
+Dès lors, l'Autorit é de Protect ion, au regard de la nature des donnée s traitées
+que le principe de la conser vation limitée des donnée s n'est pas respect
+E) Sur la proportionnalité des données collectées
+Consid érant que selon les disposi tions de l'article 16 de la Loi n°2013 -450
+s traitées
+2013, relative à la protect ion des donnée s à caractè re personnel, les donnée
+pour
+doivent être adéquates, pertine ntes et non excess ives au regard des finalités
+lesquelles elles sont collecté es et traitées ;
+Consid érant que le contrat de transpo rt est conclu dès la validation de la comma
+client par le chauffe ur du VTC YA~GO ;
+nde du
+rter
+Que le contrat de transpo rt fait naitre à la charge du chauffe ur, l'obligation de transpo
+affiché sur
+le client jusqu'à sa destination e~ pour le client l'obliga tion de payer le prix
+l'applica tion lors de la comma nde du VTC ;
+aires à
+Que pour conduire un passag er 6·un point A à un point 8 , les donnée s nécess
+client, le
+l'exécut ion du contrat de transpo rt d'un client VTC sont le nom et le prénom du
+numéro de télépho ne, la destina tipn et le mode de paieme nt ;
+e à
+Consid érant qu'il n'est pas nécess aire d'enreg istrer toute convers ation effectué
+l'intérie ur du véhicule, pour le tra~spo rt du client d'un point A à un point B.
+Par conséq uent, l'Autorité de Protection considè re que l'enregi streme
+disproportionné, inadéqu at et nori pertine nt au regard de la finalité.
+est
+F) Sur les destinataires ou catégories de destinataires habilités à recevo
+communication des données
+ion des
+Consid érant les disposi tions de l'article 9 de la Loi n°2013 -450 relative à la protect
+er les
+d'indiqu
+tenu
+est
+ent
+traitem
+donnée s à caractè re person nel, le respons able
+destina taires habilités à recevoi r commu nication des donnée s traitées
+Consid érant que les destina taire~ internes et externe s doivent être clairem ent
+identifié s ;
+YANGO
+Que lors de son entretie n avec l'tutorit é de Protect ion, le gérant de la société
+de la
+CIV LLC a affirmé que les enregis tremen ts sont commu niqués aux agents
+préfect ure de Police d'Abidj an et à ses service s compét ents ;
+ure de
+Que la société YANGO CIV LLC collabo re dans un cadre informe l avec la préfect
+différen ts
+police d'Abidja n dans le cadre des agressions dont seraien t victime s les
+chauffe urs utilisant sa platefo rme ;
+nique
+Que dans le cadre de cette collaboration la société YANGO CIV LLC commu
+erie
+fréquemment des enregistrements aux forces de police via l'application de messag
+WhatsApp ;
+les
+Considérant que le gérant de la société YANGO CIV LLC a indiqué ne pas savoir
+lieux de stockage des données er,registrées concernant les clients ;
+Considérant que tous les destinataires des données internes et externes ne sont
+clairement identifiés ;
+Considérant qu'il n'existe pas de réquisition
+enregistrements sur WhatsApp ;
+pas
+lors de la communication des
+licence
+Considérant également que l'analyse des conditions générales d'utilisation, de la
+et la politique de confidentialité présent dans l'application YANGO et sur son site interne
+Arabes
+dénotent que les serveurs de YANGO CIV LLC se trouvent en Russie aux Emirats
+Unis (Dubaï) et en Hollande ;
+Que le stockage des donnés vers ces différentes destinations constitue des transfer
+des données à destination de pa~s tiers ;
+Considérant que la société YANGP CIV LLC ne dispose pas d'autorisations de transfer
+de données ;
+L'Autorité de Protection considère que :
+les transferts de données à caractère personnel opérés par la société YANGO
+relative à la protection des données à caractère personnel ;
+la communication effectuJe à la police nationale est effectuée en toute illégalité ;
+les destinataires des données ne sont pas clairement identifiés.
+G) Sur la transp arence drs traitem ents
+impliqu
+rence
+transpa
+relative à la protection des don~ées à caractère personnel,
+able
+l'information obligatoire et claire des personnes concernées par le respons
+traitement ;
+rence
+Qu'il s'agit en l'espèce pour le responsable du traitement de faire preuve de transpa
+informé
+être
+vis-à-vis des personnes concernées qui devront notamment
+de l'identit é du Responsable du traitement et le cas échéant, celle de son
+représentant dûment mandaté ;
+de la finalité du traitement ;
+des catégories de données concernées ;
+des destinataires auxquels les données sont susceptibles d'être communiquées
+de l'existence et des modalités d'exercice de leur droit d'accès et de rectification
+de la durée de conservati9n des données ;
+de l'éventualité de tout transfert de données à destination de pays tiers.
+lication
+hicules ou via l'app
+leurs
+existe
+nregistrement de
+l'e
+Considérant qu'il n'
+er les personnes
+t l'application YANG
+ilis
+mobile pour inform
+oniques à l'intérie
+conversations téléph
+marrage de
+sage sonore au dé
+iss
+rsonne
+lleurs, qu e l'é
+n suffisante de la pe
+Considérant pa r ai
+passager.
+constitue pas une m
+s être entendu pa r le
+l'enregistrement ne
+mesure où le m es
+concernée, da ns la
+tialité ne
+politique de confiden
+lic
+les
+générales d'utilisat
+ation selon laquelle
+l'in
+tio
+ica
+Que les conditions
+dite ap
+ation YANGO
+x utilisateurs de la
+C utilisant l'applic
+fournissent pa s au
+rie
+l'in
+munications à
+échanges ou com
+gistrées ;
+pourraient être enre
+principe
+O n'a pas respecté le
+Protection considèr
+Dès lors , l'Autorité de
+de la transparence.
+térieur des vé
+aucune affiche à l'in
+H) Su r les droits de
+pe rson ne s co nc er
+né es
+relative à
+qu e le responsable
+pers
+rvice au pr ès
+nnées à caractère
+la personne ou le se
+tio
+la protection de s do
+droits
+er da ns sa deman
+es , notamment les
+traitement do it indiqu
+x pe
+s droits reconnus au
+duquel s'exercent le
+d'opposition ;
+suppre
+ific
+d'accès,
+ondant à la
+désigné de Corresp
+société YANGO
+Considérant qu e la
+ient ;
+protection de s donn
+fectués à l'insu du cl
+tib
+enregistrements sont
+sponible
+Considérant qu e les
+YANGO CIV LLC di
+lité
+tia
+droits de s personne
+politique de confiden
+s en
+litige ;
+NGO ne prend pa
+gistrement, objet du
+sur l'application YA
+ent le droit de s'o
+concernées , notamm
+ne sont pa s
+rsonnes concernées
+tion considère qu
+L'Autorité de Protec
+respectés.
+A près en av oi r dé
+lib éré,
+Conform ément aux dispositions de l'article 49 de la loi n°2013-450 du 19 juin
+relative à la protection des données à caractère personnel et l'article 17 de la Décisio
+date
+d'Ivoire
+n°2021-0676 de l'Autorité de Protection de la République de Côte
+s à
+Août 2021 portant procéd ure de contrôle en matière de protection des donnée
+YANGO
+société
+caractè re personnel, l'Autorité de Protection prononce à l'égard
+CIV LLC :
+- Un avertissement pour enregistrements illicites des conversations des
+passagers à bord des VTC utilisant l'application YANGO ;
+Une mise en demeure de désactiver sans délai et jusqu'à nouvel ordre
+l'option d'enregistrement des conversations téléphoniques sur l'application
+YANG O;
+Un avertissement pour le non-respect de ses obligations découlant de
+l'application de la présente loi ;
+ent à
+des données à caractère personnel, l'Autorité de Protection prononce égalem
+iate
+l'égard de la société YANGO CIV LLC, le verrouillage et la suppression imméd
+plus
+des données d'enregistrement audio des clients de sorte qu'elles ne soient
+accessibles.
+tenue
+la protection des données à caractère personnel, la société YANGO CIV LLC est
+de désigner son corresponda ~t à la protection, dans un délai de sept (07) jours
+compte r de la réception de la présente, et le notifier à l'Autorité de Protection.
+ion
+des données à caractère personnel, la société YANGO CIV LLC est tenue de débute
+de la
+relative à la protection des dônnées à caractère personnel, dès réception
+présente.
+Article 5:
+afin de
+Les agents assermentés de l'Autorité de Protection effectueront des contrôles
+s'assurer du respect de la présente décision conformément à la décision n°2021
+contrôle
+procédu
+de l'Autorité de Protection en date du 04 août 2021 portant
+matière de protection des donné~s à caractère personnel.
+la loi
+L'Autorité de Protection prononcera l'une des mesures prévues par l'article 51 de
+nel
+person
+caractè
+LLC.
+en cas de non-respect de la présente mise en demeure par la société YANGO CIV
+Article 7:
+La présente décision prend effet à compter de la date de sa notification à la
+YANGO CIV LLC.
+société
+Article 8:
+publiée
+Le Directeur Général est chargé de l'exécution de la présente décision, qui sera
+Côte
+tions/TI
+munica
+sur le site internet de l'Autorité de Régulation des Télécom
+d'Ivoire et celui de l'Autorité de Pfotection.
+En deux (2) exemplaires originaux
+Le présid ent

@@ -1,0 +1,535 @@
+# titre: Décision n° 2023-0936 du 23 août 2023 portant avertissement et mise en demeure de la Standard Chartered Bank Côte d'Ivoire SA
+# label: Décision ARTCI n° 2023-0936 (Standard Chartered Bank Côte d'Ivoire)
+# pays: Côte d'Ivoire
+# domaine: donnees
+# source: ARTCI, Conseil de régulation (décision scannée, texte obtenu par OCR)
+
+IÎR\
+RTCI
+REPUBLIQ UE DE CÔTE D'IVOIRE
+Union - Discipline - Travail
+AIITORITEDER EGWllllllES~T[ DECOlED'MH.
+CONSEIL DE REGULATION
+DE L'AUTO RITE DE PROTE CTION
+DE LA REPUBLIQUE DE CÔTE D'IVOIRE
+PORTA NT AVERT ISSEME NT ET MISE EN DEMEU RE DE
+1 LA STANDARD CHARTERED BANK COTE D'IVOIRE .S.A
+EN MATIER E DE PROTE CTION DES DONNE ES A
+CARAC TERE PERSONNEL
+ij'
+L'AUTORITE DE PROTECTION,
+paiement dans les états membres de l'Union Economique et Monétaire Ouest
+Africaine (UEMOA) ;
+personnel ;
+la Loi n°2013-546 du 30 juillet 2013 relative aux Transactions électroniques ;
+d'information sur le crédit ;
+des capitaux et le financement du terrorisme ;
+décembre 2009 portant règlementation bancaire ;
+systèmes financiers décentralisés ;
+aux Technologies de l'Information et de la Communication ;
+fonctionnement de l'Autorité de Régulation des Télécommunications/TIC de Côte
+d'Ivoire (ARTCI) ;
+fourniture des prestations de cryptologie ;
+le Décret n°2014-106 du 12 mars 2014 fixant les conditions d'établissement et de
+conservation de l'écrit et de la signature sous forme électronique ;
+déclarations, de présentation des demandes , d'octroi et de retrait des
+autorisations pour le traitement des données à caractère personnel ;
+le Décret n°2019-947 du 13 novembre 2019 portant nomination du Président de
+l'Autorité de Régulation des Télécommunications/TIC de Côte d'Ivoire ;
+Conseil de Régulation de l'Autorité de Régulation des Télécommunications/TIC de
+Côte d'Ivoire (ARTCI);
+le Décret n°2022-265 du 13 Avril 2022 portant nomination du Directeur Général de
+l'Autorité de Régulation des Télécommunications/TIC de Côte d'Ivoire (ARTCI) ;
+le Décret n°2022-783 du 12 Octobre 2022 portant renouvellement partiel du
+Conseil de Régulation de l'Autorité de Régulation des Télécommunications/ TIC
+Côte d'Ivoire, en abrégé ARTCI ;
+!'Arrêté n°511/MPTIC/CAB du 11 novembre 2014 portant définition du profil et
+fixant les conditions d'emploi du correspondant à la protection des données à
+caractère personnel ;
+la Décision n°2013-0003 du Conseil de Régulation de l'Autorité de Régulation des
+Télécommunications/TIC de Côte d'Ivoire en date du 20 septembre 2013 portant
+règlement intérieur ;
+la Décision n°2014-0020 du Conseil de Régulation de l'Autorité de Régulation
+des Télécommunications/TIC de Côte d'Ivoire en date du 03 septembre 2014
+portant adoption des règles de conduites relatives au traitement et à la protection
+des données à caractères personnel ;
+la Décision n°2014-0021 du Conseil de Régulation de l'Autorité de Régulation des
+Télécommunications/TIC de Côte d'Ivoire en date du 03 septembre 2014 portant
+conditions et critères applicables à la limitation du traitement des données à
+caractère personnel ;
+la Décision n°2014-0022 du Conseil de Régulation de l'Autorité de Régulation des
+Télécommunications/TIC de Côte d'Ivoire en date du 03 septembre 2014
+portant conditions de la suppression des liens vers les données à caractère
+personnel , des copies ou des reproductions de celles-ci existant dans les services
+de communication électronique accessibles au public ;
+la Décision n°2017-354 de l'Autorité de Protection de la République de Côte
+d'Ivoire en date du 26 octobre 2017 portant procédure de mise en conformité des
+protection des données à caractère personnel ;
+la Décision n°2020-0535 de l'Autorité de Protection de la République de Côte
+d'Ivoire en date du 03 Mars 2020 portant autorisation de traitement de données à
+caractère personnel par la Standard Chartered Bank Côte d'Ivoire S.A;
+la Décision n°2021-0676 de l'Autorité de Protection de la République de Côte
+d'Ivoire en date du 04 Août 2021 portant procédure de contrôle en matière de
+protection des données à caractère personnel ;
+la Décision n°2022-0738 de l'Autorité de Protection de la République de Côte
+d'Ivoire en date du 05 mai 2022 portant approbation de la liste des contrôles en
+matière de protection des données à caractère personnel pour l'année 2022 ;
+le rapport définitif d'audit de situation de la Standard Chartered Bank Côte d'Ivoire
+Faits et procédure
+Considérant la Décision n°2021-0676 de l'Autorité de Protection de la République de
+Côte d'Ivoire en date du 04 Août 2021 portant procédure de contrôle en matière de
+protection des données à caractère personnel ;
+Qu'en application de l'article 9 de la Décision précitée, l'Autorité de Protection a, par
+contrôles en matière de protection des données à caractère personnel pour l'année 2022,
+identifié la Standard Chartered Bank Côte d'Ivoire S.A comme responsable du traitement
+Considérant que la Standard Chartered Bank Côte d'Ivoire S.A dispose de la Décision
+n°2020-0535 de l'Autorité de Protection de la République de Côte d'Ivoire en date du 03
+mars 2020 portant autorisation de traitements de données à caractère personnel par la
+Standard Chartered Bank Côte d'Ivoire S.A ;
+Considérant que l'article 2 de la Décision n°2017-354 de l'Autorité de Protection de la
+République de Côte d'Ivoire en date du 26 octobre 2017 portant procédure de mise en
+conformité des responsables du traitement avec la Loi n°2013-450 du 19 juin 2013
+relative à la protection des données personnelles dispose que : « /a mise en conformité
+implique que les mesures techniques, organisationnelles et juridiques, nécessaires pour
+la protection des données à caractère personne l ont été prises par le Responsable du
+traitement » ;
+Considérant que le point 12 de l'annexe de la Décision n°2017-354 de l'Autorité de
+Protection de la République de Côte d'Ivoire en date du 26 octobre 2017 portant
+procédure de mise en conformité des responsables du traitement avec la Loi n°2013-450
+du 19 juin 2013 relative à la protection des données personnelles dispose qu'après
+corrections des écarts, l'Autorité de Protection délivrera une attestation de conformité ;
+ont mené une opération de contrôle au sein de l'Agence Standard Chartered Bank Côte
+20, 21 octobre 2022 contradictoirement dressés et signés ont été remis à la Standard
+Chartered Bank Côte d'Ivoire S.A. ;
+Que cette mission eût pour objet de vérifier le respect par la Standard Chartered Bank
+Côte d'Ivoire S.A de l'ensemble des dispositions légales et règlementaires en matière de
+protection des données personnelles et les recommandations contenues dans sa
+Décision d'autorisation et son rapport définitif d'audit de protectio n des données
+personnelles.
+Motifs de la Décision :
+Il.
+Sur le respect des recomm andation s contenue s dans la Décision n°2020-0 535 de
+l'Autorité de Protection de la Républiq ue de Côte d'Ivoire en date du 03 mars 2020 portant
+autorisation de traiteme nts de données à caractèr e personn el par la Standard Chartered
+Bank Côte d'Ivoire S.A et son rapport définitif d'audit de situation :
+1. Sur le non-respect du principe de la légitimité et licéité des traitements
+Considérant que conform ément aux dispositi ons de l'article 14 de la Loi n°2013-4 50 du
+19 juin 2013 relative à la protection des données à caractère personn el, le traiteme nt de
+données à caractèr e personn el est considéré comme légitime si la personn e concerné e
+donne expressé ment son consent ement préalabl e ;
+Considé rant toutefois que le consente ment doit être exprès, non équivoqu e, libre
+spécifiqu e et éclairé ;
+Considé rant que la personn e concerné e doit avoir été suffisam ment informée par le
+responsable du traiteme nt, avant de donner libremen t son consent ement, afin d'être en
+mesure de compren dre d'une part, la portée et les conséqu ences de son consente ment,
+et d'autre part, les avantag es et les inconvén ients du traiteme nt ;
+Considé rant les points 6.1 (principe de la légitimité et la licéité des traiteme nts), 7.1
+(recomm andation s) du rapport définitif d'audit de situation de la Standard Chartere d Bank
+Côte d'Ivoire S.A et son tableau des recomm andation s ;
+Considérant que lors du contrôle , l'Autorité de Protectio n a constaté :
+Dans le cadre de la gestion clientèle :
+L'absence de formulaires de recueil de consentement à l'occasion de
+l'entrée en relation clientèle ;
+L'absence de recueil de consentement sur les formula ires de retrait et de
+dépôt de la banque ;
+L'absence de consentement spécifique et de clauses de protection des
+données personnelles dans les conditions générales de convention de
+compte particulier ;
+L'absence de recueil de consentement et de clauses de données à caractère
+personnel dans les produits de bancassurance proposés à la clientèle
+(assurance auto, assurance voyage, assurance incendie ... ).
+Dans le cadre du recrutem ent et de la gestion du personn el :
+Le formula ire « autorisa tion pour l'utilisat ion des donnée s » ne contien t pas
+la nature des donnée s collecté es, les durées de conserv ation des donnée s
+et le destinat aire des données ;
+Le consent ement recueilli via ce formu laire ne couvre pas tous les
+traiteme nts opérés par la Standar d Chartered Bank Côte d'Ivoire S.A ;
+L'absence de recueil du consentement pour l'utilisation de la biométrie, la
+géolocalisation et le transfert des données hors de l'espace CEDEAO ;
+L'absence de recueil de consentement spécifique pour le dispositif des
+alertes professionnelles.
+Dès lors, l'Autorité de Protection considère que les traitements opérés ne satisfont
+pas au principe de la légitimité.
+2. Sur les délais de conservation des données
+des données à caractère personnel dispose que, les données traitées doivent être
+conservées pendant une durée qui n'excède pas la période nécessaire aux finalités pour
+lesquelles elles ont été collectées ;
+Considérant les points 6.3 (délais de conservations), 7.2 du rapport définitif d'audit de
+situation de la société Standard Chartered Bank Côte d'Ivoire S.A et son tableau de
+recommandations ;
+Considérant que lors du contrôle , l'Autorité de Protection a constaté :
+L'archivage électronique n'a pas été mis en œuvre ;
+Le projet de calendrier de rétention ne fait pas référence à la loi Ivoirien ne
+sur la protection des données personnelles ;
+Le projet de calendrier de rétention communiqué n'est pas signé;
+L'incohérence entre la durée de conservation (horaire de groupe) et les
+durées de conservation minimale et maximale ;
+Les délais de conservation sont alignés sur ceux du groupe et non sur la loi
+personnel ;
+Les archives sont transférées via CODITRANS au siège de la banque à
+Abidjan ;
+Le registre des convoyeurs des fonds est conservé pendant une durée de
+Absence de durée de conservation dans la charte de protection des données
+personnelles ;
+L'Autorité de Protection considère que les prescriptions contenues dans la décision
+d'autorisation de traitement n'ont pas été respectées.
+3. Sur les finalités des traitements
+Considérant l'article 16 de la Loi relative à la protection des données à caractère
+personnel qui dispose que les données doivent être collectées pour des finalités
+déterminées, explicites et légitimes et ne peuvent pas être traitées ultérieurement de
+manière incompatible avec ces finalités ;
+Considérant le point 6.2 (finalités) du rapport définitif d'audit de situation de la Standard
+Chartered Bank Côte d'Ivoire S.A;
+Considérant que lors du contrôle , l'Autorité de Protection a constaté que le point 4 des
+conditions et modalités d'ouverture de compte particulier (SC Mobile) indique une
+utilisation ultérieure des données clients pour des finalités indéterminées,
+inexplicites.
+L'Autorité de Protection considère que le principe des finalités déterminées, explicites
+et légitimes n'est pas respecté .
+4. Sur la proportionnalité des données
+Considérant que selon les dispositions de l'article 16 de la Loi n°2013-450 du 19 juin
+2013, relative à la protection des données à caractère personnel, les données traitées
+doivent être adéquates, pertinentes et non excessives au regard des finalités pour
+lesquelles elles sont collectées et traitées ;
+Considérant les points 6.4 (finalités), 7.3 du rapport définitif d'audit de situation de la
+Standard Chartered Bank Côte d'Ivoire S.A et son tableau de recommandations ;
+Considérant que lors du contrôle, l'Autorité de Protection a constaté :
+la collecte des donnée s relatives à l'opinion politique lors du processus de
+recrutement ;
+la collecte des donnée s de filiation (nom de jeune fille de la mère) ;
+l'absence de politique de gestion des données sensibl es;
+l'absence d'inventaire des données sensibles ;
+l'absence d'analyse d'imp act relative à la vie privée pour les
+sensibles traitées.
+donné es
+t de situation
+Considérant que les recommandations faites dans le rapport définitif d'audi
+et la décision n'ont pas été prises en compte ;
+L'Autorité de Protection considère que le principe de la proportionnalité
+n'est pas respecté.
+des donné es
+5. Sur la transparence des traitements
+arence implique
+relative à la protection des données à caractère personnel, la transp
+responsable du
+l'information obligatoire et claire des personnes concernées par le
+traitement ;
+de transparence
+Qu'il s'agit en l'espèce pour le responsable du traitement de faire preuve
+vis-à-vis des personnes concernées qui devront notamment être inform
+de son
+de l'identité du Responsable du traitement et le cas échéant, celle
+représentant dûment mandaté ;
+de la finalité du traitement ;
+sous
+du fait que la Standard Chartered Bank Côte d'Ivoire S.A soit placée
+vidéosurveillance ;
+des catégories de données concernées ;
+uniquées ;
+des destinataires auxquels les données sont susceptibles d'être comm
+ation;
+de l'existence et des modalités d'exercice de leur droit d'accès et de rectific
+de la durée de conservation des données ;
+de l'éventualité de tout transfert de données à destination de pays tiers
+du numéro de !'Autorisation délivrée par l'Autorité de Protection.
+Considérant le rapport définitif d'audit de situation de la Standard Charte
+d'Ivoire S.A et son tableau de recommandations ;
+Considérant qu'à l'issue du contrôle, l'Autorité de Protection a constaté
+red Bank Côte
+pas les
+Les formulaires, contrats et affiches de la banqu e ne comp ortent
+tion des
+mentions prescrites par les articles 18 et 28 de la Loi sur la protec
+donné es personnelles ;
+lement
+L'information sur les Droits des personnes concernées est diffici
+d'Ivoire
+accessible sur le site internet de la Standard Chartered Bank Côte
+dans les
+L'info rmatio n spécif ique à l'alerte profes sionne lle n'est pas affiché e
+locaux du respo nsable du traitement, ni sur son site intern et.
+vidéosurveillance
+Considérant que le respon sable du traitement a installé un dispositif de
+que ce site est
+et des affiches contenant la mention suivante « nous vous informons
+des biens et
+placé sous la surveillance vidéo pour des raison s de sécurité
+es à caractère
+personnes. Pour exerc er vos droits sur la protec tion des donné
+personnel, Envoyez-nou s un email à : PDCSCBCl@sc.com »
+pas toutes les
+Considérant que cette affiche liée à la vidéosurveillance ne contient
+à la protection des données à caractère personnel.
+t de situation
+Considérant que les recommandations faites dans le rapport définitif d'audi
+et la décision n'ont pas été totalement prises en compte ;
+e n'est pas
+L'Autorité de Protection considère que le principe de transparenc
+totalement respecté .
+6. Sur les mesures de sécurité
+à la protection
+ent est tenu
+des données à caractère personnel dispose que le respon sable du traitem
+des mesures
+de choisir un sous-traitant qui apporte des garanties suffisantes au regard
+er.
+de sécurité technique et d'organisation relatives aux traitements à effectu
+Qu'il incombe au responsable du traitement ainsi qu'aux sous-traitant
+respect de ces mesures.
+s de veiller au
+red Bank Côte
+Considérant le rapport définit if d'audit de situation de la Standard Charte
+d'Ivoire S.A et son tableau des recommandations ;
+l'Autorité de
+Considérant qu'à l'issue du contrôle et après analyse des documents,
+Protection a constaté :
+L'utilisation d'un dispositif de vidéosurveillance ;
+L'entrée aux salles est faite par badge et clés selon les habilitations ;
+L'existence d'une double authentification pour l'accès aux salles des caisse
+L'accès au local technique est accessible par clé ;
+smes ;
+Le chiffrement des com munications électroniques avec d'autres organi
+fréquence
+La politiqu e de mot de passe impose un niveau de complexité et une
+de renouvellement des mots de passe ;
+les profils
+L'existence d'une double authentification sur les postes de travail selon
+d'habitation ;
+EBBS ,
+Les transferts des données non autori sés des applications métier
+Ebranch, SIGCA P à destination des pays tiers ;
+La présence de systèm e anti-intrusion dans les locaux ;
+internet.
+L'utilisation du protocole HTTPS pour la sécurité des communications sur
+Considérant que le contrôle a révélé aussi des insuffisances à savoir :
+L'abse nce de systèm e de gestion de cookie s paramé trables sur le site web
+du Groupe Standa rd Charte red Bank Côte d'Ivoire ;
+La cartogr aphie des risques n'est pas spécifi que à la protec tion des donnée s
+person nelles ;
+La politiqu e de sécurit é du groupe ne mentio nne pas les mesure s de sécurit é
+physiq ues;
+Les documents relatifs à la sécurité et la confidentialité communiqués sont
+des politiques groupe en anglais et ne sont pas spécifiques à la standard
+chartered bank Côte d'Ivoire .
+Considérant les recommandations contenues dans le rapport définitif d'audit de situatio
+de la Standa rd Chartered Bank Côte d'Ivoire S.A ;
+L'Autorité de Protection considère que les prescriptions faites sur le systèm
+d'information ont été respectées. Les non-conformités supplémentai res relevée
+lors du contrôle doivent toutefois faire l'objet de corrections.
+7. Sur les sous-traitants
+ion
+tenu
+des données à caractère personnel dispose que le responsable du traitement est
+de choisir un sous-traitant qui apporte des garanties suffisantes au regard des mesure
+de sécurité techniques et d'organisation relatives aux traitements à effectuer.
+Qu'il incombe au responsable du traitement ainsi qu'aux sous-traitants de veiller
+respect de ces mesures.
+Considérant les analyses faites dans le rapport définitif d'audit de situation de la Standa
+Chartered Bank Côte d'Ivoire S.A et son tableau des recommandations ;
+Considérant qu'à l'issue du contrôle , l'Autorité de Protection a constaté :
+Le recours à la société G45 pour la sécurité physique des locaux ;
+Le recours à la société MFI SARL ;
+Le recours à la société CODIVAL pour le transfert des fonds ;
+Le recours à la société CODITRANS pour le transport des colis et des
+courrie rs;
+Le recours à la société SECURICOM pour la maintenance du dispos itif de
+vidéosurveillance ;
+Le bon de commande de G4S communiqué n'est pas signé et ne comporte
+pas de clauses spécifiques de protection des données personnelles ;
+La convent ion entre le groupe de la Standar d Charter ed Bank et la holding
+de G4S est non signée et régis par le Règlem ent Général sur la Protecti on
+des Données Personn elles (RGPD) ;
+Le contrat conclu entre la Standard Chartered Bank et MFI SARL le 06 juillet
+2022 ne contien t pas des clauses de protecti on des donnée s personn elles ;
+Le prestata ire MFI SARL n'a ent repris aucune démarc he auprès de l'Autorité
+de Protecti on en vue de se mettre en conform ité ou d'obten ir une décision
+d'autori sation ;
+Les contrats de sous-tra itance ne fixent pas les condit ions de restituti on ou
+de suppres sion des donnée s.
+Considérant qu'aucun sous-traitant ci-dessus mentionné ne dispose
+d'autorisations de traitement de données ou de décision de mise en conformité
+personnelles ;
+Considérant qu'aucun sous-traitant n'a entamé de démarches auprès de l'Autorité
+de protection en vue de se mettre en conform ité ou obtenir des autorisations de
+traitements ;
+L'Autorité de Protectio n considère que les recommandations faites sur les soustraitants n'ont pas été respectées.
+8. Sur la vidéosurveillance
+des données à caractère personnel dispose que le responsable du traitement est tenu
+de prendre toute précaution au regard de la nature des données et, notamment, pour
+empêcher qu'elles soient déformées, endommagées, ou que les tiers non autorisés y
+aient accès ;
+Considérant les recomm andations contenues dans le rapport définitif d'audit de situation
+de la société Standard Chartered Bank Côte d'Ivoire S.A ;
+Considérant qu'à l'issue du contrôle , l'Autorité de Protection a constaté :
+La durée de conservation des données issues de la vidéosurveillance est de
+quatre-vingt-dix (90) jours ;
+Le consentement des agents n'a pas été recueilli pour l'installation du
+disposit if de vidéosurveillance ;
+L'affiche ou le pictogramme ne contient pas les mentions prévues aux
+des données à caractère personnel ;
+- Les destinataires des données ne sont pas identifiés.
+Considéra nt que les points de non-confo rmité identifiés dans le rapport définitif d'audit de
+situation n'ont pas été corrigés ;
+L'Autorité de Protection considère que les recommandations faites sur la
+vidéosurveillance n'ont pas été respectées.
+9. Sur le Correspondant à la protection des données
+la protection des données à caractère personnel prescriven t que le responsab le du
+traitement doit indiquer dans sa demande, la fonction de la personne ou le service auprès
+duquel s'exercent les droits reconnus aux personnes concernée s, notammen t les droits
+d'accès, de rectification, de suppressi on et de retrait du consentem ent ;
+Considéra nt les analyses faites dans le rapport définitif d'audit de situation et son tableau
+des recomman dations ;
+Considéra nt qu'au moment du contrôle , l'Autorité de Protection a constaté :
+L'existenc e d'un Correspon dant à la protection des données personnel les qui rend
+compte directeme nt de ses actions au Directeur de la Conformit é ;
+L'existenc e d'une équipe de six (06) personnes qui appuient le Correspon dant à
+la protection ;
+Le Correspon dant à la protection est sollicité dans les projets qui nécessite nt des
+autorisations de traitement de données à caractère personnel ;
+Le correspon dant dispose d'un registre des traitement s de données personnel les.
+Les violations de données personnelles sont remontées via une application
+La procédure de notifications des violations n'est pas formalisée ;
+La personne concernée est tenue de se rapprocher du conseiller client pour
+la gestion des droits des personnes concernées ;
+L'inexistence de la fiche de poste du Correspondant à la protection des
+données ;
+Les fonctions du Correspondant dans la norme de confidentialité sont
+spécifiques au règlement général de protection des données (RGPD) ;
+Considéra nt que les non-confo rmités relevées dans le rapport définitif d'audit de situation
+ont été partiellem ent corrigées ;
+L'Autorité de Protection considère que les recomma ndations faites sur le
+Correspo ndant à la protection n'ont pas été respectées.
+1O. Sur les droits des personne s concerné es
+la protection des données à caractère personnel prescrivent que le responsable du
+traitement doit indiquer dans sa demande, la fonction de la personne ou le service auprès
+duquel s'exercent les droits reconnus aux personnes concernées, notamment les droits
+d'accès, de rectification, de suppression ;
+Considérant les recommandations contenues dans le rapport définitif d'audit de situation
+de la société ;
+Considérant qu'à l'issue du contrôle, l'Autorité de Protection a constaté :
+Les droits des personne s concerné s ne sont pas visibles sur le pictogram me
+de la vidéosurv eillance ;
+Les prérogati ves des personne s concerné es tant à l'intérieur qu'à l'extérieu r
+de la banque ne permetten t pas de prendre contact aisément et directeme nt
+avec le Correspo ndant sans devoir s 'adresser à un autre service de
+l'organism e ;
+L'existen ce d'une procédur e interne de droits des personne s concerné es ;
+L'absenc e de délai de traitemen t des droits des personne s concerné es ;
+L'absenc e de procédur e de gestion des droits des personne s concerné es ;
+L'exercic e des droits des personne s concerné es se fait au niveau du siège.
+Considérant que les non-conformités relevées dans le rapport définitif d'audit de situation
+et la décision ont été partiellement corrigées ;
+L'Autorité de Protection considère que les recomma ndations faites sur les droits des
+personne s concerné es sont partiellem ent respectée s.
+11. Sur la formation du personnel
+Considérant les recommandations contenues dans le rapport définitif d'audit de situation
+de la société Standard Chartered Bank Côte d'Ivoire S.A ;
+Considérant qu'à l'issue du contrôle et après analyse des documents, le personnel de la
+Standard Chartered Bank Côte d'Ivoire S.A dispose d'une connaissance partielle de la
+protection des données et d'un Correspondant à la protection ;
+Considérant les recommandations faites dans le rapport définitif d'audit de situation et la
+décision d'autorisation ;
+L'Autorité de Protection considère que les recommandations faites sur la formation
+du person nel ne sont pas respectées.
+12.Sur les procéd ures du Respon sable du traitem ent
+situatio n
+Consid érant les recomm andatio ns contenu es dans le rapport définitif d'audit de
+et la décision d'autor isation de la société Standard Charter ed Bank Côte d'Ivoire
+Consid érant qu'à l'issue du contrôle et après analyse, l'Autori té de Protection
+a constat é
+Les procéd ures du groupe n'ont pas fait l'objet d'une actuali sation en vue
+de les confor mer à législa tion ivoirien ne sur la protec tion des donnée s
+person nelles ;
+L'existe nce d'une charte de protect ion des donnée s person nelles : l'article 3
+cette charte mentio nne l'interc onnexi on avec les bases de donnée s d'un
+client ;
+L'utilis ation de l'intérê t légitim e comme base légale de certain s traitem ents ;
+Le princip e de la confide ntialité et de protec tion des donnée s conten ues
+dans la procéd ure n'est pas confor me à l'article 40 et 41 de la Loi sur la
+protec tion des donnée s person nelles ;
+La commu nicatio n des donnée s à des destina taires non habilité s (dirige ants,
+employ és, fournis seurs, agents .. .) ;
+La commu nicatio n des donnée s (transf erts) dans un lieu situé hors de la
+Côte d'Ivoire où il n'exist e pas de Loi sur la protec tion des donnée s
+person nelles ;
+L'abse nce de durée de conser vation dans la charte de protec tion des
+donnée s person nelles ;
+L'abse nce de recueil de consen tement pour l'utilisa tion des donnée s à des
+fins market ing, d'évèn ements promo tionnel s ;
+L'abse nce de délai de traitem ent pour les deman des d'exerc ice des droits
+d'accè s des person nes concer nées;
+La procéd ure de suppre ssion des donnée s n'est pas explici te ;
+La présen ce du droit d'objec tion qui n'est pas prévu par la Loi ivoirien ne sur
+la protec tion des donnée s person nelles ;
+Les docum ents relatifs à la sécurit é et la confide ntialité des donnée s sont
+des politiqu es du groupe ne sont pas spécifi ques à la Standa rd Charte red
+Bank Côte d'Ivoire ;
+L'abse nce de procéd ure de gestion des droits des person nes concer nées.
+Considérant que les recomm andations faites dans le rapport définitif d'audit de situation
+et la décision n'ont pas été totaleme nt corrigées ;
+L'Autorité de Protection considère que les recomm andatio ns faites sur les procédu res
+ne sont pas totalem ent respecté es.
+13. Sur le manque ment à l'obligat ion d'obten ir une autorisa tion de traiteme nt
+pour les logiciels et produits du Respon sable du traiteme nt
+la protection des données à caractère personnel, le traitement portant sur un numéro
+national d'identification ou tout autre identifiant de la même nature, notamment les
+numéros de téléphon e est soumis à autorisation préalable de l'Autorité de protection,
+avant toute mise en œuvre ;
+Considérant qu'à l'issue du contrôle et après analyse des documents, l'Autorité de
+Protectio n a constaté l'utilisation de logiciels métier et applications que sont :
+« ASTRA » pour le scan et la validatio n des remises de chèques ;
+« EBBS » pour le paiemen t des clients, recherc he sur les compte s, les
+opératio ns de chèques et de paiemen t ;
+« SIG UP » pour la vérification des signatures ;
+« M 7 » pour les violation s sur la protecti on des donnée s à caractèr e
+personn el et pour tous les risques de violation s ;
+L'application « EBranch ».
+Considé rant que l'utilisation de ces logiciels induit de nouveau x traiteme nts qui
+n'ont pas été autorisé s par l'Autorit é de Protecti on ;
+Considé rant que les traiteme nts de données collecté es par les applications
+soulève nt des questio ns liées aux principe s de légitimit é, de proporti onnalité , de
+conserv ations de donnée s, de sécurité ...
+Considé rant que le Respon sable du traiteme nt n'a entamé aucune démarc he en
+vue d'obtenir des autorisa tions pour les nouveau x traiteme nts constat és ;
+L'Autorité de Protection considère que les traiteme nts effectué s non déclarés ne
+des données à caractèr e personn el.
+relative à la protection des données à caractère personnel et l'article 17 de la Décision
+n°2021-0676 de l'Autorité de Protection de la République de Côte d'Ivoire en date du 04
+Août 2021 portant procédure de contrôle en matière de protection des données à
+caractère personnel ;
+Après en avoir délibéré ,
+DECIDE:
+relative à la protection des données à caractère personnel et l'article 17 de la Décision
+n°2021-0676 de l'Autorité de Protection de la République de Côte d'Ivoire en date du 04
+Août 2021 portant procédure de contrôle en matière de protection des données à
+caractère personnel , l'Autorité de Protection prononce à l'égard de :
+un avertisse ment pour non-resp ect des obligation s découlan t de la Loi
+personne l;
+une mise en demeure de faire cesser tous les manquem ents observés dans
+les soixante (60) jours à compter de la réception de la présente Décision ;
+une mise en demeure d'appliqu er toutes les prescript ions contenue s dans
+la décision d'autorisation de traitement délivré dans un délai de soixante (60)
+jours à compter de la réception de la présente décision.
+Article 2:
+Si la Standard Chartered Bank Côte d'Ivoire S.A ne s'est pas conformée à la présente
+mise en demeure, l'Autorité de Protection prononcera l'une des mesures prévues par
+caractère personnel .
+Article 3:
+Les agents assermentés de l'Autorité de Protection effectuero nt des contrôles afin de
+s'assurer du respect de la présente décision conformément à la Décision n°2021-0676
+de l'Autorité de Protection en date du 04 août 2021 portant procédure de contrôle en
+matière de protection des données à caractère personnel.
+Article 4:
+La présente décision prend effet à compter de la date de sa notification à la Standard
+Chartered Bank Côte d'Ivoire S.A.
+Article 5:
+présente décision, qui sera publiée
+Le Directeur Général est chargé de l'exécution de la
+TélécommunicationsfflC de Côte
+sur le site internet de l'Autorité de Régulation des
+d'Ivoire et celui de l'Autorité de Protection .
+En deux (2) exemplaires originaux
+Le président ,
+:î .ê Présld
+Dr Coty Soufeïman~"
+COMMANDEURDE VORORc~~ -=
