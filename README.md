@@ -17,6 +17,10 @@ des textes officiels, article par article, et cite ses sources.
   cherche, situation) et bouton « Améliorer ma question » qui reformule en termes juridiques et signale les
   informations manquantes. Après chaque réponse : la question telle que comprise, les précisions utiles et
   trois questions de suivi en un clic.
+- **Équivalences Maroc ↔ OHADA** : à partir d'un article de droit marocain (ou OHADA), l'assistant retrouve les
+  articles qui traitent le même point dans l'autre système, grâce à une table de correspondance par thème (SARL,
+  bail commercial, fonds de commerce, sûretés, procédures collectives…), signale les matières sans équivalent, et
+  rédige à la demande une comparaison (points communs, différences, conséquences pratiques).
 - **Citation directe** : « Que prévoit l'article 309 de l'AUSCGIE ? » va chercher l'article exact.
 - **Consulter un article** : texte intégral d'un article, avec navigation vers l'article précédent ou suivant.
 - **Bibliothèque** : liste des textes intégrés, avec leur source.
@@ -51,6 +55,12 @@ législative).
    vocabulaire (« ARTCI » / « Commission nationale », « SAS » / « société par actions simplifiée »…) et un
    renforcement du texte visé par la question.
 3. Un modèle open source (via l'API Groq) rédige la réponse à partir des seuls articles retrouvés.
+
+## Quotas
+
+L'assistant utilise l'offre gratuite de Groq. Si le modèle principal est saturé, il bascule automatiquement sur un
+modèle de secours (`GROQ_MODEL_SECOURS`, par défaut `openai/gpt-oss-20b`). L'étape d'analyse n'envoie que le plan des
+textes probablement concernés, pour économiser les jetons.
 
 ## Ajouter un texte
 

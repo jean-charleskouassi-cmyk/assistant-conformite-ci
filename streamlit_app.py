@@ -111,7 +111,10 @@ def tokeniser(texte):
 ARTICLE_RE = re.compile(
     r"(?m)^[\W_]{0,4}(?:Article|ARTICLE|Art\.)\s+"
     r"(premier|Premier|PREMIER|1er|\d+(?:\s*[-‑]\s*\d+)?(?:\s*bis|\s*ter)?)\b")
-TITRE_RE = re.compile(r"(?mi)^\s*(livre|titre|chapitre|section)\b[^\n]{0,120}")
+TITRE_RE = re.compile(
+    r"(?m)^\s*((?i:livre|titre|chapitre|section))\s+"
+    r"(?:[0-9]+(?:-[0-9]+)?|[IVXLC]+|(?i:premier|première|preliminaire|préliminaire|unique|bis))"
+    r"(?:\s*(?:[-:–—.]|$)|\s+[A-ZÀ-ÖØ-Þ(«])[^\n]{0,120}")
 
 
 def lire_document(chemin):
@@ -332,7 +335,7 @@ def analyser_question(client, question, precedente="", plan_txt=""):
                + f"Question : {question}")
     try:
         rep = client.chat.completions.create(
-            model=modele, temperature=0, max_tokens=900,
+            model=modele, temperature=0, max_tokens=700,
             messages=[{"role": "system", "content": ANALYSE}, {"role": "user", "content": contenu}])
         brut = rep.choices[0].message.content or ""
         m = re.search(r"\{.*\}", brut, re.S)
@@ -438,6 +441,157 @@ def rechercher(question, passages, index, articles, domaines, espaces, k=TOP_K, 
         if passages[i] not in resultat and len(resultat) < 9:
             resultat.append(passages[i])
     return resultat
+
+
+# ------------------------------------------------------------------ appels au modèle (quotas)
+
+def flux_modele(client, messages, modele):
+    """Lance la génération ; si le modèle est saturé (quota) ou indisponible, bascule sur le modèle de secours."""
+    secours = st.secrets["GROQ_MODEL_SECOURS"] if "GROQ_MODEL_SECOURS" in st.secrets else "openai/gpt-oss-20b"
+    derniere = None
+    for m in ([modele, secours] if secours != modele else [modele]):
+        try:
+            return client.chat.completions.create(model=m, messages=messages, stream=True,
+                                                  temperature=0.2), m
+        except Exception as e:  # noqa: BLE001
+            derniere = e
+            if not any(x in type(e).__name__ for x in ("RateLimit", "NotFound", "InternalServer", "APIStatus",
+                                                         "ServiceUnavailable")):
+                raise
+    raise derniere
+
+
+def ecrire_flux(flux):
+    def generer():
+        for bloc in flux:
+            if bloc.choices and bloc.choices[0].delta.content:
+                yield bloc.choices[0].delta.content
+    return st.write_stream(generer())
+
+
+def message_erreur(e):
+    nom = type(e).__name__
+    if "RateLimit" in nom:
+        return "Le service est très sollicité (limite de requêtes atteinte). Réessayez dans une minute."
+    return f"Le service de génération est momentanément indisponible ({nom}). Réessayez dans un instant."
+
+
+def textes_probables(question, passages, index, domaines, espaces, n=5):
+    """Textes les plus probablement concernés (pour n'envoyer que leur plan à l'analyse)."""
+    scores = index.get_scores(tokeniser(question))
+    vus = []
+    for i in sorted(range(len(passages)), key=lambda i: scores[i], reverse=True)[:60]:
+        q = passages[i]
+        if scores[i] > 0 and q["domaine"] in domaines and q["pays"] in espaces and q["label"] not in vus:
+            vus.append(q["label"])
+    for motif, frags in NOTIONS_TEXTES.items():
+        if re.search(motif, question, re.I):
+            for lab in {q["label"] for q in passages}:
+                if any(f in lab for f in frags) and lab not in vus:
+                    vus.insert(0, lab)
+    return vus[:n]
+
+
+# ------------------------------------------------------------------ équivalences Maroc / OHADA
+
+EQUIVALENCES = [
+    {"theme": "Société à responsabilité limitée (SARL)",
+     "maroc": [("Loi 5-96", r"responsabilit[ée] limit")], "ohada": [("AUSCGIE", r"responsabilit[ée] limit")]},
+    {"theme": "Société en nom collectif",
+     "maroc": [("Loi 5-96", r"nom collectif")], "ohada": [("AUSCGIE", r"nom collectif")]},
+    {"theme": "Société en commandite simple",
+     "maroc": [("Loi 5-96", r"commandite simple")], "ohada": [("AUSCGIE", r"commandite simple")]},
+    {"theme": "Société en commandite par actions",
+     "maroc": [("Loi 5-96", r"commandite par actions")], "ohada": None,
+     "note": "L'AUSCGIE ne prévoit pas de société en commandite par actions : pas d'équivalent direct en droit OHADA."},
+    {"theme": "Société en participation",
+     "maroc": [("Loi 5-96", r"participation")], "ohada": [("AUSCGIE", r"Société en participation")]},
+    {"theme": "Société anonyme et société par actions simplifiée",
+     "maroc": None, "ohada": [("AUSCGIE", r"Société anonyme|actions simplifi")],
+     "note": "La loi marocaine n° 17-95 sur les sociétés anonymes n'est pas encore intégrée dans la bibliothèque."},
+    {"theme": "Groupement d'intérêt économique",
+     "maroc": None, "ohada": [("AUSCGIE", r"Groupement d.int")],
+     "note": "Le droit marocain des groupements d'intérêt économique n'est pas encore intégré dans la bibliothèque."},
+    {"theme": "Règles communes aux sociétés commerciales",
+     "maroc": [("Loi 5-96", r"Dispositions générales|Responsabilit[ée] Civile|publicit|infractions|Dispositions diverses"),
+               ("DOC", r"association")],
+     "ohada": [("AUSCGIE", r"Constitution de la soci|Fonctionnement de la soci|responsabilit[ée] civile|Formalit|"
+                           r"Nullit|Dissolution|Transformation|Fusion|Liens de droit|Capital variable|pénales")]},
+    {"theme": "Statut du commerçant et registre du commerce",
+     "maroc": [("Code de commerce", r"LIVRE PREMIER")],
+     "ohada": [("AUDCG", r"Livre [1-5] |Champ d.application")]},
+    {"theme": "Bail commercial",
+     "maroc": [("Loi 49-16", None)], "ohada": [("AUDCG", r"Titre 1 - Bail")]},
+    {"theme": "Fonds de commerce",
+     "maroc": [("Code de commerce", r"LIVRE II:")], "ohada": [("AUDCG", r"Titre 2 - Fonds de commerce")]},
+    {"theme": "Intermédiaires de commerce (agence, courtage, commission)",
+     "maroc": [("Code de commerce", r"AGENCE COMMERCIALE|COURTAGE|COMMISSION")],
+     "ohada": [("AUDCG", r"Intermédiaires de commerce")]},
+    {"theme": "Vente commerciale",
+     "maroc": [("DOC", r"De la Vente")], "ohada": [("AUDCG", r"Vente commerciale|livrer les marchandises")]},
+    {"theme": "Transport de marchandises",
+     "maroc": [("Code de commerce", r"LE TRANSPORT")], "ohada": [("AUCTMR", None)]},
+    {"theme": "Sûretés : nantissement, gage, cautionnement, hypothèque",
+     "maroc": [("Code de commerce", r"NANTISSEMENT"), ("DOC", r"Cautionnement|Nantissement")],
+     "ohada": [("(AUS)", None)]},
+    {"theme": "Difficultés de l'entreprise et procédures collectives",
+     "maroc": [("Code de commerce", r"Livre V")], "ohada": [("AUPCAP", None)]},
+    {"theme": "Effets de commerce",
+     "maroc": [("Code de commerce", r"EFFETS DE COMMERCE")], "ohada": None,
+     "note": "Les effets de commerce (lettre de change, billet à ordre, chèque) ne relèvent d'aucun Acte uniforme "
+             "OHADA ; en Côte d'Ivoire, ils relèvent notamment de la réglementation UEMOA, non intégrée ici."},
+    {"theme": "Contrats bancaires, crédit-bail et domiciliation",
+     "maroc": [("Code de commerce", r"CREDIT|BANCAIRES|DOMICILIATION")], "ohada": None,
+     "note": "Aucun Acte uniforme OHADA ne traite ces contrats : ils relèvent du droit national ou de l'UEMOA."},
+    {"theme": "Juridictions de commerce, recouvrement et voies d'exécution",
+     "maroc": [("Loi 53-95", None)], "ohada": [("AUPSRVE", None)]},
+    {"theme": "Arbitrage et médiation",
+     "maroc": None, "ohada": [("(AUA)", None), ("(AUM)", None)],
+     "note": "La loi marocaine n° 95-17 sur l'arbitrage et la médiation n'est pas encore intégrée dans la bibliothèque."},
+    {"theme": "Droit comptable",
+     "maroc": None, "ohada": [("AUDCIF", None), ("SYCEBNL", None)],
+     "note": "Le droit comptable marocain n'est pas intégré dans la bibliothèque."},
+    {"theme": "Sociétés coopératives",
+     "maroc": None, "ohada": [("AUSCOOP", None)],
+     "note": "La loi marocaine sur les coopératives n'est pas intégrée dans la bibliothèque."},
+]
+
+
+def _correspond(p, entrees):
+    return any(frag in p["label"] and (rx is None or re.search(rx, p["contexte"], re.I)) for frag, rx in entrees)
+
+
+def theme_equivalence(p, source):
+    for t in EQUIVALENCES:
+        if t.get(source) and _correspond(p, t[source]):
+            return t
+    return None
+
+
+def equivalents(p, source, passages, index, n=5):
+    """Articles de l'autre système qui traitent le même point que le passage p."""
+    cible = "ohada" if source == "maroc" else "maroc"
+    theme = theme_equivalence(p, source)
+    if theme is not None and theme.get(cible) is None:
+        return theme, []
+    if theme is not None:
+        candidats = {i for i, q in enumerate(passages) if _correspond(q, theme[cible])}
+    else:
+        pays_cible = "OHADA" if cible == "ohada" else "Maroc"
+        candidats = {i for i, q in enumerate(passages) if q["pays"] == pays_cible and q["domaine"] == "affaires"}
+    corps = re.sub(r"^\W*Article\s+\S+", "", p["texte"])[:1400]
+    mots = list(dict.fromkeys(tokeniser(p["contexte"] + " " + corps)))[:90]
+    scores = index.get_scores(mots)
+    resultats, vus = [], set()
+    for i in sorted(candidats, key=lambda i: scores[i], reverse=True):
+        cle = (passages[i]["label"], passages[i]["num"])
+        if cle in vus or not passages[i]["num"]:
+            continue
+        vus.add(cle)
+        resultats.append((passages[i], scores[i]))
+        if len(resultats) >= n:
+            break
+    return theme, resultats
 
 
 # ------------------------------------------------------------------ interface
@@ -558,8 +712,9 @@ st.markdown(
       </div></div>""",
     unsafe_allow_html=True)
 
-onglet_q, onglet_art, onglet_biblio, onglet_apropos = st.tabs(
-    ["Question juridique", "Consulter un article", "Bibliothèque des textes", "À propos"])
+onglet_q, onglet_eq, onglet_art, onglet_biblio, onglet_apropos = st.tabs(
+    ["Question juridique", "Équivalences Maroc ↔ OHADA", "Consulter un article", "Bibliothèque des textes",
+     "À propos"])
 
 
 def afficher_sources(sources, cle):
@@ -731,15 +886,15 @@ with onglet_q:
                                    if m["role"] == "user"), "")
                 with st.spinner("Analyse de la question et recherche des articles…"):
                     plan_dispo = "\n".join(
-                        plan_resume(t["label"], plans) for t in textes
-                        if t["domaine"] in domaines and t["pays"] in choix_espaces and t["label"] in plans)
+                        plan_resume(lab, plans) for lab in
+                        textes_probables(question, passages, index, domaines, choix_espaces) if lab in plans)
                     analyse = analyser_question(client, question, precedente, plan_dispo)
                     trouves = rechercher(question + " " + analyse.get("question_precise", ""), passages, index,
                                          articles, domaines, choix_espaces, analyse=analyse)
                 contexte = "\n\n".join(
                     f"[{n + 1}] {p['ref']} — {p['titre']}\n{p['texte']}" for n, p in enumerate(trouves)
                 ) or "(Aucun extrait pertinent trouvé dans le corpus.)"
-                concernes = list(dict.fromkeys(p["label"] for p in trouves if p["label"] in plans))
+                concernes = list(dict.fromkeys(p["label"] for p in trouves if p["label"] in plans))[:3]
                 if concernes:
                     contexte += "\n\nPlan des textes concernés :\n" + "\n".join(
                         plan_resume(lab, plans) for lab in concernes)
@@ -753,21 +908,12 @@ with onglet_q:
                                                         + (f"\n(Reformulation juridique : {precise})" if precise else "")}]
                 with st.chat_message("assistant", avatar=str(LOGO_ICONE) if LOGO_ICONE.exists() else None):
                     try:
-                        flux = client.chat.completions.create(model=modele, messages=messages,
-                                                              stream=True, temperature=0.2)
-
-                        def generer():
-                            for bloc in flux:
-                                if bloc.choices and bloc.choices[0].delta.content:
-                                    yield bloc.choices[0].delta.content
-
-                        reponse = st.write_stream(generer())
-                    except Exception as e:
-                        nom = type(e).__name__
-                        reponse = ("Le service est très sollicité (limite de requêtes atteinte). "
-                                   "Réessayez dans une minute." if "RateLimit" in nom else
-                                   f"Le service de génération est momentanément indisponible ({nom}). "
-                                   "Réessayez dans un instant.")
+                        flux, utilise = flux_modele(client, messages, modele)
+                        reponse = ecrire_flux(flux)
+                        if utilise != modele:
+                            st.caption("Réponse rédigée par le modèle de secours (forte affluence).")
+                    except Exception as e:  # noqa: BLE001
+                        reponse = message_erreur(e)
                         st.warning(reponse)
                     if precise:
                         st.caption(f"Question comprise comme : {precise}")
@@ -782,6 +928,73 @@ with onglet_q:
                 "sources": [{"ref": s["ref"], "texte": s["texte"], "contexte": s["contexte"]} for s in trouves],
                 "precise": analyse.get("question_precise", ""), "precisions": analyse.get("precisions", []),
                 "suivis": analyse.get("suivis", [])})
+
+# --- Onglet Équivalences Maroc ↔ OHADA
+COMPARAISON = """Tu es juriste comparatiste (droit marocain et droit uniforme OHADA). On te donne un article source
+et les articles de l'autre système qui traitent le même point. À partir de ces seuls textes, rédige :
+**Correspondance** (quel article correspond le mieux, et pourquoi), **Points communs**, **Différences** (conditions,
+délais, montants, majorités, sanctions), **Conséquence pratique** (ce que cela change pour une entreprise qui opère
+dans les deux espaces). Cite les références exactes entre crochets. Si aucun article ne correspond vraiment,
+dis-le. Termine par une phrase rappelant qu'il s'agit d'une information et non d'un conseil juridique."""
+
+with onglet_eq:
+    st.markdown("Choisissez un article de droit marocain ou de droit OHADA : l'assistant retrouve les articles qui "
+                "traitent le même point dans l'autre système, puis peut rédiger une comparaison.")
+    sens = st.radio("Sens", ["Du droit marocain vers l'OHADA", "De l'OHADA vers le droit marocain"],
+                    horizontal=True, label_visibility="collapsed", key="eq_sens")
+    source = "maroc" if sens.startswith("Du droit marocain") else "ohada"
+    pays_src = "Maroc" if source == "maroc" else "OHADA"
+    labels_src = [t["label"] for t in textes
+                  if t["pays"] == pays_src and t["domaine"] == "affaires" and t["label"] in articles]
+    e1, e2 = st.columns([3, 1])
+    texte_eq = e1.selectbox("Texte source", labels_src, key=f"eq_texte_{source}")
+    nums_eq = [n for n, _ in articles.get(texte_eq, [])]
+    num_eq = e2.selectbox("Article", nums_eq, key=f"eq_num_{texte_eq}") if nums_eq else None
+    if num_eq:
+        idx_src = dict(articles[texte_eq])[num_eq]
+        p_src = dict(passages[idx_src[0]])
+        p_src["texte"] = passages[idx_src[0]]["texte"] + "".join(passages[i]["texte"][150:] for i in idx_src[1:])
+        theme, equiv = equivalents(p_src, source, passages, index)
+        st.markdown(f"<div class='jck-label'>Article source · {texte_eq}, art. {num_eq}</div>",
+                    unsafe_allow_html=True)
+        with st.expander("Lire l'article source", expanded=True):
+            if p_src["contexte"]:
+                st.markdown(f"<div class='jck-ctx'>{p_src['contexte']}</div>", unsafe_allow_html=True)
+            st.markdown(p_src["texte"].replace("\n", "  \n"))
+        if theme:
+            st.markdown(f"**Thème :** {theme['theme']}")
+        else:
+            st.caption("Thème non répertorié dans la table de correspondance : recherche dans tout le droit "
+                       + ("OHADA." if source == "maroc" else "marocain des affaires."))
+        if theme and theme.get("note") and not equiv:
+            st.info(theme["note"])
+        if equiv:
+            st.markdown("<div class='jck-label'>Articles équivalents probables</div>", unsafe_allow_html=True)
+            top = equiv[0][1] or 1
+            for q, sc in equiv:
+                force = "forte" if sc >= 0.75 * top else ("moyenne" if sc >= 0.5 * top else "faible")
+                with st.expander(f"{q['ref']} · correspondance {force}"):
+                    if q["contexte"]:
+                        st.markdown(f"<div class='jck-ctx'>{q['contexte']}</div>", unsafe_allow_html=True)
+                    st.markdown(q["texte"].replace("\n", "  \n"))
+                    st.code(q["ref"], language=None)
+            st.caption("Correspondances proposées automatiquement à partir du thème et du vocabulaire des "
+                       "articles : vérifiez-les avant de les citer.")
+            if "GROQ_API_KEY" in st.secrets and st.button("Comparer avec l'IA", type="primary", key="eq_comparer"):
+                client_eq = Groq(api_key=st.secrets["GROQ_API_KEY"])
+                modele_eq = st.secrets["GROQ_MODEL"] if "GROQ_MODEL" in st.secrets else DEFAULT_MODEL
+                contenu = (f"Article source : [{p_src['ref']}]\n{p_src['texte'][:2500]}\n\n"
+                           "Articles de l'autre système :\n\n" +
+                           "\n\n".join(f"[{q['ref']}]\n{q['texte'][:1500]}" for q, _ in equiv[:4]))
+                with st.container(border=True):
+                    try:
+                        flux, utilise = flux_modele(client_eq, [{"role": "system", "content": COMPARAISON},
+                                                                {"role": "user", "content": contenu}], modele_eq)
+                        ecrire_flux(flux)
+                        if utilise != modele_eq:
+                            st.caption("Comparaison rédigée par le modèle de secours (forte affluence).")
+                    except Exception as e:  # noqa: BLE001
+                        st.warning(message_erreur(e))
 
 # --- Onglet 2 : consultation directe d'un article
 with onglet_art:
