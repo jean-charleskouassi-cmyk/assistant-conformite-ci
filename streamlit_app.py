@@ -50,8 +50,10 @@ Règles impératives :
    jamais un article sans rapport direct avec la question, même pour « illustrer ».
 2. Cite chaque règle avec sa référence exacte entre crochets, telle qu'elle figure dans l'en-tête de \
 l'extrait, par exemple [Loi 09-08 (Maroc), art. 4].
-3. Si les extraits ne suffisent pas, dis-le et indique quel texte consulter. N'invente jamais un numéro \
-d'article, un délai ou un montant.
+3. Si les extraits ne suffisent pas, ne dis JAMAIS que le texte manque ou n'est « pas fourni » : la \
+bibliothèque contient les textes complets. Dis que les articles retrouvés ne traitent pas ce point et \
+indique, d'après le plan fourni, les articles à lire dans l'onglet « Consulter un article ». N'invente \
+jamais un numéro d'article, un délai ou un montant.
 4. Si plusieurs pays ou espaces sont concernés, distingue nettement ce que prévoit chacun.
 5. Si l'en-tête d'un extrait indique « VERSION D'ORIGINE » ou « OCR », signale qu'il faut vérifier le \
 texte officiel en vigueur avant toute citation définitive.
@@ -208,7 +210,40 @@ def charger_corpus():
             lst[-1][1].append(i)
         else:
             lst.append((p["num"], [i]))
-    return passages, index, textes, articles
+    plans = {lab: plan_texte(lab, passages, articles, 2) for lab in articles}
+    return passages, index, textes, articles, plans
+
+
+def plan_texte(label, passages, articles, niveaux=2):
+    """Plan d'un texte : [(intitulé, premier article, dernier article)], d'après livres / titres."""
+    out, cur, premier, dernier = [], None, None, None
+    for n, idx in articles.get(label, []):
+        parts = [x for x in passages[idx[0]]["contexte"].split(" > ") if x]
+        tete = " > ".join(parts[:niveaux])
+        if tete != cur:
+            if cur is not None:
+                out.append((cur, premier, dernier))
+            cur, premier = tete, n
+        dernier = n
+    if cur is not None:
+        out.append((cur, premier, dernier))
+    return out
+
+
+def plan_resume(label, plans, niveaux=1):
+    """Plan compact d'un texte, au premier niveau, pour les consignes du modèle."""
+    vus, lignes = set(), []
+    for intitule, a, b in plans.get(label, []):
+        tete = intitule.split(" > ")[0] if niveaux == 1 else intitule
+        if not tete or tete in vus:
+            continue
+        vus.add(tete)
+        fin = b
+        for i2, a2, b2 in plans[label]:
+            if i2.split(" > ")[0] == tete:
+                fin = b2
+        lignes.append(f"art. {a} à {fin} : {tete[:70]}")
+    return f"{label} — " + " ; ".join(lignes) if lignes else ""
 
 
 EXPANSIONS = {
@@ -274,15 +309,19 @@ Pour la question posée, réponds UNIQUEMENT par un objet JSON de cette forme :
  "espaces": ["Côte d'Ivoire" | "Maroc" | "OHADA" | "CEDEAO" | "Union africaine"],
  "articles": [{"texte": "AUSCGIE", "num": "10"}]}
 - "espaces" : seulement ceux que la question vise explicitement ou implicitement ; liste vide si rien n'est précisé.
-- "articles" : au plus 5 articles centraux dont tu es sûr. Valeurs possibles pour "texte" : AUSCGIE, AUDCG, AUS,
+- "articles" : au plus 6 articles centraux (par exemple les premiers articles du titre qui traite le sujet,
+  d'après le plan fourni). Valeurs possibles pour "texte" : AUSCGIE, AUDCG, AUS,
   AUPSRVE, AUPCAP, AUA, AUM, AUCTMR, AUSCOOP, AUDCIF, SYCEBNL, Loi 09-08, Loi 2013-450, Loi 5-96, Loi 49-16,
   Loi 53-95, Code de commerce, DOC, Malabo, CEDEAO. Liste vide si tu n'es pas sûr."""
 
 
-def analyser_question(client, question, precedente=""):
+def analyser_question(client, question, precedente="", plan_txt=""):
     """Reformule la question en vocabulaire juridique (modèle rapide). Ne bloque jamais."""
     modele = st.secrets["GROQ_MODEL_RAPIDE"] if "GROQ_MODEL_RAPIDE" in st.secrets else "openai/gpt-oss-20b"
-    contenu = (f"Question précédente (contexte) : {precedente}\n" if precedente else "") + f"Question : {question}"
+    contenu = ((f"Plan des textes disponibles (appuie-toi dessus pour choisir les articles) :\n{plan_txt}\n\n"
+                if plan_txt else "")
+               + (f"Question précédente (contexte) : {precedente}\n" if precedente else "")
+               + f"Question : {question}")
     try:
         rep = client.chat.completions.create(
             model=modele, temperature=0, max_tokens=600,
@@ -294,7 +333,7 @@ def analyser_question(client, question, precedente=""):
         data = {}
     return {"mots_cles": str(data.get("mots_cles", ""))[:400],
             "espaces": [e for e in data.get("espaces", []) if e in ESPACES] if isinstance(data.get("espaces"), list) else [],
-            "articles": [a for a in data.get("articles", []) if isinstance(a, dict)][:5]
+            "articles": [a for a in data.get("articles", []) if isinstance(a, dict)][:6]
             if isinstance(data.get("articles"), list) else []}
 
 
@@ -462,7 +501,7 @@ div[data-testid="stExpander"] summary:hover { color: var(--or-clair); }
 </style>
 """, unsafe_allow_html=True)
 
-passages, index, textes, articles = charger_corpus()
+passages, index, textes, articles, plans = charger_corpus()
 espaces_dispo = [e for e in ESPACES if any(t["pays"] == e for t in textes)]
 labels_textes = [t["label"] for t in textes if t["label"] in articles]
 
@@ -565,12 +604,19 @@ with onglet_q:
                 precedente = next((m["content"] for m in reversed(st.session_state.messages[:-1])
                                    if m["role"] == "user"), "")
                 with st.spinner("Analyse de la question et recherche des articles…"):
-                    analyse = analyser_question(client, question, precedente)
+                    plan_dispo = "\n".join(
+                        plan_resume(t["label"], plans) for t in textes
+                        if t["domaine"] in domaines and t["pays"] in choix_espaces and t["label"] in plans)
+                    analyse = analyser_question(client, question, precedente, plan_dispo)
                     trouves = rechercher(question, passages, index, articles, domaines, choix_espaces,
                                          analyse=analyse)
                 contexte = "\n\n".join(
                     f"[{n + 1}] {p['ref']} — {p['titre']}\n{p['texte']}" for n, p in enumerate(trouves)
                 ) or "(Aucun extrait pertinent trouvé dans le corpus.)"
+                concernes = list(dict.fromkeys(p["label"] for p in trouves if p["label"] in plans))
+                if concernes:
+                    contexte += "\n\nPlan des textes concernés :\n" + "\n".join(
+                        plan_resume(lab, plans) for lab in concernes)
                 historique = [{"role": m["role"], "content": m["content"][:1500]}
                               for m in st.session_state.messages[-5:-1]]
                 messages = [{"role": "system", "content": SYSTEME + "\n\n" + FORMATS[format_rep]},
@@ -655,6 +701,10 @@ with onglet_biblio:
             [{"Texte": t["titre"], "Domaine": DOMAINES.get(t["domaine"], t["domaine"]),
               "Articles": t["articles"] or "—", "Source": t["source"]} for t in lot],
             hide_index=True, width="stretch")
+        for t in lot:
+            if plans.get(t["label"]):
+                with st.expander(f"Plan — {t['label']}"):
+                    st.markdown("\n".join(f"- **art. {a} à {b}** · {i}" for i, a, b in plans[t["label"]]))
 
 # --- Onglet 4 : à propos
 with onglet_apropos:
