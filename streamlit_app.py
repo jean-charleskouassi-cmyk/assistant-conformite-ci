@@ -24,7 +24,7 @@ from rank_bm25 import BM25Okapi
 
 ICI = Path(__file__).parent
 CORPUS_DIR = ICI / "corpus"
-LOGO_H = ICI / "assets" / "logo_horizontal.png"
+LOGO_H = ICI / "assets" / "logo_horizontal_sombre.png"
 LOGO_ICONE = ICI / "assets" / "logo_icone.png"
 
 AUTEUR = "Kouassi Jean-Charles"
@@ -334,21 +334,71 @@ st.set_page_config(page_title="JCKouassi · Assistant juridique",
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap');
-html, body, [class*="css"], .stMarkdown, p, li, label { font-family: 'Inter', system-ui, sans-serif; }
-h1, h2, h3, .jck-titre { font-family: 'Source Serif 4', Georgia, serif !important; color: #14284b; }
-.block-container { padding-top: 1.6rem; max-width: 1180px; }
-.jck-entete { display: flex; align-items: center; gap: 18px; padding: 6px 0 14px;
-              border-bottom: 2px solid #c9972f; margin-bottom: 8px; }
-.jck-titre { font-size: 1.9rem; font-weight: 700; line-height: 1.15; margin: 0; }
-.jck-sous { color: #4a5670; font-size: .95rem; margin-top: 2px; }
-.jck-sous b { color: #9c7322; }
-.jck-pied { margin-top: 2.5rem; padding-top: 12px; border-top: 1px solid #d7dce6; color: #5c6780;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+:root { --nuit:#070c1a; --nuit2:#0f1a33; --nuit3:#16244a; --bord:#243456; --or:#d6a94a; --or-clair:#f3d08a;
+        --bleu:#3b6ef6; --bleu-clair:#9fc0ff; --texte:#e7edf8; --doux:#a9b5cc; }
+html, body, .stMarkdown, p, li, label, textarea, input { font-family: 'Inter', system-ui, sans-serif; }
+h1, h2, h3, h4, .jck-titre { font-family: 'Sora', 'Inter', sans-serif !important; color: var(--texte); letter-spacing: -.01em; }
+h3 { color: var(--or-clair) !important; }
+.stApp { background: radial-gradient(1200px 600px at 75% -10%, rgba(59,110,246,.20), transparent 60%),
+                     radial-gradient(900px 500px at -10% 110%, rgba(214,169,74,.07), transparent 60%), var(--nuit); }
+.block-container { padding-top: 1.2rem; max-width: 1180px; }
+
+/* Bandeau de marque */
+.jck-hero { position: relative; overflow: hidden; display: flex; align-items: center; gap: 26px;
+            padding: 26px 30px; margin-bottom: 14px; border-radius: 20px; border: 1px solid var(--bord);
+            background: radial-gradient(600px 260px at 85% 0%, rgba(59,110,246,.35), transparent 70%),
+                        linear-gradient(135deg, #0b1430 0%, #070c1a 100%); }
+.jck-hero::after { content: ""; position: absolute; left: 30px; right: 30px; bottom: 0; height: 2px;
+                   background: linear-gradient(90deg, transparent, var(--or), var(--or-clair), var(--or), transparent); }
+.jck-hero img { width: 104px; height: 104px; flex-shrink: 0; filter: drop-shadow(0 0 22px rgba(59,110,246,.45)); }
+.jck-marque { font-family: 'Sora', sans-serif; font-weight: 600; font-size: .78rem; letter-spacing: .38em;
+              color: var(--or-clair); text-transform: uppercase; }
+.jck-titre { font-size: 2.1rem; font-weight: 800; line-height: 1.1; margin: 4px 0 6px; color: #fff; }
+.jck-sous { color: var(--doux); font-size: .96rem; line-height: 1.5; }
+.jck-sous b { color: var(--or-clair); font-weight: 600; }
+.jck-chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+.jck-chip { font-size: .78rem; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--bord);
+            color: var(--bleu-clair); background: rgba(59,110,246,.10); }
+
+/* Barre latérale */
+section[data-testid="stSidebar"] { background: linear-gradient(180deg, #0b1430 0%, #070c1a 100%);
+                                   border-right: 1px solid var(--bord); }
+section[data-testid="stSidebar"] h4 { color: var(--or-clair); font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; }
+
+/* Onglets */
+div[data-baseweb="tab-list"] { gap: 6px; border-bottom: 1px solid var(--bord); }
+button[data-baseweb="tab"] { font-family: 'Sora', sans-serif; font-weight: 600; color: var(--doux);
+                             padding: 10px 16px; border-radius: 10px 10px 0 0; }
+button[data-baseweb="tab"][aria-selected="true"] { color: var(--or-clair); background: rgba(214,169,74,.08); }
+div[data-baseweb="tab-highlight"] { background-color: var(--or) !important; }
+
+/* Boutons */
+.stButton button, .stFormSubmitButton button { border-radius: 12px; border: 1px solid var(--bord);
+    background: var(--nuit2); color: var(--texte); transition: border-color .15s, background .15s; text-align: left; }
+.stButton button:hover { border-color: var(--or); background: var(--nuit3); color: #fff; }
+.stFormSubmitButton button, .stButton button[kind="primary"] { background: linear-gradient(90deg, #c9972f, #f3d08a);
+    color: #0b1220; border: none; font-weight: 700; }
+.stFormSubmitButton button:hover { filter: brightness(1.06); color: #0b1220; }
+
+/* Saisie */
+.stTextArea textarea, .stTextInput input { background: var(--nuit2) !important; border: 1px solid var(--bord) !important;
+    border-radius: 12px !important; color: var(--texte) !important; }
+.stTextArea textarea:focus, .stTextInput input:focus { border-color: var(--or) !important; box-shadow: 0 0 0 1px var(--or) !important; }
+
+/* Messages et sources */
+div[data-testid="stChatMessage"] { background: rgba(15,26,51,.65); border: 1px solid var(--bord); border-radius: 16px; padding: 14px 16px; }
+div[data-testid="stExpander"] details { border: 1px solid var(--bord); border-radius: 12px; background: rgba(15,26,51,.7); }
+div[data-testid="stExpander"] summary { color: var(--bleu-clair); font-weight: 500; }
+div[data-testid="stExpander"] summary:hover { color: var(--or-clair); }
+.jck-ctx { color: var(--doux); font-size: .82rem; margin-bottom: 6px; border-left: 2px solid var(--or); padding-left: 10px; }
+.jck-label { color: var(--or-clair); font-family: 'Sora', sans-serif; font-weight: 600; font-size: .95rem; margin: 10px 0 6px; }
+
+/* Pied de page */
+.jck-pied { margin-top: 2.6rem; padding: 18px 0 6px; border-top: 1px solid var(--bord); color: var(--doux);
             font-size: .85rem; text-align: center; }
-.jck-pied b { color: #14284b; }
-.jck-ref { font-weight: 600; color: #14284b; }
-.jck-ctx { color: #6b7590; font-size: .82rem; margin-bottom: 4px; }
-div[data-testid="stExpander"] details { border-color: #d7dce6; background: #ffffff; }
+.jck-pied b { color: var(--or-clair); }
+.jck-pied span { color: var(--bleu-clair); letter-spacing: .3em; font-family: 'Sora', sans-serif; font-size: .72rem; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -375,17 +425,21 @@ with st.sidebar:
     st.caption(f"{len(textes)} textes · {nb_articles:,} articles indexés".replace(",", " "))
     st.caption(f"Une initiative de **{AUTEUR}**")
 
-# En-tête
-col_logo, col_titre = st.columns([1, 9], vertical_alignment="center")
-with col_logo:
-    if LOGO_ICONE.exists():
-        st.image(str(LOGO_ICONE), width=84)
-with col_titre:
-    st.markdown(
-        f"<div class='jck-titre'>Assistant juridique</div>"
-        f"<div class='jck-sous'>Données personnelles et droit des affaires · Côte d'Ivoire, Maroc, OHADA, "
-        f"CEDEAO, Union africaine<br>Une initiative de <b>{AUTEUR}</b> · Juriste 2.0</div>",
-        unsafe_allow_html=True)
+# En-tête : bandeau de marque
+import base64
+icone_b64 = base64.b64encode(LOGO_ICONE.read_bytes()).decode() if LOGO_ICONE.exists() else ""
+st.markdown(
+    f"""<div class='jck-hero'>
+      {f"<img src='data:image/png;base64,{icone_b64}' alt='Emblème JCKouassi'>" if icone_b64 else ""}
+      <div>
+        <div class='jck-marque'>JCKouassi · Juriste 2.0</div>
+        <div class='jck-titre'>Assistant juridique</div>
+        <div class='jck-sous'>Données personnelles et droit des affaires, réponses sourcées article par article.<br>
+          Une initiative de <b>{AUTEUR}</b>.</div>
+        <div class='jck-chips'><span class='jck-chip'>Côte d'Ivoire</span><span class='jck-chip'>Maroc</span>
+          <span class='jck-chip'>OHADA</span><span class='jck-chip'>CEDEAO</span><span class='jck-chip'>Union africaine</span></div>
+      </div></div>""",
+    unsafe_allow_html=True)
 
 onglet_q, onglet_art, onglet_biblio, onglet_apropos = st.tabs(
     ["Question juridique", "Consulter un article", "Bibliothèque des textes", "À propos"])
@@ -411,7 +465,7 @@ with onglet_q:
         modele = st.secrets["GROQ_MODEL"] if "GROQ_MODEL" in st.secrets else DEFAULT_MODEL
 
         if not st.session_state.messages:
-            st.markdown("**Exemples de questions**")
+            st.markdown("<div class='jck-label'>Exemples de questions</div>", unsafe_allow_html=True)
             exemples = [
                 "Faut-il déclarer un fichier clients à l'autorité de protection, au Maroc et en Côte d'Ivoire ?",
                 "Quelles sont les conditions de constitution d'une SAS en droit OHADA ?",
@@ -428,7 +482,7 @@ with onglet_q:
             with st.chat_message(m["role"], avatar=str(LOGO_ICONE) if m["role"] == "assistant" and LOGO_ICONE.exists() else None):
                 st.markdown(m["content"])
                 if m.get("sources"):
-                    st.markdown("**Articles consultés**")
+                    st.markdown("<div class='jck-label'>Articles consultés</div>", unsafe_allow_html=True)
                     afficher_sources(m["sources"], f"h{n}")
 
         with st.form("question", clear_on_submit=True):
@@ -473,7 +527,7 @@ with onglet_q:
                                    "Réessayez dans un instant.")
                         st.warning(reponse)
                     if trouves:
-                        st.markdown("**Articles consultés**")
+                        st.markdown("<div class='jck-label'>Articles consultés</div>", unsafe_allow_html=True)
                         afficher_sources(trouves, "dernier")
             st.session_state.messages.append({"role": "assistant", "content": reponse, "sources": [
                 {"ref": s["ref"], "texte": s["texte"], "contexte": s["contexte"]} for s in trouves]})
@@ -561,5 +615,5 @@ de l'ARTCI.
             st.image(str(LOGO_H), width=300)
 
 st.markdown(
-    f"<div class='jck-pied'>Conçu et développé par <b>{AUTEUR}</b> · JCKouassi, Juriste 2.0 · "
+    f"<div class='jck-pied'><span>JCKOUASSI · JURISTE 2.0</span><br>Conçu et développé par <b>{AUTEUR}</b> · "
     f"Information juridique, pas un conseil juridique.</div>", unsafe_allow_html=True)
