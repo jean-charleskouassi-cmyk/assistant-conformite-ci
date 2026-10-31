@@ -667,6 +667,72 @@ div[data-testid="stExpander"] summary:hover { color: var(--or-clair); }
             font-size: .85rem; text-align: center; }
 .jck-pied b { color: var(--or-clair); }
 .jck-pied span { color: var(--bleu-clair); letter-spacing: .3em; font-family: 'Sora', sans-serif; font-size: .72rem; }
+
+/* ---------- Animations ---------- */
+@keyframes jck-monte { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes jck-apparait { from { opacity: 0; } to { opacity: 1; } }
+@keyframes jck-flotte { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes jck-halo { 0%, 100% { filter: drop-shadow(0 0 16px rgba(59,110,246,.35)); }
+                      50% { filter: drop-shadow(0 0 30px rgba(214,169,74,.55)); } }
+@keyframes jck-balaye { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes jck-aurore { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-4%, 3%) scale(1.08); }
+                        100% { transform: translate(0, 0) scale(1); } }
+@keyframes jck-pop { 0% { opacity: 0; transform: scale(.8); } 70% { transform: scale(1.06); } 100% { opacity: 1; transform: none; } }
+@keyframes jck-reflet { 0% { left: -60%; } 60%, 100% { left: 130%; } }
+@keyframes jck-glisse { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: none; } }
+
+/* Bandeau */
+.jck-hero { animation: jck-monte .7s cubic-bezier(.2,.7,.2,1) both; }
+.jck-hero > * { position: relative; z-index: 1; }
+.jck-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(380px 200px at 85% 0%, rgba(214,169,74,.18), transparent 70%);
+    animation: jck-aurore 14s ease-in-out infinite; }
+.jck-hero::after { background-size: 200% 100%; animation: jck-balaye 5s linear infinite; }
+.jck-hero img { animation: jck-flotte 6s ease-in-out infinite, jck-halo 6s ease-in-out infinite; }
+.jck-marque { animation: jck-apparait .9s .15s both; }
+.jck-titre { background: linear-gradient(90deg, #ffffff 0%, #ffffff 40%, var(--or-clair) 50%, #ffffff 60%, #ffffff 100%);
+    background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: jck-monte .8s .2s both, jck-balaye 7s 1s linear infinite; }
+.jck-sous { animation: jck-apparait 1s .35s both; }
+.jck-chip { animation: jck-pop .5s both; transition: transform .2s, border-color .2s, color .2s; }
+.jck-chip:nth-child(1) { animation-delay: .45s; } .jck-chip:nth-child(2) { animation-delay: .55s; }
+.jck-chip:nth-child(3) { animation-delay: .65s; } .jck-chip:nth-child(4) { animation-delay: .75s; }
+.jck-chip:nth-child(5) { animation-delay: .85s; }
+.jck-chip:hover { transform: translateY(-2px); border-color: var(--or); color: var(--or-clair); }
+
+/* Onglets : le contenu apparaît à chaque changement */
+div[data-baseweb="tab-panel"] { animation: jck-monte .45s cubic-bezier(.2,.7,.2,1) both; }
+button[data-baseweb="tab"] { transition: color .2s, background .2s; }
+div[data-baseweb="tab-highlight"] { transition: all .35s cubic-bezier(.2,.7,.2,1) !important; }
+
+/* Boutons : léger soulèvement, reflet doré sur le bouton principal */
+.stButton button, .stFormSubmitButton button { transition: transform .18s, box-shadow .18s, border-color .15s, background .15s; }
+.stButton button:hover, .stFormSubmitButton button:hover { transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,0,0,.35), 0 0 0 1px rgba(214,169,74,.25); }
+.stButton button:active, .stFormSubmitButton button:active { transform: translateY(0); }
+.stFormSubmitButton button, .stButton button[kind="primary"] { position: relative; overflow: hidden; }
+.stFormSubmitButton button::after, .stButton button[kind="primary"]::after { content: ""; position: absolute; top: 0;
+    left: -60%; width: 40%; height: 100%; transform: skewX(-20deg);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
+    animation: jck-reflet 3.5s ease-in-out infinite; }
+
+/* Saisie : halo à la mise au point */
+.stTextArea textarea, .stTextInput input { transition: border-color .2s, box-shadow .3s !important; }
+.stTextArea textarea:focus, .stTextInput input:focus { box-shadow: 0 0 0 1px var(--or), 0 0 18px rgba(214,169,74,.25) !important; }
+
+/* Réponses, sources, encadrés */
+div[data-testid="stChatMessage"] { animation: jck-monte .5s cubic-bezier(.2,.7,.2,1) both; }
+div[data-testid="stExpander"] { animation: jck-glisse .45s both; }
+div[data-testid="stExpander"] details { transition: border-color .2s, background .2s; }
+div[data-testid="stExpander"] details:hover { border-color: rgba(214,169,74,.55); }
+div[data-testid="stAlert"] { animation: jck-monte .4s both; }
+section[data-testid="stSidebar"] img { animation: jck-apparait .8s both; }
+
+/* Respect du réglage « réduire les animations » */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .jck-titre { color: #fff; background: none; }
+}
 </style>
 """, unsafe_allow_html=True)
 
