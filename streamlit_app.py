@@ -34,15 +34,17 @@ MAX_CHUNK = 1800
 TOP_K = 7
 DEFAULT_MODEL = "openai/gpt-oss-120b"
 
-ESPACES = ["Côte d'Ivoire", "Maroc", "OHADA", "CEDEAO", "Union africaine"]
-DOMAINES = {"donnees": "Données personnelles", "affaires": "Droit des affaires"}
+ESPACES = ["Côte d'Ivoire", "Maroc", "OHADA", "CEDEAO", "Union africaine", "Union européenne"]
+DOMAINES = {"donnees": "Données personnelles", "affaires": "Droit des affaires",
+            "ia": "Intelligence artificielle"}
 # Textes communautaires applicables quand la question vise un pays.
 APPLICABLES = {"Côte d'Ivoire": ["OHADA", "CEDEAO", "Union africaine"], "Maroc": ["Union africaine"]}
 
 SYSTEME = """Tu es l'assistant juridique de JCKouassi, conçu par Kouassi Jean-Charles. Tu informes sur la \
-protection des données personnelles et le droit des affaires en Côte d'Ivoire, au Maroc, dans l'espace \
-OHADA (les Actes uniformes s'appliquent notamment en Côte d'Ivoire, pas au Maroc), dans la CEDEAO et \
-dans l'Union africaine.
+protection des données personnelles, le droit des affaires et la réglementation de l'intelligence \
+artificielle en Côte d'Ivoire, au Maroc, dans l'espace OHADA (les Actes uniformes s'appliquent notamment \
+en Côte d'Ivoire, pas au Maroc), dans la CEDEAO, dans l'Union africaine et dans l'Union européenne (RGPD \
+et règlement sur l'IA, utiles en comparaison ou quand l'activité d'un client touche l'Europe).
 
 Règles impératives :
 1. Appuie-toi UNIQUEMENT sur les extraits fournis. N'affirme aucune règle de droit qui n'y figure pas.
@@ -275,6 +277,7 @@ ESPACES_CITES = {
     "OHADA": r"ohada|acte uniforme|\bau[a-z]{1,6}\b",
     "CEDEAO": r"cedeao|ecowas",
     "Union africaine": r"union africaine|malabo",
+    "Union européenne": r"union europ[ée]enne|\brgpd\b|\bue\b|\bai act\b|2016/679|2024/1689",
 }
 # Abréviations courantes -> label du texte, pour « article 309 AUSCGIE » etc.
 ALIAS_TEXTES = {
@@ -287,6 +290,8 @@ ALIAS_TEXTES = {
     r"5-96": "Loi 5-96", r"49-16": "Loi 49-16", r"53-95": "Loi 53-95",
     r"code de commerce": "Code de commerce", r"\bdoc\b|obligations et (?:des )?contrats": "DOC",
     r"malabo": "Malabo", r"cedeao|a/sa\.?1": "CEDEAO",
+    r"\brgpd\b|gdpr|donn[ée]es.{0,20}union europ[ée]enne": "RGPD",
+    r"\bai act\b|intelligence artificielle.{0,20}(?:union europ[ée]enne|r[èe]glement)|2024/1689": "AI Act",
 }
 
 
@@ -307,11 +312,11 @@ NOTIONS_TEXTES = {
 }
 
 
-ANALYSE = """Tu es documentaliste juridique (OHADA, Côte d'Ivoire, Maroc, CEDEAO, Union africaine).
+ANALYSE = """Tu es documentaliste juridique (OHADA, Côte d'Ivoire, Maroc, CEDEAO, Union africaine, Union européenne).
 Pour la question posée, réponds UNIQUEMENT par un objet JSON de cette forme :
 {"question_precise": "la question reformulée en une phrase juridique claire et précise, en français",
  "mots_cles": "termes juridiques précis tels qu'ils figurent dans les textes, synonymes compris (20 mots au plus)",
- "espaces": ["Côte d'Ivoire" | "Maroc" | "OHADA" | "CEDEAO" | "Union africaine"],
+ "espaces": ["Côte d'Ivoire" | "Maroc" | "OHADA" | "CEDEAO" | "Union africaine" | "Union européenne"],
  "articles": [{"texte": "AUSCGIE", "num": "10"}],
  "precisions": ["information manquante formulée comme une courte question à l'utilisateur"],
  "suivis": ["question de suivi utile"]}
@@ -320,7 +325,7 @@ Pour la question posée, réponds UNIQUEMENT par un objet JSON de cette forme :
 - "articles" : au plus 6 articles centraux (par exemple les premiers articles du titre qui traite le sujet,
   d'après le plan fourni). Valeurs possibles pour "texte" : AUSCGIE, AUDCG, AUS,
   AUPSRVE, AUPCAP, AUA, AUM, AUCTMR, AUSCOOP, AUDCIF, SYCEBNL, Loi 09-08, Loi 2013-450, Loi 5-96, Loi 49-16,
-  Loi 53-95, Code de commerce, DOC, Malabo, CEDEAO. Liste vide si tu n'es pas sûr.
+  Loi 53-95, Code de commerce, DOC, Malabo, CEDEAO, RGPD, AI Act. Liste vide si tu n'es pas sûr.
 - "precisions" : au plus 3 informations qui manquent pour bien répondre (pays, forme de société, qualité de la
   personne, montant…) ; liste vide si la question est assez précise.
 - "suivis" : 3 questions de suivi courtes et concrètes qu'un juriste poserait ensuite."""
@@ -1079,9 +1084,10 @@ with st.sidebar:
                     f"style='width:100%;border-radius:14px;margin:4px 0 14px;border:1px solid #243456'>",
                     unsafe_allow_html=True)
     st.markdown("#### Périmètre de recherche")
-    choix_domaine = st.radio("Domaine", ["Les deux", "Données personnelles", "Droit des affaires"])
-    domaines = {"Les deux": ["donnees", "affaires"], "Données personnelles": ["donnees"],
-                "Droit des affaires": ["affaires"]}[choix_domaine]
+    choix_domaine = st.radio("Domaine", ["Tout", "Données personnelles", "Droit des affaires",
+                                          "Intelligence artificielle"])
+    domaines = {"Tout": ["donnees", "affaires", "ia"], "Données personnelles": ["donnees"],
+                "Droit des affaires": ["affaires"], "Intelligence artificielle": ["ia"]}[choix_domaine]
     choix_espaces = st.multiselect("Pays et espaces juridiques", espaces_dispo, default=espaces_dispo)
     st.markdown("#### Réponse")
     format_rep = st.radio("Format", list(FORMATS), horizontal=True)
