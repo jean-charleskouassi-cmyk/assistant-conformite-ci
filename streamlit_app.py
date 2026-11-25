@@ -632,6 +632,38 @@ CONTRATS = {
                                               "légale et doivent être vérifiées."},
         },
     },
+    "Contrat SaaS / licence logicielle": {
+        "roles": ("Le client", "Le fournisseur"),
+        "champs": [("objet", "Logiciel ou service proposé", "area", "ex. accès à une plateforme SaaS de facturation en ligne"),
+                   ("acces", "Modalités d'accès et nombre d'utilisateurs", "text", "ex. 5 comptes utilisateurs, accès web"),
+                   ("duree", "Durée et renouvellement de l'abonnement", "text", "ex. 1 an, renouvelable par tacite reconduction"),
+                   ("prix", "Prix et modalités de paiement", "text", "ex. 2 000 DH HT par mois, facturation mensuelle"),
+                   ("disponibilite", "Niveau de service attendu (disponibilité, support)", "area",
+                    "ex. disponibilité visée 99 %, support par email sous 48h"),
+                   ("hebergement", "Lieu d'hébergement des données", "text", "ex. hébergeur cloud situé en Europe"),
+                   ("donnees", "Le fournisseur traite des données personnelles pour le client", "check", ""),
+                   ("propriete", "Propriété intellectuelle du logiciel", "choice",
+                    ["Licence d'utilisation non exclusive (le fournisseur reste propriétaire)",
+                     "Cession des développements spécifiques au client"]),
+                   ("litiges", "Règlement des litiges", "choice",
+                    ["Tribunal compétent", "Médiation, puis tribunal", "Médiation, puis arbitrage"])],
+        "requete": "louage ouvrage services prix exécution délai responsabilité inexécution force majeure résiliation licence",
+        "droits": {
+            "Maroc": {"socle": [("DOC", ["230", "723", "724", "263", "264", "268", "269"])],
+                      "reserve": [("DOC", (723, 780))],
+                      "donnees": [("Loi 09-08", ["23", "25", "26"])],
+                      "note": "Le régime spécifique de l'échange électronique de données juridiques (loi n° 53-05) "
+                              "n'est pas intégré dans la bibliothèque : le contrat s'appuie sur le droit commun des "
+                              "contrats (DOC) et doit être complété pour les aspects propres au numérique "
+                              "(signature électronique, preuve) si nécessaire."},
+            "Côte d'Ivoire (OHADA)": {"socle": [("(AUM)", ["2"]), ("(AUA)", ["2", "3-1", "4"])], "reserve": [],
+                                      "donnees": [("Loi 2013-450", ["39", "40", "41"])],
+                                      "note": "Le droit commun ivoirien des contrats (Code civil) et la réglementation "
+                                              "ivoirienne spécifique au numérique ne sont pas intégrés dans la "
+                                              "bibliothèque : les clauses générales sont rédigées sans référence "
+                                              "légale et doivent être vérifiées."},
+        },
+    },
     "Accord de confidentialité (NDA)": {
         "roles": ("La partie divulgatrice", "La partie destinataire"),
         "champs": [("sens", "Type d'accord", "choice", ["Unilatéral", "Mutuel (les deux parties échangent)"]),
